@@ -14,6 +14,8 @@ Docker 26.1.1
 # Environment setup
 
 1. Follow instructions to prepare to run IsaacSim headless in a docker container: https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html.
-2. Run docker-compose.yaml to start containers:
-  a. IsaacSim (headless)
-  b. ROS2-equipped container
+  a. Note 1: Just follow the steps installing Nvidia drivers, Docker, and the Nvidia container toolkit. The image we use comes from 
+  b. Note 2: The tutorial reccomends using Nvidia drivers version 525.x.x, in the linked tutorial and here: https://docs.omniverse.nvidia.com/platform/latest/common/technical-requirements.html. I have successfully used 535.x.x drivers.
+3. Run docker-compose.yaml to start containers:
+  a. IsaacSim (headless), with ROS2 humble.
+  b. ROS2 Humble-equipped container.
