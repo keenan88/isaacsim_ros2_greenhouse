@@ -6,7 +6,7 @@ To develop, test, & demonstrate behaviour of Ecoation's ANT robots in a containe
 
 # Validated Environment
 
-Operating System: Ubuntu 22.04
+Operating System: Ubuntu 22.04 
 Graphics Card: NVIDIA GeForce RTX 3050
 NVIDIA Driver version: 535.171.04
 Docker 26.1.1
