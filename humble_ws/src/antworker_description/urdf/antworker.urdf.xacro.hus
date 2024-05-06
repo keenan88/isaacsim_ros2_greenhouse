@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<robot name="antworker" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:arg name="use_sim" default="false" />
+  <xacro:arg name="use_gpu" default="false" />
+  <xacro:arg name="simulation_engine" default="gazebo" />
+
+  <xacro:include filename="$(find antworker_description)/urdf/antworker_macro.urdf.xacro" ns="ant" />
+  <xacro:ant.antworker_robot use_sim="$(arg use_sim)" use_gpu="$(arg use_gpu)" simulation_engine="$(arg simulation_engine)"/>
+
+</robot>
