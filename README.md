@@ -19,7 +19,7 @@ To develop, test, & demonstrate behaviour of Ecoation's ANT robots in a IsaacSim
 1. Go to the root of the repo and enter <docker compose up>
    1. If this command works properly, you should be able to see:
       1. A huge dump of text in the terminal from IsaacSim starting up. There should be no red text about ROS2 bridge failing to start.
-      2. 2 containers named isaac-sim and humble-desktop if you run <docker ps -a>
+      2. 2 containers named isaac-sim and humble-desktop if you run `docker ps -a`
 2. Open a new terminal and run ifconfig to get your wifi card's inet IP address.
 3. Launch Omniverse Streaming Client from Omniverse and enter the IP address.
 4. If the connection is successful, you should see IsaacSim load up to a blank world.
