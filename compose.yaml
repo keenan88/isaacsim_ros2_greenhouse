@@ -21,7 +21,7 @@ services:
                 - gpu
 
     volumes:
-      - ./fastdds.xml:/home/.ros/fastdds.xml:rw
+      - ../fastdds.xml:/root/.ros/fastdds.xml:rw
       - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
       - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
       - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
@@ -33,7 +33,7 @@ services:
     
     network_mode: "host"
     restart: "no"
-    command: "runheadless.native.sh"
+    #command: "runheadless.native.sh"
 
   # humble-desktop:
   #   container_name: humble-desktop

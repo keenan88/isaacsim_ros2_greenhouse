@@ -32,4 +32,9 @@ RUN apt install ros-humble-desktop -y
 
 RUN apt install ros-dev-tools -y
 
+# ros-humble-vision-msgs necessary for IsaacSim ROS2 bridge as per: https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_ros.html
+RUN apt install ros-humble-vision-msgs
+
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+
+ENV FASTRTPS_DEFAULT_PROFILES_FILE=/root/.ros/fastdds.xml
