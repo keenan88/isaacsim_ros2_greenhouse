@@ -23,7 +23,7 @@ To develop, test, & demonstrate behaviour of Ecoation's ANT robots in a IsaacSim
 2. Open a new terminal and run ifconfig to get your wifi card's inet IP address.
 3. Launch Omniverse Streaming Client from Omniverse and enter the IP address.
 4. If the connection is successful, you should see IsaacSim load up to a blank world.
-5. In IsaacSim, go to File -` Open, and navigate to */isaac-sim/humble_ws/src/antworker_description/usd* and open *greenhouse_worker_v1.usd*.
+5. In IsaacSim, go to File -> Open, and navigate to */isaac-sim/humble_ws/src/antworker_description/usd* and open *greenhouse_worker_v1.usd*.
 6. If successful, you should see a world with a pipe rail, two rows of plants, and the ANT Worker robot.
 
 # Steps to drive the robot
@@ -33,4 +33,4 @@ To develop, test, & demonstrate behaviour of Ecoation's ANT robots in a IsaacSim
 3. Run `ros2 run teleop_twist_keyboard teleop_twist_keyboard`.
 4. Hit the play button in IsaacSim. 
 5. As you enter Twist commands in the teleop terminal, you should see the robot drive front/back in IsaacSim. It may move slowly if the sim has a low framerate.
-6. You can verify the velocity commands are getting to the wheels by viewing velocityCommand textbox in IsaacSim -` Action_Graph_01 -` Articulation Controller
+6. You can verify the velocity commands are getting to the wheels by viewing velocityCommand textbox in IsaacSim -> Action_Graph_01 -> Articulation Controller
