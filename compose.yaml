@@ -1,0 +1,48 @@
+
+services:
+  isaac-sim:
+    build:
+      context: ./isaacsim_humble_dockerfile2
+      dockerfile: Dockerfile
+    image: isaacsim_humble
+
+    container_name: isaac-sim
+    entrypoint: bash
+    stdin_open: true
+    tty: true
+    environment:
+      - ACCEPT_EULA=Y
+      - PRIVACY_CONSENT=Y
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities:
+                - gpu
+
+    volumes:
+      - ./fastdds.xml:/home/.ros/fastdds.xml:rw
+      - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
+      - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
+      - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
+      - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
+      - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
+      - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
+      - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
+      - ~/docker/isaac-sim/documents:/root/Documents:rw
+    
+    network_mode: "host"
+    restart: "no"
+    #command: "runheadless.native.sh"
+
+  # humble-desktop:
+  #   container_name: humble-desktop
+  #   image: osrf/ros:humble-desktop
+  #   tty: true
+  #   stdin_open: true
+  #   environment:
+  #     - DISPLAY=${DISPLAY}
+  #   volumes:
+  #     - /tmp/.X11-unix:/tmp/.X11-unix
+  #   network_mode: "host"
+  #   restart: "no"
