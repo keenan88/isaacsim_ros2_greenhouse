@@ -33,7 +33,7 @@ services:
     
     network_mode: "host"
     restart: "no"
-    #command: "runheadless.native.sh"
+    command: "runheadless.native.sh"
 
   # humble-desktop:
   #   container_name: humble-desktop
