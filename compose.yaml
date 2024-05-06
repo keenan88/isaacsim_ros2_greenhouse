@@ -4,10 +4,9 @@ services:
     build:
       context: ./isaacsim_humble_dockerfile
       dockerfile: Dockerfile
-    image: isaacsim_humble
+    #image: isaacsim_humble
 
     container_name: isaac-sim
-    entrypoint: bash
     stdin_open: true
     tty: true
     environment:
@@ -31,12 +30,13 @@ services:
       - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
       - ~/docker/isaac-sim/documents:/root/Documents:rw
       - ./humble_ws:/isaac-sim/humble_ws:rw
+      - ./scripts:/isaac-sim/scripts:rw
       
     
     network_mode: "host"
     restart: "no"
-    command: "runheadless.native.sh"
-
+    entrypoint: /isaac-sim/scripts/ros_entrypoint.sh
+ 
   humble-desktop:
     container_name: humble-desktop
     image: osrf/ros:humble-desktop
