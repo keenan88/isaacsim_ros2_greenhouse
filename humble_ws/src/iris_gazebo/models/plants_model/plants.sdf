@@ -1,0 +1,266 @@
+<sdf version='1.7'>
+  <model name='plants'>
+    <joint name='plants_joint' type='fixed'>
+      <pose relative_to='__model__'>0 0 0.75 0 -0 0</pose>
+      <parent>world</parent>
+      <child>plants</child>
+    </joint>
+    <link name='plants'>
+      <pose relative_to='plants_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>17.835 0 0.033333 0 -0 0</pose>
+        <mass>300000</mass>
+        <inertia>
+          <ixx>3.00427e+07</ixx>
+          <ixy>0</ixy>
+          <ixz>713200</ixz>
+          <iyy>7.7729e+07</iyy>
+          <iyz>0</iyz>
+          <izz>7.76863e+07</izz>
+        </inertia>
+      </inertial>
+      <collision name='plants_collision'>
+        <pose>26.75 0 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.5 1.5</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='plants_collision_1'>
+        <pose>-26.75 0 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.5 1.5</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='plants_fixed_joint_lump__pot_collision_2'>
+        <pose>26.75 0 -0.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.5 0.1</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='plants_fixed_joint_lump__pot_collision_3'>
+        <pose>-26.75 0 -0.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.5 0.1</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='plants_visual'>
+        <pose>26.75 0.24 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.001 1.5</size>
+          </box>
+        </geometry>
+        <transparency>0.01</transparency>
+        <material>
+          <script>
+            <name>plant/Difuse</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_visual_1'>
+        <pose>26.75 0 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.001 1.5</size>
+          </box>
+        </geometry>
+        <transparency>0.01</transparency>
+        <material>
+          <script>
+            <name>plant/Difuse</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_visual_2'>
+        <pose>26.75 -0.24 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.001 1.5</size>
+          </box>
+        </geometry>
+        <transparency>0.01</transparency>
+        <material>
+          <script>
+            <name>plant/Difuse</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_visual_3'>
+        <pose>-26.75 0.24 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.001 1.5</size>
+          </box>
+        </geometry>
+        <transparency>0.01</transparency>
+        <material>
+          <script>
+            <name>plant/Difuse</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_visual_4'>
+        <pose>-26.75 0 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.001 1.5</size>
+          </box>
+        </geometry>
+        <transparency>0.01</transparency>
+        <material>
+          <script>
+            <name>plant/Difuse</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_visual_5'>
+        <pose>-26.75 -0.24 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.001 1.5</size>
+          </box>
+        </geometry>
+        <transparency>0.01</transparency>
+        <material>
+          <script>
+            <name>plant/Difuse</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_fixed_joint_lump__plant_shift_visual_6'>
+        <pose>26.755 0.125 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.001 1.5</size>
+          </box>
+        </geometry>
+        <transparency>0.01</transparency>
+        <material>
+          <script>
+            <name>plant_shift/Difuse</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_fixed_joint_lump__plant_shift_visual_7'>
+        <pose>26.755 -0.125 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.001 1.5</size>
+          </box>
+        </geometry>
+        <transparency>0.01</transparency>
+        <material>
+          <script>
+            <name>plant_shift/Difuse</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_fixed_joint_lump__plant_shift_visual_8'>
+        <pose>-26.745 0.125 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.001 1.5</size>
+          </box>
+        </geometry>
+        <transparency>0.01</transparency>
+        <material>
+          <script>
+            <name>plant_shift/Difuse</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_fixed_joint_lump__plant_shift_visual_9'>
+        <pose>-26.745 -0.125 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.001 1.5</size>
+          </box>
+        </geometry>
+        <transparency>0.01</transparency>
+        <material>
+          <script>
+            <name>plant_shift/Difuse</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_fixed_joint_lump__pot_visual_10'>
+        <pose>26.75 0 -0.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.5 0.1</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='plants_fixed_joint_lump__pot_visual_11'>
+        <pose>-26.75 0 -0.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>50 0.5 0.1</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
