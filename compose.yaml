@@ -2,7 +2,7 @@
 services:
   isaac-sim:
     build:
-      context: ./isaacsim_humble_dockerfile2
+      context: ./isaacsim_humble_dockerfile
       dockerfile: Dockerfile
     image: isaacsim_humble
 
