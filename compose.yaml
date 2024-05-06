@@ -4,7 +4,7 @@ services:
     build:
       context: ./isaacsim_humble_dockerfile
       dockerfile: Dockerfile
-    #image: isaacsim_humble
+    image: isaacsim_humble
 
     container_name: isaac-sim
     stdin_open: true
