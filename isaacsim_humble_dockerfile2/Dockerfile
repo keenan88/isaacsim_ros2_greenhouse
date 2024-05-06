@@ -31,3 +31,5 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt install ros-humble-desktop -y
 
 RUN apt install ros-dev-tools -y
+
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
