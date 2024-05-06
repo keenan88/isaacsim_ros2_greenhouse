@@ -30,19 +30,22 @@ services:
       - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
       - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
       - ~/docker/isaac-sim/documents:/root/Documents:rw
+      - ../humble_ws://isaac-sim/humble_ws:rw
+      
     
     network_mode: "host"
     restart: "no"
     command: "runheadless.native.sh"
 
-  # humble-desktop:
-  #   container_name: humble-desktop
-  #   image: osrf/ros:humble-desktop
-  #   tty: true
-  #   stdin_open: true
-  #   environment:
-  #     - DISPLAY=${DISPLAY}
-  #   volumes:
-  #     - /tmp/.X11-unix:/tmp/.X11-unix
-  #   network_mode: "host"
-  #   restart: "no"
+  humble-desktop:
+    container_name: humble-desktop
+    image: osrf/ros:humble-desktop
+    tty: true
+    stdin_open: true
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ../humble_ws:/home/humble_ws:rw
+    network_mode: "host"
+    restart: "no"
