@@ -35,5 +35,5 @@ To develop, test, & demonstrate behaviour of Ecoation's ANT robots in a IsaacSim
 5. As you enter Twist commands in the teleop terminal, you should see the robot drive front/back in IsaacSim. It may move slowly if the sim has a low framerate.
 6. You can verify the velocity commands are getting to the wheels by viewing velocityCommand textbox in IsaacSim -> Action_Graph_01 -> Articulation Controller
 
-![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/a5e3f1e3-30c3-43df-b42d-0513a8a8864c)
+![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/f5f72a71-04d3-442c-865e-ca7e9e072263)
 *Figure 1* Fully loaded world with plants, pipe rails, and Worker robot. Also *velocityCommand* in the Articulation Controller (bottom right of the image) shows non-zero movement for both wheels.
