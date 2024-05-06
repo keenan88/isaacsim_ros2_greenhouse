@@ -10,10 +10,10 @@ To develop, test, & demonstrate behaviour of Ecoation's ANT robots in a IsaacSim
   a. Note: I have used 535.x.x instead of the reccomended 525.x.x drivers to run IsaacSim.
 2. Download [Nvidia Omniverse](https://www.nvidia.com/en-us/omniverse/download/) and use it to install the Omniverse Streaming Client.
 3. Follow [these steps](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to install: 
-⋅⋅1. Nvidia drivers
-⋅⋅2. Docker
-⋅⋅3. Nvidia container toolkit
-⋅⋅4. IsaacSim Docker container image
+   1. Nvidia drivers
+   2. Docker
+   3. Nvidia container toolkit
+   4. IsaacSim Docker container image
 
 # Steps to launch simulation
 1. Go to the root of the repo and enter <docker compose up>
