@@ -1,45 +1,49 @@
 
 services:
-  isaac-sim:
-    build:
-      context: ./isaacsim_humble_dockerfile
-      dockerfile: Dockerfile
-    image: isaacsim_humble
+  # isaac-sim:
+  #   build:
+  #     context: ./isaacsim_humble_dockerfile
+  #     dockerfile: Dockerfile
+  #   image: isaacsim_humble
 
-    container_name: isaac-sim
-    stdin_open: true
-    tty: true
-    environment:
-      - ACCEPT_EULA=Y
-      - PRIVACY_CONSENT=Y
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - capabilities:
-                - gpu
+  #   container_name: isaac-sim
+  #   stdin_open: true
+  #   tty: true
+  #   environment:
+  #     - ACCEPT_EULA=Y
+  #     - PRIVACY_CONSENT=Y
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - capabilities:
+  #               - gpu
 
-    volumes:
-      - ./fastdds.xml:/root/.ros/fastdds.xml:rw
-      - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
-      - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
-      - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
-      - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
-      - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
-      - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
-      - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
-      - ~/docker/isaac-sim/documents:/root/Documents:rw
-      - ./humble_ws:/isaac-sim/humble_ws:rw
-      - ./scripts:/isaac-sim/scripts:rw
+  #   volumes:
+  #     - ./fastdds.xml:/root/.ros/fastdds.xml:rw
+  #     - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
+  #     - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
+  #     - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
+  #     - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
+  #     - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
+  #     - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
+  #     - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
+  #     - ~/docker/isaac-sim/documents:/root/Documents:rw
+  #     - ./humble_ws:/isaac-sim/humble_ws:rw
+  #     - ./scripts/isaacsim_entrypoint.sh:/isaac-sim/scripts/isaacsim_entrypoint.sh:rw
       
     
-    network_mode: "host"
-    restart: "no"
-    entrypoint: /isaac-sim/scripts/ros_entrypoint.sh
+  #   network_mode: "host"
+  #   restart: "no"
+  #   entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
+
  
   humble-desktop:
     container_name: humble-desktop
-    image: osrf/ros:humble-desktop
+    build:
+      context: ./humble_worker_dockerfile
+      dockerfile: Dockerfile
+    image: humble_dev_img
     tty: true
     stdin_open: true
     environment:
@@ -47,5 +51,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ./humble_ws:/home/humble_ws:rw
+      - ./scripts/dev_entrypoint.sh:/isaac-sim/scripts/dev_entrypoint.sh:rw
     network_mode: "host"
     restart: "no"
+    entrypoint: /isaac-sim/scripts/dev_entrypoint.sh
