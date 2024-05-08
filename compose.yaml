@@ -55,5 +55,6 @@ services:
       - ./humble_ws:/home/humble_ws:rw
       - ./scripts/dev_entrypoint.sh:/isaac-sim/scripts/dev_entrypoint.sh:rw
     network_mode: "host"
+    working_dir: /home/humble_ws/src
     restart: "no"
     entrypoint: /isaac-sim/scripts/dev_entrypoint.sh
