@@ -54,6 +54,7 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ./humble_ws:/home/humble_ws:rw
       - ./scripts/dev_entrypoint.sh:/isaac-sim/scripts/dev_entrypoint.sh:rw
+    privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
     network_mode: "host"
     working_dir: /home/humble_ws/src
     restart: "no"
