@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<robot name="plants">
+  <link name="plants">
+    <inertial>
+      <origin xyz="26.75 0 0.3"/>
+      <mass value="100000.0"/>
+      <inertia ixx="10000000.0" ixy="0.0" ixz="0.0" iyy="10000000.0" iyz="0.0" izz="10000000.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="26.75 0.24 0.3"/>
+      <geometry>
+        <box size="50 0.001 1.5"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="26.75 0 0.3"/>
+      <geometry>
+        <box size="50 0.001 1.5"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="26.75 -0.24 0.3"/>
+      <geometry>
+        <box size="50 0.001 1.5"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="26.75 0 0.3"/>
+      <geometry>
+        <box size="50 0.5 1.5"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-26.75 0.24 0.3"/>
+      <geometry>
+        <box size="50 0.001 1.5"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="-26.75 0 0.3"/>
+      <geometry>
+        <box size="50 0.001 1.5"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="-26.75 -0.24 0.3"/>
+      <geometry>
+        <box size="50 0.001 1.5"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-26.75 0 0.3"/>
+      <geometry>
+        <box size="50 0.5 1.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="plant_shift">
+    <inertial>
+      <origin xyz="0 0 0.3"/>
+      <mass value="100000.0"/>
+      <inertia ixx="10000000.0" ixy="0.0" ixz="0.0" iyy="10000000.0" iyz="0.0" izz="10000000.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="26.75 0.125 0.3"/>
+      <geometry>
+        <box size="50 0.001 1.5"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="26.75 -0.125 0.3"/>
+      <geometry>
+        <box size="50 0.001 1.5"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="-26.75 0.125 0.3"/>
+      <geometry>
+        <box size="50 0.001 1.5"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="-26.75 -0.125 0.3"/>
+      <geometry>
+        <box size="50 0.001 1.5"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="pot">
+    <inertial>
+      <origin xyz="26.75 0 0.25"/>
+      <mass value="100000.0"/>
+      <inertia ixx="10000000.0" ixy="0.0" ixz="0.0" iyy="10000000.0" iyz="0.0" izz="10000000.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="26.75 0 0.25"/>
+      <geometry>
+        <box size="50 0.5 0.1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="26.75 0 0.25"/>
+      <geometry>
+        <box size="50 0.5 0.1"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-26.75 0 0.25"/>
+      <geometry>
+        <box size="50 0.5 0.1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-26.75 0 0.25"/>
+      <geometry>
+        <box size="50 0.5 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="plant_shift_joint" type="fixed">
+    <origin rpy="0.0 0.0 0.0" xyz="0.005 0 0"/>
+    <parent link="plants"/>
+    <child link="plant_shift"/>
+  </joint>
+  <joint name="pot_joint" type="fixed">
+    <origin rpy="0.0 0.0 0.0" xyz="0 0 -0.75"/>
+    <parent link="plants"/>
+    <child link="pot"/>
+  </joint>
+</robot>
+

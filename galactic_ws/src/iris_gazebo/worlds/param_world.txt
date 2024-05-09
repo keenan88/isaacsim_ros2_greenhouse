@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+    <world name="default">
+        <physics type='ode'>
+            <max_step_size>0.01</max_step_size>
+            <real_time_factor>1</real_time_factor>
+            <real_time_update_rate>100</real_time_update_rate>
+            <gravity>0 0 -9.81</gravity>
+        </physics>
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <population name="rails_population">
+            <model name="rail1">
+                <include>
+                    <uri>model://models/rails_model</uri>               
+                </include>
+            </model>
+            <pose>aisle_origin_x row_offset 0 0 0 0</pose>
+            <box>
+                <size>30 rails_total_width 1</size>
+            </box>
+            <model_count>rails_rows</model_count>
+            <distribution>
+                <type>linear-y</type>
+            </distribution>
+        </population>
+
+        <population name="plants_population">
+            <model name="plant1">
+                <include>
+                    <uri>model://models/plants_model</uri>
+                </include>
+            </model>
+            <pose>aisle_origin_x row_offset 0 0 0 0</pose>
+            <box>
+                <size>30 plants_total_width 1</size>
+            </box>
+            <model_count>plants_rows</model_count>
+            <distribution>
+                <type>linear-y</type>
+            </distribution>
+        </population>
+
+
+        <plugin name='gazebo_occupancy_map' filename='libgazebo_2dmap_plugin.so'>
+            <map_resolution>0.05</map_resolution>           <!-- in meters, optional, default 0.1 -->
+            <map_height>0.2</map_height>                    <!-- in meters, optional, default 0.3 -->
+            <map_size_x>global_map_size_x</map_size_x>      <!-- in meters, optional, default 10 -->
+            <map_size_y>global_map_size_y</map_size_y>      <!-- in meters, optional, default 10 -->
+            <init_robot_x>aisle_origin_x</init_robot_x>     <!-- x coordinate in meters, optional, default 0 -->
+            <init_robot_y>0</init_robot_y>                  <!-- y coordinate in meters, optional, default 0 -->
+        </plugin>
+
+        <!-- obstacles -->
+
+    </world>
+</sdf>

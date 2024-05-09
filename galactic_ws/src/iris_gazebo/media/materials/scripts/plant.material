@@ -1,0 +1,39 @@
+material plant/Difuse
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            ambient 2.0 2.0 2.0
+            diffuse 2.0 2.0 2.0
+            texture_unit
+            {
+                texture tomatos.png
+                scale 0.025 1.0
+            }
+        }
+
+    }
+}
+
+material plant_shift/Difuse
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            ambient 2.0 2.0 2.0
+            diffuse 2.0 2.0 2.0
+            texture_unit
+            {
+                texture tomatos.png
+                scroll 0.5 1.0
+                scale 0.025 1.0
+            }
+        }
+
+    }
+}
+
