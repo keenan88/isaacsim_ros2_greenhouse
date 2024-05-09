@@ -23,13 +23,7 @@ def generate_launch_description():
         executable='lifecycle_manager',
         name='lifecycle_manager',
         output='screen',
-        parameters=[
-            {
-                'use_sim_time': use_sim_time,
-                'autostart': True,
-                'node_names': lifecycle_nodes
-            }
-        ]
+        parameters=['/home/humble_ws/src/antworker_navigation/config/lifecycle_manager.yaml']
     )
 
     nav2_planner = launch_ros.actions.Node(
@@ -39,14 +33,6 @@ def generate_launch_description():
         output='screen',
         parameters=['/home/humble_ws/src/antworker_navigation/config/planner.yaml']
     )
-
-    # config_file_arg = DeclareLaunchArgument(
-    #     'config_file',
-    #     default_value='/home/humble_ws/src/antworker_navigation/config/controller.yaml',
-    #     description='Path to the YAML configuration file for nav2_controller'
-    # )
-
-    # ld.add_entity(config_file_arg)
 
     nav2_controller = launch_ros.actions.Node(
         package='nav2_controller',
@@ -90,7 +76,7 @@ def generate_launch_description():
     ld.add_action(nav2_controller)
     ld.add_action(bt_navigator)
     ld.add_action(recoveries)
-
+    
     return ld
 
 

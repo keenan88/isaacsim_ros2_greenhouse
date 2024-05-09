@@ -1,15 +1,3 @@
-planner_server:
-  ros__parameters:
-    expected_planner_frequency: 20.0
-    use_sim_time: True
-    planner_plugins: ["GridBased"]
-    GridBased:
-      plugin: "nav2_theta_star_planner/ThetaStarPlanner"
-      how_many_corners: 8
-      w_euc_cost: 1.0
-      w_traversal_cost: 2.0
-      w_heuristic_cost: 1.0
-
 controller_server:
   ros__parameters:
     use_sim_time: True #True
@@ -19,7 +7,8 @@ controller_server:
     min_theta_velocity_threshold: 0.001
     failure_tolerance: 0.3
     progress_checker_plugin: "progress_checker"
-    goal_checker_plugins: ["general_goal_checker"] # "precise_goal_checker"
+    goal_checker_plugins: ["simple_goal_checker"] # "precise_goal_checker"
+    current_goal_checker: "simple_goal_checker"
     controller_plugins: ["FollowPath"]
 
     # Progress checker parameters
@@ -28,17 +17,17 @@ controller_server:
       required_movement_radius: 0.5
       movement_time_allowance: 10.0
 
-    # Goal checker parameters
-    general_goal_checker:
+    simple_goal_checker:
       stateful: True
       plugin: "nav2_controller::SimpleGoalChecker"
       xy_goal_tolerance: 0.25
-      yaw_goal_tolerance: 0.25
+      yaw_goal_tolerance: 6.28
 
     # DWB parameters
     FollowPath:
-      plugin: "nav2_rotation_shim_controller::RotationShimController"
+      #plugin: "nav2_rotation_shim_controller::RotationShimController"
       primary_controller: "dwb_core::DWBLocalPlanner"
+      current_goal_checker: "simple_goal_checker"
       debug_trajectory_details: True
       min_vel_x: -0.1
       min_vel_y: -0.1
@@ -78,5 +67,7 @@ controller_server:
       RotateToGoal.scale: 32.0
       RotateToGoal.slowing_factor: 5.0
       RotateToGoal.lookahead_time: -1.0
-    
 
+controller_server_rclcpp_node:
+  ros__parameters:
+    use_sim_time: True

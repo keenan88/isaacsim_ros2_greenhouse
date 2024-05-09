@@ -9,6 +9,7 @@ planner_server:
       w_euc_cost: 1.0
       w_traversal_cost: 2.0
       w_heuristic_cost: 1.0
+      current_goal_checker: "simple_goal_checker" # Not sure if this is necessary, literally trying everything to get current_goal_checker to work
 
 planner_server_rclcpp_node:
   ros__parameters:
