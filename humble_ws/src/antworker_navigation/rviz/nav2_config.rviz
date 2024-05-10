@@ -10,7 +10,6 @@ Panels:
         - /TF1/Frames1
         - /Path1
         - /Map1/Topic1
-        - /LocalCostmap1
         - /LocalCostmap1/Topic1
       Splitter Ratio: 0.5
     Tree Height: 725
@@ -67,20 +66,16 @@ Visualization Manager:
         map:
           Value: true
         odom:
-          Value: false
+          Value: true
         rear_wheel_link:
           Value: true
-        world:
-          Value: false
       Marker Scale: 0.75
       Name: TF
       Show Arrows: false
       Show Axes: true
       Show Names: true
       Tree:
-        world:
-          map:
-            {}
+        map:
           odom:
             chassis_link:
               base_link:
@@ -228,25 +223,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 10.823343276977539
+      Distance: 4.654879570007324
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 2.9692463874816895
-        Y: 1.2967631816864014
-        Z: -2.1481266021728516
+        X: 0.12473344802856445
+        Y: -1.4057132005691528
+        Z: 0.16156093776226044
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.0003963708877563
+      Pitch: 0.5703967213630676
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.1803985834121704
+      Yaw: 1.1253986358642578
     Saved: ~
 Window Geometry:
   Displays:
