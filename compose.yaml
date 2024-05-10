@@ -33,11 +33,10 @@ services:
       - ./humble_ws:/isaac-sim/humble_ws:rw
       - ./scripts/isaacsim_entrypoint.sh:/isaac-sim/scripts/isaacsim_entrypoint.sh:rw
       - ./isaacsim_extensions:/isaac-sim/isaacsim_extensions:rw
-      
-    
-  #   network_mode: "host"
-  #   restart: "no"
-  #   entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
+          
+    network_mode: "host"
+    restart: "no"
+    entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
 
  
   # humble-desktop:
