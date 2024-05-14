@@ -1,0 +1,17 @@
+[0.516s] Invoking command in '/home/humble_ws/src/kinova_arm': PYTHONPATH=/home/humble_ws/build/kinova_arm/prefix_override:/home/humble_ws/install/kinova_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/kinova_arm build --build-base /home/humble_ws/build/kinova_arm/build install --record /home/humble_ws/build/kinova_arm/install.log --single-version-externally-managed install_data
+[0.697s] running egg_info
+[0.698s] writing ../../build/kinova_arm/kinova_arm.egg-info/PKG-INFO
+[0.698s] writing dependency_links to ../../build/kinova_arm/kinova_arm.egg-info/dependency_links.txt
+[0.698s] writing entry points to ../../build/kinova_arm/kinova_arm.egg-info/entry_points.txt
+[0.698s] writing requirements to ../../build/kinova_arm/kinova_arm.egg-info/requires.txt
+[0.699s] writing top-level names to ../../build/kinova_arm/kinova_arm.egg-info/top_level.txt
+[0.700s] reading manifest file '../../build/kinova_arm/kinova_arm.egg-info/SOURCES.txt'
+[0.700s] writing manifest file '../../build/kinova_arm/kinova_arm.egg-info/SOURCES.txt'
+[0.701s] running build
+[0.701s] running build_py
+[0.701s] running install
+[0.701s] running install_lib
+[0.702s] running install_data
+[0.702s] creating /home/humble_ws/install/kinova_arm/share/kinova_arm/description
+[0.702s] error: can't copy 'description/meshes': doesn't exist or not a regular file
+[0.717s] Invoked command in '/home/humble_ws/src/kinova_arm' returned '1': PYTHONPATH=/home/humble_ws/build/kinova_arm/prefix_override:/home/humble_ws/install/kinova_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/kinova_arm build --build-base /home/humble_ws/build/kinova_arm/build install --record /home/humble_ws/build/kinova_arm/install.log --single-version-externally-managed install_data

@@ -1,7 +1,18 @@
 <?xml version="1.0"?>
 
 <robot name="GEN3_6DOF_VISION_URDF_ARM_V01" version="1.0">
-  <link name="base_link">
+
+  <link name="no_inertia_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </visual>
+  </link>
+  <joint name="joint_no_inertia" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="no_inertia_link" />
+    <child link="arm_base_link" />
+
+  <link name="arm_base_link">
     <inertial>
       <origin xyz="-0.000648 -0.000166 0.084487" rpy="0 0 0" />
       <mass value="1.697" />
@@ -10,7 +21,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/base_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/base_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -19,7 +30,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/base_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -32,7 +43,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/shoulder_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/shoulder_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -41,13 +52,13 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/shoulder_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/shoulder_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint name="joint_1" type="continuous">
     <origin xyz="0 0 0.15643" rpy="-3.1416 0.0 0.0" />
-    <parent link="base_link" />
+    <parent link="arm_base_link" />
     <child link="shoulder_link" />
     <axis xyz="0 0 1" />
     <limit effort="39" velocity="1.3963" />
@@ -61,7 +72,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/bicep_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/bicep_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -70,7 +81,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/bicep_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/bicep_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -90,7 +101,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/forearm_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/forearm_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -99,7 +110,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/forearm_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/forearm_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -119,7 +130,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/spherical_wrist_1_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/spherical_wrist_1_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -128,7 +139,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/spherical_wrist_1_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/spherical_wrist_1_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -148,7 +159,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/spherical_wrist_2_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/spherical_wrist_2_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -157,7 +168,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/spherical_wrist_2_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/spherical_wrist_2_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -177,7 +188,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/bracelet_with_vision_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/bracelet_with_vision_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -186,7 +197,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/isaac-sim/humble_ws/src/kinova_arm/description/meshes/bracelet_with_vision_link.obj" />
+        <mesh filename="package://kinova_arm/description/meshes/bracelet_with_vision_link.STL" />
       </geometry>
     </collision>
   </link>

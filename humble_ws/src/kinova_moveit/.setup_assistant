@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: kinova_arm
+    relative_path: description/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf
+  srdf:
+    relative_path: config/GEN3_6DOF_VISION_URDF_ARM_V01.srdf
+  package_settings:
+    author_name: KeenanEcoation
+    author_email: keenanburke@ecoation.com
+    generated_timestamp: 1715701463
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
