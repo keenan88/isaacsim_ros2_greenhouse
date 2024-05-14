@@ -21,8 +21,6 @@
 /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/move_group.launch.py
 /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/warehouse_db.launch.py
 /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/moveit_rviz.launch.py
-/home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/__pycache__/demo.launch.cpython-310.pyc
-/home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/sensors_3d.yaml
 /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/joint_limits.yaml
 /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/kinematics.yaml
 /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/GEN3_6DOF_VISION_URDF_ARM_V01.ros2_control.xacro

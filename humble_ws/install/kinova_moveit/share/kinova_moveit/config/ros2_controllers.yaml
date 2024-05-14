@@ -3,17 +3,16 @@ controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
 
-    arm_chain_controller:
+    kinova_arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-arm_chain_controller:
+kinova_arm_controller:
   ros__parameters:
     joints:
-      - arm_base_robot_base
       - joint_1
       - joint_2
       - joint_3

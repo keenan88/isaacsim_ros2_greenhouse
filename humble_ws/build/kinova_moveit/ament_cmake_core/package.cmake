@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "kinova_moveit")
 set(kinova_moveit_VERSION "0.3.0")
-set(kinova_moveit_MAINTAINER "KeenanEcoation <keenanburke@ecoation.com>")
+set(kinova_moveit_MAINTAINER "KeenanBurke <keenanburke@ecoation.com>")
 set(kinova_moveit_BUILD_DEPENDS )
 set(kinova_moveit_BUILDTOOL_DEPENDS "ament_cmake")
 set(kinova_moveit_BUILD_EXPORT_DEPENDS )

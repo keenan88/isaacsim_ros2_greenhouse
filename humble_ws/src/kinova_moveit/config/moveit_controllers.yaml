@@ -4,14 +4,13 @@ moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControll
 
 moveit_simple_controller_manager:
   controller_names:
-    - moveit_planner
+    - kinova_arm_controller
 
-  moveit_planner:
+  kinova_arm_controller:
     type: FollowJointTrajectory
     action_ns: follow_joint_trajectory
     default: true
     joints:
-      - arm_base_robot_base
       - joint_1
       - joint_2
       - joint_3

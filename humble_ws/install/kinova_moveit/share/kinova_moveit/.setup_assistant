@@ -5,9 +5,9 @@ moveit_setup_assistant_config:
   srdf:
     relative_path: config/GEN3_6DOF_VISION_URDF_ARM_V01.srdf
   package_settings:
-    author_name: KeenanEcoation
+    author_name: KeenanBurke
     author_email: keenanburke@ecoation.com
-    generated_timestamp: 1715701463
+    generated_timestamp: 1715708301
   control_xacro:
     command:
       - position
