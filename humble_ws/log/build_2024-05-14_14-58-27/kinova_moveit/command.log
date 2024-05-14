@@ -1,2 +1,0 @@
-Invoking command in '/home/humble_ws/build/kinova_moveit': /usr/bin/cmake /home/humble_ws/src/kinova_moveit -DCMAKE_INSTALL_PREFIX=/home/humble_ws/install/kinova_moveit
-Invoked command in '/home/humble_ws/build/kinova_moveit' returned '1': /usr/bin/cmake /home/humble_ws/src/kinova_moveit -DCMAKE_INSTALL_PREFIX=/home/humble_ws/install/kinova_moveit

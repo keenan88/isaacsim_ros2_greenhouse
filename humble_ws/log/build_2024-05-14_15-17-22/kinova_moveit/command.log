@@ -1,2 +1,0 @@
-Invoking command in '/home/humble_ws/build/kinova_moveit': /usr/bin/cmake --build /home/humble_ws/build/kinova_moveit -- -j16 -l16
-Invoked command in '/home/humble_ws/build/kinova_moveit' returned '2': /usr/bin/cmake --build /home/humble_ws/build/kinova_moveit -- -j16 -l16
