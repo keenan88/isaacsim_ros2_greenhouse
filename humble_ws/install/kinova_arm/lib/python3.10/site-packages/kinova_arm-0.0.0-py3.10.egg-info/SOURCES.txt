@@ -26,6 +26,7 @@ description/meshes/spherical_wrist_2_link.STL
 description/meshes/spherical_wrist_2_link.obj
 description/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf
 kinova_arm/__init__.py
+kinova_arm/arm_ik_test.py
 resource/kinova_arm
 test/test_copyright.py
 test/test_flake8.py

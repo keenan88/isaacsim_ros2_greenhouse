@@ -1,7 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000715] (-) JobUnselected: {'identifier': 'antworker_navigation'}
-[0.000774] (-) JobUnselected: {'identifier': 'kinova_arm'}
-[0.000803] (kinova_moveit) JobQueued: {'identifier': 'kinova_moveit', 'dependencies': OrderedDict([('kinova_arm', '/home/humble_ws/install/kinova_arm')])}
-[0.000833] (kinova_moveit) JobStarted: {'identifier': 'kinova_moveit'}
-[0.012771] (kinova_moveit) JobEnded: {'identifier': 'kinova_moveit', 'rc': 1}
-[0.023282] (-) EventReactorShutdown: {}

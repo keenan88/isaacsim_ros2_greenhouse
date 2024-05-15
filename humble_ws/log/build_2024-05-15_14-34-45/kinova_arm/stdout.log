@@ -1,0 +1,54 @@
+running egg_info
+creating ../../build/kinova_arm/kinova_arm.egg-info
+writing ../../build/kinova_arm/kinova_arm.egg-info/PKG-INFO
+writing dependency_links to ../../build/kinova_arm/kinova_arm.egg-info/dependency_links.txt
+writing entry points to ../../build/kinova_arm/kinova_arm.egg-info/entry_points.txt
+writing requirements to ../../build/kinova_arm/kinova_arm.egg-info/requires.txt
+writing top-level names to ../../build/kinova_arm/kinova_arm.egg-info/top_level.txt
+writing manifest file '../../build/kinova_arm/kinova_arm.egg-info/SOURCES.txt'
+reading manifest file '../../build/kinova_arm/kinova_arm.egg-info/SOURCES.txt'
+writing manifest file '../../build/kinova_arm/kinova_arm.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/humble_ws/build/kinova_arm/build
+creating /home/humble_ws/build/kinova_arm/build/lib
+creating /home/humble_ws/build/kinova_arm/build/lib/kinova_arm
+copying kinova_arm/arm_ik_test.py -> /home/humble_ws/build/kinova_arm/build/lib/kinova_arm
+copying kinova_arm/__init__.py -> /home/humble_ws/build/kinova_arm/build/lib/kinova_arm
+running install
+running install_lib
+creating /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm
+copying /home/humble_ws/build/kinova_arm/build/lib/kinova_arm/arm_ik_test.py -> /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm
+copying /home/humble_ws/build/kinova_arm/build/lib/kinova_arm/__init__.py -> /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm
+byte-compiling /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm/arm_ik_test.py to arm_ik_test.cpython-310.pyc
+byte-compiling /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/humble_ws/install/kinova_arm/share/ament_index
+creating /home/humble_ws/install/kinova_arm/share/ament_index/resource_index
+creating /home/humble_ws/install/kinova_arm/share/ament_index/resource_index/packages
+copying resource/kinova_arm -> /home/humble_ws/install/kinova_arm/share/ament_index/resource_index/packages
+copying package.xml -> /home/humble_ws/install/kinova_arm/share/kinova_arm
+creating /home/humble_ws/install/kinova_arm/share/kinova_arm/description
+creating /home/humble_ws/install/kinova_arm/share/kinova_arm/description/urdf
+copying description/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/urdf
+creating /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/bracelet_no_vision_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/shoulder_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/bicep_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/bracelet_with_vision_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/forearm_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/base_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/base_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/shoulder_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/forearm_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/spherical_wrist_1_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/bracelet_with_vision_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/spherical_wrist_2_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/bicep_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/spherical_wrist_2_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/bracelet_no_vision_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+copying description/meshes/spherical_wrist_1_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+running install_egg_info
+Copying ../../build/kinova_arm/kinova_arm.egg-info to /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/humble_ws/build/kinova_arm/install.log'

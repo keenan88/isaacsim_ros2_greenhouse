@@ -1,0 +1,56 @@
+[0.406s] Invoking command in '/home/humble_ws/src/kinova_arm': PYTHONPATH=/home/humble_ws/build/kinova_arm/prefix_override:/home/humble_ws/install/kinova_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/kinova_arm build --build-base /home/humble_ws/build/kinova_arm/build install --record /home/humble_ws/build/kinova_arm/install.log --single-version-externally-managed install_data
+[0.544s] running egg_info
+[0.545s] creating ../../build/kinova_arm/kinova_arm.egg-info
+[0.545s] writing ../../build/kinova_arm/kinova_arm.egg-info/PKG-INFO
+[0.545s] writing dependency_links to ../../build/kinova_arm/kinova_arm.egg-info/dependency_links.txt
+[0.545s] writing entry points to ../../build/kinova_arm/kinova_arm.egg-info/entry_points.txt
+[0.545s] writing requirements to ../../build/kinova_arm/kinova_arm.egg-info/requires.txt
+[0.545s] writing top-level names to ../../build/kinova_arm/kinova_arm.egg-info/top_level.txt
+[0.545s] writing manifest file '../../build/kinova_arm/kinova_arm.egg-info/SOURCES.txt'
+[0.546s] reading manifest file '../../build/kinova_arm/kinova_arm.egg-info/SOURCES.txt'
+[0.547s] writing manifest file '../../build/kinova_arm/kinova_arm.egg-info/SOURCES.txt'
+[0.547s] running build
+[0.547s] running build_py
+[0.547s] creating /home/humble_ws/build/kinova_arm/build
+[0.547s] creating /home/humble_ws/build/kinova_arm/build/lib
+[0.547s] creating /home/humble_ws/build/kinova_arm/build/lib/kinova_arm
+[0.547s] copying kinova_arm/arm_ik_test.py -> /home/humble_ws/build/kinova_arm/build/lib/kinova_arm
+[0.547s] copying kinova_arm/__init__.py -> /home/humble_ws/build/kinova_arm/build/lib/kinova_arm
+[0.547s] running install
+[0.548s] running install_lib
+[0.548s] creating /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm
+[0.548s] copying /home/humble_ws/build/kinova_arm/build/lib/kinova_arm/arm_ik_test.py -> /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm
+[0.548s] copying /home/humble_ws/build/kinova_arm/build/lib/kinova_arm/__init__.py -> /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm
+[0.549s] byte-compiling /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm/arm_ik_test.py to arm_ik_test.cpython-310.pyc
+[0.549s] byte-compiling /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm/__init__.py to __init__.cpython-310.pyc
+[0.549s] running install_data
+[0.549s] creating /home/humble_ws/install/kinova_arm/share/ament_index
+[0.549s] creating /home/humble_ws/install/kinova_arm/share/ament_index/resource_index
+[0.549s] creating /home/humble_ws/install/kinova_arm/share/ament_index/resource_index/packages
+[0.549s] copying resource/kinova_arm -> /home/humble_ws/install/kinova_arm/share/ament_index/resource_index/packages
+[0.550s] copying package.xml -> /home/humble_ws/install/kinova_arm/share/kinova_arm
+[0.550s] creating /home/humble_ws/install/kinova_arm/share/kinova_arm/description
+[0.550s] creating /home/humble_ws/install/kinova_arm/share/kinova_arm/description/urdf
+[0.550s] copying description/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/urdf
+[0.550s] creating /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.550s] copying description/meshes/bracelet_no_vision_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.555s] copying description/meshes/shoulder_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.557s] copying description/meshes/bicep_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.558s] copying description/meshes/bracelet_with_vision_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.564s] copying description/meshes/forearm_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.565s] copying description/meshes/base_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.566s] copying description/meshes/base_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.566s] copying description/meshes/shoulder_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.568s] copying description/meshes/forearm_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.569s] copying description/meshes/spherical_wrist_1_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.570s] copying description/meshes/bracelet_with_vision_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.576s] copying description/meshes/spherical_wrist_2_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.578s] copying description/meshes/bicep_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.580s] copying description/meshes/spherical_wrist_2_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.581s] copying description/meshes/bracelet_no_vision_link.STL -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.583s] copying description/meshes/spherical_wrist_1_link.obj -> /home/humble_ws/install/kinova_arm/share/kinova_arm/description/meshes
+[0.584s] running install_egg_info
+[0.586s] Copying ../../build/kinova_arm/kinova_arm.egg-info to /home/humble_ws/install/kinova_arm/lib/python3.10/site-packages/kinova_arm-0.0.0-py3.10.egg-info
+[0.587s] running install_scripts
+[0.601s] writing list of installed files to '/home/humble_ws/build/kinova_arm/install.log'
+[0.618s] Invoked command in '/home/humble_ws/src/kinova_arm' returned '0': PYTHONPATH=/home/humble_ws/build/kinova_arm/prefix_override:/home/humble_ws/install/kinova_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/kinova_arm build --build-base /home/humble_ws/build/kinova_arm/build install --record /home/humble_ws/build/kinova_arm/install.log --single-version-externally-managed install_data
