@@ -10,7 +10,7 @@ Panels:
         - /TF1
         - /TF1/Frames1
       Splitter Ratio: 0.5
-    Tree Height: 256
+    Tree Height: 202
   - Class: rviz_common/Help
     Name: Help
   - Class: rviz_common/Views
@@ -227,52 +227,70 @@ Visualization Manager:
       Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: false
+        All Enabled: true
         arm_base_link:
           Value: true
+        base_link:
+          Value: true
         bicep_link:
-          Value: false
+          Value: true
         bracelet_link:
-          Value: false
+          Value: true
         camera_color_frame:
-          Value: false
+          Value: true
         camera_depth_frame:
-          Value: false
+          Value: true
         camera_link:
-          Value: false
+          Value: true
+        chassis_link:
+          Value: true
         end_effector_link:
           Value: true
         forearm_link:
-          Value: false
+          Value: true
+        front_wheel_link:
+          Value: true
+        map:
+          Value: true
+        odom:
+          Value: true
+        rear_wheel_link:
+          Value: true
         shoulder_link:
-          Value: false
+          Value: true
         spherical_wrist_1_link:
-          Value: false
+          Value: true
         spherical_wrist_2_link:
-          Value: false
-        world:
-          Value: false
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
-        world:
-          arm_base_link:
-            shoulder_link:
-              bicep_link:
-                forearm_link:
-                  spherical_wrist_1_link:
-                    spherical_wrist_2_link:
-                      bracelet_link:
-                        end_effector_link:
-                          camera_color_frame:
-                            {}
-                          camera_depth_frame:
-                            {}
-                          camera_link:
-                            {}
+        map:
+          odom:
+            chassis_link:
+              arm_base_link:
+                shoulder_link:
+                  bicep_link:
+                    forearm_link:
+                      spherical_wrist_1_link:
+                        spherical_wrist_2_link:
+                          bracelet_link:
+                            end_effector_link:
+                              camera_color_frame:
+                                {}
+                              camera_depth_frame:
+                                {}
+                              camera_link:
+                                {}
+              base_link:
+                {}
+              front_wheel_link:
+                {}
+              rear_wheel_link:
+                {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -293,25 +311,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 1.6417275667190552
+      Distance: 3.4729435443878174
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.030979732051491737
-        Y: 0.2982623875141144
-        Z: 0.278292179107666
+        X: 0.004768693819642067
+        Y: 0.44596561789512634
+        Z: 0.40958282351493835
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3000001013278961
+      Pitch: 0.47000011801719666
       Target Frame: arm_base_link
       Value: Orbit (rviz_default_plugins)
-      Yaw: 5.7751874923706055
+      Yaw: 5.580186367034912
     Saved: ~
 Window Geometry:
   Displays:
@@ -325,9 +343,9 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002b4000003bdfc0200000005fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000003f00fffffffb000000100044006900730070006c006100790073010000003b0000013b000000c700fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000017c000001b20000016900fffffffb0000000800480065006c0070000000029a0000006e0000006e00fffffffb0000000a005600690065007700730100000334000000c4000000a000ffffff000004c6000003bd00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b4000003bdfc0200000005fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000003f00fffffffb000000100044006900730070006c006100790073010000003b00000105000000c700fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000146000001da0000016900fffffffb0000000800480065006c0070000000029a0000006e0000006e00fffffffb0000000a005600690065007700730100000326000000d2000000a000ffffff000004c6000003bd00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 1920
-  X: 3840
+  X: 0
   Y: 0
