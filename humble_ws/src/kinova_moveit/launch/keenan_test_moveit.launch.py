@@ -23,7 +23,6 @@ def generate_launch_description():
         )
         .robot_description(
             mappings = launch_arguments,
-            use_sim_time = True
             
         )
         .trajectory_execution(file_path="config/moveit_controllers.yaml")
@@ -36,13 +35,16 @@ def generate_launch_description():
         .to_moveit_configs()
     )
 
-    print(moveit_config.robot_description.keys())
+    #print(moveit_config.robot_description.keys())
 
     run_move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
         parameters=[moveit_config.to_dict()],
+        remappings = [
+            ('joint_states', 'kinova_joint_states'),
+        ]
     )
 
 
@@ -93,12 +95,19 @@ def generate_launch_description():
         parameters=[moveit_config.robot_description],
     )
 
+    run_move_group_node = Node(
+        package="moveit_ros_move_group",
+        executable="move_group",
+        output="screen",
+        parameters=[moveit_config.to_dict()],
+    )
+
     return LaunchDescription(
         [
-            #rviz_config_arg,
-            #rviz_node,
+            rviz_config_arg,
+            rviz_node,
             #static_tf,
             robot_state_publisher,
-            #run_move_group_node
+            run_move_group_node
         ]
     )
