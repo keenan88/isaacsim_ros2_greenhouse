@@ -1,0 +1,37 @@
+[0.242s] Invoking command in '/home/keenan/Downloads/isaacsim_ros2_greenhouse/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/keenan/Downloads/isaacsim_ros2_greenhouse/humble_ws/src/moveit_interface -DCMAKE_INSTALL_PREFIX=/home/keenan/Downloads/isaacsim_ros2_greenhouse/humble_ws/install/moveit_interface
+[0.294s] -- The C compiler identification is GNU 11.4.0
+[0.348s] -- The CXX compiler identification is GNU 11.4.0
+[0.355s] -- Detecting C compiler ABI info
+[0.426s] -- Detecting C compiler ABI info - done
+[0.432s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.432s] -- Detecting C compile features
+[0.432s] -- Detecting C compile features - done
+[0.435s] -- Detecting CXX compiler ABI info
+[0.515s] -- Detecting CXX compiler ABI info - done
+[0.522s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.523s] -- Detecting CXX compile features
+[0.523s] -- Detecting CXX compile features - done
+[0.526s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.665s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.758s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.758s]   By not providing "Findmoveit_ros_planning_interface.cmake" in
+[0.758s]   CMAKE_MODULE_PATH this project has asked CMake to find a package
+[0.758s]   configuration file provided by "moveit_ros_planning_interface", but CMake
+[0.758s]   did not find one.
+[0.758s] 
+[0.758s]   Could not find a package configuration file provided by
+[0.759s]   "moveit_ros_planning_interface" with any of the following names:
+[0.759s] 
+[0.759s]     moveit_ros_planning_interfaceConfig.cmake
+[0.759s]     moveit_ros_planning_interface-config.cmake
+[0.759s] 
+[0.759s]   Add the installation prefix of "moveit_ros_planning_interface" to
+[0.759s]   CMAKE_PREFIX_PATH or set "moveit_ros_planning_interface_DIR" to a directory
+[0.759s]   containing one of the above files.  If "moveit_ros_planning_interface"
+[0.759s]   provides a separate development package or SDK, be sure it has been
+[0.759s]   installed.
+[0.759s] 
+[0.760s] [0m
+[0.760s] -- Configuring incomplete, errors occurred!
+[0.760s] See also "/home/keenan/Downloads/isaacsim_ros2_greenhouse/humble_ws/build/moveit_interface/CMakeFiles/CMakeOutput.log".
+[0.763s] Invoked command in '/home/keenan/Downloads/isaacsim_ros2_greenhouse/humble_ws/build/moveit_interface' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/keenan/Downloads/isaacsim_ros2_greenhouse/humble_ws/src/moveit_interface -DCMAKE_INSTALL_PREFIX=/home/keenan/Downloads/isaacsim_ros2_greenhouse/humble_ws/install/moveit_interface

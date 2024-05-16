@@ -102,12 +102,19 @@ def generate_launch_description():
         parameters=[moveit_config.to_dict()],
     )
 
+    joint_forwarder = Node(
+        package="kinova_arm",
+        executable="joint_state_forwarder",
+        output="screen"
+    )
+
     return LaunchDescription(
         [
             rviz_config_arg,
             rviz_node,
             #static_tf,
+            joint_forwarder,
             robot_state_publisher,
-            run_move_group_node
+            #run_move_group_node
         ]
     )

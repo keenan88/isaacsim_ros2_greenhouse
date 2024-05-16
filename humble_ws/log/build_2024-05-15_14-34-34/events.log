@@ -1,6 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000243] (-) JobUnselected: {'identifier': 'antworker_navigation'}
-[0.000291] (-) JobUnselected: {'identifier': 'kinova_arm'}
-[0.000328] (-) JobUnselected: {'identifier': 'kinova_moveit'}
-[0.000346] (-) JobUnselected: {'identifier': 'moveit_interface'}
-[0.000379] (-) EventReactorShutdown: {}

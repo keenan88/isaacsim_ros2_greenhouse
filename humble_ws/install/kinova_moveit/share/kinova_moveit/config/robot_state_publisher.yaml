@@ -1,0 +1,30 @@
+/robot_state_publisher:
+  ros__parameters:
+    frame_prefix: ''
+    ignore_timestamp: false
+    publish_frequency: 20.0
+    qos_overrides:
+      /joint_states:
+        subscription:
+          depth: 5
+          history: keep_last
+          reliability: best_effort
+      /parameter_events:
+        publisher:
+          depth: 1000
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+      /tf:
+        publisher:
+          depth: 100
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+      /tf_static:
+        publisher:
+          depth: 1
+          history: keep_last
+          reliability: reliable
+    #robot_description: "/home/humble_ws/src/kinova_arm/description/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf"
+    use_sim_time: true

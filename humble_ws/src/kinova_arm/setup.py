@@ -26,6 +26,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'joint_state_forwarder = kinova_arm.joint_state_forwarder:main',
         ],
     },
 )
