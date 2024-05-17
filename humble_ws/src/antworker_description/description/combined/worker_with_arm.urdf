@@ -30,7 +30,7 @@
   <!-- ========================= -->
 
   <!-- Base -->
-  <link name="base_link"></link>
+  <link name="kbase_link"></link>
 
   <!-- Chassis -->
   <link name="chassis_link">
@@ -57,7 +57,7 @@
 
   <joint name="base_link_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 0" />
-    <parent link="base_link" />
+    <parent link="kbase_link" />
     <child link="chassis_link" />
   </joint>
 
@@ -154,7 +154,7 @@
 
   <joint name="robot_base_link_arm_base_link" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 0" />
-    <parent link="base_link" />
+    <parent link="kbase_link" />
     <child link="arm_base_link" />
   </joint>
 
@@ -180,6 +180,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint name="joint_1" type="continuous">
     <origin xyz="0 0 0.15643" rpy="-3.1416 0.0 0.0" />
     <parent link="arm_base_link" />
@@ -187,6 +188,9 @@
     <axis xyz="0 0 1" />
     <limit effort="39" velocity="1.3963" />
   </joint>
+
+  
+
   <link name="bicep_link">
     <inertial>
       <origin xyz="3.5E-05 -0.208207 -0.01889" rpy="0 0 0" />
