@@ -1,7 +1,7 @@
 moveit_setup_assistant_config:
   urdf:
-    package: kinova_arm
-    relative_path: description/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf
+    package: antworker_description
+    relative_path: description/combined/urdf/worker_with_arm.urdf
   srdf:
     relative_path: config/GEN3_6DOF_VISION_URDF_ARM_V01.srdf
   package_settings:

@@ -1,0 +1,264 @@
+[0.000000] (-) TimerEvent: {}
+[0.000235] (-) JobUnselected: {'identifier': 'antworker_navigation'}
+[0.000269] (-) JobUnselected: {'identifier': 'gz_test'}
+[0.000293] (kinova_moveit) JobQueued: {'identifier': 'kinova_moveit', 'dependencies': OrderedDict()}
+[0.000315] (moveit_interface) JobQueued: {'identifier': 'moveit_interface', 'dependencies': OrderedDict()}
+[0.000603] (kinova_moveit) JobStarted: {'identifier': 'kinova_moveit'}
+[0.008045] (moveit_interface) JobStarted: {'identifier': 'moveit_interface'}
+[0.013273] (kinova_moveit) JobProgress: {'identifier': 'kinova_moveit', 'progress': 'cmake'}
+[0.013932] (kinova_moveit) JobProgress: {'identifier': 'kinova_moveit', 'progress': 'build'}
+[0.014624] (kinova_moveit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/humble_ws/build/kinova_moveit', '--', '-j16', '-l16'], 'cwd': '/home/humble_ws/build/kinova_moveit', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/humble_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/humble_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('RTI_NC_LICENSE_ACCEPTED', 'yes'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/humble_ws/install/kinova_moveit:/home/humble_ws/install/kinova_arm:/opt/ros/humble'), ('PWD', '/home/humble_ws/build/kinova_moveit'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/humble_ws/install/kinova_arm/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/humble_ws/install/kinova_moveit:/home/humble_ws/install/kinova_arm:/opt/ros/humble')]), 'shell': False}
+[0.017415] (moveit_interface) JobProgress: {'identifier': 'moveit_interface', 'progress': 'cmake'}
+[0.017950] (moveit_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/humble_ws/src/moveit_interface', '-DCMAKE_INSTALL_PREFIX=/home/humble_ws/install/moveit_interface'], 'cwd': '/home/humble_ws/build/moveit_interface', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/humble_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/humble_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('RTI_NC_LICENSE_ACCEPTED', 'yes'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/humble_ws/install/kinova_moveit:/home/humble_ws/install/kinova_arm:/opt/ros/humble'), ('PWD', '/home/humble_ws/build/moveit_interface'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/humble_ws/install/kinova_arm/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/humble_ws/install/kinova_moveit:/home/humble_ws/install/kinova_arm:/opt/ros/humble')]), 'shell': False}
+[0.052798] (kinova_moveit) CommandEnded: {'returncode': 0}
+[0.069402] (moveit_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.075898] (kinova_moveit) JobProgress: {'identifier': 'kinova_moveit', 'progress': 'install'}
+[0.084412] (kinova_moveit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/humble_ws/build/kinova_moveit'], 'cwd': '/home/humble_ws/build/kinova_moveit', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/humble_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/humble_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('RTI_NC_LICENSE_ACCEPTED', 'yes'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/humble_ws/install/kinova_moveit:/home/humble_ws/install/kinova_arm:/opt/ros/humble'), ('PWD', '/home/humble_ws/build/kinova_moveit'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/humble_ws/install/kinova_arm/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/humble_ws/install/kinova_moveit:/home/humble_ws/install/kinova_arm:/opt/ros/humble')]), 'shell': False}
+[0.093201] (kinova_moveit) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.093532] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/ament_index/resource_index/package_run_dependencies/kinova_moveit\n'}
+[0.093675] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/ament_index/resource_index/parent_prefix_path/kinova_moveit\n'}
+[0.093796] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/environment/ament_prefix_path.sh\n'}
+[0.093963] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/environment/ament_prefix_path.dsv\n'}
+[0.094078] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/environment/path.sh\n'}
+[0.094247] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/environment/path.dsv\n'}
+[0.094355] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/local_setup.bash\n'}
+[0.094505] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/local_setup.sh\n'}
+[0.094649] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/local_setup.zsh\n'}
+[0.094764] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/local_setup.dsv\n'}
+[0.094904] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/package.dsv\n'}
+[0.095031] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/ament_index/resource_index/packages/kinova_moveit\n'}
+[0.095134] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/cmake/kinova_moveitConfig.cmake\n'}
+[0.095253] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/cmake/kinova_moveitConfig-version.cmake\n'}
+[0.095359] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/package.xml\n'}
+[0.095463] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch\n'}
+[0.095569] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/demo.launch.py\n'}
+[0.095753] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/setup_assistant.launch.py\n'}
+[0.095849] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/move_group.launch.py\n'}
+[0.095937] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/__pycache__\n'}
+[0.096020] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/__pycache__/demo.launch.cpython-310.pyc\n'}
+[0.096101] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/__pycache__/move_group.launch.cpython-310.pyc\n'}
+[0.096181] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/__pycache__/keenan_test_moveit.launch.cpython-310.pyc\n'}
+[0.096263] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/__pycache__/rsp.launch.cpython-310.pyc\n'}
+[0.096343] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/__pycache__/setup_assistant.launch.cpython-310.pyc\n'}
+[0.096422] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/warehouse_db.launch.py\n'}
+[0.096500] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/keenan_test_moveit.launch.py\n'}
+[0.096580] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/static_virtual_joint_tfs.launch.py\n'}
+[0.096659] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/spawn_controllers.launch.py\n'}
+[0.096743] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/rsp.launch.py\n'}
+[0.096837] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/moveit_rviz.launch.py\n'}
+[0.096922] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config\n'}
+[0.097001] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/joint_limits.yaml\n'}
+[0.097081] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/ros2_controllers.yaml\n'}
+[0.097145] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/pilz_cartesian_limits.yaml\n'}
+[0.097222] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/GEN3_6DOF_VISION_URDF_ARM_V01.srdf\n'}
+[0.097299] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/robot_state_publisher.yaml\n'}
+[0.097365] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/GEN3_6DOF_VISION_URDF_ARM_V01.ros2_control.xacro\n'}
+[0.097432] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/moveit.rviz\n'}
+[0.097515] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/kinematics.yaml\n'}
+[0.097788] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/GEN3_6DOF_VISION_URDF_ARM_V01.urdf.xacro\n'}
+[0.097857] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/sensors_3d.yaml\n'}
+[0.097935] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/initial_positions.yaml\n'}
+[0.098123] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/moveit_controllers.yaml\n'}
+[0.098190] (kinova_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/.setup_assistant\n'}
+[0.098524] (kinova_moveit) CommandEnded: {'returncode': 0}
+[0.099954] (-) TimerEvent: {}
+[0.124998] (moveit_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.132380] (moveit_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.140492] (kinova_moveit) JobEnded: {'identifier': 'kinova_moveit', 'rc': 0}
+[0.200075] (-) TimerEvent: {}
+[0.203137] (moveit_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.209180] (moveit_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.209387] (moveit_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.209714] (moveit_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.212435] (moveit_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.292913] (moveit_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.299363] (moveit_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.299620] (moveit_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.300025] (moveit_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.300118] (-) TimerEvent: {}
+[0.303682] (moveit_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400240] (-) TimerEvent: {}
+[0.426167] (moveit_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500355] (-) TimerEvent: {}
+[0.525292] (moveit_interface) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[0.600481] (-) TimerEvent: {}
+[0.700841] (-) TimerEvent: {}
+[0.722502] (moveit_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[0.783755] (moveit_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.790807] (moveit_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.800946] (-) TimerEvent: {}
+[0.803287] (moveit_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.821452] (moveit_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.845788] (moveit_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.901070] (-) TimerEvent: {}
+[1.001371] (-) TimerEvent: {}
+[1.101666] (-) TimerEvent: {}
+[1.201997] (-) TimerEvent: {}
+[1.302292] (-) TimerEvent: {}
+[1.402580] (-) TimerEvent: {}
+[1.502876] (-) TimerEvent: {}
+[1.603190] (-) TimerEvent: {}
+[1.703579] (-) TimerEvent: {}
+[1.762055] (moveit_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.784617] (moveit_interface) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.803674] (-) TimerEvent: {}
+[1.870784] (moveit_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.875089] (moveit_interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.903782] (-) TimerEvent: {}
+[2.004107] (-) TimerEvent: {}
+[2.006091] (moveit_interface) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.036772] (moveit_interface) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.103173] (moveit_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.104175] (-) TimerEvent: {}
+[2.118811] (moveit_interface) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.204305] (-) TimerEvent: {}
+[2.276898] (moveit_interface) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[2.304423] (-) TimerEvent: {}
+[2.331764] (moveit_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[2.404557] (-) TimerEvent: {}
+[2.443136] (moveit_interface) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[2.504664] (-) TimerEvent: {}
+[2.597924] (moveit_interface) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.598122] (moveit_interface) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.604736] (-) TimerEvent: {}
+[2.704962] (-) TimerEvent: {}
+[2.805246] (-) TimerEvent: {}
+[2.905530] (-) TimerEvent: {}
+[3.005866] (-) TimerEvent: {}
+[3.106320] (-) TimerEvent: {}
+[3.125899] (moveit_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[3.206430] (-) TimerEvent: {}
+[3.306815] (-) TimerEvent: {}
+[3.407186] (-) TimerEvent: {}
+[3.507502] (-) TimerEvent: {}
+[3.607860] (-) TimerEvent: {}
+[3.629331] (moveit_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[3.707961] (-) TimerEvent: {}
+[3.808277] (-) TimerEvent: {}
+[3.862119] (moveit_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[3.908383] (-) TimerEvent: {}
+[4.008673] (-) TimerEvent: {}
+[4.108953] (-) TimerEvent: {}
+[4.209266] (-) TimerEvent: {}
+[4.245633] (moveit_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.309363] (-) TimerEvent: {}
+[4.322619] (moveit_interface) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.322835] (moveit_interface) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/humble_ws/src/moveit_interface/include>\n'}
+[4.322927] (moveit_interface) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.323262] (moveit_interface) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.323813] (moveit_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.324305] (moveit_interface) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.325051] (moveit_interface) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.325118] (moveit_interface) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.325599] (moveit_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.327063] (moveit_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.362027] (moveit_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[4.364264] (moveit_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/humble_ws/build/moveit_interface\n'}
+[4.377736] (moveit_interface) CommandEnded: {'returncode': 0}
+[4.378263] (moveit_interface) JobProgress: {'identifier': 'moveit_interface', 'progress': 'build'}
+[4.378522] (moveit_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/humble_ws/build/moveit_interface', '--', '-j16', '-l16'], 'cwd': '/home/humble_ws/build/moveit_interface', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/humble_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/humble_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('RTI_NC_LICENSE_ACCEPTED', 'yes'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/humble_ws/install/kinova_moveit:/home/humble_ws/install/kinova_arm:/opt/ros/humble'), ('PWD', '/home/humble_ws/build/moveit_interface'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/humble_ws/install/kinova_arm/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/humble_ws/install/kinova_moveit:/home/humble_ws/install/kinova_arm:/opt/ros/humble')]), 'shell': False}
+[4.409477] (-) TimerEvent: {}
+[4.440536] (moveit_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/moveit_interface.dir/src/moveit_interface.cpp.o\x1b[0m\n'}
+[4.509593] (-) TimerEvent: {}
+[4.609945] (-) TimerEvent: {}
+[4.710337] (-) TimerEvent: {}
+[4.810640] (-) TimerEvent: {}
+[4.910964] (-) TimerEvent: {}
+[5.011272] (-) TimerEvent: {}
+[5.111615] (-) TimerEvent: {}
+[5.212280] (-) TimerEvent: {}
+[5.312556] (-) TimerEvent: {}
+[5.412854] (-) TimerEvent: {}
+[5.513155] (-) TimerEvent: {}
+[5.613420] (-) TimerEvent: {}
+[5.713698] (-) TimerEvent: {}
+[5.814026] (-) TimerEvent: {}
+[5.914428] (-) TimerEvent: {}
+[6.014760] (-) TimerEvent: {}
+[6.115058] (-) TimerEvent: {}
+[6.215396] (-) TimerEvent: {}
+[6.315712] (-) TimerEvent: {}
+[6.416021] (-) TimerEvent: {}
+[6.516324] (-) TimerEvent: {}
+[6.616642] (-) TimerEvent: {}
+[6.717006] (-) TimerEvent: {}
+[6.817405] (-) TimerEvent: {}
+[6.917706] (-) TimerEvent: {}
+[7.018019] (-) TimerEvent: {}
+[7.118434] (-) TimerEvent: {}
+[7.218815] (-) TimerEvent: {}
+[7.319127] (-) TimerEvent: {}
+[7.419454] (-) TimerEvent: {}
+[7.519922] (-) TimerEvent: {}
+[7.620260] (-) TimerEvent: {}
+[7.720552] (-) TimerEvent: {}
+[7.820838] (-) TimerEvent: {}
+[7.921139] (-) TimerEvent: {}
+[8.021451] (-) TimerEvent: {}
+[8.121707] (-) TimerEvent: {}
+[8.222019] (-) TimerEvent: {}
+[8.322431] (-) TimerEvent: {}
+[8.422717] (-) TimerEvent: {}
+[8.523038] (-) TimerEvent: {}
+[8.623360] (-) TimerEvent: {}
+[8.723679] (-) TimerEvent: {}
+[8.823960] (-) TimerEvent: {}
+[8.924490] (-) TimerEvent: {}
+[9.024802] (-) TimerEvent: {}
+[9.125106] (-) TimerEvent: {}
+[9.225410] (-) TimerEvent: {}
+[9.325740] (-) TimerEvent: {}
+[9.426025] (-) TimerEvent: {}
+[9.526319] (-) TimerEvent: {}
+[9.626690] (-) TimerEvent: {}
+[9.727064] (-) TimerEvent: {}
+[9.827538] (-) TimerEvent: {}
+[9.927858] (-) TimerEvent: {}
+[10.028151] (-) TimerEvent: {}
+[10.128437] (-) TimerEvent: {}
+[10.228735] (-) TimerEvent: {}
+[10.329252] (-) TimerEvent: {}
+[10.429641] (-) TimerEvent: {}
+[10.530012] (-) TimerEvent: {}
+[10.630307] (-) TimerEvent: {}
+[10.730637] (-) TimerEvent: {}
+[10.830984] (-) TimerEvent: {}
+[10.931279] (-) TimerEvent: {}
+[11.031785] (-) TimerEvent: {}
+[11.132374] (-) TimerEvent: {}
+[11.232693] (-) TimerEvent: {}
+[11.332979] (-) TimerEvent: {}
+[11.433271] (-) TimerEvent: {}
+[11.533554] (-) TimerEvent: {}
+[11.633822] (-) TimerEvent: {}
+[11.734119] (-) TimerEvent: {}
+[11.763613] (moveit_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable moveit_interface\x1b[0m\n'}
+[11.834222] (-) TimerEvent: {}
+[11.934533] (-) TimerEvent: {}
+[12.034894] (-) TimerEvent: {}
+[12.105699] (moveit_interface) StdoutLine: {'line': b'[100%] Built target moveit_interface\n'}
+[12.116426] (moveit_interface) CommandEnded: {'returncode': 0}
+[12.135018] (-) TimerEvent: {}
+[12.143680] (moveit_interface) JobProgress: {'identifier': 'moveit_interface', 'progress': 'install'}
+[12.144033] (moveit_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/humble_ws/build/moveit_interface'], 'cwd': '/home/humble_ws/build/moveit_interface', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/humble_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/humble_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('RTI_NC_LICENSE_ACCEPTED', 'yes'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/humble_ws/install/kinova_moveit:/home/humble_ws/install/kinova_arm:/opt/ros/humble'), ('PWD', '/home/humble_ws/build/moveit_interface'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/humble_ws/install/kinova_arm/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/humble_ws/install/kinova_moveit:/home/humble_ws/install/kinova_arm:/opt/ros/humble')]), 'shell': False}
+[12.152335] (moveit_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.152660] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/lib/moveit_interface/moveit_interface\n'}
+[12.153309] (moveit_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/humble_ws/install/moveit_interface/lib/moveit_interface/moveit_interface" to ""\n'}
+[12.153476] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/package_run_dependencies/moveit_interface\n'}
+[12.153667] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/parent_prefix_path/moveit_interface\n'}
+[12.153896] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/ament_prefix_path.sh\n'}
+[12.154058] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/ament_prefix_path.dsv\n'}
+[12.154215] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/path.sh\n'}
+[12.154365] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/path.dsv\n'}
+[12.154509] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.bash\n'}
+[12.154674] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.sh\n'}
+[12.154840] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.zsh\n'}
+[12.155000] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.dsv\n'}
+[12.155154] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/package.dsv\n'}
+[12.155587] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/packages/moveit_interface\n'}
+[12.155762] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/cmake/moveit_interfaceConfig.cmake\n'}
+[12.155895] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/cmake/moveit_interfaceConfig-version.cmake\n'}
+[12.156029] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/package.xml\n'}
+[12.157973] (moveit_interface) CommandEnded: {'returncode': 0}
+[12.199372] (moveit_interface) JobEnded: {'identifier': 'moveit_interface', 'rc': 0}
+[12.200022] (-) EventReactorShutdown: {}
