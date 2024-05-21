@@ -7,6 +7,8 @@ from rclpy.callback_groups import ReentrantCallbackGroup
 from std_msgs.msg import Float64MultiArray
 import asyncio
 from sensor_msgs.msg import JointState
+import numpy as np
+from time import sleep
 
 
 class JointTrajectoryActionServer(Node):
@@ -26,7 +28,19 @@ class JointTrajectoryActionServer(Node):
             'joint_command',
             10
         )
+
+        self.joint_state_subscriber = self.create_subscription(
+            JointState,
+            'joint_states',
+            self.record_joint_state,
+            10
+        )
+        self.joint_state = JointState()
+
         self.get_logger().info('Joint Trajectory Action Server has been started.')
+
+    def record_joint_state(self, joint_state):
+        self.joint_state = joint_state
 
     async def execute_callback(self, goal_handle):
         self.get_logger().info('Received goal request...')
@@ -46,9 +60,20 @@ class JointTrajectoryActionServer(Node):
             joint_command.velocity = point.velocities
 
             self._joint_command_publisher.publish(joint_command)
+            
+            feedback_msg.joint_names = ['joint_1', 'joint_2', 'joint_3', 'joint_4', 'joint_5', 'joint_6']
+            feedback_msg.actual.positions = self.joint_state.position
+            feedback_msg.actual.velocities = self.joint_state.velocity
 
-            feedback_msg.actual = point # Change to read joint_states instead
+            feedback_msg.desired = point
+
+            feedback_msg.error.positions = list(np.array(feedback_msg.desired.positions) - np.array(feedback_msg.actual.positions))
+            feedback_msg.error.velocities = list(np.array(feedback_msg.desired.velocities) - np.array(feedback_msg.actual.velocities))
+
             goal_handle.publish_feedback(feedback_msg)
+
+            sleep(0.1)
+            
             # await self.sleep_in_repose()  # Simulate execution time
         
         result.error_code = FollowJointTrajectory.Result.SUCCESSFUL
