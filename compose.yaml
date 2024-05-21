@@ -1,18 +1,53 @@
 
 services:
 
-  isaac-sim:
-    build:
-      context: ./isaacsim_humble_dockerfile
-      dockerfile: Dockerfile
-    image: isaacsim_humble
+  # isaac-sim:
+  #   build:
+  #     context: ./isaacsim_humble_dockerfile
+  #     dockerfile: Dockerfile
+  #   image: isaacsim_humble
 
-    container_name: isaac-sim
+  #   container_name: isaac-sim
+  #   stdin_open: true
+  #   tty: true
+  #   environment:
+  #     - ACCEPT_EULA=Y
+  #     - PRIVACY_CONSENT=Y
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - capabilities:
+  #               - gpu
+
+  #   volumes:
+  #     - ./fastdds.xml:/root/.ros/fastdds.xml:rw
+  #     - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
+  #     - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
+  #     - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
+  #     - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
+  #     - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
+  #     - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
+  #     - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
+  #     - ~/docker/isaac-sim/documents:/root/Documents:rw
+  #     - ./humble_ws:/isaac-sim/humble_ws:rw
+  #     - ./scripts/isaacsim_entrypoint.sh:/isaac-sim/scripts/isaacsim_entrypoint.sh:rw
+  #     - ./isaacsim_extensions:/isaac-sim/isaacsim_extensions:rw
+  #   network_mode: "host"
+  #   restart: "no"
+  #   entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
+
+  gazebo:
+    build:
+      context: ./gazebo_humble_dockerfile
+      dockerfile: Dockerfile
+    image: gazebo_humble_dockerfile
+
+    container_name: gz_humble
+    environment:
+      - DISPLAY=${DISPLAY}
     stdin_open: true
     tty: true
-    environment:
-      - ACCEPT_EULA=Y
-      - PRIVACY_CONSENT=Y
     deploy:
       resources:
         reservations:
@@ -21,21 +56,12 @@ services:
                 - gpu
 
     volumes:
-      - ./fastdds.xml:/root/.ros/fastdds.xml:rw
-      - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
-      - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
-      - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
-      - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
-      - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
-      - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
-      - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
-      - ~/docker/isaac-sim/documents:/root/Documents:rw
-      - ./humble_ws:/isaac-sim/humble_ws:rw
-      - ./scripts/isaacsim_entrypoint.sh:/isaac-sim/scripts/isaacsim_entrypoint.sh:rw
-      - ./isaacsim_extensions:/isaac-sim/isaacsim_extensions:rw
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./humble_ws:/humble_ws:rw
+      - ./scripts/gz_entrypoint.sh:/scripts/gz_entrypoint.sh:rw
     network_mode: "host"
     restart: "no"
-    entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
+    entrypoint: /scripts/gz_entrypoint.sh
 
  
   # humble-desktop:
@@ -58,23 +84,23 @@ services:
   #   restart: "no"
   #   entrypoint: /isaac-sim/scripts/dev_entrypoint.sh
 
-  humble-desktop-kinova:
-    container_name: humble-desktop-kinova
-    build:
-      context: ./kinova_dockerfile
-      dockerfile: Dockerfile
-    image: humble_kinova_img
-    tty: true
-    stdin_open: true
-    environment:
-      - DISPLAY=${DISPLAY}
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
-      - ./humble_ws:/home/humble_ws:rw
-      #- ./moveit_ws:/home/moveit_ws:rw
-      - ./scripts/kinova_entrypoint.sh:/home/scripts/kinova_entrypoint.sh:rw
-    privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
-    network_mode: "host"
-    working_dir: /home/humble_ws/src/
-    restart: "no"
-    entrypoint: /home/scripts/kinova_entrypoint.sh
+  # humble-desktop-kinova:
+  #   container_name: humble-desktop-kinova
+  #   build:
+  #     context: ./kinova_dockerfile
+  #     dockerfile: Dockerfile
+  #   image: humble_kinova_img
+  #   tty: true
+  #   stdin_open: true
+  #   environment:
+  #     - DISPLAY=${DISPLAY}
+  #   volumes:
+  #     - /tmp/.X11-unix:/tmp/.X11-unix
+  #     - ./humble_ws:/home/humble_ws:rw
+  #     #- ./moveit_ws:/home/moveit_ws:rw
+  #     - ./scripts/kinova_entrypoint.sh:/home/scripts/kinova_entrypoint.sh:rw
+  #   privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
+  #   network_mode: "host"
+  #   working_dir: /home/humble_ws/src/
+  #   restart: "no"
+  #   entrypoint: /home/scripts/kinova_entrypoint.sh
