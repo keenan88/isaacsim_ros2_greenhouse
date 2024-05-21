@@ -1,19 +1,18 @@
 moveit_setup_assistant_config:
   urdf:
     package: antworker_description
-    relative_path: description/combined/urdf/worker_with_arm.urdf
+    relative_path: description/arm/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf
   srdf:
     relative_path: config/GEN3_6DOF_VISION_URDF_ARM_V01.srdf
   package_settings:
-    author_name: KeenanBurke
+    author_name: keenan
     author_email: keenanburke@ecoation.com
-    generated_timestamp: 1715806479
+    generated_timestamp: 1716318541
   control_xacro:
     command:
       - position
     state:
       - position
-      - velocity
   modified_urdf:
     xacros:
       - control_xacro
@@ -22,4 +21,3 @@ moveit_setup_assistant_config:
       - position
     state:
       - position
-      - velocity

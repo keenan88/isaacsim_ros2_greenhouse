@@ -1,0 +1,44 @@
+[0.013s] Invoking command in '/home/humble_ws/build/kinova_moveit': AMENT_PREFIX_PATH=/home/humble_ws/install/antworker_description:/home/humble_ws/install/moveit_interface:/home/humble_ws/install/kinova_moveit:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/kinova_moveit -- -j16 -l16
+[0.054s] Invoked command in '/home/humble_ws/build/kinova_moveit' returned '0': AMENT_PREFIX_PATH=/home/humble_ws/install/antworker_description:/home/humble_ws/install/moveit_interface:/home/humble_ws/install/kinova_moveit:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/kinova_moveit -- -j16 -l16
+[0.089s] Invoking command in '/home/humble_ws/build/kinova_moveit': AMENT_PREFIX_PATH=/home/humble_ws/install/antworker_description:/home/humble_ws/install/moveit_interface:/home/humble_ws/install/kinova_moveit:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --install /home/humble_ws/build/kinova_moveit
+[0.097s] -- Install configuration: ""
+[0.097s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/ament_index/resource_index/package_run_dependencies/kinova_moveit
+[0.097s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/ament_index/resource_index/parent_prefix_path/kinova_moveit
+[0.097s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/environment/ament_prefix_path.sh
+[0.097s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/environment/ament_prefix_path.dsv
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/environment/path.sh
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/environment/path.dsv
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/local_setup.bash
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/local_setup.sh
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/local_setup.zsh
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/local_setup.dsv
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/package.dsv
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/ament_index/resource_index/packages/kinova_moveit
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/cmake/kinova_moveitConfig.cmake
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/cmake/kinova_moveitConfig-version.cmake
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/package.xml
+[0.098s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/demo.launch.py
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/setup_assistant.launch.py
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/move_group.launch.py
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/__pycache__
+[0.099s] -- Installing: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/__pycache__/moveit_test.launch.cpython-310.pyc
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/warehouse_db.launch.py
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/static_virtual_joint_tfs.launch.py
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/spawn_controllers.launch.py
+[0.099s] -- Installing: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/moveit_test.launch.py
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/rsp.launch.py
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/launch/moveit_rviz.launch.py
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config
+[0.099s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/joint_limits.yaml
+[0.100s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/ros2_controllers.yaml
+[0.100s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/pilz_cartesian_limits.yaml
+[0.100s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/GEN3_6DOF_VISION_URDF_ARM_V01.srdf
+[0.100s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/GEN3_6DOF_VISION_URDF_ARM_V01.ros2_control.xacro
+[0.100s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/moveit.rviz
+[0.100s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/kinematics.yaml
+[0.100s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/GEN3_6DOF_VISION_URDF_ARM_V01.urdf.xacro
+[0.100s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/initial_positions.yaml
+[0.100s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/config/moveit_controllers.yaml
+[0.100s] -- Up-to-date: /home/humble_ws/install/kinova_moveit/share/kinova_moveit/.setup_assistant
+[0.101s] Invoked command in '/home/humble_ws/build/kinova_moveit' returned '0': AMENT_PREFIX_PATH=/home/humble_ws/install/antworker_description:/home/humble_ws/install/moveit_interface:/home/humble_ws/install/kinova_moveit:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --install /home/humble_ws/build/kinova_moveit

@@ -3,7 +3,7 @@
     <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
 
     <!-- Import GEN3_6DOF_VISION_URDF_ARM_V01 urdf file -->
-    <xacro:include filename="$(find kinova_arm)/description/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf" />
+    <xacro:include filename="$(find antworker_description)/description/arm/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf" />
 
     <!-- Import control_xacro -->
     <xacro:include filename="GEN3_6DOF_VISION_URDF_ARM_V01.ros2_control.xacro" />
