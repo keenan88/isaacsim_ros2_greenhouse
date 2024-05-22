@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: antworker_description
+    relative_path: description/combined/worker_with_arm.urdf
+  srdf:
+    relative_path: config/antworker.srdf
+  package_settings:
+    author_name: Keenan Burke
+    author_email: keenanburke@ecoation.com
+    generated_timestamp: 1716326592
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

@@ -22,7 +22,7 @@ def generate_launch_description():
     # Load the robot configuration
     moveit_config = (
         MoveItConfigsBuilder(
-            "gen3", package_name="kinova_moveit"
+            "gen3", package_name="kinova_base_moveit"
         )
         .robot_description(mappings=launch_arguments)
         .trajectory_execution(file_path="config/moveit_controllers.yaml")
@@ -30,7 +30,7 @@ def generate_launch_description():
             publish_robot_description=True, publish_robot_description_semantic=True
         )
         .planning_pipelines(
-            pipelines=["ompl", "pilz_industrial_motion_planner"]
+            pipelines=["ompl"]
         )
         .to_moveit_configs()
     )
@@ -60,54 +60,54 @@ def generate_launch_description():
     )
 
     # Static TF
-    static_tf = Node(
-        package="tf2_ros",
-        executable="static_transform_publisher",
-        name="static_transform_publisher",
-        output="log",
-        arguments=["--frame-id", "world", "--child-frame-id", "base_link"],
-    )
+    # static_tf = Node(
+    #     package="tf2_ros",
+    #     executable="static_transform_publisher",
+    #     name="static_transform_publisher",
+    #     output="log",
+    #     arguments=["--frame-id", "world", "--child-frame-id", "base_link"],
+    # )
 
-    # Publish TF
-    robot_state_publisher = Node(
-        package="robot_state_publisher",
-        executable="robot_state_publisher",
-        name="robot_state_publisher",
-        output="both",
-        parameters=[moveit_config.robot_description],
-    )
+    # # Publish TF
+    # robot_state_publisher = Node(
+    #     package="robot_state_publisher",
+    #     executable="robot_state_publisher",
+    #     name="robot_state_publisher",
+    #     output="both",
+    #     parameters=[moveit_config.robot_description],
+    # )
 
-    ros2_controllers_path = os.path.join(
-        get_package_share_directory("kinova_moveit"),
-        "config",
-        "ros2_controllers.yaml",
-    )
+    # ros2_controllers_path = os.path.join(
+    #     get_package_share_directory("kinova_base_moveit"),
+    #     "config",
+    #     "ros2_controllers.yaml",
+    # )
 
-    ros2_control_node = Node(
-        package="controller_manager",
-        executable="ros2_control_node",
-        parameters=[ros2_controllers_path],
-        remappings=[
-            ("/controller_manager/robot_description", "/robot_description"),
-        ],
-        output="both",
-    )
+    # ros2_control_node = Node(
+    #     package="controller_manager",
+    #     executable="ros2_control_node",
+    #     parameters=[ros2_controllers_path],
+    #     remappings=[
+    #         ("/controller_manager/robot_description", "/robot_description"),
+    #     ],
+    #     output="both",
+    # )
 
-    joint_state_broadcaster_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=[
-            "joint_state_broadcaster",
-            "--controller-manager",
-            "/controller_manager",
-        ],
-    )
+    # joint_state_broadcaster_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=[
+    #         "joint_state_broadcaster",
+    #         "--controller-manager",
+    #         "/controller_manager",
+    #     ],
+    # )
 
-    arm_controller_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
-    )
+    # arm_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
+    # )
 
     # hand_controller_spawner = Node(
     #     package="controller_manager",

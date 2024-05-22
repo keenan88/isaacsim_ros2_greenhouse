@@ -25,7 +25,12 @@ description/arm/meshes/spherical_wrist_1_link.STL
 description/arm/meshes/spherical_wrist_1_link.obj
 description/arm/meshes/spherical_wrist_2_link.STL
 description/arm/meshes/spherical_wrist_2_link.obj
-description/arm/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf
+description/base/meshes/antworker_chassis.dae
+description/base/meshes/antworker_chassis_collision.stl
+description/base/meshes/body.stl
+description/base/meshes/wheel_a.dae
+description/base/meshes/wheel_b.dae
+description/base/meshes/worker_chassis.stl
 resource/antworker_description
 test/test_copyright.py
 test/test_flake8.py

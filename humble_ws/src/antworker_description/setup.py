@@ -24,8 +24,9 @@ setup(
         #('share/' + package_name + '/GEN3_6DOF_VISION_URDF_ARM_V01.urdf', ['description/arm/urdf/GEN3_6DOF_VISION_URDF_ARM_V01.urdf'])
         #('share/' + package_name, glob('description/base/meshes/**')),
 
-        (os.path.join('share', package_name, 'description/arm/urdf'), glob(os.path.join('description/arm/urdf', 'GEN3_6DOF_VISION_URDF_ARM_V01.urdf'))),
+        (os.path.join('share', package_name, 'description/combined/worker_with_arm.urdf'), glob(os.path.join('description/combined/urdf', 'worker_with_arm.urdf'))),
         (os.path.join('share', package_name, 'description/arm/meshes'), glob(os.path.join('description/arm/meshes', '*'))),
+        (os.path.join('share', package_name, 'description/base/meshes'), glob(os.path.join('description/base/meshes', '*'))),
 
     ],
     install_requires=['setuptools'],
