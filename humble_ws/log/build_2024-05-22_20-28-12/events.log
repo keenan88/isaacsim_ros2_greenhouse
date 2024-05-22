@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.000145] (-) JobUnselected: {'identifier': 'antworker_description'}
+[0.000185] (-) JobUnselected: {'identifier': 'antworker_navigation'}
+[0.000213] (-) JobUnselected: {'identifier': 'iron_moveit_ctrl'}
+[0.000239] (-) JobUnselected: {'identifier': 'moveit_cpp_interface'}
+[0.000262] (-) JobUnselected: {'identifier': 'support_kinova_moveit'}
+[0.000282] (kinova_base_moveit) JobQueued: {'identifier': 'kinova_base_moveit', 'dependencies': OrderedDict([('antworker_description', '/home/humble_ws/install/antworker_description')])}
+[0.000681] (kinova_base_moveit) JobStarted: {'identifier': 'kinova_base_moveit'}
+[0.013911] (kinova_base_moveit) JobEnded: {'identifier': 'kinova_base_moveit', 'rc': 1}
+[0.024303] (-) EventReactorShutdown: {}

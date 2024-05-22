@@ -1,5 +1,5 @@
 # Fine to use humble image since it is the only base image
-FROM moveit/moveit2:humble-release 
+FROM moveit/moveit2:iron-release 
 
 RUN apt update
 RUN apt install vim -y
@@ -13,4 +13,4 @@ RUN apt install vim -y
 RUN apt install gnome-terminal dbus-x11 -y
 #RUN apt install ros-humble-moveit-setup-asssistant -y
 
-RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN echo "source /opt/ros/iron/setup.bash" >> ~/.bashrc

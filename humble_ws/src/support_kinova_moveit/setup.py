@@ -26,7 +26,6 @@ setup(
         'console_scripts': [
             'joint_forwarder = support_kinova_moveit.joint_forwarder:main',
             'joint_command_forwarder = support_kinova_moveit.joint_command_forwarder:main',
-            'test_interface = support_kinova_moveit.test_interface:main'
         ],
     },
 )
