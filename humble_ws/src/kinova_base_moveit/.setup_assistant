@@ -5,9 +5,9 @@ moveit_setup_assistant_config:
   srdf:
     relative_path: config/antworker.srdf
   package_settings:
-    author_name: Keenan Burke
+    author_name: keenan burke
     author_email: keenanburke@ecoation.com
-    generated_timestamp: 1716326592
+    generated_timestamp: 1716387368
   control_xacro:
     command:
       - position

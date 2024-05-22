@@ -8,6 +8,7 @@ setup.py
 ../../build/support_kinova_moveit/support_kinova_moveit.egg-info/requires.txt
 ../../build/support_kinova_moveit/support_kinova_moveit.egg-info/top_level.txt
 ../../build/support_kinova_moveit/support_kinova_moveit.egg-info/zip-safe
+launch/moveit_test.launch.py
 resource/support_kinova_moveit
 support_kinova_moveit/__init__.py
 support_kinova_moveit/joint_command_forwarder.py

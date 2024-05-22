@@ -31,6 +31,7 @@ description/base/meshes/body.stl
 description/base/meshes/wheel_a.dae
 description/base/meshes/wheel_b.dae
 description/base/meshes/worker_chassis.stl
+description/combined/worker_with_arm.urdf
 resource/antworker_description
 test/test_copyright.py
 test/test_flake8.py

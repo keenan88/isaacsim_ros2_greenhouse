@@ -28,6 +28,7 @@
 /home/humble_ws/install/kinova_base_moveit/share/kinova_base_moveit/config/pilz_cartesian_limits.yaml
 /home/humble_ws/install/kinova_base_moveit/share/kinova_base_moveit/config/moveit.rviz
 /home/humble_ws/install/kinova_base_moveit/share/kinova_base_moveit/config/kinematics.yaml
+/home/humble_ws/install/kinova_base_moveit/share/kinova_base_moveit/config/sensors_3d.yaml
 /home/humble_ws/install/kinova_base_moveit/share/kinova_base_moveit/config/initial_positions.yaml
 /home/humble_ws/install/kinova_base_moveit/share/kinova_base_moveit/config/antworker.urdf.xacro
 /home/humble_ws/install/kinova_base_moveit/share/kinova_base_moveit/config/moveit_controllers.yaml

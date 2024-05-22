@@ -21,7 +21,7 @@ class MyNode(Node):
         self.get_logger().info('Node has been started and is listening to "robot_joint_states".')
 
     def listener_callback(self, msg):
-        self.get_logger().info('Received message from "robot_joint_states"')
+        #self.get_logger().info('Received message from "robot_joint_states"')
         
         # Here, we simply forward the received message to the 'joint_states' topic
         arm_joints_only = JointState()
