@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/support_kinova_moveit/support_kinova_moveit.egg-info/PKG-INFO
+writing dependency_links to ../../build/support_kinova_moveit/support_kinova_moveit.egg-info/dependency_links.txt
+writing entry points to ../../build/support_kinova_moveit/support_kinova_moveit.egg-info/entry_points.txt
+writing requirements to ../../build/support_kinova_moveit/support_kinova_moveit.egg-info/requires.txt
+writing top-level names to ../../build/support_kinova_moveit/support_kinova_moveit.egg-info/top_level.txt
+reading manifest file '../../build/support_kinova_moveit/support_kinova_moveit.egg-info/SOURCES.txt'
+writing manifest file '../../build/support_kinova_moveit/support_kinova_moveit.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/humble_ws/install/support_kinova_moveit/lib/python3.10/site-packages/support_kinova_moveit-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/support_kinova_moveit/support_kinova_moveit.egg-info to /home/humble_ws/install/support_kinova_moveit/lib/python3.10/site-packages/support_kinova_moveit-0.0.0-py3.10.egg-info
+running install_scripts
+Installing joint_command_forwarder script to /home/humble_ws/install/support_kinova_moveit/lib/support_kinova_moveit
+Installing joint_forwarder script to /home/humble_ws/install/support_kinova_moveit/lib/support_kinova_moveit
+writing list of installed files to '/home/humble_ws/build/support_kinova_moveit/install.log'

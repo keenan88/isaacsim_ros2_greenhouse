@@ -33,7 +33,7 @@
         <joint name="joint_6" value="0"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="end_effector" parent_link="kbase_link" group="end_effector"/>
+    <end_effector name="end_effector" parent_link="arm_base_link" group="end_effector"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="arm_base_link" link2="bicep_link" reason="Never"/>
     <disable_collisions link1="arm_base_link" link2="chassis_link" reason="Adjacent"/>

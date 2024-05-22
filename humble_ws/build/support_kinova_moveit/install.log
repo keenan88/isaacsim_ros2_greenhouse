@@ -18,3 +18,4 @@
 /home/humble_ws/install/support_kinova_moveit/lib/python3.10/site-packages/support_kinova_moveit-0.0.0-py3.10.egg-info/entry_points.txt
 /home/humble_ws/install/support_kinova_moveit/lib/support_kinova_moveit/joint_command_forwarder
 /home/humble_ws/install/support_kinova_moveit/lib/support_kinova_moveit/joint_forwarder
+/home/humble_ws/install/support_kinova_moveit/lib/support_kinova_moveit/test_interface

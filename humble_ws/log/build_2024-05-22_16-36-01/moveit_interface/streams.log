@@ -1,0 +1,26 @@
+[0.017s] Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/moveit_interface -- -j16 -l16
+[0.119s] [35m[1mConsolidate compiler generated dependencies of target moveit_interface[0m
+[0.209s] [ 50%] [32mBuilding CXX object CMakeFiles/moveit_interface.dir/src/moveit_interface.cpp.o[0m
+[8.984s] [100%] [32m[1mLinking CXX executable moveit_interface[0m
+[9.383s] [100%] Built target moveit_interface
+[9.397s] Invoked command in '/home/humble_ws/build/moveit_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/moveit_interface -- -j16 -l16
+[9.441s] Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/humble_ws/build/moveit_interface
+[9.450s] -- Install configuration: ""
+[9.451s] -- Installing: /home/humble_ws/install/moveit_interface/lib/moveit_interface/moveit_interface
+[9.452s] -- Set runtime path of "/home/humble_ws/install/moveit_interface/lib/moveit_interface/moveit_interface" to ""
+[9.453s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/package_run_dependencies/moveit_interface
+[9.453s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/parent_prefix_path/moveit_interface
+[9.453s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/ament_prefix_path.sh
+[9.453s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/ament_prefix_path.dsv
+[9.453s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/path.sh
+[9.453s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/path.dsv
+[9.453s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.bash
+[9.454s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.sh
+[9.454s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.zsh
+[9.454s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.dsv
+[9.454s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/package.dsv
+[9.454s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/packages/moveit_interface
+[9.454s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/cmake/moveit_interfaceConfig.cmake
+[9.454s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/cmake/moveit_interfaceConfig-version.cmake
+[9.454s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/package.xml
+[9.456s] Invoked command in '/home/humble_ws/build/moveit_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/humble_ws/build/moveit_interface

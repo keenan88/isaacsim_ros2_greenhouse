@@ -72,7 +72,7 @@ class JointTrajectoryActionServer(Node):
 
             goal_handle.publish_feedback(feedback_msg)
 
-            sleep(0.1)
+            sleep(0.01)
             
             # await self.sleep_in_repose()  # Simulate execution time
         
