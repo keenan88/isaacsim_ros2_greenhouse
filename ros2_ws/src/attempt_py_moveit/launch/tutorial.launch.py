@@ -13,22 +13,22 @@ from moveit_configs_utils import MoveItConfigsBuilder
 def generate_launch_description():
     moveit_config = (
         MoveItConfigsBuilder(
-            robot_name="panda", package_name="moveit_resources_panda_moveit_config"
+            robot_name="antworker", package_name="antworker_moveit_description"
         )
-        .robot_description(file_path="config/panda.urdf.xacro")
-        .trajectory_execution(file_path="config/gripper_moveit_controllers.yaml")
+        .robot_description(file_path="config/antworker.urdf.xacro")
+        .trajectory_execution(file_path="config/moveit_controllers.yaml")
         .moveit_cpp(
-            file_path=get_package_share_directory("moveit2_tutorials")
-            + "/config/motion_planning_python_api_tutorial.yaml"
+            file_path=get_package_share_directory("attempt_py_moveit")
+            + "/config/moveit_py_params.yaml"
         )
         .to_moveit_configs()
     )
 
-    example_file = DeclareLaunchArgument(
-        "example_file",
-        default_value="motion_planning_python_api_tutorial.py",
-        description="Python API tutorial file name",
-    )
+    # example_file = DeclareLaunchArgument(
+    #     "example_file",
+    #     default_value="motion_planning_python_api_tutorial.py",
+    #     description="Python API tutorial file name",
+    # )
 
     moveit_py_node = Node(
         name="moveit_py",
@@ -61,7 +61,7 @@ def generate_launch_description():
         executable="static_transform_publisher",
         name="static_transform_publisher",
         output="log",
-        arguments=["--frame-id", "world", "--child-frame-id", "panda_link0"],
+        arguments=["--frame-id", "kbase_link", "--child-frame-id", "arm_base_link"],
     )
 
     robot_state_publisher = Node(
@@ -73,7 +73,7 @@ def generate_launch_description():
     )
 
     ros2_controllers_path = os.path.join(
-        get_package_share_directory("moveit_resources_panda_moveit_config"),
+        get_package_share_directory("antworker_moveit_description"),
         "config",
         "ros2_controllers.yaml",
     )
@@ -89,8 +89,9 @@ def generate_launch_description():
 
     load_controllers = []
     for controller in [
-        "panda_arm_controller",
-        "panda_hand_controller",
+        # "panda_arm_controller",
+        # "panda_hand_controller",
+        "kinova_arm_controller",
         "joint_state_broadcaster",
     ]:
         load_controllers += [
@@ -103,7 +104,7 @@ def generate_launch_description():
 
     return LaunchDescription(
         [
-            example_file,
+            # example_file,
             moveit_py_node,
             robot_state_publisher,
             ros2_control_node,
