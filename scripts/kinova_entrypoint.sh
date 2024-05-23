@@ -1,5 +1,5 @@
 #!/bin/bash
 
-source /opt/ros/iron/setup.bash
+source /opt/ros/rolling/setup.bash
 
 bash
