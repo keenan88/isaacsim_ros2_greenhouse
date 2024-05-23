@@ -11,6 +11,8 @@ RUN apt install vim -y
 #ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 RUN apt install gnome-terminal dbus-x11 -y
+RUN apt install pip -y
+RUN pip install setuptools==58.2.0
 #RUN apt install ros-humble-moveit-setup-asssistant -y
 
 RUN echo "source /opt/ros/rolling/setup.bash" >> ~/.bashrc
