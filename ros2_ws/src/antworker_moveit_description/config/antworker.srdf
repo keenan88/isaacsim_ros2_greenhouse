@@ -40,8 +40,16 @@
         <joint name="joint_5" value="-0.7506"/>
         <joint name="joint_6" value="0"/>
     </group_state>
+    <group_state name="pose3" group="kinova_arm">
+        <joint name="joint_1" value="0.6422"/>
+        <joint name="joint_2" value="-0.2846"/>
+        <joint name="joint_3" value="0.5538"/>
+        <joint name="joint_4" value="1.8571"/>
+        <joint name="joint_5" value="0.612"/>
+        <joint name="joint_6" value="-1.1282"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="kinova_end_effector" parent_link="arm_base_link" group="kinova_arm"/>
+    <end_effector name="kinova_end_effector" parent_link="bracelet_link" group="kinova_end_effector"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="arm_base_link" link2="bicep_link" reason="Never"/>
     <disable_collisions link1="arm_base_link" link2="chassis_link" reason="Adjacent"/>

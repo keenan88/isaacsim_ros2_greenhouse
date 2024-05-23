@@ -1,0 +1,20 @@
+[0.920s] Invoking command in '/home/ros2_ws/src/antworker_description': PYTHONPATH=/home/ros2_ws/build/antworker_description/prefix_override:/home/ros2_ws/install/antworker_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/antworker_description build --build-base /home/ros2_ws/build/antworker_description/build install --record /home/ros2_ws/build/antworker_description/install.log --single-version-externally-managed
+[1.104s] running egg_info
+[1.105s] writing ../../build/antworker_description/antworker_description.egg-info/PKG-INFO
+[1.105s] writing dependency_links to ../../build/antworker_description/antworker_description.egg-info/dependency_links.txt
+[1.105s] writing entry points to ../../build/antworker_description/antworker_description.egg-info/entry_points.txt
+[1.105s] writing requirements to ../../build/antworker_description/antworker_description.egg-info/requires.txt
+[1.105s] writing top-level names to ../../build/antworker_description/antworker_description.egg-info/top_level.txt
+[1.106s] reading manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'
+[1.107s] writing manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'
+[1.107s] running build
+[1.107s] running build_py
+[1.108s] running install
+[1.108s] running install_lib
+[1.108s] running install_data
+[1.109s] running install_egg_info
+[1.111s] removing '/home/ros2_ws/install/antworker_description/lib/python3.10/site-packages/antworker_description-0.0.0-py3.10.egg-info' (and everything under it)
+[1.111s] Copying ../../build/antworker_description/antworker_description.egg-info to /home/ros2_ws/install/antworker_description/lib/python3.10/site-packages/antworker_description-0.0.0-py3.10.egg-info
+[1.111s] running install_scripts
+[1.126s] writing list of installed files to '/home/ros2_ws/build/antworker_description/install.log'
+[1.149s] Invoked command in '/home/ros2_ws/src/antworker_description' returned '0': PYTHONPATH=/home/ros2_ws/build/antworker_description/prefix_override:/home/ros2_ws/install/antworker_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/antworker_description build --build-base /home/ros2_ws/build/antworker_description/build install --record /home/ros2_ws/build/antworker_description/install.log --single-version-externally-managed

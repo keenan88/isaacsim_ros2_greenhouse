@@ -16,167 +16,89 @@ from moveit.planning import (
     MultiPipelinePlanRequestParameters,
 )
 
+import rclpy
+from rclpy.node import Node
 
-def plan_and_execute(
-    robot,
-    planning_component,
-    logger,
-    single_plan_parameters=None,
-    multi_plan_parameters=None,
-    sleep_time=0.0,
-):
-    """Helper function to plan and execute a motion."""
-    # plan to goal
-    logger.info("Planning trajectory")
-    if multi_plan_parameters is not None:
-        plan_result = planning_component.plan(
-            multi_plan_parameters=multi_plan_parameters
-        )
-    elif single_plan_parameters is not None:
-        plan_result = planning_component.plan(
-            single_plan_parameters=single_plan_parameters
-        )
-    else:
-        plan_result = planning_component.plan()
+class EmptyNode(Node):
+    def __init__(self):
+        super().__init__('empty_node')
+        self.get_logger().info('Empty node has been started.')
 
-    # execute the plan
-    if plan_result:
-        logger.info("Executing plan")
-        robot_trajectory = plan_result.trajectory
-        robot.execute(robot_trajectory, controllers=[])
-    else:
-        logger.error("Planning failed")
+        self.logger = get_logger("moveit_py.pose_goal")
 
-    time.sleep(sleep_time)
+        # instantiate MoveItPy instance and get planning component
+        self.panda = MoveItPy(node_name="moveit_py")
+        self.panda_arm = self.panda.get_planning_component("kinova_arm")
+        self.logger.info("MoveItPy instance created")
 
+        ###########################################################################
+        # Plan 1 - set states with predefined string
+        ###########################################################################
 
-def main():
+        self.logger.info("\nMOVING ARM TO PRESET POINT\n")
 
-    ###################################################################
-    # MoveItPy Setup
-    ###################################################################
-    rclpy.init()
-    logger = get_logger("moveit_py.pose_goal")
+        # set plan start state using predefined state
+        self.panda_arm.set_start_state(configuration_name="extended")
 
-    # instantiate MoveItPy instance and get planning component
-    panda = MoveItPy(node_name="moveit_py")
-    panda_arm = panda.get_planning_component("kinova_arm")
-    logger.info("MoveItPy instance created")
+        # set pose goal using predefined state
+        self.panda_arm.set_goal_state(configuration_name="pose3")
 
-    ###########################################################################
-    # Plan 1 - set states with predefined string
-    ###########################################################################
+        # plan to goal
+        self.plan_and_execute(self.panda, self.panda_arm, sleep_time=3.0)    
 
-    # set plan start state using predefined state
-    panda_arm.set_start_state(configuration_name="extended")
+        # ###########################################################################
+        # # Plan 3 - set goal state with PoseStamped message
+        # ###########################################################################
 
-    # set pose goal using predefined state
-    panda_arm.set_goal_state(configuration_name="jagged")
+        # self.logger.info("\nMOVING ARM TO CUSTOM POINT\n")
 
-    # plan to goal
-    plan_and_execute(panda, panda_arm, logger, sleep_time=3.0)
+        # # set plan start state to current state
+        # self.panda_arm.set_start_state_to_current_state()
 
-    
+        # # set pose goal with PoseStamped message
+        # from geometry_msgs.msg import PoseStamped
 
-    # # ###########################################################################
-    # # # Plan 2 - set goal state with RobotState object
-    # # ###########################################################################
+        # pose_goal = PoseStamped()
+        # pose_goal.header.frame_id = "arm_base_link"
+        # pose_goal.pose.orientation.w = 1.0
+        # pose_goal.pose.position.x = 0.28
+        # pose_goal.pose.position.y = -0.2
+        # pose_goal.pose.position.z = 0.5
+        # self.panda_arm.set_goal_state(pose_stamped_msg=pose_goal, pose_link="end_effector_link")
 
-    # # instantiate a RobotState instance using the current robot model
-    # robot_model = panda.get_robot_model()
-    # robot_state = RobotState(robot_model)
+        # # plan to goal
+        # self.plan_and_execute(self.panda, self.panda_arm, sleep_time=3.0)
 
-    # # randomize the robot state
-    # robot_state.set_to_random_positions()
+        
+        self.logger.info("DONE MOVING ARM AROUND")
 
-    # # set plan start state to current state
-    # panda_arm.set_start_state_to_current_state()
+    def plan_and_execute(self, robot, planning_component, single_plan_parameters=None, multi_plan_parameters=None, sleep_time=0.0):
+        self.logger.info("Planning trajectory")
+        if multi_plan_parameters is not None:
+            plan_result = planning_component.plan(
+                multi_plan_parameters=multi_plan_parameters
+            )
+        elif single_plan_parameters is not None:
+            plan_result = planning_component.plan(
+                single_plan_parameters=single_plan_parameters
+            )
+        else:
+            plan_result = planning_component.plan()
 
-    # # set goal state to the initialized robot state
-    # logger.info("Set goal state to the initialized robot state")
-    # panda_arm.set_goal_state(robot_state=robot_state)
+        # execute the plan
+        if plan_result:
+            self.logger.info("Executing plan")
+            robot_trajectory = plan_result.trajectory
+            robot.execute(robot_trajectory, controllers=[])
+        else:
+            self.logger.error("Planning failed")
 
-    # # plan to goal
-    # plan_and_execute(panda, panda_arm, logger, sleep_time=3.0)
-
-    logger.info("DONE MOVING ARM AROUND")
-
-    # ###########################################################################
-    # # Plan 3 - set goal state with PoseStamped message
-    # ###########################################################################
-
-    # # set plan start state to current state
-    # panda_arm.set_start_state_to_current_state()
-
-    # # set pose goal with PoseStamped message
-    # from geometry_msgs.msg import PoseStamped
-
-    # pose_goal = PoseStamped()
-    # pose_goal.header.frame_id = "panda_link0"
-    # pose_goal.pose.orientation.w = 1.0
-    # pose_goal.pose.position.x = 0.28
-    # pose_goal.pose.position.y = -0.2
-    # pose_goal.pose.position.z = 0.5
-    # panda_arm.set_goal_state(pose_stamped_msg=pose_goal, pose_link="panda_link8")
-
-    # # plan to goal
-    # plan_and_execute(panda, panda_arm, logger, sleep_time=3.0)
-
-    
-
-    # ###########################################################################
-    # # Plan 4 - set goal state with constraints
-    # ###########################################################################
-
-    # # set plan start state to current state
-    # panda_arm.set_start_state_to_current_state()
-
-    # # set constraints message
-    # from moveit.core.kinematic_constraints import construct_joint_constraint
-
-    # joint_values = {
-    #     "panda_joint1": -1.0,
-    #     "panda_joint2": 0.7,
-    #     "panda_joint3": 0.7,
-    #     "panda_joint4": -1.5,
-    #     "panda_joint5": -0.7,
-    #     "panda_joint6": 2.0,
-    #     "panda_joint7": 0.0,
-    # }
-    # robot_state.joint_positions = joint_values
-    # joint_constraint = construct_joint_constraint(
-    #     robot_state=robot_state,
-    #     joint_model_group=panda.get_robot_model().get_joint_model_group("panda_arm"),
-    # )
-    # panda_arm.set_goal_state(motion_plan_constraints=[joint_constraint])
-
-    # # plan to goal
-    # plan_and_execute(panda, panda_arm, logger, sleep_time=3.0)
-
-    # ###########################################################################
-    # # Plan 5 - Planning with Multiple Pipelines simultaneously
-    # ###########################################################################
-
-    # # set plan start state to current state
-    # panda_arm.set_start_state_to_current_state()
-
-    # # set pose goal with PoseStamped message
-    # panda_arm.set_goal_state(configuration_name="ready")
-
-    # # initialise multi-pipeline plan request parameters
-    # multi_pipeline_plan_request_params = MultiPipelinePlanRequestParameters(
-    #     panda, ["ompl_rrtc", "pilz_lin", "chomp_planner"]
-    # )
-
-    # # plan to goal
-    # plan_and_execute(
-    #     panda,
-    #     panda_arm,
-    #     logger,
-    #     multi_plan_parameters=multi_pipeline_plan_request_params,
-    #     sleep_time=3.0,
-    # )
+        time.sleep(sleep_time)
 
 
-if __name__ == "__main__":
-    main()
+def main(args=None):
+    rclpy.init(args=args)
+    node = EmptyNode()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
