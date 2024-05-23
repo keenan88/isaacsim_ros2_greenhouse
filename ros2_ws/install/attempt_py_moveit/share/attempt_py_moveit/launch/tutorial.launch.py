@@ -38,10 +38,10 @@ def generate_launch_description():
     # )
 
     moveit_py_node = Node(
-        name="moveit_py",
+        name="motion_demo",
         package="attempt_py_moveit",
         executable="attempt_motion_planning",
-        output="both",
+        output="screen",
         parameters=[moveit_config.to_dict()],
     )
 

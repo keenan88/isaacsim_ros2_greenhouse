@@ -27,7 +27,7 @@ class EmptyNode(Node):
         self.logger = get_logger("moveit_py.pose_goal")
 
         # instantiate MoveItPy instance and get planning component
-        self.panda = MoveItPy(node_name="moveit_py")
+        self.panda = MoveItPy(node_name = "moveit_py")
         self.panda_arm = self.panda.get_planning_component("kinova_arm")
         self.logger.info("MoveItPy instance created")
 
