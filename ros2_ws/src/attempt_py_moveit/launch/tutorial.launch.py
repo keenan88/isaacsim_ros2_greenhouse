@@ -21,6 +21,13 @@ def generate_launch_description():
             file_path=get_package_share_directory("attempt_py_moveit")
             + "/config/moveit_py_params.yaml"
         )
+        .planning_pipelines(
+            pipelines=["ompl", "chomp", "pilz_industrial_motion_planner", "stomp"]
+        )
+        .planning_scene_monitor(
+            publish_robot_description=True, publish_robot_description_semantic=True
+        )
+        .robot_description_semantic(file_path="config/antworker.srdf")
         .to_moveit_configs()
     )
 
@@ -102,6 +109,15 @@ def generate_launch_description():
             )
         ]
 
+    # Start the actual move_group node/action server
+    move_group_node = Node(
+        package="moveit_ros_move_group",
+        executable="move_group",
+        output="screen",
+        parameters=[moveit_config.to_dict()],
+        arguments=["--ros-args", "--log-level", "info"],
+    )
+
     return LaunchDescription(
         [
             # example_file,
@@ -110,6 +126,7 @@ def generate_launch_description():
             ros2_control_node,
             rviz_node,
             static_tf,
+            move_group_node
         ]
         + load_controllers
     )

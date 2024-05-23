@@ -1,0 +1,12 @@
+[0.000000] (-) TimerEvent: {}
+[0.000661] (-) JobUnselected: {'identifier': 'antworker_description'}
+[0.000777] (-) JobUnselected: {'identifier': 'antworker_navigation'}
+[0.000894] (-) JobUnselected: {'identifier': 'iron_moveit_ctrl'}
+[0.000915] (attempt_py_moveit) JobQueued: {'identifier': 'attempt_py_moveit', 'dependencies': OrderedDict()}
+[0.000958] (antworker_moveit_description) JobQueued: {'identifier': 'antworker_moveit_description', 'dependencies': OrderedDict([('antworker_description', '/home/ros2_ws/install/antworker_description')])}
+[0.000980] (attempt_py_moveit) JobStarted: {'identifier': 'attempt_py_moveit'}
+[0.071718] (antworker_moveit_description) JobStarted: {'identifier': 'antworker_moveit_description'}
+[0.099847] (-) TimerEvent: {}
+[0.155169] (antworker_moveit_description) JobEnded: {'identifier': 'antworker_moveit_description', 'rc': 1}
+[0.156549] (attempt_py_moveit) JobEnded: {'identifier': 'attempt_py_moveit', 'rc': 'SIGINT'}
+[0.166833] (-) EventReactorShutdown: {}

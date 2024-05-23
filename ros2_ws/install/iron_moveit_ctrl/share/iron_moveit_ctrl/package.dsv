@@ -1,6 +1,0 @@
-source;share/iron_moveit_ctrl/hook/pythonpath.ps1
-source;share/iron_moveit_ctrl/hook/pythonpath.dsv
-source;share/iron_moveit_ctrl/hook/pythonpath.sh
-source;share/iron_moveit_ctrl/hook/ament_prefix_path.ps1
-source;share/iron_moveit_ctrl/hook/ament_prefix_path.dsv
-source;share/iron_moveit_ctrl/hook/ament_prefix_path.sh

@@ -1,4 +1,0 @@
-[console_scripts]
-joint_command_forwarder = support_kinova_moveit.joint_command_forwarder:main
-joint_forwarder = support_kinova_moveit.joint_forwarder:main
-

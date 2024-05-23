@@ -16,6 +16,8 @@
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/demo.launch.py
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/setup_assistant.launch.py
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/move_group.launch.py
+/home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/__pycache__/demo.launch.cpython-310.pyc
+/home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/__pycache__/move_group.launch.cpython-310.pyc
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/warehouse_db.launch.py
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/static_virtual_joint_tfs.launch.py
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/spawn_controllers.launch.py
@@ -28,7 +30,6 @@
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/pilz_cartesian_limits.yaml
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/moveit.rviz
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/kinematics.yaml
-/home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/sensors_3d.yaml
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/initial_positions.yaml
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/antworker.urdf.xacro
 /home/ros2_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/moveit_controllers.yaml
