@@ -1,5 +1,5 @@
 #!/bin/bash
 
-source /opt/ros/humble/setup.bash
+source /opt/ros/iron/setup.bash
 
 bash
