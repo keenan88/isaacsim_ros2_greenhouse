@@ -50,24 +50,27 @@ class EmptyNode(Node):
         # # Plan 3 - set goal state with PoseStamped message
         # ###########################################################################
 
-        # self.logger.info("\nMOVING ARM TO CUSTOM POINT\n")
+        self.logger.info("\nMOVING ARM TO CUSTOM POINT\n")
 
-        # # set plan start state to current state
-        # self.panda_arm.set_start_state_to_current_state()
+        # set plan start state to current state
+        self.panda_arm.set_start_state_to_current_state()
 
-        # # set pose goal with PoseStamped message
-        # from geometry_msgs.msg import PoseStamped
+        # set pose goal with PoseStamped message
+        from geometry_msgs.msg import PoseStamped
 
-        # pose_goal = PoseStamped()
-        # pose_goal.header.frame_id = "arm_base_link"
-        # pose_goal.pose.orientation.w = 1.0
-        # pose_goal.pose.position.x = 0.28
-        # pose_goal.pose.position.y = -0.2
-        # pose_goal.pose.position.z = 0.5
-        # self.panda_arm.set_goal_state(pose_stamped_msg=pose_goal, pose_link="end_effector_link")
+        pose_goal = PoseStamped()
+        pose_goal.header.frame_id = "arm_base_link"        
+        pose_goal.pose.orientation.x = -0.322
+        pose_goal.pose.orientation.y = 0.250
+        pose_goal.pose.orientation.z = 0.627
+        pose_goal.pose.orientation.w = 0.664
+        pose_goal.pose.position.x = -0.290
+        pose_goal.pose.position.y = 0.334
+        pose_goal.pose.position.z = 0.9
+        self.panda_arm.set_goal_state(pose_stamped_msg=pose_goal, pose_link="end_effector_link")
 
-        # # plan to goal
-        # self.plan_and_execute(self.panda, self.panda_arm, sleep_time=3.0)
+        # plan to goal
+        self.plan_and_execute(self.panda, self.panda_arm, sleep_time=3.0)
 
         
         self.logger.info("DONE MOVING ARM AROUND")
