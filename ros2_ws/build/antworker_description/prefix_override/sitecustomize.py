@@ -1,3 +1,3 @@
 import sys
 sys.real_prefix = sys.prefix
-sys.prefix = sys.exec_prefix = '/home/humble_ws/install/antworker_description'
+sys.prefix = sys.exec_prefix = '/home/ros2_ws/install/antworker_description'
