@@ -6,6 +6,7 @@
 /home/ros2_ws/install/attempt_py_moveit/share/attempt_py_moveit/package.xml
 /home/ros2_ws/install/attempt_py_moveit/share/attempt_py_moveit/launch/tutorial.launch.py
 /home/ros2_ws/install/attempt_py_moveit/share/attempt_py_moveit/config/moveit_py_params.yaml
+/home/ros2_ws/install/attempt_py_moveit/share/attempt_py_moveit/config/rviz_config.rviz
 /home/ros2_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit-0.0.0-py3.10.egg-info/requires.txt
 /home/ros2_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/ros2_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit-0.0.0-py3.10.egg-info/zip-safe

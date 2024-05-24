@@ -11,6 +11,7 @@ setup.py
 attempt_py_moveit/__init__.py
 attempt_py_moveit/attempt_motion_planning.py
 config/moveit_py_params.yaml
+config/rviz_config.rviz
 launch/tutorial.launch.py
 resource/attempt_py_moveit
 test/test_copyright.py

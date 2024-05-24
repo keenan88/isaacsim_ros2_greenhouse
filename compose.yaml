@@ -1,77 +1,97 @@
 
 services:
 
-  isaac-sim:
+  # isaac-sim:
+  #   build:
+  #     context: ./isaacsim_humble_dockerfile
+  #     dockerfile: Dockerfile
+  #   image: isaacsim_humble
+
+  #   container_name: isaac-sim
+  #   stdin_open: true
+  #   tty: true
+  #   environment:
+  #     - ACCEPT_EULA=Y
+  #     - PRIVACY_CONSENT=Y
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - capabilities:
+  #               - gpu
+
+  #   volumes:
+  #     - ./fastdds.xml:/root/.ros/fastdds.xml:rw
+  #     # - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
+  #     - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
+  #     # - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
+  #     # - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
+  #     # - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
+  #     # - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
+  #     # - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
+  #     # - ~/docker/isaac-sim/documents:/root/Documents:rw
+  #     - ./ros2_ws:/isaac-sim/ros2_ws:rw
+  #     - ./scripts/isaacsim_entrypoint.sh:/isaac-sim/scripts/isaacsim_entrypoint.sh:rw
+  #   network_mode: "host"
+  #   restart: "no"
+  #   entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
+
+  humble-desktop:
+    container_name: humble-desktop
     build:
-      context: ./isaacsim_humble_dockerfile
+      context: ./humble_worker_dockerfile
       dockerfile: Dockerfile
-    image: isaacsim_humble
-
-    container_name: isaac-sim
-    stdin_open: true
+    image: humble_dev_img
     tty: true
+    stdin_open: true
     environment:
-      - ACCEPT_EULA=Y
-      - PRIVACY_CONSENT=Y
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - capabilities:
-                - gpu
-
+      - DISPLAY=${DISPLAY}
     volumes:
-      - ./fastdds.xml:/root/.ros/fastdds.xml:rw
-      # - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
-      - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
-      # - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
-      # - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
-      # - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
-      # - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
-      # - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
-      # - ~/docker/isaac-sim/documents:/root/Documents:rw
-      - ./ros2_ws:/isaac-sim/ros2_ws:rw
-      - ./scripts/isaacsim_entrypoint.sh:/isaac-sim/scripts/isaacsim_entrypoint.sh:rw
-    network_mode: "host"
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./ros2_ws:/home/ros2_ws:rw
+      - ./scripts/dev_entrypoint.sh:/isaac-sim/scripts/dev_entrypoint.sh:rw
+    privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
+    #network_mode: "host"
+    working_dir: /home/ros2_ws/src/antworker_navigation/launch
     restart: "no"
-    entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
+    entrypoint: /isaac-sim/scripts/dev_entrypoint.sh
 
-  # humble-desktop:
-  #   container_name: humble-desktop
-  #   build:
-  #     context: ./humble_worker_dockerfile
-  #     dockerfile: Dockerfile
-  #   image: humble_dev_img
-  #   tty: true
-  #   stdin_open: true
-  #   environment:
-  #     - DISPLAY=${DISPLAY}
-  #   volumes:
-  #     - /tmp/.X11-unix:/tmp/.X11-unix
-  #     - ./ros2_ws:/home/ros2_ws:rw
-  #     - ./scripts/dev_entrypoint.sh:/isaac-sim/scripts/dev_entrypoint.sh:rw
-  #   privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
-  #   network_mode: "host"
-  #   working_dir: /home/ros2_ws/src/antworker_navigation/launch
-  #   restart: "no"
-  #   entrypoint: /isaac-sim/scripts/dev_entrypoint.sh
+  rolling-desktop-kinova:
+    container_name: rolling-desktop-kinova
+    build:
+      context: ./kinova_dockerfile
+      dockerfile: Dockerfile
+    image: rolling_kinova_img
+    tty: true
+    stdin_open: true
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./ros2_ws:/home/ros2_ws:rw
+      - ./scripts/kinova_entrypoint.sh:/home/scripts/kinova_entrypoint.sh:rw
+    #network_mode: "host"
+    working_dir: /home/ros2_ws/src/
+    restart: "no"
+    entrypoint: /home/scripts/kinova_entrypoint.sh
 
-  # rolling-desktop-kinova:
-  #   container_name: rolling-desktop-kinova
-  #   build:
-  #     context: ./kinova_dockerfile
-  #     dockerfile: Dockerfile
-  #   image: rolling_kinova_img
-  #   tty: true
-  #   stdin_open: true
-  #   environment:
-  #     - DISPLAY=${DISPLAY}
-  #   volumes:
-  #     - /tmp/.X11-unix:/tmp/.X11-unix
-  #     - ./ros2_ws:/home/ros2_ws:rw
-  #     - ./scripts/kinova_entrypoint.sh:/home/scripts/kinova_entrypoint.sh:rw
-  #   privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
-  #   network_mode: "host"
-  #   working_dir: /home/ros2_ws/src/
-  #   restart: "no"
-  #   entrypoint: /home/scripts/kinova_entrypoint.sh
+
+  humble-debug:
+    container_name: humble-debug
+    build:
+      context: ./humble_worker_dockerfile
+      dockerfile: Dockerfile
+    image: humble_dev_img
+    tty: true
+    stdin_open: true
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./ros2_ws:/home/ros2_ws:rw
+      - ./scripts/dev_entrypoint.sh:/isaac-sim/scripts/dev_entrypoint.sh:rw
+    privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
+    #network_mode: "host"
+    working_dir: /home/ros2_ws/src/antworker_navigation/launch
+    restart: "no"
+    entrypoint: /isaac-sim/scripts/dev_entrypoint.sh
