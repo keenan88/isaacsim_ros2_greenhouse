@@ -123,10 +123,10 @@ def generate_launch_description():
             # example_file,
             moveit_py_node,
             robot_state_publisher,
-            ros2_control_node,
+            #ros2_control_node,
             rviz_node,
-            static_tf,
+            #static_tf,
             move_group_node
         ]
-        + load_controllers
+        #+ load_controllers
     )
