@@ -1,0 +1,42 @@
+[1.192s] Invoking command in '/home/rolling_ws/src/attempt_py_moveit': PYTHONPATH=/home/rolling_ws/build/attempt_py_moveit/prefix_override:/home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/attempt_py_moveit build --build-base /home/rolling_ws/build/attempt_py_moveit/build install --record /home/rolling_ws/build/attempt_py_moveit/install.log --single-version-externally-managed
+[1.440s] running egg_info
+[1.440s] creating ../../build/attempt_py_moveit/attempt_py_moveit.egg-info
+[1.440s] writing ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/PKG-INFO
+[1.441s] writing dependency_links to ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/dependency_links.txt
+[1.441s] writing entry points to ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/entry_points.txt
+[1.441s] writing requirements to ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/requires.txt
+[1.441s] writing top-level names to ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/top_level.txt
+[1.441s] writing manifest file '../../build/attempt_py_moveit/attempt_py_moveit.egg-info/SOURCES.txt'
+[1.442s] reading manifest file '../../build/attempt_py_moveit/attempt_py_moveit.egg-info/SOURCES.txt'
+[1.443s] writing manifest file '../../build/attempt_py_moveit/attempt_py_moveit.egg-info/SOURCES.txt'
+[1.443s] running build
+[1.443s] running build_py
+[1.443s] creating /home/rolling_ws/build/attempt_py_moveit/build
+[1.444s] creating /home/rolling_ws/build/attempt_py_moveit/build/lib
+[1.444s] creating /home/rolling_ws/build/attempt_py_moveit/build/lib/attempt_py_moveit
+[1.444s] copying attempt_py_moveit/attempt_motion_planning.py -> /home/rolling_ws/build/attempt_py_moveit/build/lib/attempt_py_moveit
+[1.444s] copying attempt_py_moveit/__init__.py -> /home/rolling_ws/build/attempt_py_moveit/build/lib/attempt_py_moveit
+[1.444s] running install
+[1.444s] running install_lib
+[1.445s] creating /home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit
+[1.445s] copying /home/rolling_ws/build/attempt_py_moveit/build/lib/attempt_py_moveit/attempt_motion_planning.py -> /home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit
+[1.445s] copying /home/rolling_ws/build/attempt_py_moveit/build/lib/attempt_py_moveit/__init__.py -> /home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit
+[1.445s] byte-compiling /home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit/attempt_motion_planning.py to attempt_motion_planning.cpython-310.pyc
+[1.446s] byte-compiling /home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit/__init__.py to __init__.cpython-310.pyc
+[1.446s] running install_data
+[1.447s] creating /home/rolling_ws/install/attempt_py_moveit/share/ament_index
+[1.447s] creating /home/rolling_ws/install/attempt_py_moveit/share/ament_index/resource_index
+[1.447s] creating /home/rolling_ws/install/attempt_py_moveit/share/ament_index/resource_index/packages
+[1.447s] copying resource/attempt_py_moveit -> /home/rolling_ws/install/attempt_py_moveit/share/ament_index/resource_index/packages
+[1.447s] copying package.xml -> /home/rolling_ws/install/attempt_py_moveit/share/attempt_py_moveit
+[1.447s] creating /home/rolling_ws/install/attempt_py_moveit/share/attempt_py_moveit/launch
+[1.447s] copying launch/tutorial.launch.py -> /home/rolling_ws/install/attempt_py_moveit/share/attempt_py_moveit/launch
+[1.447s] creating /home/rolling_ws/install/attempt_py_moveit/share/attempt_py_moveit/config
+[1.447s] copying config/moveit_py_params.yaml -> /home/rolling_ws/install/attempt_py_moveit/share/attempt_py_moveit/config
+[1.447s] copying config/rviz_config.rviz -> /home/rolling_ws/install/attempt_py_moveit/share/attempt_py_moveit/config
+[1.448s] running install_egg_info
+[1.449s] Copying ../../build/attempt_py_moveit/attempt_py_moveit.egg-info to /home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit-0.0.0-py3.10.egg-info
+[1.450s] running install_scripts
+[1.469s] Installing attempt_motion_planning script to /home/rolling_ws/install/attempt_py_moveit/lib/attempt_py_moveit
+[1.469s] writing list of installed files to '/home/rolling_ws/build/attempt_py_moveit/install.log'
+[1.492s] Invoked command in '/home/rolling_ws/src/attempt_py_moveit' returned '0': PYTHONPATH=/home/rolling_ws/build/attempt_py_moveit/prefix_override:/home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/attempt_py_moveit build --build-base /home/rolling_ws/build/attempt_py_moveit/build install --record /home/rolling_ws/build/attempt_py_moveit/install.log --single-version-externally-managed

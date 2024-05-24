@@ -1,0 +1,3 @@
+[console_scripts]
+attempt_motion_planning = attempt_py_moveit.attempt_motion_planning:main
+

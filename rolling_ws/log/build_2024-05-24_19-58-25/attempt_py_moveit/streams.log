@@ -1,0 +1,22 @@
+[1.063s] Invoking command in '/home/rolling_ws/src/attempt_py_moveit': PYTHONPATH=/home/rolling_ws/build/attempt_py_moveit/prefix_override:/home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/attempt_py_moveit build --build-base /home/rolling_ws/build/attempt_py_moveit/build install --record /home/rolling_ws/build/attempt_py_moveit/install.log --single-version-externally-managed
+[1.284s] running egg_info
+[1.284s] writing ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/PKG-INFO
+[1.284s] writing dependency_links to ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/dependency_links.txt
+[1.285s] writing entry points to ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/entry_points.txt
+[1.285s] writing requirements to ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/requires.txt
+[1.285s] writing top-level names to ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/top_level.txt
+[1.286s] reading manifest file '../../build/attempt_py_moveit/attempt_py_moveit.egg-info/SOURCES.txt'
+[1.287s] writing manifest file '../../build/attempt_py_moveit/attempt_py_moveit.egg-info/SOURCES.txt'
+[1.287s] running build
+[1.287s] running build_py
+[1.287s] running install
+[1.288s] running install_lib
+[1.289s] running install_data
+[1.289s] copying launch/tutorial.launch.py -> /home/rolling_ws/install/attempt_py_moveit/share/attempt_py_moveit/launch
+[1.289s] running install_egg_info
+[1.292s] removing '/home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit-0.0.0-py3.10.egg-info' (and everything under it)
+[1.292s] Copying ../../build/attempt_py_moveit/attempt_py_moveit.egg-info to /home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages/attempt_py_moveit-0.0.0-py3.10.egg-info
+[1.292s] running install_scripts
+[1.311s] Installing attempt_motion_planning script to /home/rolling_ws/install/attempt_py_moveit/lib/attempt_py_moveit
+[1.311s] writing list of installed files to '/home/rolling_ws/build/attempt_py_moveit/install.log'
+[1.446s] Invoked command in '/home/rolling_ws/src/attempt_py_moveit' returned '0': PYTHONPATH=/home/rolling_ws/build/attempt_py_moveit/prefix_override:/home/rolling_ws/install/attempt_py_moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/attempt_py_moveit build --build-base /home/rolling_ws/build/attempt_py_moveit/build install --record /home/rolling_ws/build/attempt_py_moveit/install.log --single-version-externally-managed
