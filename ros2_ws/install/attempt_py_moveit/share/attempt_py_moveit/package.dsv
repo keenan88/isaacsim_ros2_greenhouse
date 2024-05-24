@@ -1,6 +1,0 @@
-source;share/attempt_py_moveit/hook/pythonpath.ps1
-source;share/attempt_py_moveit/hook/pythonpath.dsv
-source;share/attempt_py_moveit/hook/pythonpath.sh
-source;share/attempt_py_moveit/hook/ament_prefix_path.ps1
-source;share/attempt_py_moveit/hook/ament_prefix_path.dsv
-source;share/attempt_py_moveit/hook/ament_prefix_path.sh
