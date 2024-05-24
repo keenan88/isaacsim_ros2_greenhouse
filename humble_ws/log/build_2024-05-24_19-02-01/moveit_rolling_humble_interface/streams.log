@@ -1,0 +1,36 @@
+[0.461s] Invoking command in '/home/humble_ws/src/moveit_rolling_humble_interface': PYTHONPATH=/home/humble_ws/build/moveit_rolling_humble_interface/prefix_override:/home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/moveit_rolling_humble_interface build --build-base /home/humble_ws/build/moveit_rolling_humble_interface/build install --record /home/humble_ws/build/moveit_rolling_humble_interface/install.log --single-version-externally-managed install_data
+[0.639s] running egg_info
+[0.639s] creating ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info
+[0.639s] writing ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/PKG-INFO
+[0.640s] writing dependency_links to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/dependency_links.txt
+[0.640s] writing entry points to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/entry_points.txt
+[0.640s] writing requirements to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/requires.txt
+[0.640s] writing top-level names to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/top_level.txt
+[0.640s] writing manifest file '../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/SOURCES.txt'
+[0.641s] reading manifest file '../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/SOURCES.txt'
+[0.642s] writing manifest file '../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/SOURCES.txt'
+[0.642s] running build
+[0.642s] running build_py
+[0.642s] creating /home/humble_ws/build/moveit_rolling_humble_interface/build
+[0.642s] creating /home/humble_ws/build/moveit_rolling_humble_interface/build/lib
+[0.642s] creating /home/humble_ws/build/moveit_rolling_humble_interface/build/lib/moveit_rolling_humble_interface
+[0.642s] copying moveit_rolling_humble_interface/__init__.py -> /home/humble_ws/build/moveit_rolling_humble_interface/build/lib/moveit_rolling_humble_interface
+[0.642s] copying moveit_rolling_humble_interface/moveit_rolling_humble_interface.py -> /home/humble_ws/build/moveit_rolling_humble_interface/build/lib/moveit_rolling_humble_interface
+[0.642s] running install
+[0.642s] running install_lib
+[0.643s] creating /home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages/moveit_rolling_humble_interface
+[0.643s] copying /home/humble_ws/build/moveit_rolling_humble_interface/build/lib/moveit_rolling_humble_interface/__init__.py -> /home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages/moveit_rolling_humble_interface
+[0.643s] copying /home/humble_ws/build/moveit_rolling_humble_interface/build/lib/moveit_rolling_humble_interface/moveit_rolling_humble_interface.py -> /home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages/moveit_rolling_humble_interface
+[0.643s] byte-compiling /home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages/moveit_rolling_humble_interface/__init__.py to __init__.cpython-310.pyc
+[0.643s] byte-compiling /home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages/moveit_rolling_humble_interface/moveit_rolling_humble_interface.py to moveit_rolling_humble_interface.cpython-310.pyc
+[0.644s] running install_data
+[0.644s] creating /home/humble_ws/install/moveit_rolling_humble_interface/share/ament_index
+[0.644s] creating /home/humble_ws/install/moveit_rolling_humble_interface/share/ament_index/resource_index
+[0.644s] creating /home/humble_ws/install/moveit_rolling_humble_interface/share/ament_index/resource_index/packages
+[0.644s] copying resource/moveit_rolling_humble_interface -> /home/humble_ws/install/moveit_rolling_humble_interface/share/ament_index/resource_index/packages
+[0.644s] copying package.xml -> /home/humble_ws/install/moveit_rolling_humble_interface/share/moveit_rolling_humble_interface
+[0.644s] running install_egg_info
+[0.645s] Copying ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info to /home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages/moveit_rolling_humble_interface-0.0.0-py3.10.egg-info
+[0.646s] running install_scripts
+[0.660s] writing list of installed files to '/home/humble_ws/build/moveit_rolling_humble_interface/install.log'
+[0.675s] Invoked command in '/home/humble_ws/src/moveit_rolling_humble_interface' returned '0': PYTHONPATH=/home/humble_ws/build/moveit_rolling_humble_interface/prefix_override:/home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/moveit_rolling_humble_interface build --build-base /home/humble_ws/build/moveit_rolling_humble_interface/build install --record /home/humble_ws/build/moveit_rolling_humble_interface/install.log --single-version-externally-managed install_data

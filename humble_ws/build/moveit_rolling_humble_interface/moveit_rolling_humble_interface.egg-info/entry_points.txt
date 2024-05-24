@@ -1,0 +1,3 @@
+[console_scripts]
+joint_state_translater = moveit_rolling_humble_interface.moveit_rolling_humble_interface:main
+
