@@ -1,0 +1,21 @@
+[0.400s] Invoking command in '/home/humble_ws/src/moveit_rolling_humble_interface': PYTHONPATH=/home/humble_ws/build/moveit_rolling_humble_interface/prefix_override:/home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/moveit_rolling_humble_interface build --build-base /home/humble_ws/build/moveit_rolling_humble_interface/build install --record /home/humble_ws/build/moveit_rolling_humble_interface/install.log --single-version-externally-managed install_data
+[0.566s] running egg_info
+[0.566s] writing ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/PKG-INFO
+[0.567s] writing dependency_links to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/dependency_links.txt
+[0.567s] writing entry points to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/entry_points.txt
+[0.567s] writing requirements to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/requires.txt
+[0.567s] writing top-level names to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/top_level.txt
+[0.568s] reading manifest file '../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/SOURCES.txt'
+[0.569s] writing manifest file '../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/SOURCES.txt'
+[0.569s] running build
+[0.569s] running build_py
+[0.569s] running install
+[0.569s] running install_lib
+[0.570s] running install_data
+[0.570s] running install_egg_info
+[0.572s] removing '/home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages/moveit_rolling_humble_interface-0.0.0-py3.10.egg-info' (and everything under it)
+[0.572s] Copying ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info to /home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages/moveit_rolling_humble_interface-0.0.0-py3.10.egg-info
+[0.573s] running install_scripts
+[0.588s] Installing joint_state_translater script to /home/humble_ws/install/moveit_rolling_humble_interface/lib/moveit_rolling_humble_interface
+[0.588s] writing list of installed files to '/home/humble_ws/build/moveit_rolling_humble_interface/install.log'
+[0.607s] Invoked command in '/home/humble_ws/src/moveit_rolling_humble_interface' returned '0': PYTHONPATH=/home/humble_ws/build/moveit_rolling_humble_interface/prefix_override:/home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/moveit_rolling_humble_interface build --build-base /home/humble_ws/build/moveit_rolling_humble_interface/build install --record /home/humble_ws/build/moveit_rolling_humble_interface/install.log --single-version-externally-managed install_data

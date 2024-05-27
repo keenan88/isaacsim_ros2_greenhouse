@@ -1,18 +1,19 @@
-# Fine to use humble image since it is the only base image
-FROM ghcr.io/ros-planning/moveit2_tutorials:rolling-tutorial
+#FROM ghcr.io/ros-planning/moveit2_tutorials:rolling-tutorial
+FROM moveit/moveit2:jazzy-release
 
-RUN apt update
+RUN apt-get update
 RUN apt install vim -y
 
 # Packages for Kinova & Moveit, documentation: https://github.com/Kinovarobotics/ros2_kortex
 #RUN apt install ros-humble-kortex-bringup -y
 #RUN apt install ros-humble-kinova-gen3-6dof-robotiq-2f-85-moveit-config -y
 #RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
-#ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
 
 RUN apt install gnome-terminal dbus-x11 -y
-RUN apt install pip -y
-RUN pip install setuptools==58.2.0
-#RUN apt install ros-humble-moveit-setup-asssistant -y
 
-RUN echo "source /opt/ros/rolling/setup.bash" >> ~/.bashrc
+RUN apt-get update
+RUN apt install ros-jazzy-rmw-fastrtps-dynamic-cpp --fix-missing -y
+ENV RMW_IMPLEMENTATION=rmw_fastrtps_dynamic_cpp
+
+RUN echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc 

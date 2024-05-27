@@ -1,0 +1,61 @@
+[0.705s] Invoking command in '/home/rolling_ws/src/antworker_description': PYTHONPATH=/home/rolling_ws/build/antworker_description/prefix_override:/home/rolling_ws/install/antworker_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_description build --build-base /home/rolling_ws/build/antworker_description/build install --record /home/rolling_ws/build/antworker_description/install.log --single-version-externally-managed install_data
+[0.888s] running egg_info
+[0.888s] creating ../../build/antworker_description/antworker_description.egg-info
+[0.900s] writing ../../build/antworker_description/antworker_description.egg-info/PKG-INFO
+[0.900s] writing dependency_links to ../../build/antworker_description/antworker_description.egg-info/dependency_links.txt
+[0.900s] writing requirements to ../../build/antworker_description/antworker_description.egg-info/requires.txt
+[0.900s] writing top-level names to ../../build/antworker_description/antworker_description.egg-info/top_level.txt
+[0.900s] writing manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'
+[0.924s] reading manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'
+[0.925s] writing manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'
+[0.925s] running build
+[0.925s] running build_py
+[0.925s] creating /home/rolling_ws/build/antworker_description/build
+[0.926s] creating /home/rolling_ws/build/antworker_description/build/lib
+[0.926s] creating /home/rolling_ws/build/antworker_description/build/lib/description
+[0.926s] copying description/__init__.py -> /home/rolling_ws/build/antworker_description/build/lib/description
+[0.926s] running install
+[0.930s] running install_lib
+[0.942s] creating /home/rolling_ws/install/antworker_description/lib/python3.12/site-packages/description
+[0.942s] copying /home/rolling_ws/build/antworker_description/build/lib/description/__init__.py -> /home/rolling_ws/install/antworker_description/lib/python3.12/site-packages/description
+[0.943s] byte-compiling /home/rolling_ws/install/antworker_description/lib/python3.12/site-packages/description/__init__.py to __init__.cpython-312.pyc
+[0.943s] running install_data
+[0.943s] creating /home/rolling_ws/install/antworker_description/share/ament_index
+[0.943s] creating /home/rolling_ws/install/antworker_description/share/ament_index/resource_index
+[0.944s] creating /home/rolling_ws/install/antworker_description/share/ament_index/resource_index/packages
+[0.944s] copying resource/antworker_description -> /home/rolling_ws/install/antworker_description/share/ament_index/resource_index/packages
+[0.944s] copying package.xml -> /home/rolling_ws/install/antworker_description/share/antworker_description
+[0.944s] creating /home/rolling_ws/install/antworker_description/share/antworker_description/description
+[0.944s] creating /home/rolling_ws/install/antworker_description/share/antworker_description/description/combined
+[0.944s] copying description/combined/worker_with_arm.urdf -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/combined
+[0.944s] creating /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm
+[0.944s] creating /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.944s] copying description/arm/meshes/bracelet_with_vision_link.obj -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.952s] copying description/arm/meshes/bicep_link.STL -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.954s] copying description/arm/meshes/spherical_wrist_2_link.STL -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.955s] copying description/arm/meshes/bracelet_no_vision_link.obj -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.959s] copying description/arm/meshes/bracelet_with_vision_link.STL -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.963s] copying description/arm/meshes/base_link.obj -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.964s] copying description/arm/meshes/shoulder_link.obj -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.966s] copying description/arm/meshes/forearm_link.STL -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.967s] copying description/arm/meshes/spherical_wrist_2_link.obj -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.968s] copying description/arm/meshes/spherical_wrist_1_link.obj -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.970s] copying description/arm/meshes/forearm_link.obj -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.971s] copying description/arm/meshes/bicep_link.obj -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.974s] copying description/arm/meshes/shoulder_link.STL -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.975s] copying description/arm/meshes/bracelet_no_vision_link.STL -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.977s] copying description/arm/meshes/spherical_wrist_1_link.STL -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.978s] copying description/arm/meshes/base_link.STL -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.979s] creating /home/rolling_ws/install/antworker_description/share/antworker_description/description/base
+[0.979s] creating /home/rolling_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.979s] copying description/base/meshes/body.stl -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.980s] copying description/base/meshes/antworker_chassis_collision.stl -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.980s] copying description/base/meshes/wheel_b.dae -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.981s] copying description/base/meshes/antworker_chassis.dae -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.985s] copying description/base/meshes/worker_chassis.stl -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.989s] copying description/base/meshes/wheel_a.dae -> /home/rolling_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.990s] running install_egg_info
+[1.003s] Copying ../../build/antworker_description/antworker_description.egg-info to /home/rolling_ws/install/antworker_description/lib/python3.12/site-packages/antworker_description-0.0.0-py3.12.egg-info
+[1.004s] running install_scripts
+[1.094s] writing list of installed files to '/home/rolling_ws/build/antworker_description/install.log'
+[1.114s] Invoked command in '/home/rolling_ws/src/antworker_description' returned '0': PYTHONPATH=/home/rolling_ws/build/antworker_description/prefix_override:/home/rolling_ws/install/antworker_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_description build --build-base /home/rolling_ws/build/antworker_description/build install --record /home/rolling_ws/build/antworker_description/install.log --single-version-externally-managed install_data

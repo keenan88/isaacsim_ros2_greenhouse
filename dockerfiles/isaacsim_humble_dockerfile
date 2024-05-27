@@ -39,4 +39,4 @@ RUN apt install vim -y
 
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
-ENV FASTRTPS_DEFAULT_PROFILES_FILE=/root/.ros/fastdds.xml
+ENV FASTRTPS_DEFAULT_PROFILES_FILE=/root/.ros/fastdds.xml 

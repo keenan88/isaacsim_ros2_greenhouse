@@ -1,5 +1,6 @@
 #!/bin/bash
 
-source /opt/ros/rolling/setup.bash
+source /opt/ros/jazzy/setup.bash
+gnome-terminal
 
 bash

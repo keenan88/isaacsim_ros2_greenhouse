@@ -1,0 +1,34 @@
+[0.000000] (-) TimerEvent: {}
+[0.000574] (-) JobUnselected: {'identifier': 'antworker_isaacsim_world'}
+[0.000662] (-) JobUnselected: {'identifier': 'antworker_navigation'}
+[0.000696] (moveit_rolling_humble_interface) JobQueued: {'identifier': 'moveit_rolling_humble_interface', 'dependencies': OrderedDict()}
+[0.000723] (moveit_rolling_humble_interface) JobStarted: {'identifier': 'moveit_rolling_humble_interface'}
+[0.099795] (-) TimerEvent: {}
+[0.200034] (-) TimerEvent: {}
+[0.300262] (-) TimerEvent: {}
+[0.400520] (-) TimerEvent: {}
+[0.401797] (moveit_rolling_humble_interface) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/moveit_rolling_humble_interface', 'build', '--build-base', '/home/humble_ws/build/moveit_rolling_humble_interface/build', 'install', '--record', '/home/humble_ws/build/moveit_rolling_humble_interface/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/humble_ws/src/moveit_rolling_humble_interface', 'env': {'HOSTNAME': 'b20f4efa18d3', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/home/humble_ws', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/home/humble_ws/build/moveit_rolling_humble_interface', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/humble_ws/build/moveit_rolling_humble_interface/prefix_override:/home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.500637] (-) TimerEvent: {}
+[0.569168] (moveit_rolling_humble_interface) StdoutLine: {'line': b'running egg_info\n'}
+[0.569594] (moveit_rolling_humble_interface) StdoutLine: {'line': b'writing ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/PKG-INFO\n'}
+[0.569783] (moveit_rolling_humble_interface) StdoutLine: {'line': b'writing dependency_links to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/dependency_links.txt\n'}
+[0.569927] (moveit_rolling_humble_interface) StdoutLine: {'line': b'writing entry points to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/entry_points.txt\n'}
+[0.570055] (moveit_rolling_humble_interface) StdoutLine: {'line': b'writing requirements to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/requires.txt\n'}
+[0.570178] (moveit_rolling_humble_interface) StdoutLine: {'line': b'writing top-level names to ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/top_level.txt\n'}
+[0.571284] (moveit_rolling_humble_interface) StdoutLine: {'line': b"reading manifest file '../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/SOURCES.txt'\n"}
+[0.571980] (moveit_rolling_humble_interface) StdoutLine: {'line': b"writing manifest file '../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info/SOURCES.txt'\n"}
+[0.572087] (moveit_rolling_humble_interface) StdoutLine: {'line': b'running build\n'}
+[0.572149] (moveit_rolling_humble_interface) StdoutLine: {'line': b'running build_py\n'}
+[0.572287] (moveit_rolling_humble_interface) StdoutLine: {'line': b'running install\n'}
+[0.572507] (moveit_rolling_humble_interface) StdoutLine: {'line': b'running install_lib\n'}
+[0.573395] (moveit_rolling_humble_interface) StdoutLine: {'line': b'running install_data\n'}
+[0.573509] (moveit_rolling_humble_interface) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.574619] (moveit_rolling_humble_interface) StdoutLine: {'line': b"removing '/home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages/moveit_rolling_humble_interface-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.574936] (moveit_rolling_humble_interface) StdoutLine: {'line': b'Copying ../../build/moveit_rolling_humble_interface/moveit_rolling_humble_interface.egg-info to /home/humble_ws/install/moveit_rolling_humble_interface/lib/python3.10/site-packages/moveit_rolling_humble_interface-0.0.0-py3.10.egg-info\n'}
+[0.575822] (moveit_rolling_humble_interface) StdoutLine: {'line': b'running install_scripts\n'}
+[0.590846] (moveit_rolling_humble_interface) StdoutLine: {'line': b'Installing joint_state_translater script to /home/humble_ws/install/moveit_rolling_humble_interface/lib/moveit_rolling_humble_interface\n'}
+[0.591155] (moveit_rolling_humble_interface) StdoutLine: {'line': b"writing list of installed files to '/home/humble_ws/build/moveit_rolling_humble_interface/install.log'\n"}
+[0.600745] (-) TimerEvent: {}
+[0.609282] (moveit_rolling_humble_interface) CommandEnded: {'returncode': 0}
+[0.617120] (moveit_rolling_humble_interface) JobEnded: {'identifier': 'moveit_rolling_humble_interface', 'rc': 0}
+[0.617677] (-) EventReactorShutdown: {}
