@@ -18,7 +18,7 @@ class KinovaArmActionServer(Node):
             goal_callback=self.goal_callback,
             cancel_callback=self.cancel_callback
         )
-        self._publisher = self.create_publisher(JointState, '/joint_commands', 10)
+        self._publisher = self.create_publisher(JointTrajectory, '/joint_trajectory_controller/joint_trajectory', 10)
         self._timer = self.create_timer(1.0, self.timer_callback)
         self._current_joint_states = JointState()
 
@@ -40,20 +40,17 @@ class KinovaArmActionServer(Node):
 
         for point in trajectory.points:
             # Publish joint commands
-            joint_command_msg = JointState()
-            joint_command_msg.header.stamp = self.get_clock().now().to_msg()
-            joint_command_msg.name = trajectory.joint_names
-            joint_command_msg.position = point.positions
+            # joint_command_msg = JointTrajectory()
+            # joint_command_msg.header.stamp = self.get_clock().now().to_msg()
+            # joint_command_msg.joint_names = trajectory.joint_names
+            # joint_command_msg.points = point.positions
 
-            self._publisher.publish(joint_command_msg)
-
-            # Sleep for the duration of the time_from_start
-            sleep(0.1)
+            self._publisher.publish(trajectory)
 
             # Feedback can be provided here
-            feedback_msg.joint_names = trajectory.joint_names
-            feedback_msg.actual.positions = self._current_joint_states.position
-            goal_handle.publish_feedback(feedback_msg)
+            #feedback_msg.joint_names = trajectory.joint_names
+            #feedback_msg.actual.positions = self._current_joint_states.position
+            #goal_handle.publish_feedback(feedback_msg)
 
         goal_handle.succeed()
         result.error_code = FollowJointTrajectory.Result.SUCCESSFUL

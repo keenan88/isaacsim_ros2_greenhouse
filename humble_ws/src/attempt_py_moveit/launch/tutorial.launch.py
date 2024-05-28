@@ -8,9 +8,15 @@ from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument, ExecuteProcess
 from launch.substitutions import LaunchConfiguration
 from moveit_configs_utils import MoveItConfigsBuilder
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+
 
 
 def generate_launch_description():
+
+    use_sim_time = False 
+
     moveit_config = (
         MoveItConfigsBuilder(
             robot_name="antworker", 
@@ -41,7 +47,7 @@ def generate_launch_description():
         output="screen",
         parameters=[
             moveit_config.to_dict(),
-            {"use_sim_time": True}
+            {"use_sim_time": use_sim_time}
         ],
     )
 
@@ -59,7 +65,7 @@ def generate_launch_description():
         parameters=[
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,
-            {"use_sim_time": True}
+            {"use_sim_time": use_sim_time}
         ],
     )
 
@@ -70,7 +76,7 @@ def generate_launch_description():
         output="log",
         arguments=["--frame-id", "kbase_link", "--child-frame-id", "arm_base_link"],
         parameters = [
-            {"use_sim_time": True}
+            {"use_sim_time": use_sim_time}
         ]
     )
 
@@ -83,7 +89,7 @@ def generate_launch_description():
         output="screen",
         parameters=[
             moveit_config.robot_description,
-            {"use_sim_time": True}
+            {"use_sim_time": use_sim_time}
         ],
     )
 
@@ -97,7 +103,7 @@ def generate_launch_description():
         executable="ros2_control_node",
         parameters=[
             ros2_controllers_path,
-            {"use_sim_time": True}
+            {"use_sim_time": use_sim_time}
         ],
         remappings=[
             ("/controller_manager/robot_description", "/robot_description"),
@@ -118,7 +124,7 @@ def generate_launch_description():
                 shell=True,
                 output="log",
                 # parameters = [
-                #     {"use_sim_time": True}
+                #     {"use_sim_time": use_sim_time}
                 # ]
             )
         ]
@@ -130,7 +136,7 @@ def generate_launch_description():
         output="screen",
         parameters=[
             moveit_config.to_dict(),
-            {"use_sim_time": True}
+            {"use_sim_time": use_sim_time}
         ],
         arguments=["--ros-args", "--log-level", "info"],
     )
@@ -140,19 +146,34 @@ def generate_launch_description():
         executable="kinova_joint_action_server",
         output="screen",
         parameters = [
-            {"use_sim_time": True}
+            {"use_sim_time": use_sim_time}
         ]
+    )
+
+    kinova_interface_launch_path = os.path.join(
+        get_package_share_directory('kortex_bringup'), 
+        'launch',
+        'gen3.launch.py'
+    )
+
+    kinova_interface_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(kinova_interface_launch_path),
+        launch_arguments = {
+            'robot_ip': '192.168.1.10',
+            'dof': '6'
+        }.items()
     )
 
     return LaunchDescription(
         [
             moveit_py_node,
-            robot_state_publisher,
-            ros2_control_node,
+            # robot_state_publisher, # the kinova interface launches a robot state publisher node
+            # ros2_control_node,
             rviz_node,
             static_tf,
             move_group_node,
-            kinova_joint_action_server
+            kinova_joint_action_server,
+            kinova_interface_launch
         ]
         # + load_controllers
     )

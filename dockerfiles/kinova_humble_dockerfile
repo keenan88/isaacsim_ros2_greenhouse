@@ -20,9 +20,15 @@ wget
 RUN apt update -y
 RUN apt dist-upgrade -y
 RUN rosdep update -y
-WORKDIR /home/moveit
-RUN rosdep install --from-paths src --ignore-src -r -y
-
+# These are all the packages that are installed by rosdep install --from-paths /home/moveit --ignore-src -r -y
+# But since I cant run that in a dockerfile since the volumes are mounted after image build, 
+# I am just manually installing all the packages here
+RUN apt-get install -y ros-humble-topic-tools
+RUN apt-get install -y ros-humble-ros-testing
+RUN apt-get install -y ros-humble-position-controllers
+RUN apt-get install -y ros-humble-google-benchmark-vendor
+RUN apt-get install -y ros-humble-ament-cmake-google-benchmark
+RUN apt-get install -y ros-humble-stomp
 
 #RUN apt remove ros-humble-moveit* - y
 
@@ -34,6 +40,12 @@ RUN rosdep install --from-paths src --ignore-src -r -y
 
 
 RUN apt install gnome-terminal dbus-x11 -y
+
+RUN apt install ros-humble-kortex-bringup -y 
+RUN apt install ros-humble-kinova-gen3-6dof-robotiq-2f-85-moveit-config -y
+
+RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
+ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 RUN echo "source /home/moveit/install/setup.bash" >> ~/.bashrc 
