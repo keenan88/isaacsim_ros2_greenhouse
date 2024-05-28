@@ -10,6 +10,7 @@ setup.py
 ../../build/attempt_py_moveit/attempt_py_moveit.egg-info/zip-safe
 attempt_py_moveit/__init__.py
 attempt_py_moveit/attempt_motion_planning.py
+attempt_py_moveit/kinova_joint_action_server.py
 config/moveit_py_params.yaml
 config/rviz_config.rviz
 launch/tutorial.launch.py

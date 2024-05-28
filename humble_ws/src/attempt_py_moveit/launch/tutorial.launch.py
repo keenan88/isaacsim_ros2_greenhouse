@@ -39,7 +39,10 @@ def generate_launch_description():
         package="attempt_py_moveit",
         executable="attempt_motion_planning",
         output="screen",
-        parameters=[moveit_config.to_dict()],
+        parameters=[
+            moveit_config.to_dict(),
+            {"use_sim_time": True}
+        ],
     )
 
     rviz_config_file = os.path.join(
@@ -56,6 +59,7 @@ def generate_launch_description():
         parameters=[
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,
+            {"use_sim_time": True}
         ],
     )
 
@@ -65,6 +69,9 @@ def generate_launch_description():
         name="static_transform_publisher",
         output="log",
         arguments=["--frame-id", "kbase_link", "--child-frame-id", "arm_base_link"],
+        parameters = [
+            {"use_sim_time": True}
+        ]
     )
 
     urdf_file = "/home/humble_ws/src/antworker_description/description/combined/worker_with_arm.urdf"
@@ -75,7 +82,8 @@ def generate_launch_description():
         name="robot_state_publisher",
         output="screen",
         parameters=[
-            moveit_config.robot_description
+            moveit_config.robot_description,
+            {"use_sim_time": True}
         ],
     )
 
@@ -87,7 +95,10 @@ def generate_launch_description():
     ros2_control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
-        parameters=[ros2_controllers_path],
+        parameters=[
+            ros2_controllers_path,
+            {"use_sim_time": True}
+        ],
         remappings=[
             ("/controller_manager/robot_description", "/robot_description"),
         ],
@@ -106,6 +117,9 @@ def generate_launch_description():
                 cmd=["ros2 run controller_manager spawner {}".format(controller)],
                 shell=True,
                 output="log",
+                # parameters = [
+                #     {"use_sim_time": True}
+                # ]
             )
         ]
 
@@ -114,8 +128,20 @@ def generate_launch_description():
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
-        parameters=[moveit_config.to_dict()],
+        parameters=[
+            moveit_config.to_dict(),
+            {"use_sim_time": True}
+        ],
         arguments=["--ros-args", "--log-level", "info"],
+    )
+
+    kinova_joint_action_server = Node(
+        package="attempt_py_moveit",
+        executable="kinova_joint_action_server",
+        output="screen",
+        parameters = [
+            {"use_sim_time": True}
+        ]
     )
 
     return LaunchDescription(
@@ -125,7 +151,8 @@ def generate_launch_description():
             ros2_control_node,
             rviz_node,
             static_tf,
-            move_group_node
+            move_group_node,
+            kinova_joint_action_server
         ]
-        + load_controllers
+        # + load_controllers
     )

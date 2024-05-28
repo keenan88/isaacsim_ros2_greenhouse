@@ -1,0 +1,62 @@
+[0.638s] Invoking command in '/home/humble_ws/src/antworker_description': PYTHONPATH=/home/humble_ws/build/antworker_description/prefix_override:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_description build --build-base /home/humble_ws/build/antworker_description/build install --record /home/humble_ws/build/antworker_description/install.log --single-version-externally-managed install_data
+[0.801s] running egg_info
+[0.802s] creating ../../build/antworker_description/antworker_description.egg-info
+[0.802s] writing ../../build/antworker_description/antworker_description.egg-info/PKG-INFO
+[0.802s] writing dependency_links to ../../build/antworker_description/antworker_description.egg-info/dependency_links.txt
+[0.802s] writing entry points to ../../build/antworker_description/antworker_description.egg-info/entry_points.txt
+[0.802s] writing requirements to ../../build/antworker_description/antworker_description.egg-info/requires.txt
+[0.802s] writing top-level names to ../../build/antworker_description/antworker_description.egg-info/top_level.txt
+[0.802s] writing manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'
+[0.803s] reading manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'
+[0.804s] writing manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'
+[0.804s] running build
+[0.804s] running build_py
+[0.804s] creating /home/humble_ws/build/antworker_description/build
+[0.804s] creating /home/humble_ws/build/antworker_description/build/lib
+[0.804s] creating /home/humble_ws/build/antworker_description/build/lib/description
+[0.805s] copying description/__init__.py -> /home/humble_ws/build/antworker_description/build/lib/description
+[0.805s] running install
+[0.805s] running install_lib
+[0.805s] creating /home/humble_ws/install/antworker_description/lib/python3.10/site-packages/description
+[0.805s] copying /home/humble_ws/build/antworker_description/build/lib/description/__init__.py -> /home/humble_ws/install/antworker_description/lib/python3.10/site-packages/description
+[0.805s] byte-compiling /home/humble_ws/install/antworker_description/lib/python3.10/site-packages/description/__init__.py to __init__.cpython-310.pyc
+[0.806s] running install_data
+[0.806s] creating /home/humble_ws/install/antworker_description/share/ament_index
+[0.806s] creating /home/humble_ws/install/antworker_description/share/ament_index/resource_index
+[0.806s] creating /home/humble_ws/install/antworker_description/share/ament_index/resource_index/packages
+[0.806s] copying resource/antworker_description -> /home/humble_ws/install/antworker_description/share/ament_index/resource_index/packages
+[0.806s] copying package.xml -> /home/humble_ws/install/antworker_description/share/antworker_description
+[0.806s] creating /home/humble_ws/install/antworker_description/share/antworker_description/description
+[0.807s] creating /home/humble_ws/install/antworker_description/share/antworker_description/description/combined
+[0.807s] copying description/combined/worker_with_arm.urdf -> /home/humble_ws/install/antworker_description/share/antworker_description/description/combined
+[0.807s] creating /home/humble_ws/install/antworker_description/share/antworker_description/description/arm
+[0.807s] creating /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.807s] copying description/arm/meshes/bracelet_with_vision_link.obj -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.811s] copying description/arm/meshes/bicep_link.STL -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.812s] copying description/arm/meshes/spherical_wrist_2_link.STL -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.813s] copying description/arm/meshes/bracelet_no_vision_link.obj -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.815s] copying description/arm/meshes/bracelet_with_vision_link.STL -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.818s] copying description/arm/meshes/base_link.obj -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.818s] copying description/arm/meshes/shoulder_link.obj -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.819s] copying description/arm/meshes/forearm_link.STL -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.820s] copying description/arm/meshes/spherical_wrist_2_link.obj -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.821s] copying description/arm/meshes/spherical_wrist_1_link.obj -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.822s] copying description/arm/meshes/forearm_link.obj -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.823s] copying description/arm/meshes/bicep_link.obj -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.824s] copying description/arm/meshes/shoulder_link.STL -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.824s] copying description/arm/meshes/bracelet_no_vision_link.STL -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.826s] copying description/arm/meshes/spherical_wrist_1_link.STL -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.827s] copying description/arm/meshes/base_link.STL -> /home/humble_ws/install/antworker_description/share/antworker_description/description/arm/meshes
+[0.827s] creating /home/humble_ws/install/antworker_description/share/antworker_description/description/base
+[0.827s] creating /home/humble_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.827s] copying description/base/meshes/body.stl -> /home/humble_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.828s] copying description/base/meshes/antworker_chassis_collision.stl -> /home/humble_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.828s] copying description/base/meshes/wheel_b.dae -> /home/humble_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.828s] copying description/base/meshes/antworker_chassis.dae -> /home/humble_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.831s] copying description/base/meshes/worker_chassis.stl -> /home/humble_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.833s] copying description/base/meshes/wheel_a.dae -> /home/humble_ws/install/antworker_description/share/antworker_description/description/base/meshes
+[0.833s] running install_egg_info
+[0.835s] Copying ../../build/antworker_description/antworker_description.egg-info to /home/humble_ws/install/antworker_description/lib/python3.10/site-packages/antworker_description-0.0.0-py3.10.egg-info
+[0.836s] running install_scripts
+[0.852s] writing list of installed files to '/home/humble_ws/build/antworker_description/install.log'
+[0.868s] Invoked command in '/home/humble_ws/src/antworker_description' returned '0': PYTHONPATH=/home/humble_ws/build/antworker_description/prefix_override:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_description build --build-base /home/humble_ws/build/antworker_description/build install --record /home/humble_ws/build/antworker_description/install.log --single-version-externally-managed install_data

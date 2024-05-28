@@ -24,7 +24,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'attempt_motion_planning = attempt_py_moveit.attempt_motion_planning:main'
+            'attempt_motion_planning = attempt_py_moveit.attempt_motion_planning:main',
+            'kinova_joint_action_server = attempt_py_moveit.kinova_joint_action_server:main',
         ],
     },
 )

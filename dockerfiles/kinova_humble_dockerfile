@@ -20,8 +20,11 @@ wget
 RUN apt update -y
 RUN apt dist-upgrade -y
 RUN rosdep update -y
+WORKDIR /home/moveit
+RUN rosdep install --from-paths src --ignore-src -r -y
 
-RUN apt remove ros-humble-moveit* - y
+
+#RUN apt remove ros-humble-moveit* - y
 
 
 # Packages for Kinova & Moveit, documentation: https://github.com/Kinovarobotics/ros2_kortex
@@ -32,5 +35,5 @@ RUN apt remove ros-humble-moveit* - y
 
 RUN apt install gnome-terminal dbus-x11 -y
 
-
-RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc 
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN echo "source /home/moveit/install/setup.bash" >> ~/.bashrc 
