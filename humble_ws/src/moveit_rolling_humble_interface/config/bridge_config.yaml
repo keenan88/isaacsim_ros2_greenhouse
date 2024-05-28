@@ -1,0 +1,12 @@
+# Name of the domain bridge, used for node naming and logging
+name: humble_jazzy_bridge
+topics:
+  # joint_commands:
+  #   type: sensor_msgs/msg/JointState
+  #   from_domain: 2
+  #   to_domain: 1
+
+  joint_states:
+    type: sensor_msgs/msg/JointState
+    from_domain: 1
+    to_domain: 2

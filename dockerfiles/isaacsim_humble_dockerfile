@@ -40,3 +40,6 @@ RUN apt install vim -y
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
 ENV FASTRTPS_DEFAULT_PROFILES_FILE=/root/.ros/fastdds.xml 
+
+# Domain ID 1 is humble, 2 is jazzy
+ENV ROS_DOMAIN_ID=1

@@ -1,0 +1,68 @@
+[0.022s] Invoking command in '/home/moveit/build/moveit_ros_move_group': AMENT_PREFIX_PATH=/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_fanuc_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_fanuc_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moveit/build/moveit_ros_move_group -- -j16 -l16
+[0.073s] [35m[1mConsolidate compiler generated dependencies of target moveit_move_group_capabilities_base[0m
+[0.116s] [ 15%] Built target moveit_move_group_capabilities_base
+[0.140s] [ 26%] [32mBuilding CXX object CMakeFiles/list_move_group_capabilities.dir/src/list_capabilities.cpp.o[0m
+[0.140s] [ 31%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/apply_planning_scene_service_capability.cpp.o[0m
+[0.140s] [ 31%] [32mBuilding CXX object CMakeFiles/move_group.dir/src/move_group.cpp.o[0m
+[0.140s] [ 36%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/cartesian_path_service_capability.cpp.o[0m
+[0.140s] [ 42%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/clear_octomap_service_capability.cpp.o[0m
+[0.141s] [ 47%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/get_planning_scene_service_capability.cpp.o[0m
+[0.141s] [ 52%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/execute_trajectory_action_capability.cpp.o[0m
+[0.142s] [ 57%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/kinematics_service_capability.cpp.o[0m
+[0.142s] [ 63%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/move_action_capability.cpp.o[0m
+[0.142s] [ 68%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/plan_service_capability.cpp.o[0m
+[0.142s] [ 78%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/state_validation_service_capability.cpp.o[0m
+[0.142s] [ 78%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/query_planners_service_capability.cpp.o[0m
+[0.143s] [ 84%] [32mBuilding CXX object CMakeFiles/moveit_move_group_default_capabilities.dir/src/default_capabilities/tf_publisher_capability.cpp.o[0m
+[20.872s] [ 89%] [32m[1mLinking CXX executable list_move_group_capabilities[0m
+[21.146s] [ 89%] Built target list_move_group_capabilities
+[21.815s] [ 94%] [32m[1mLinking CXX executable move_group[0m
+[22.060s] [100%] [32m[1mLinking CXX shared library libmoveit_move_group_default_capabilities.so[0m
+[22.114s] [100%] Built target move_group
+[22.374s] [100%] Built target moveit_move_group_default_capabilities
+[22.470s] Invoked command in '/home/moveit/build/moveit_ros_move_group' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_fanuc_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_fanuc_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moveit/build/moveit_ros_move_group -- -j16 -l16
+[22.556s] Invoking command in '/home/moveit/build/moveit_ros_move_group': AMENT_PREFIX_PATH=/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_fanuc_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_fanuc_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/moveit/build/moveit_ros_move_group
+[22.560s] -- Install configuration: "Release"
+[22.561s] -- Installing: /home/moveit/install/moveit_ros_move_group/lib/moveit_ros_move_group/move_group
+[22.562s] -- Set runtime path of "/home/moveit/install/moveit_ros_move_group/lib/moveit_ros_move_group/move_group" to ""
+[22.562s] -- Installing: /home/moveit/install/moveit_ros_move_group/lib/moveit_ros_move_group/list_move_group_capabilities
+[22.562s] -- Set runtime path of "/home/moveit/install/moveit_ros_move_group/lib/moveit_ros_move_group/list_move_group_capabilities" to ""
+[22.563s] -- Installing: /home/moveit/install/moveit_ros_move_group/lib/libmoveit_move_group_default_capabilities.so.2.9.0
+[22.565s] -- Set runtime path of "/home/moveit/install/moveit_ros_move_group/lib/libmoveit_move_group_default_capabilities.so.2.9.0" to ""
+[22.565s] -- Installing: /home/moveit/install/moveit_ros_move_group/lib/libmoveit_move_group_default_capabilities.so
+[22.565s] -- Installing: /home/moveit/install/moveit_ros_move_group/lib/libmoveit_move_group_capabilities_base.so.2.9.0
+[22.566s] -- Set runtime path of "/home/moveit/install/moveit_ros_move_group/lib/libmoveit_move_group_capabilities_base.so.2.9.0" to ""
+[22.566s] -- Installing: /home/moveit/install/moveit_ros_move_group/lib/libmoveit_move_group_capabilities_base.so
+[22.566s] -- Installing: /home/moveit/install/moveit_ros_move_group/include/moveit_ros_move_group
+[22.566s] -- Installing: /home/moveit/install/moveit_ros_move_group/include/moveit_ros_move_group/moveit
+[22.566s] -- Installing: /home/moveit/install/moveit_ros_move_group/include/moveit_ros_move_group/moveit/move_group
+[22.566s] -- Installing: /home/moveit/install/moveit_ros_move_group/include/moveit_ros_move_group/moveit/move_group/move_group_context.h
+[22.566s] -- Installing: /home/moveit/install/moveit_ros_move_group/include/moveit_ros_move_group/moveit/move_group/capability_names.h
+[22.567s] -- Installing: /home/moveit/install/moveit_ros_move_group/include/moveit_ros_move_group/moveit/move_group/move_group_capability.h
+[22.567s] -- Installing: /home/moveit/install/moveit_ros_move_group/lib/moveit_ros_move_group/load_map
+[22.568s] -- Installing: /home/moveit/install/moveit_ros_move_group/lib/moveit_ros_move_group/save_map
+[22.568s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/default_capabilities_plugin_description.xml
+[22.568s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/environment/library_path.sh
+[22.569s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/environment/library_path.dsv
+[22.569s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/ament_index/resource_index/package_run_dependencies/moveit_ros_move_group
+[22.570s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/ament_index/resource_index/parent_prefix_path/moveit_ros_move_group
+[22.570s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/environment/ament_prefix_path.sh
+[22.570s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/environment/ament_prefix_path.dsv
+[22.571s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/environment/path.sh
+[22.571s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/environment/path.dsv
+[22.571s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/local_setup.bash
+[22.571s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/local_setup.sh
+[22.571s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/local_setup.zsh
+[22.572s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/local_setup.dsv
+[22.572s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/package.dsv
+[22.572s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/ament_index/resource_index/packages/moveit_ros_move_group
+[22.572s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/ament_index/resource_index/moveit_ros_move_group__pluginlib__plugin/moveit_ros_move_group
+[22.573s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/cmake/moveit_ros_move_groupTargetsExport.cmake
+[22.573s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/cmake/moveit_ros_move_groupTargetsExport-release.cmake
+[22.574s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/cmake/ConfigExtras.cmake
+[22.574s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/cmake/ament_cmake_export_targets-extras.cmake
+[22.574s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.575s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/cmake/moveit_ros_move_groupConfig.cmake
+[22.575s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/cmake/moveit_ros_move_groupConfig-version.cmake
+[22.575s] -- Installing: /home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/package.xml
+[22.592s] Invoked command in '/home/moveit/build/moveit_ros_move_group' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_fanuc_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_fanuc_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/moveit/build/moveit_ros_move_group

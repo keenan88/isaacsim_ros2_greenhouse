@@ -16,4 +16,7 @@ RUN apt-get update
 RUN apt install ros-jazzy-rmw-fastrtps-dynamic-cpp --fix-missing -y
 ENV RMW_IMPLEMENTATION=rmw_fastrtps_dynamic_cpp
 
+# Domain ID 1 is humble, 2 is jazzy
+ENV ROS_DOMAIN_ID=2
+
 RUN echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc 

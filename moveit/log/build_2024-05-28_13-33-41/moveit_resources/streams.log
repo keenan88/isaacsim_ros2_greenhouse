@@ -1,0 +1,39 @@
+[0.009s] Invoking command in '/home/moveit/build/moveit_resources': AMENT_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake /home/moveit/src/moveit_resources/moveit_resources -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/moveit_resources
+[0.057s] -- The C compiler identification is GNU 11.4.0
+[0.104s] -- The CXX compiler identification is GNU 11.4.0
+[0.110s] -- Detecting C compiler ABI info
+[0.173s] -- Detecting C compiler ABI info - done
+[0.178s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.178s] -- Detecting C compile features
+[0.179s] -- Detecting C compile features - done
+[0.181s] -- Detecting CXX compiler ABI info
+[0.253s] -- Detecting CXX compiler ABI info - done
+[0.258s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.258s] -- Detecting CXX compile features
+[0.259s] -- Detecting CXX compile features - done
+[0.264s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.386s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.530s] -- Configuring done
+[0.533s] -- Generating done
+[0.533s] -- Build files have been written to: /home/moveit/build/moveit_resources
+[0.537s] Invoked command in '/home/moveit/build/moveit_resources' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake /home/moveit/src/moveit_resources/moveit_resources -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/moveit_resources
+[0.538s] Invoking command in '/home/moveit/build/moveit_resources': AMENT_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake --build /home/moveit/build/moveit_resources -- -j16 -l16
+[0.574s] Invoked command in '/home/moveit/build/moveit_resources' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake --build /home/moveit/build/moveit_resources -- -j16 -l16
+[0.596s] Invoking command in '/home/moveit/build/moveit_resources': AMENT_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake --install /home/moveit/build/moveit_resources
+[0.603s] -- Install configuration: "Release"
+[0.603s] -- Installing: /home/moveit/install/moveit_resources/share/ament_index/resource_index/package_run_dependencies/moveit_resources
+[0.604s] -- Installing: /home/moveit/install/moveit_resources/share/ament_index/resource_index/parent_prefix_path/moveit_resources
+[0.604s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/environment/ament_prefix_path.sh
+[0.604s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/environment/ament_prefix_path.dsv
+[0.604s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/environment/path.sh
+[0.604s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/environment/path.dsv
+[0.605s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/local_setup.bash
+[0.605s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/local_setup.sh
+[0.605s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/local_setup.zsh
+[0.605s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/local_setup.dsv
+[0.606s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/package.dsv
+[0.606s] -- Installing: /home/moveit/install/moveit_resources/share/ament_index/resource_index/packages/moveit_resources
+[0.606s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/cmake/moveit_resourcesConfig.cmake
+[0.606s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/cmake/moveit_resourcesConfig-version.cmake
+[0.606s] -- Installing: /home/moveit/install/moveit_resources/share/moveit_resources/package.xml
+[0.608s] Invoked command in '/home/moveit/build/moveit_resources' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_fanuc_moveit_config:/home/moveit/install/moveit_resources_pr2_description:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake --install /home/moveit/build/moveit_resources

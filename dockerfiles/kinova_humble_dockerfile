@@ -1,0 +1,36 @@
+FROM osrf/ros:humble-desktop
+
+RUN apt-get update
+RUN apt install vim -y
+
+# Instructions for installing Moveit2 from source:
+# https://moveit.ros.org/install-moveit2/source/
+
+RUN apt install -y \
+build-essential \
+cmake \
+git \
+python3-colcon-common-extensions \
+python3-flake8 \
+python3-rosdep \
+python3-setuptools \
+python3-vcstool \
+wget
+
+RUN apt update -y
+RUN apt dist-upgrade -y
+RUN rosdep update -y
+
+RUN apt remove ros-humble-moveit* - y
+
+
+# Packages for Kinova & Moveit, documentation: https://github.com/Kinovarobotics/ros2_kortex
+#RUN apt install ros-humble-kortex-bringup -y
+#RUN apt install ros-humble-kinova-gen3-6dof-robotiq-2f-85-moveit-config -y
+#RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
+
+
+RUN apt install gnome-terminal dbus-x11 -y
+
+
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc 

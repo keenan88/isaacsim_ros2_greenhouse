@@ -10,7 +10,10 @@ RUN apt install gnome-terminal dbus-x11 -y
 #RUN apt install ros-humble-rmw-fastrtps-cpp -y
 #ENV RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 
+RUN apt install ros-humble-domain-bridge -y
 
+# Domain ID 1 is humble, 2 is jazzy
+ENV ROS_DOMAIN_ID=1
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
 

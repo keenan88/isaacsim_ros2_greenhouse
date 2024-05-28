@@ -1,0 +1,4 @@
+Invoking command in '/home/moveit/build/moveit_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/moveit/src/moveit_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/moveit_msgs
+Invoked command in '/home/moveit/build/moveit_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/moveit/src/moveit_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/moveit_msgs
+Invoking command in '/home/moveit/build/moveit_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/moveit/build/moveit_msgs -- -j16 -l16
+Invoked command in '/home/moveit/build/moveit_msgs' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/moveit/build/moveit_msgs -- -j16 -l16

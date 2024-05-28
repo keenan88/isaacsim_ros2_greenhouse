@@ -1,0 +1,65 @@
+[0.018s] Invoking command in '/home/moveit/build/moveit_resources_panda_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/moveit/src/moveit_resources/panda_description -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/moveit_resources_panda_description
+[0.155s] -- The C compiler identification is GNU 11.4.0
+[0.293s] -- The CXX compiler identification is GNU 11.4.0
+[0.321s] -- Detecting C compiler ABI info
+[0.501s] -- Detecting C compiler ABI info - done
+[0.517s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.518s] -- Detecting C compile features
+[0.518s] -- Detecting C compile features - done
+[0.526s] -- Detecting CXX compiler ABI info
+[0.723s] -- Detecting CXX compiler ABI info - done
+[0.740s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.741s] -- Detecting CXX compile features
+[0.742s] -- Detecting CXX compile features - done
+[0.754s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.106s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.507s] -- Configuring done
+[1.515s] -- Generating done
+[1.517s] -- Build files have been written to: /home/moveit/build/moveit_resources_panda_description
+[1.526s] Invoked command in '/home/moveit/build/moveit_resources_panda_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/moveit/src/moveit_resources/panda_description -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/moveit_resources_panda_description
+[1.529s] Invoking command in '/home/moveit/build/moveit_resources_panda_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/moveit/build/moveit_resources_panda_description -- -j16 -l16
+[1.623s] Invoked command in '/home/moveit/build/moveit_resources_panda_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/moveit/build/moveit_resources_panda_description -- -j16 -l16
+[1.680s] Invoking command in '/home/moveit/build/moveit_resources_panda_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/moveit/build/moveit_resources_panda_description
+[1.698s] -- Install configuration: "Release"
+[1.699s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/ament_index/resource_index/package_run_dependencies/moveit_resources_panda_description
+[1.699s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/ament_index/resource_index/parent_prefix_path/moveit_resources_panda_description
+[1.700s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/ament_prefix_path.sh
+[1.701s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/ament_prefix_path.dsv
+[1.701s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/path.sh
+[1.702s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/path.dsv
+[1.702s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.bash
+[1.703s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.sh
+[1.704s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.zsh
+[1.704s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.dsv
+[1.705s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.dsv
+[1.705s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/ament_index/resource_index/packages/moveit_resources_panda_description
+[1.706s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig.cmake
+[1.707s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig-version.cmake
+[1.707s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.xml
+[1.708s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes
+[1.708s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual
+[1.708s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link5.dae
+[1.714s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/finger.dae
+[1.715s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/hand.dae
+[1.717s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link3.dae
+[1.722s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link1.dae
+[1.726s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link7.dae
+[1.730s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link0.dae
+[1.736s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link4.dae
+[1.741s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link6.dae
+[1.748s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link2.dae
+[1.752s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision
+[1.753s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link7.stl
+[1.753s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link4.stl
+[1.754s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link2.stl
+[1.754s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/hand.stl
+[1.755s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/finger.stl
+[1.755s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link5.stl
+[1.756s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link0.stl
+[1.756s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link3.stl
+[1.757s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link6.stl
+[1.757s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link1.stl
+[1.758s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/urdf
+[1.758s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/urdf/panda.urdf
+[1.759s] -- Installing: /home/moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/urdf/panda.urdf.xacro
+[1.763s] Invoked command in '/home/moveit/build/moveit_resources_panda_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/moveit/build/moveit_resources_panda_description
