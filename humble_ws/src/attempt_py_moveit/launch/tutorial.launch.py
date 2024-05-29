@@ -80,6 +80,17 @@ def generate_launch_description():
         ]
     )
 
+    static_tf_2 = Node(
+        package="tf2_ros",
+        executable="static_transform_publisher",
+        name="static_transform_publisher",
+        output="log",
+        arguments=["--frame-id", "kbase_link", "--child-frame-id", "camera_link"],
+        parameters = [
+            {"use_sim_time": use_sim_time}
+        ]
+    )
+
     urdf_file = "/home/humble_ws/src/antworker_description/description/combined/worker_with_arm.urdf"
 
     robot_state_publisher = Node(
@@ -164,6 +175,12 @@ def generate_launch_description():
         }.items()
     )
 
+    realsense_node = Node(
+        package="realsense2_camera",
+        executable="realsense2_camera_node",
+        output="screen"
+    )
+
     return LaunchDescription(
         [
             moveit_py_node,
@@ -171,9 +188,11 @@ def generate_launch_description():
             # ros2_control_node,
             rviz_node,
             static_tf,
+            static_tf_2,
             move_group_node,
             kinova_joint_action_server,
-            kinova_interface_launch
+            kinova_interface_launch,
+            realsense_node
         ]
         # + load_controllers
     )
