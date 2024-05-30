@@ -95,6 +95,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ./kortex_ws:/home/kortex_ws:rw
+      - ./humble_ws:/home/humble_ws:rw
     network_mode: "host"
     privileged: true
     working_dir: /home/kortex_ws

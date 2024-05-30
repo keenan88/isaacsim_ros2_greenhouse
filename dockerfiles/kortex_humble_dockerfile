@@ -38,11 +38,11 @@ RUN apt-get install -y ros-humble-moveit-setup-assistant
 RUN apt-get install -y pip
 RUN pip install setuptools==58.2.0
 
-
 # Reccomended DDS for moveit is cyclone
 RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
+RUN apt-get install ros-humble-domain-bridge -y
 ENV ROS_DOMAIN_ID=2
 
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc 

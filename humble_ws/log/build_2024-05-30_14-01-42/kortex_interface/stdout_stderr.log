@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/kortex_interface/kortex_interface.egg-info/PKG-INFO
+writing dependency_links to ../../build/kortex_interface/kortex_interface.egg-info/dependency_links.txt
+writing entry points to ../../build/kortex_interface/kortex_interface.egg-info/entry_points.txt
+writing requirements to ../../build/kortex_interface/kortex_interface.egg-info/requires.txt
+writing top-level names to ../../build/kortex_interface/kortex_interface.egg-info/top_level.txt
+reading manifest file '../../build/kortex_interface/kortex_interface.egg-info/SOURCES.txt'
+writing manifest file '../../build/kortex_interface/kortex_interface.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying config/kortex_domain_bridge.yaml -> /home/humble_ws/install/kortex_interface/share/kortex_interface/config
+running install_egg_info
+removing '/home/humble_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/kortex_interface/kortex_interface.egg-info to /home/humble_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface-0.0.0-py3.10.egg-info
+running install_scripts
+Installing joint_pruner script to /home/humble_ws/install/kortex_interface/lib/kortex_interface
+writing list of installed files to '/home/humble_ws/build/kortex_interface/install.log'
