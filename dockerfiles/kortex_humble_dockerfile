@@ -45,4 +45,5 @@ ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 RUN apt-get install ros-humble-domain-bridge -y
 ENV ROS_DOMAIN_ID=2
 
-RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc 
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN echo "source /home/kortex_ws/install/setup.bash" >> ~/.bashrc 

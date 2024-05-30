@@ -15,10 +15,11 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
 
-    is_simulation = os.getenv('IS_SIM', True)
+    is_simulation = os.getenv('USE_SIM')
     if is_simulation == 'False': is_simulation = False
     else: is_simulation = True
 
+    
     moveit_config = (
         MoveItConfigsBuilder(
             robot_name="antworker", 
@@ -189,6 +190,8 @@ def generate_launch_description():
         base_to_arm_static_tf,
         rviz_node
     ] + load_controllers
+
+
 
     launch_content = simulation_launch if is_simulation else hardware_launch_description
 

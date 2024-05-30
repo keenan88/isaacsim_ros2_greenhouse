@@ -1,0 +1,15 @@
+
+name: domain_bridge
+from_domain: 2
+to_domain: 1
+topics:
+  joint_states_without_robotiq_gripper:
+    type: sensor_msgs/msg/JointState
+    from_domain: 2
+    to_domain: 1
+    remap: joint_states
+
+  joint_trajectory_controller/joint_trajectory:
+    type: trajectory_msgs/msg/JointTrajectory 
+    from_domain: 1
+    to_domain: 2

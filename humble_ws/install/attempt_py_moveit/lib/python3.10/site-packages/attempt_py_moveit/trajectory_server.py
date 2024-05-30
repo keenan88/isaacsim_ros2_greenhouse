@@ -47,7 +47,7 @@ class KinovaArmActionServer(Node):
 
             self._publisher.publish(trajectory)
 
-            sleep(0.1)
+            #sleep(0.1)
 
             # Feedback can be provided here
             #feedback_msg.joint_names = trajectory.joint_names
