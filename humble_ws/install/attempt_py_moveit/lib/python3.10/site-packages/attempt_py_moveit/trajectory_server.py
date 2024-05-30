@@ -47,6 +47,8 @@ class KinovaArmActionServer(Node):
 
             self._publisher.publish(trajectory)
 
+            sleep(0.1)
+
             # Feedback can be provided here
             #feedback_msg.joint_names = trajectory.joint_names
             #feedback_msg.actual.positions = self._current_joint_states.position

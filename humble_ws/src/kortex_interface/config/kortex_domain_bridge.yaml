@@ -9,5 +9,11 @@ topics:
     to_domain: 1
     remap: joint_states
 
+  joint_states_without_robotiq_gripper:
+    type: sensor_msgs/msg/JointState
+    from_domain: 2
+    to_domain: 1
+    remap: joint_trajectory_controller/joint_trajectory
+
 
 

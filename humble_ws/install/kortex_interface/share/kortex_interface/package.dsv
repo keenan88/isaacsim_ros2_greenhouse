@@ -1,6 +1,0 @@
-source;share/kortex_interface/hook/pythonpath.ps1
-source;share/kortex_interface/hook/pythonpath.dsv
-source;share/kortex_interface/hook/pythonpath.sh
-source;share/kortex_interface/hook/ament_prefix_path.ps1
-source;share/kortex_interface/hook/ament_prefix_path.dsv
-source;share/kortex_interface/hook/ament_prefix_path.sh

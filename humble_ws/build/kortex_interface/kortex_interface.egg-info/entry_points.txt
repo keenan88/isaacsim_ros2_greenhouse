@@ -1,3 +1,0 @@
-[console_scripts]
-joint_pruner = kortex_interface.joint_pruner:main
-

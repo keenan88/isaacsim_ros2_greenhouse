@@ -62,4 +62,4 @@ RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-#RUN echo "source /home/moveit/install/setup.bash" >> ~/.bashrc 
+RUN echo "source /home/moveit/install/setup.bash" >> ~/.bashrc 

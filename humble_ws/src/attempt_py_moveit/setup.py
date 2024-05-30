@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'ee_point_server = attempt_py_moveit.ee_point_server:main',
             'trajectory_server = attempt_py_moveit.trajectory_server:main',
+            'trajectory_server_sim = attempt_py_moveit.trajectory_server_sim:main',
         ],
     },
 )

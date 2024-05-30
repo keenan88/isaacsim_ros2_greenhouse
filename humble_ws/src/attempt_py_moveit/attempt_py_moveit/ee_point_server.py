@@ -19,10 +19,9 @@ from moveit.planning import (
 import rclpy
 from rclpy.node import Node
 
-class EmptyNode(Node):
+class PointServer(Node):
     def __init__(self):
-        super().__init__('empty_node')
-        self.get_logger().info('Empty node has been started.')
+        super().__init__('PointServer')
 
         self.logger = get_logger("moveit_py.pose_goal")
 
@@ -101,7 +100,7 @@ class EmptyNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = EmptyNode()
+    node = PointServer()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()

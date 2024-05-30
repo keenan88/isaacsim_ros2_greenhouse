@@ -62,7 +62,7 @@ def generate_launch_description():
         package="rviz2",
         executable="rviz2",
         name="rviz2",
-        output="log",
+        output="screen",
         arguments=["-d", rviz_config_file],
         parameters=[
             moveit_config.robot_description,
@@ -75,7 +75,7 @@ def generate_launch_description():
         package="tf2_ros",
         executable="static_transform_publisher",
         name="static_transform_publisher",
-        output="log",
+        output="screen",
         arguments=["--frame-id", "kbase_link", "--child-frame-id", "arm_base_link"],
         parameters = [
             {"use_sim_time": is_simulation}
@@ -109,19 +109,19 @@ def generate_launch_description():
         remappings=[
             ("/controller_manager/robot_description", "/robot_description"),
         ],
-        output="log",
+        output="screen",
     )
 
     load_controllers = []
     for controller in [
         "kinova_arm_controller",
-        "joint_state_broadcaster",
+        # "joint_state_broadcaster",
     ]:
         load_controllers += [
             ExecuteProcess(
                 cmd=["ros2 run controller_manager spawner {}".format(controller)],
                 shell=True,
-                output="log"
+                output="screen"
             )
         ]
 
@@ -136,7 +136,7 @@ def generate_launch_description():
         arguments=["--ros-args", "--log-level", "info"],
     )
 
-    trajectory_server = Node(
+    trajectory_server_hardware = Node(
         package="attempt_py_moveit",
         executable="trajectory_server",
         output="screen",
@@ -145,34 +145,26 @@ def generate_launch_description():
         ]
     )
 
-    # kinova_interface_launch = IncludeLaunchDescription(
-    #     PythonLaunchDescriptionSource(
-    #         os.path.join(
-    #             get_package_share_directory('kortex_bringup'), 
-    #             'launch',
-    #             'gen3.launch.py'
-    #         )
-    #     ),
-    #     launch_arguments = {
-    #         'robot_ip': '192.168.1.10',
-    #         'dof': '6',
-    #         'launch_rviz': "false",
-    #         # "gripper": "No_gripper", # Leave blank for no gripper
-    #         # "gripper_joint_name": "No_gripper" # Leave blank for no gripper joint
-    #     }.items()
-    # )
-
-    realsense_node = Node(
-        package="realsense2_camera",
-        executable="realsense2_camera_node",
-        output="screen"
+    trajectory_server_sim = Node(
+        package="attempt_py_moveit",
+        executable="trajectory_server_sim",
+        output="screen",
+        parameters = [
+            {"use_sim_time": is_simulation}
+        ]
     )
 
-    static_tf_2 = Node(
+    # realsense_node = Node(
+    #     package="realsense2_camera",
+    #     executable="realsense2_camera_node",
+    #     output="screen"
+    # )
+
+    static_tf_camera = Node(
         package="tf2_ros",
         executable="static_transform_publisher",
         name="static_transform_publisher",
-        output="log",
+        output="screen",
         arguments=["--frame-id", "kbase_link", "--child-frame-id", "camera_link"],
         parameters = [
             {"use_sim_time": is_simulation}
@@ -182,26 +174,24 @@ def generate_launch_description():
     hardware_launch_description = [
         ee_point_server, 
         move_group, 
-        trajectory_server, 
-        # kinova_interface_launch, 
+        trajectory_server_hardware, 
         base_to_arm_static_tf,
-        rviz_node
+        rviz_node,
+        robot_state_publisher
     ]
 
+    simulation_launch = [
+        ee_point_server,
+        move_group,
+        trajectory_server_sim,
+        ros2_control_node,
+        robot_state_publisher,
+        base_to_arm_static_tf,
+        rviz_node
+    ] + load_controllers
 
+    launch_content = simulation_launch if is_simulation else hardware_launch_description
 
     return LaunchDescription(
-        [
-            # ee_point_server,
-            robot_state_publisher,
-            # # ros2_control_node,
-            # rviz_node,
-            # base_to_arm_static_tf,
-            # static_tf_2,
-            # move_group,
-            # trajectory_server,
-            # kinova_interface_launch,
-            # realsense_node
-        ]
-        # + load_controllers
+        launch_content
     )

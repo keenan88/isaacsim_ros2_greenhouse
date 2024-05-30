@@ -11,6 +11,7 @@ setup.py
 attempt_py_moveit/__init__.py
 attempt_py_moveit/ee_point_server.py
 attempt_py_moveit/trajectory_server.py
+attempt_py_moveit/trajectory_server_sim.py
 config/moveit_py_params.yaml
 config/rviz_config.rviz
 launch/tutorial.launch.py
