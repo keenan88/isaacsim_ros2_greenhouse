@@ -37,6 +37,8 @@ RUN apt install ros-humble-vision-msgs
 
 RUN apt install vim -y
 
+ENV ROS_DOMAIN_ID=1
+
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
 #ENV FASTRTPS_DEFAULT_PROFILES_FILE=/root/.ros/fastdds.xml 

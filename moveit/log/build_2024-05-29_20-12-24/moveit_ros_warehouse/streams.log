@@ -1,0 +1,53 @@
+[0.016s] Invoking command in '/home/moveit/build/moveit_ros_warehouse': AMENT_PREFIX_PATH=/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moveit/build/moveit_ros_warehouse -- -j16 -l16
+[0.108s] [ 40%] Built target moveit_warehouse
+[0.139s] [ 60%] Built target moveit_warehouse_services
+[0.139s] [ 60%] Built target moveit_warehouse_broadcast
+[0.142s] [ 90%] Built target moveit_warehouse_save_as_text
+[0.142s] [ 90%] Built target moveit_warehouse_import_from_text
+[0.142s] [ 90%] Built target moveit_save_to_warehouse
+[0.143s] [100%] Built target moveit_init_demo_warehouse
+[0.153s] Invoked command in '/home/moveit/build/moveit_ros_warehouse' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moveit/build/moveit_ros_warehouse -- -j16 -l16
+[0.208s] Invoking command in '/home/moveit/build/moveit_ros_warehouse': AMENT_PREFIX_PATH=/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/moveit/build/moveit_ros_warehouse
+[0.215s] -- Install configuration: "Release"
+[0.216s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_save_to_warehouse
+[0.216s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_broadcast
+[0.217s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_import_from_text
+[0.217s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text
+[0.218s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_init_demo_warehouse
+[0.218s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_services
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/trajectory_constraints_storage.h
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/constraints_storage.h
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/state_storage.h
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/warehouse_connector.h
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/planning_scene_storage.h
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/moveit_message_storage.h
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/planning_scene_world_storage.h
+[0.219s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit_warehouse_export.h
+[0.220s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/lib/libmoveit_warehouse.so.2.9.0
+[0.220s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/lib/libmoveit_warehouse.so
+[0.220s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/library_path.sh
+[0.220s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/library_path.dsv
+[0.220s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/ament_index/resource_index/package_run_dependencies/moveit_ros_warehouse
+[0.221s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/ament_index/resource_index/parent_prefix_path/moveit_ros_warehouse
+[0.221s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/ament_prefix_path.sh
+[0.221s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/ament_prefix_path.dsv
+[0.221s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/path.sh
+[0.221s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/path.dsv
+[0.221s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/local_setup.bash
+[0.221s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/local_setup.sh
+[0.221s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/local_setup.zsh
+[0.221s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/local_setup.dsv
+[0.221s] -- Installing: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/package.dsv
+[0.221s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/ament_index/resource_index/packages/moveit_ros_warehouse
+[0.222s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/moveit_ros_warehouseTargetsExport.cmake
+[0.222s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/moveit_ros_warehouseTargetsExport-release.cmake
+[0.222s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/ConfigExtras.cmake
+[0.222s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/ament_cmake_export_targets-extras.cmake
+[0.222s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.222s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/moveit_ros_warehouseConfig.cmake
+[0.222s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/moveit_ros_warehouseConfig-version.cmake
+[0.222s] -- Up-to-date: /home/moveit/install/moveit_ros_warehouse/share/moveit_ros_warehouse/package.xml
+[0.224s] Invoked command in '/home/moveit/build/moveit_ros_warehouse' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/moveit/build/moveit_ros_warehouse

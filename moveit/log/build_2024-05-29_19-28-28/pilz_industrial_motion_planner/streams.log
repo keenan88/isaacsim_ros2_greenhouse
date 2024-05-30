@@ -1,0 +1,177 @@
+[0.032s] Invoking command in '/home/moveit/build/pilz_industrial_motion_planner': AMENT_PREFIX_PATH=/home/moveit/install/moveit_resources_prbt_pg70_support:/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_resources_prbt_moveit_config:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/pilz_industrial_motion_planner_testutils:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_prbt_support:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_configs_utils:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_resources_prbt_pg70_support:/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_resources_prbt_moveit_config:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/pilz_industrial_motion_planner_testutils:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_prbt_support:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning_interface/lib:/home/moveit/install/moveit_ros_move_group/lib:/home/moveit/install/moveit_ros_warehouse/lib:/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/pilz_industrial_motion_planner_testutils/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:/home/moveit/install/moveit_configs_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/moveit/src/moveit2/moveit_planners/pilz_industrial_motion_planner -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/pilz_industrial_motion_planner
+[0.093s] -- The CXX compiler identification is GNU 11.4.0
+[0.100s] -- Detecting CXX compiler ABI info
+[0.175s] -- Detecting CXX compiler ABI info - done
+[0.180s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.180s] -- Detecting CXX compile features
+[0.181s] -- Detecting CXX compile features - done
+[0.183s] -- Found moveit_common: 2.9.0 (/home/moveit/install/moveit_common/share/moveit_common/cmake)
+[0.188s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.318s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.489s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[0.494s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[0.494s] -- BACKWARD_HAS_UNWIND=1
+[0.494s] -- BACKWARD_HAS_BACKTRACE=0
+[0.494s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[0.494s] -- BACKWARD_HAS_DW=1
+[0.494s] -- BACKWARD_HAS_BFD=0
+[0.495s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[0.500s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.511s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.516s] -- Found generate_parameter_library: 0.3.8 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[0.525s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.594s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.604s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.617s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.636s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.661s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.747s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.753s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.793s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.810s] -- Looking for C++ include pthread.h
+[0.913s] -- Looking for C++ include pthread.h - found
+[0.913s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.021s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.022s] -- Found Threads: TRUE  
+[1.199s] -- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.240s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.274s] -- Found moveit_core: 2.9.0 (/home/moveit/install/moveit_core/share/moveit_core/cmake)
+[1.342s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.389s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.510s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.756s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.636s] -- Found moveit_ros_move_group: 2.9.0 (/home/moveit/install/moveit_ros_move_group/share/moveit_ros_move_group/cmake)
+[2.640s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[2.844s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.182s] -- Found moveit_ros_planning_interface: 2.9.0 (/home/moveit/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[3.186s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[3.340s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[3.722s] -- Found tf2_eigen_kdl: 0.25.6 (/opt/ros/humble/share/tf2_eigen_kdl/cmake)
+[3.730s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  
+[3.808s] -- Found ament_cmake_gtest: 1.3.9 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.813s] -- Found ament_cmake_gmock: 1.3.9 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[3.818s] -- Found ros_testing: 0.4.0 (/opt/ros/humble/share/ros_testing/cmake)
+[3.823s] -- Found launch_testing_ament_cmake: 1.0.6 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[3.827s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.845s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.849s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.849s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.849s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.849s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.867s] -- Found PythonExtra: .so  
+[3.869s] -- Found moveit_resources_prbt_support: 2.9.0 (/home/moveit/install/moveit_resources_prbt_support/share/moveit_resources_prbt_support/cmake)
+[3.870s] -- Found moveit_resources_prbt_moveit_config: 2.9.0 (/home/moveit/install/moveit_resources_prbt_moveit_config/share/moveit_resources_prbt_moveit_config/cmake)
+[3.873s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[3.875s] -- Found pilz_industrial_motion_planner_testutils: 2.9.0 (/home/moveit/install/pilz_industrial_motion_planner_testutils/share/pilz_industrial_motion_planner_testutils/cmake)
+[3.973s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[4.010s] -- The C compiler identification is GNU 11.4.0
+[4.016s] -- Detecting C compiler ABI info
+[4.107s] -- Detecting C compiler ABI info - done
+[4.112s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.112s] -- Detecting C compile features
+[4.112s] -- Detecting C compile features - done
+[4.146s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[4.156s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.318s] -- Found launch_testing_ament_cmake: 1.0.6 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[4.318s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.337s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.337s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.337s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.351s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.353s] -- Configured cppcheck include dirs: /home/moveit/src/moveit2/moveit_planners/pilz_industrial_motion_planner/include
+[4.353s] -- Configured cppcheck exclude dirs and/or files: 
+[4.354s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.356s] -- Added test 'xmllint' to check XML markup files
+[4.358s] -- Configuring done
+[4.820s] -- Generating done
+[4.825s] -- Build files have been written to: /home/moveit/build/pilz_industrial_motion_planner
+[4.848s] Invoked command in '/home/moveit/build/pilz_industrial_motion_planner' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_resources_prbt_pg70_support:/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_resources_prbt_moveit_config:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/pilz_industrial_motion_planner_testutils:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_prbt_support:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_configs_utils:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_resources_prbt_pg70_support:/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_resources_prbt_moveit_config:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/pilz_industrial_motion_planner_testutils:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_prbt_support:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning_interface/lib:/home/moveit/install/moveit_ros_move_group/lib:/home/moveit/install/moveit_ros_warehouse/lib:/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/pilz_industrial_motion_planner_testutils/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:/home/moveit/install/moveit_configs_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/moveit/src/moveit2/moveit_planners/pilz_industrial_motion_planner -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/pilz_industrial_motion_planner
+[4.850s] Invoking command in '/home/moveit/build/pilz_industrial_motion_planner': AMENT_PREFIX_PATH=/home/moveit/install/moveit_resources_prbt_pg70_support:/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_resources_prbt_moveit_config:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/pilz_industrial_motion_planner_testutils:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_prbt_support:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_configs_utils:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_resources_prbt_pg70_support:/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_resources_prbt_moveit_config:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/pilz_industrial_motion_planner_testutils:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/moveit/install/moveit_core:/home/moveit/install/moveit_resources_panda_moveit_config:/home/moveit/install/moveit_resources_prbt_support:/home/moveit/install/moveit_resources_panda_description:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning_interface/lib:/home/moveit/install/moveit_ros_move_group/lib:/home/moveit/install/moveit_ros_warehouse/lib:/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/pilz_industrial_motion_planner_testutils/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:/home/moveit/install/moveit_configs_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moveit/build/pilz_industrial_motion_planner -- -j16 -l16
+[4.908s] [  7%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[4.908s] [  7%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[4.908s] [  7%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[4.908s] [  7%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[4.908s] [  7%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/moveit/build/pilz_industrial_motion_planner/cartesian_limits_parameters/include//cartesian_limits_parameters.hpp /home/moveit/src/moveit2/moveit_planners/pilz_industrial_motion_planner/src/cartesian_limits_parameters.yaml `[0m
+[4.908s] [  7%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[5.111s] [  7%] Built target cartesian_limits_parameters
+[5.141s] [ 10%] [32mBuilding CXX object CMakeFiles/trajectory_generation_common.dir/src/trajectory_blender_transition_window.cpp.o[0m
+[5.141s] [ 10%] [32mBuilding CXX object CMakeFiles/planning_context_loader_base.dir/src/planning_context_loader.cpp.o[0m
+[5.144s] [ 12%] [32mBuilding CXX object CMakeFiles/trajectory_generation_common.dir/src/trajectory_functions.cpp.o[0m
+[5.144s] [ 12%] [32mBuilding CXX object CMakeFiles/trajectory_generation_common.dir/src/trajectory_generator.cpp.o[0m
+[5.149s] [ 16%] [32mBuilding CXX object CMakeFiles/joint_limits_common.dir/src/limits_container.cpp.o[0m
+[5.149s] [ 16%] [32mBuilding CXX object CMakeFiles/joint_limits_common.dir/src/joint_limits_container.cpp.o[0m
+[5.150s] [ 16%] [32mBuilding CXX object CMakeFiles/joint_limits_common.dir/src/joint_limits_aggregator.cpp.o[0m
+[5.150s] [ 17%] [32mBuilding CXX object CMakeFiles/joint_limits_common.dir/src/joint_limits_validator.cpp.o[0m
+[5.901s] [ 18%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[5.965s] [ 18%] Built target gtest_main
+[6.450s] [ 20%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[6.509s] [ 20%] Built target gmock_main
+[15.859s] [ 21%] [32m[1mLinking CXX static library libgmock.a[0m
+[15.951s] [ 21%] Built target gmock
+[16.219s] [ 22%] [32m[1mLinking CXX static library libgtest.a[0m
+[16.300s] [ 22%] Built target gtest
+[17.568s] [ 23%] [32m[1mLinking CXX shared library libplanning_context_loader_base.so[0m
+[18.942s] [ 23%] Built target planning_context_loader_base
+[20.411s] [ 25%] [32m[1mLinking CXX shared library libjoint_limits_common.so[0m
+[20.790s] [ 25%] Built target joint_limits_common
+[20.826s] [ 27%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_joint_limits_container.dir/src/unittest_joint_limits_container.cpp.o[0m
+[20.826s] [ 27%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner.dir/src/pilz_industrial_motion_planner.cpp.o[0m
+[20.826s] [ 28%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_joint_limit.dir/src/unittest_joint_limit.cpp.o[0m
+[20.828s] [ 30%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_joint_limits_aggregator.dir/src/unittest_joint_limits_aggregator.cpp.o[0m
+[20.828s] [ 31%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_joint_limits_validator.dir/src/unittest_joint_limits_validator.cpp.o[0m
+[22.729s] [ 32%] [32m[1mLinking CXX executable unittest_joint_limits_container[0m
+[22.981s] [ 32%] Built target unittest_joint_limits_container
+[23.139s] [ 33%] [32m[1mLinking CXX executable unittest_joint_limits_validator[0m
+[23.358s] [ 35%] [32m[1mLinking CXX shared library libtrajectory_generation_common.so[0m
+[23.374s] [ 35%] Built target unittest_joint_limits_validator
+[23.592s] [ 35%] Built target trajectory_generation_common
+[23.622s] [ 41%] [32mBuilding CXX object CMakeFiles/command_list_manager.dir/src/command_list_manager.cpp.o[0m
+[23.623s] [ 41%] [32mBuilding CXX object CMakeFiles/planning_context_loader_circ.dir/src/trajectory_generator_circ.cpp.o[0m
+[23.623s] [ 42%] [32mBuilding CXX object CMakeFiles/planning_context_loader_lin.dir/src/planning_context_loader_lin.cpp.o[0m
+[23.623s] [ 41%] [32mBuilding CXX object CMakeFiles/planning_context_loader_ptp.dir/src/trajectory_generator_ptp.cpp.o[0m
+[23.623s] [ 46%] [32mBuilding CXX object CMakeFiles/planning_context_loader_circ.dir/src/planning_context_loader_circ.cpp.o[0m
+[23.623s] [ 41%] [32mBuilding CXX object CMakeFiles/planning_context_loader_ptp.dir/src/planning_context_loader_ptp.cpp.o[0m
+[23.623s] [ 46%] [32mBuilding CXX object CMakeFiles/command_list_manager.dir/src/plan_components_builder.cpp.o[0m
+[23.624s] [ 46%] [32mBuilding CXX object test/CMakeFiles/pilz_industrial_motion_planner_test_utils.dir/test_utils.cpp.o[0m
+[23.624s] [ 46%] [32mBuilding CXX object CMakeFiles/planning_context_loader_circ.dir/src/path_circle_generator.cpp.o[0m
+[23.624s] [ 47%] [32mBuilding CXX object CMakeFiles/planning_context_loader_ptp.dir/src/velocity_profile_atrap.cpp.o[0m
+[23.625s] [ 48%] [32mBuilding CXX object CMakeFiles/planning_context_loader_lin.dir/src/trajectory_generator_lin.cpp.o[0m
+[23.632s] [ 50%] [32mBuilding CXX object CMakeFiles/planning_context_loader_lin.dir/src/velocity_profile_atrap.cpp.o[0m
+[27.588s] [ 51%] [32m[1mLinking CXX executable unittest_joint_limit[0m
+[28.113s] [ 51%] Built target unittest_joint_limit
+[34.003s] [ 52%] [32m[1mLinking CXX executable unittest_joint_limits_aggregator[0m
+[34.440s] [ 52%] Built target unittest_joint_limits_aggregator
+[37.378s] [ 53%] [32m[1mLinking CXX shared library libplanning_context_loader_lin.so[0m
+[37.663s] [ 53%] Built target planning_context_loader_lin
+[38.001s] [ 55%] [32m[1mLinking CXX shared library libplanning_context_loader_circ.so[0m
+[38.245s] [ 56%] [32m[1mLinking CXX shared library libcommand_list_manager.so[0m
+[38.275s] [ 56%] Built target planning_context_loader_circ
+[38.430s] [ 57%] [32m[1mLinking CXX shared library libplanning_context_loader_ptp.so[0m
+[38.495s] [ 57%] Built target command_list_manager
+[38.529s] [ 60%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/move_group_sequence_service.cpp.o[0m
+[38.529s] [ 60%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/move_group_sequence_action.cpp.o[0m
+[38.708s] [ 60%] Built target planning_context_loader_ptp
+[39.023s] [ 61%] [32m[1mLinking CXX shared library libpilz_industrial_motion_planner.so[0m
+[39.285s] [ 61%] Built target pilz_industrial_motion_planner
+[39.315s] [ 68%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_get_solver_tip_frame.dir/src/unittest_get_solver_tip_frame.cpp.o[0m
+[39.315s] [ 68%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_velocity_profile_atrap.dir/__/__/src/velocity_profile_atrap.cpp.o[0m
+[39.316s] [ 68%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_trajectory_generator.dir/__/__/src/trajectory_generator.cpp.o[0m
+[39.316s] [ 68%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_velocity_profile_atrap.dir/src/unittest_velocity_profile_atrap.cpp.o[0m
+[39.316s] [ 68%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_pilz_industrial_motion_planner.dir/src/unittest_pilz_industrial_motion_planner.cpp.o[0m
+[39.316s] [ 68%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_pilz_industrial_motion_planner_direct.dir/src/unittest_pilz_industrial_motion_planner_direct.cpp.o[0m
+[39.317s] [ 70%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_trajectory_generator.dir/src/unittest_trajectory_generator.cpp.o[0m
+[43.526s] [ 71%] [32m[1mLinking CXX executable unittest_velocity_profile_atrap[0m
+[43.935s] [ 71%] Built target unittest_velocity_profile_atrap
+[44.379s] [ 72%] [32m[1mLinking CXX static library libpilz_industrial_motion_planner_test_utils.a[0m
+[44.458s] [ 72%] Built target pilz_industrial_motion_planner_test_utils
+[44.530s] [ 73%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_trajectory_functions.dir/src/unittest_trajectory_functions.cpp.o[0m
+[44.542s] [ 75%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_trajectory_generator_common.dir/src/unittest_trajectory_generator_common.cpp.o[0m
+[44.547s] [ 76%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_trajectory_blender_transition_window.dir/src/unittest_trajectory_blender_transition_window.cpp.o[0m
+[44.555s] [ 77%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_trajectory_generator_lin.dir/src/unittest_trajectory_generator_lin.cpp.o[0m
+[44.561s] [ 78%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_trajectory_generator_ptp.dir/src/unittest_trajectory_generator_ptp.cpp.o[0m
+[44.561s] [ 80%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_trajectory_blender_transition_window.dir/__/__/src/trajectory_blender_transition_window.cpp.o[0m
+[44.599s] [ 81%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_trajectory_generator_circ.dir/src/unittest_trajectory_generator_circ.cpp.o[0m
+[44.600s] [ 82%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_planning_context_loaders.dir/src/unittest_planning_context_loaders.cpp.o[0m
+[44.653s] [ 83%] [32mBuilding CXX object test/unit_tests/CMakeFiles/unittest_planning_context.dir/src/unittest_planning_context.cpp.o[0m
+[53.074s] [ 85%] [32m[1mLinking CXX executable unittest_get_solver_tip_frame[0m
+[53.721s] [ 85%] Built target unittest_get_solver_tip_frame

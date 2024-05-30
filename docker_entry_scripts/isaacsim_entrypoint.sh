@@ -1,8 +1,9 @@
 #!/bin/bash
 
 source /opt/ros/humble/setup.bash
-./runheadless.native.sh --reset-data
 
+if [ "$USE_SIM" == "True" ]; then
+    ./runheadless.native.sh --reset-data
+fi
 
-
-bash
+exec bash

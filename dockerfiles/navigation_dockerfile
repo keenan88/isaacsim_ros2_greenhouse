@@ -17,5 +17,7 @@ RUN apt-get update
 RUN apt install ros-humble-rmw-fastrtps-dynamic-cpp --fix-missing -y
 ENV RMW_IMPLEMENTATION=rmw_fastrtps_dynamic_cpp
 
+ENV ROS_DOMAIN_ID=1
+
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 

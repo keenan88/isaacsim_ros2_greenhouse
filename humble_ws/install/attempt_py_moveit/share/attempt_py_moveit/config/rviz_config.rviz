@@ -1,20 +1,16 @@
 Panels:
   - Class: rviz_common/Displays
-    Help Height: 78
+    Help Height: 70
     Name: Displays
     Property Tree Widget:
       Expanded:
         - /Global Options1
         - /Status1
-        - /PlanningScene1
-        - /Trajectory1
         - /Camera1
-        - /TF1
-        - /TF1/Status1
-        - /TF1/Tree1
-        - /TF1/Tree1/camera_link1
+        - /RobotModel1
+        - /RobotModel1/Description Topic1
       Splitter Ratio: 0.5
-    Tree Height: 542
+    Tree Height: 570
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Views
@@ -242,99 +238,115 @@ Visualization Manager:
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /depth/image_rect_raw
+        Value: /color/image_raw
       Value: true
       Visibility:
         Grid: true
         PlanningScene: true
-        TF: true
+        RobotModel: true
         Trajectory: true
         Value: true
       Zoom Factor: 1
-    - Class: rviz_default_plugins/TF
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
       Enabled: true
-      Frame Timeout: 15
-      Frames:
-        All Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
         arm_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
-        base_link:
+        bicep_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
         bracelet_link:
-          Value: true
-        camera_accel_frame:
-          Value: true
-        camera_accel_optical_frame:
-          Value: true
-        camera_aligned_depth_to_infra1_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
         camera_color_frame:
-          Value: true
-        camera_color_optical_frame:
-          Value: true
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         camera_depth_frame:
-          Value: true
-        camera_depth_optical_frame:
-          Value: true
-        camera_gyro_frame:
-          Value: true
-        camera_gyro_optical_frame:
-          Value: true
-        camera_infra1_frame:
-          Value: true
-        camera_infra1_optical_frame:
-          Value: true
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        chassis_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
         end_effector_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
         kbase_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
-        robotiq_85_base_link:
+        shoulder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
-        robotiq_85_left_finger_link:
+        spherical_wrist_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
-        robotiq_85_left_knuckle_link:
+        spherical_wrist_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
-        robotiq_85_right_finger_link:
-          Value: true
-        robotiq_85_right_knuckle_link:
-          Value: true
-        world:
-          Value: true
-      Marker Scale: 1
-      Name: TF
-      Show Arrows: true
-      Show Axes: true
-      Show Names: false
-      Tree:
-        camera_link:
-          camera_accel_frame:
-            camera_accel_optical_frame:
-              {}
-          camera_aligned_depth_to_infra1_frame:
-            camera_infra1_optical_frame:
-              {}
-          camera_color_frame:
-            camera_color_optical_frame:
-              {}
-          camera_depth_frame:
-            camera_depth_optical_frame:
-              {}
-          camera_gyro_frame:
-            camera_gyro_optical_frame:
-              {}
-          camera_infra1_frame:
-            {}
-        kbase_link:
-          arm_base_link:
-            {}
+      Mass Properties:
+        Inertia: false
+        Mass: false
+      Name: RobotModel
+      TF Prefix: ""
       Update Interval: 0
       Value: true
+      Visual Enabled: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: kbase_link
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -392,20 +404,20 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.45039814710617065
+      Pitch: 0.26539817452430725
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.4703981876373291
+      Yaw: 0.46539831161499023
     Saved: ~
 Window Geometry:
   Camera:
     collapsed: false
   Displays:
     collapsed: false
-  Height: 1016
+  Height: 1043
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd000000040000000000000254000003a2fc020000000cfb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed0000023000000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003b000002a7000000c700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000003c005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000003f00fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c00730047007500690100000482000000430000000000000000fb0000000c00430061006d00650072006101000002e8000000f50000002800ffffff000000010000010f000003a2fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003b000003a2000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004420000003efc0100000002fb0000000800540069006d00650100000000000004420000000000000000fb0000000800540069006d0065010000000000000450000000000000000000000411000003a200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000002e5000003bdfc020000000cfb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed0000023000000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003b000002bb000000c700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000003c005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000003f00fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c00730047007500690100000482000000430000000000000000fb0000000c00430061006d00650072006101000002fc000000fc0000002800ffffff000000010000010f000003bdfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003b000003bd000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004420000003efc0100000002fb0000000800540069006d00650100000000000004420000000000000000fb0000000800540069006d0065010000000000000450000000000000000000000380000003bd00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Trajectory - Trajectory Slider:
@@ -414,4 +426,4 @@ Window Geometry:
     collapsed: false
   Width: 1920
   X: 0
-  Y: 27
+  Y: 0

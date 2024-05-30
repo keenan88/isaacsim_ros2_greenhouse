@@ -1,0 +1,190 @@
+[0.024s] Invoking command in '/home/moveit/build/moveit_py': AMENT_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning_interface/lib:/home/moveit/install/moveit_ros_move_group/lib:/home/moveit/install/moveit_ros_warehouse/lib:/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/moveit/src/moveit2/moveit_py -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/moveit_py
+[0.073s] -- The C compiler identification is GNU 11.4.0
+[0.118s] -- The CXX compiler identification is GNU 11.4.0
+[0.124s] -- Detecting C compiler ABI info
+[0.188s] -- Detecting C compiler ABI info - done
+[0.193s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.193s] -- Detecting C compile features
+[0.193s] -- Detecting C compile features - done
+[0.196s] -- Detecting CXX compiler ABI info
+[0.268s] -- Detecting CXX compiler ABI info - done
+[0.272s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.273s] -- Detecting CXX compile features
+[0.273s] -- Detecting CXX compile features - done
+[0.278s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.396s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.497s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.558s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.567s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.579s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.594s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.616s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.691s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.696s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.729s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.752s] -- Looking for pthread.h
+[0.820s] -- Looking for pthread.h - found
+[0.820s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.888s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.888s] -- Found Threads: TRUE  
+[1.013s] -- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+[1.016s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.047s] -- Found moveit_ros_planning: 2.9.0 (/home/moveit/install/moveit_ros_planning/share/moveit_ros_planning/cmake)
+[1.092s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.143s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.177s] -- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.561s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.607s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.712s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.950s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.950s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.866s] -- Found moveit_ros_planning_interface: 2.9.0 (/home/moveit/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[2.870s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[3.017s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[3.255s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[3.584s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter Development Development.Module Development.Embed 
+[3.589s] -- Found pybind11_vendor: 2.4.2 (/opt/ros/humble/share/pybind11_vendor/cmake)
+[3.628s] -- Performing Test HAS_FLTO
+[3.756s] -- Performing Test HAS_FLTO - Success
+[3.757s] -- Found pybind11: /usr/include (found version "2.9.1")
+[3.826s] -- Found ament_cmake_pytest: 1.3.9 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[4.396s] -- Configuring done
+[4.442s] -- Generating done
+[4.445s] -- Build files have been written to: /home/moveit/build/moveit_py
+[4.456s] Invoked command in '/home/moveit/build/moveit_py' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning_interface/lib:/home/moveit/install/moveit_ros_move_group/lib:/home/moveit/install/moveit_ros_warehouse/lib:/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/moveit/src/moveit2/moveit_py -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/moveit_py
+[4.457s] Invoking command in '/home/moveit/build/moveit_py': AMENT_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning_interface/lib:/home/moveit/install/moveit_ros_move_group/lib:/home/moveit/install/moveit_ros_warehouse/lib:/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moveit/build/moveit_py -- -j16 -l16
+[4.510s] [  4%] [32mBuilding CXX object src/moveit/moveit_py_utils/CMakeFiles/moveit_py_utils.dir/src/copy_ros_msg.cpp.o[0m
+[4.510s] [  8%] [32mBuilding CXX object src/moveit/moveit_py_utils/CMakeFiles/moveit_py_utils.dir/src/ros_msg_typecasters.cpp.o[0m
+[4.524s] [  8%] Built target ament_cmake_python_copy_moveit
+[4.751s] running egg_info
+[4.751s] creating moveit.egg-info
+[4.751s] writing moveit.egg-info/PKG-INFO
+[4.752s] writing dependency_links to moveit.egg-info/dependency_links.txt
+[4.752s] writing top-level names to moveit.egg-info/top_level.txt
+[4.752s] writing manifest file 'moveit.egg-info/SOURCES.txt'
+[4.754s] reading manifest file 'moveit.egg-info/SOURCES.txt'
+[4.754s] writing manifest file 'moveit.egg-info/SOURCES.txt'
+[4.779s] [  8%] Built target ament_cmake_python_build_moveit_egg
+[8.755s] [ 12%] [32m[1mLinking CXX shared library libmoveit_py_utils.so[0m
+[9.199s] [ 12%] Built target moveit_py_utils
+[9.225s] [ 66%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/collision_detection/world.cpp.o[0m
+[9.225s] [ 66%] [32mBuilding CXX object CMakeFiles/planning.dir/src/moveit/moveit_ros/planning_scene_monitor/planning_scene_monitor.cpp.o[0m
+[9.225s] [ 66%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/kinematic_constraints/utils.cpp.o[0m
+[9.225s] [ 66%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/planning_scene/planning_scene.cpp.o[0m
+[9.225s] [ 66%] [32mBuilding CXX object CMakeFiles/planning.dir/src/moveit/planning.cpp.o[0m
+[9.225s] [ 66%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/collision_detection/collision_common.cpp.o[0m
+[9.225s] [ 66%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/planning_interface/planning_response.cpp.o[0m
+[9.225s] [ 70%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/transforms/transforms.cpp.o[0m
+[9.226s] [ 66%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/core.cpp.o[0m
+[9.226s] [ 66%] [32mBuilding CXX object CMakeFiles/planning.dir/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp.o[0m
+[9.226s] [ 66%] [32mBuilding CXX object CMakeFiles/planning.dir/src/moveit/moveit_ros/trajectory_execution_manager/trajectory_execution_manager.cpp.o[0m
+[9.226s] [ 66%] [32mBuilding CXX object CMakeFiles/planning.dir/src/moveit/moveit_ros/moveit_cpp/moveit_cpp.cpp.o[0m
+[9.226s] [ 66%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/controller_manager/controller_manager.cpp.o[0m
+[9.226s] [ 66%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/collision_detection/collision_matrix.cpp.o[0m
+[9.226s] [ 75%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/robot_model/joint_model.cpp.o[0m
+[9.226s] [ 79%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/robot_model/joint_model_group.cpp.o[0m
+[15.118s] [ 83%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/robot_model/robot_model.cpp.o[0m
+[15.504s] [ 87%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/robot_state/robot_state.cpp.o[0m
+[15.772s] [ 91%] [32mBuilding CXX object CMakeFiles/core.dir/src/moveit/moveit_core/robot_trajectory/robot_trajectory.cpp.o[0m
+[29.106s] [ 95%] [32m[1mLinking CXX shared module test_moveit/planning.cpython-310-x86_64-linux-gnu.so[0m
+[29.241s] [100%] [32m[1mLinking CXX shared module test_moveit/core.cpython-310-x86_64-linux-gnu.so[0m
+[29.349s] [01m[K/usr/include/pybind11/stl.h:172:49:[m[K [01;36m[Knote: [m[Ktype ‘[01m[Kstruct type_caster[m[K’ itself violates the C++ One Definition Rule
+[29.349s]   172 | template <typename Type, typename Alloc> struct type_caster<std::vector<Type, Alloc>>
+[29.349s]       |                                                 [01;36m[K^[m[K
+[29.349s] [01m[K/usr/include/pybind11/cast.h:33:56:[m[K [01;36m[Knote: [m[Kthe incompatible type is defined here
+[29.349s]    33 | template <typename type, typename SFINAE = void> class type_caster : public type_caster_base<type> { };
+[29.349s]       |                                                        [01;36m[K^[m[K
+[29.593s] lto-wrapper: warning: using serial compilation of 6 LTRANS jobs
+[29.961s] lto-wrapper: warning: using serial compilation of 9 LTRANS jobs
+[33.966s] [100%] Built target planning
+[35.878s] [100%] Built target core
+[35.889s] Invoked command in '/home/moveit/build/moveit_py' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning_interface/lib:/home/moveit/install/moveit_ros_move_group/lib:/home/moveit/install/moveit_ros_warehouse/lib:/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moveit/build/moveit_py -- -j16 -l16
+[35.957s] Invoking command in '/home/moveit/build/moveit_py': AMENT_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning_interface/lib:/home/moveit/install/moveit_ros_move_group/lib:/home/moveit/install/moveit_ros_warehouse/lib:/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/moveit/build/moveit_py
+[35.965s] -- Install configuration: "Release"
+[35.965s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/environment/pythonpath.sh
+[35.965s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/environment/pythonpath.dsv
+[35.965s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit-2.9.0-py3.10.egg-info
+[35.965s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit-2.9.0-py3.10.egg-info/SOURCES.txt
+[35.965s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit-2.9.0-py3.10.egg-info/dependency_links.txt
+[35.966s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit-2.9.0-py3.10.egg-info/top_level.txt
+[35.966s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit-2.9.0-py3.10.egg-info/PKG-INFO
+[35.966s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit
+[35.966s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/utils.pyi
+[35.966s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/utils.py
+[35.966s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core
+[35.966s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core/robot_model.pyi
+[35.966s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core/kinematic_constraints.pyi
+[35.966s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core/planning_scene.pyi
+[35.966s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core/robot_trajectory.pyi
+[35.967s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core/robot_state.pyi
+[35.967s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core/__init__.pyi
+[35.967s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core/planning_interface.pyi
+[35.967s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core/collision_detection.pyi
+[35.967s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core/controller_manager.pyi
+[35.967s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/README.md
+[35.967s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/py.typed
+[35.967s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/__init__.py
+[35.967s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/planning.pyi
+[35.968s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client
+[35.968s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/README.md
+[35.968s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/teleop.py
+[35.968s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/__init__.pyi
+[35.968s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/teleop.pyi
+[35.968s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/__init__.py
+[35.968s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/devices
+[35.968s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/devices/__init__.pyi
+[35.968s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/devices/ps4_dualshock.py
+[35.968s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/devices/__init__.py
+[35.969s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/devices/ps4_dualshock.pyi
+[35.969s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/policies
+[35.969s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/policies/__init__.pyi
+[35.969s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/policies/policy.pyi
+[35.969s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/policies/policy.py
+[35.969s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/policies/__init__.py
+[35.996s] Listing '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit'...
+[35.996s] Compiling '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/__init__.py'...
+[35.996s] Listing '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core'...
+[35.996s] Listing '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/policies'...
+[35.996s] Compiling '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/policies/__init__.py'...
+[35.996s] Compiling '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/policies/policy.py'...
+[35.997s] Listing '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client'...
+[35.997s] Compiling '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/__init__.py'...
+[35.997s] Listing '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/devices'...
+[35.997s] Compiling '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/devices/__init__.py'...
+[35.997s] Compiling '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/devices/ps4_dualshock.py'...
+[35.997s] Compiling '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/servo_client/teleop.py'...
+[35.997s] Compiling '/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/utils.py'...
+[35.999s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core.cpython-310-x86_64-linux-gnu.so
+[36.000s] -- Set runtime path of "/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/core.cpython-310-x86_64-linux-gnu.so" to ""
+[36.000s] -- Installing: /home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/planning.cpython-310-x86_64-linux-gnu.so
+[36.001s] -- Set runtime path of "/home/moveit/install/moveit_py/local/lib/python3.10/dist-packages/moveit/planning.cpython-310-x86_64-linux-gnu.so" to ""
+[36.001s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/environment/library_path.sh
+[36.001s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/environment/library_path.dsv
+[36.001s] -- Installing: /home/moveit/install/moveit_py/share/ament_index/resource_index/package_run_dependencies/moveit_py
+[36.002s] -- Installing: /home/moveit/install/moveit_py/share/ament_index/resource_index/parent_prefix_path/moveit_py
+[36.002s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/environment/ament_prefix_path.sh
+[36.002s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/environment/ament_prefix_path.dsv
+[36.002s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/environment/path.sh
+[36.002s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/environment/path.dsv
+[36.002s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/local_setup.bash
+[36.002s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/local_setup.sh
+[36.003s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/local_setup.zsh
+[36.003s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/local_setup.dsv
+[36.003s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/package.dsv
+[36.003s] -- Installing: /home/moveit/install/moveit_py/share/ament_index/resource_index/packages/moveit_py
+[36.003s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/cmake/moveit_py_utilsTargetsExport.cmake
+[36.003s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/cmake/moveit_py_utilsTargetsExport-release.cmake
+[36.003s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/cmake/ament_cmake_export_targets-extras.cmake
+[36.004s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/cmake/ament_cmake_export_dependencies-extras.cmake
+[36.004s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/cmake/moveit_pyConfig.cmake
+[36.004s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/cmake/moveit_pyConfig-version.cmake
+[36.004s] -- Installing: /home/moveit/install/moveit_py/share/moveit_py/package.xml
+[36.004s] -- Installing: /home/moveit/install/moveit_py/lib/libmoveit_py_utils.so.
+[36.005s] -- Set runtime path of "/home/moveit/install/moveit_py/lib/libmoveit_py_utils.so." to ""
+[36.005s] -- Installing: /home/moveit/install/moveit_py/lib/libmoveit_py_utils.so
+[36.005s] -- Installing: /home/moveit/install/moveit_py/include/moveit_py
+[36.005s] -- Installing: /home/moveit/install/moveit_py/include/moveit_py/moveit_py
+[36.005s] -- Installing: /home/moveit/install/moveit_py/include/moveit_py/moveit_py/moveit_py_utils
+[36.005s] -- Installing: /home/moveit/install/moveit_py/include/moveit_py/moveit_py/moveit_py_utils/copy_ros_msg.h
+[36.005s] -- Installing: /home/moveit/install/moveit_py/include/moveit_py/moveit_py/moveit_py_utils/ros_msg_typecasters.h
+[36.007s] Invoked command in '/home/moveit/build/moveit_py' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_ros_planning_interface:/home/moveit/install/moveit_ros_move_group:/home/moveit/install/moveit_ros_warehouse:/home/moveit/install/moveit_kinematics:/home/moveit/install/moveit_ros_planning:/home/moveit/install/moveit_ros_occupancy_map_monitor:/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_ros_planning_interface/lib:/home/moveit/install/moveit_ros_move_group/lib:/home/moveit/install/moveit_ros_warehouse/lib:/home/moveit/install/moveit_kinematics/lib:/home/moveit/install/moveit_ros_planning/lib:/home/moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/moveit/build/moveit_py

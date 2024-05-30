@@ -1,0 +1,93 @@
+[0.011s] Invoking command in '/home/moveit/build/moveit_planners_stomp': AMENT_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/moveit/src/moveit2/moveit_planners/stomp -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/moveit_planners_stomp
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.103s] -- The CXX compiler identification is GNU 11.4.0
+[0.110s] -- Detecting C compiler ABI info
+[0.171s] -- Detecting C compiler ABI info - done
+[0.176s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.176s] -- Detecting C compile features
+[0.176s] -- Detecting C compile features - done
+[0.179s] -- Detecting CXX compiler ABI info
+[0.247s] -- Detecting CXX compiler ABI info - done
+[0.252s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.252s] -- Detecting CXX compile features
+[0.253s] -- Detecting CXX compile features - done
+[0.254s] -- Found moveit_common: 2.9.0 (/home/moveit/install/moveit_common/share/moveit_common/cmake)
+[0.258s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.376s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.523s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[0.527s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[0.528s] -- BACKWARD_HAS_UNWIND=1
+[0.528s] -- BACKWARD_HAS_BACKTRACE=0
+[0.528s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[0.528s] -- BACKWARD_HAS_DW=1
+[0.528s] -- BACKWARD_HAS_BFD=0
+[0.528s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[0.532s] -- Found generate_parameter_library: 0.3.8 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[0.539s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.594s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.602s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.612s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.627s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.647s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.717s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.721s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.751s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.771s] -- Looking for pthread.h
+[0.853s] -- Looking for pthread.h - found
+[0.853s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.936s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.937s] -- Found Threads: TRUE  
+[1.091s] -- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.125s] -- Found moveit_core: 2.9.0 (/home/moveit/install/moveit_core/share/moveit_core/cmake)
+[1.176s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.214s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.352s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.589s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.589s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.451s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.470s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.470s] -- Configured cppcheck include dirs: /home/moveit/src/moveit2/moveit_planners/stomp/include
+[2.470s] -- Configured cppcheck exclude dirs and/or files: 
+[2.470s] -- Added test 'xmllint' to check XML markup files
+[2.472s] -- Configuring done
+[2.496s] -- Generating done
+[2.498s] -- Build files have been written to: /home/moveit/build/moveit_planners_stomp
+[2.508s] Invoked command in '/home/moveit/build/moveit_planners_stomp' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/moveit/src/moveit2/moveit_planners/stomp -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/moveit/install/moveit_planners_stomp
+[2.510s] Invoking command in '/home/moveit/build/moveit_planners_stomp': AMENT_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moveit/build/moveit_planners_stomp -- -j16 -l16
+[2.559s] [ 25%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/moveit/build/moveit_planners_stomp/stomp_moveit_parameters/include//stomp_moveit_parameters.hpp /home/moveit/src/moveit2/moveit_planners/stomp/res/stomp_moveit.yaml `[0m
+[2.797s] [ 25%] Built target stomp_moveit_parameters
+[2.817s] [ 50%] [32mBuilding CXX object CMakeFiles/stomp_moveit_plugin.dir/src/stomp_moveit_planner_plugin.cpp.o[0m
+[10.780s] [ 75%] [32mBuilding CXX object CMakeFiles/stomp_moveit_plugin.dir/src/stomp_moveit_planning_context.cpp.o[0m
+[22.978s] [100%] [32m[1mLinking CXX shared library libstomp_moveit_plugin.so[0m
+[23.140s] [100%] Built target stomp_moveit_plugin
+[23.150s] Invoked command in '/home/moveit/build/moveit_planners_stomp' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moveit/build/moveit_planners_stomp -- -j16 -l16
+[23.180s] Invoking command in '/home/moveit/build/moveit_planners_stomp': AMENT_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/moveit/build/moveit_planners_stomp
+[23.187s] -- Install configuration: "Release"
+[23.187s] -- Installing: /home/moveit/install/moveit_planners_stomp/include/stomp_moveit_parameters
+[23.188s] -- Installing: /home/moveit/install/moveit_planners_stomp/include/stomp_moveit_parameters/stomp_moveit_parameters.hpp
+[23.188s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/stomp_moveit_plugin_description.xml
+[23.188s] -- Installing: /home/moveit/install/moveit_planners_stomp/lib/libstomp_moveit_plugin.so
+[23.190s] -- Set runtime path of "/home/moveit/install/moveit_planners_stomp/lib/libstomp_moveit_plugin.so" to ""
+[23.190s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/environment/library_path.sh
+[23.190s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/environment/library_path.dsv
+[23.190s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/ament_index/resource_index/package_run_dependencies/moveit_planners_stomp
+[23.190s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/ament_index/resource_index/parent_prefix_path/moveit_planners_stomp
+[23.190s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/environment/ament_prefix_path.sh
+[23.191s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/environment/ament_prefix_path.dsv
+[23.191s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/environment/path.sh
+[23.191s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/environment/path.dsv
+[23.191s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/local_setup.bash
+[23.191s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/local_setup.sh
+[23.191s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/local_setup.zsh
+[23.191s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/local_setup.dsv
+[23.192s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/package.dsv
+[23.192s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/ament_index/resource_index/packages/moveit_planners_stomp
+[23.192s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/ament_index/resource_index/moveit_core__pluginlib__plugin/moveit_planners_stomp
+[23.192s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/cmake/moveit_planners_stompTargetsExport.cmake
+[23.192s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/cmake/moveit_planners_stompTargetsExport-release.cmake
+[23.192s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/cmake/ament_cmake_export_targets-extras.cmake
+[23.192s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/cmake/ament_cmake_export_dependencies-extras.cmake
+[23.193s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/cmake/moveit_planners_stompConfig.cmake
+[23.193s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/cmake/moveit_planners_stompConfig-version.cmake
+[23.193s] -- Installing: /home/moveit/install/moveit_planners_stomp/share/moveit_planners_stomp/package.xml
+[23.195s] Invoked command in '/home/moveit/build/moveit_planners_stomp' returned '0': AMENT_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveit/install/moveit_core:/home/moveit/install/moveit_msgs:/home/moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/moveit/install/moveit_core/lib:/home/moveit/install/moveit_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/moveit/install/moveit_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/moveit/build/moveit_planners_stomp
