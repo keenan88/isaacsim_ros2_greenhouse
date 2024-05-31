@@ -1,0 +1,25 @@
+[0.000000] (-) TimerEvent: {}
+[0.000125] (antworker_description) JobQueued: {'identifier': 'antworker_description', 'dependencies': OrderedDict()}
+[0.000159] (antworker_isaacsim_world) JobQueued: {'identifier': 'antworker_isaacsim_world', 'dependencies': OrderedDict()}
+[0.000187] (antworker_moveit_bringup) JobQueued: {'identifier': 'antworker_moveit_bringup', 'dependencies': OrderedDict()}
+[0.000209] (antworker_navigation) JobQueued: {'identifier': 'antworker_navigation', 'dependencies': OrderedDict()}
+[0.000230] (antworker_moveit_description) JobQueued: {'identifier': 'antworker_moveit_description', 'dependencies': OrderedDict([('antworker_description', '/home/humble_ws/install/antworker_description')])}
+[0.000752] (antworker_description) JobStarted: {'identifier': 'antworker_description'}
+[0.009582] (antworker_isaacsim_world) JobStarted: {'identifier': 'antworker_isaacsim_world'}
+[0.014698] (antworker_moveit_bringup) JobStarted: {'identifier': 'antworker_moveit_bringup'}
+[0.019682] (antworker_navigation) JobStarted: {'identifier': 'antworker_navigation'}
+[0.099851] (-) TimerEvent: {}
+[0.200162] (-) TimerEvent: {}
+[0.300441] (-) TimerEvent: {}
+[0.400724] (-) TimerEvent: {}
+[0.501018] (-) TimerEvent: {}
+[0.601346] (-) TimerEvent: {}
+[0.701641] (-) TimerEvent: {}
+[0.801951] (-) TimerEvent: {}
+[0.884324] (antworker_navigation) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 51, in build\n    setup_py_data = get_setup_data(self.context.pkg, env)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 20, in get_setup_data\n    return dict(pkg.metadata[key](env))\n  File "/usr/lib/python3/dist-packages/colcon_ros/package_augmentation/ros_ament_python.py", line 57, in getter\n    return get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 241, in get_setup_information\n    _setup_information_cache[hashable_env] = _get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 288, in _get_setup_information\n    result = subprocess.run(\n  File "/usr/lib/python3.10/subprocess.py", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'/usr/bin/python3\', \'-c\', \'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \\\'setup.py\\\', script_args=(\\\'--dry-run\\\',), stop_after=\\\'config\\\');skip_keys = (\\\'cmdclass\\\', \\\'distclass\\\', \\\'ext_modules\\\', \\\'metadata\\\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\\\'_\\\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\\\'metadata\\\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\\\'license_files\\\', \\\'provides_extras\\\')};sys.stdout.buffer.write(repr(data).encode(\\\'utf-8\\\'))\']\' returned non-zero exit status 1.\n'}
+[0.885182] (antworker_navigation) JobEnded: {'identifier': 'antworker_navigation', 'rc': 1}
+[0.885546] (antworker_description) JobEnded: {'identifier': 'antworker_description', 'rc': 'SIGINT'}
+[0.885765] (antworker_isaacsim_world) JobEnded: {'identifier': 'antworker_isaacsim_world', 'rc': 'SIGINT'}
+[0.885968] (antworker_moveit_bringup) JobEnded: {'identifier': 'antworker_moveit_bringup', 'rc': 'SIGINT'}
+[0.895107] (antworker_moveit_description) JobSkipped: {'identifier': 'antworker_moveit_description'}
+[0.895169] (-) EventReactorShutdown: {}

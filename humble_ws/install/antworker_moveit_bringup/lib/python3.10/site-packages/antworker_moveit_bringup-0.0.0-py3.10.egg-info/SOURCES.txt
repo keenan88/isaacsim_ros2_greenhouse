@@ -14,7 +14,6 @@ antworker_moveit_bringup/trajectory_server.py
 antworker_moveit_bringup/trajectory_server_sim.py
 config/moveit_py_params.yaml
 config/rviz_config.rviz
-launch/tutorial.launch.py
 resource/antworker_moveit_bringup
 test/test_copyright.py
 test/test_flake8.py
