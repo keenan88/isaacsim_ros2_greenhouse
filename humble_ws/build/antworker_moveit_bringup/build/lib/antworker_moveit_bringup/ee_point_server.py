@@ -15,6 +15,10 @@ from moveit.planning import (
     MoveItPy,
     MultiPipelinePlanRequestParameters,
 )
+from moveit_msgs.msg import CollisionObject
+from shape_msgs.msg import SolidPrimitive
+from geometry_msgs.msg import Pose
+
 
 import rclpy
 from rclpy.node import Node
@@ -26,9 +30,35 @@ class PointServer(Node):
         self.logger = get_logger("moveit_py.pose_goal")
 
         # instantiate MoveItPy instance and get planning component
-        self.panda = MoveItPy(node_name = "moveit_py")
-        self.panda_arm = self.panda.get_planning_component("kinova_arm")
+        self.kinova = MoveItPy(node_name = "moveit_py")
+        self.kinova_arm = self.kinova.get_planning_component("kinova_arm")
         self.logger.info("MoveItPy instance created")
+
+        self.planning_scene_monitor = self.kinova.get_planning_scene_monitor()
+
+        with self.planning_scene_monitor.read_write() as scene:
+
+            dimensions = [0.1, 0.1, 0.1]
+            collision_object = CollisionObject()
+            collision_object.header.frame_id = "arm_base_link"
+            collision_object.id = "boxes"
+
+            box_pose = Pose()
+            box_pose.position.x = 1.0
+            box_pose.position.y = 0.1
+            box_pose.position.z = 0.6
+
+            box = SolidPrimitive()
+            box.type = SolidPrimitive.BOX
+            box.dimensions = dimensions
+
+            collision_object.primitives.append(box)
+            collision_object.primitive_poses.append(box_pose)
+            collision_object.operation = CollisionObject.ADD
+
+
+            scene.apply_collision_object(collision_object)
+            scene.current_state.update()  # Important to ensure the scene is updated
 
         ###########################################################################
         # Plan 1 - set states with predefined string
@@ -37,13 +67,13 @@ class PointServer(Node):
         self.logger.info("\nMOVING ARM TO PRESET POINT\n")
 
         # set plan start state using predefined state
-        self.panda_arm.set_start_state_to_current_state()
+        self.kinova_arm.set_start_state_to_current_state()
 
         # set pose goal using predefined state
-        self.panda_arm.set_goal_state(configuration_name="jagged")
+        self.kinova_arm.set_goal_state(configuration_name="jagged")
 
         # plan to goal
-        self.plan_and_execute(self.panda, self.panda_arm, sleep_time=3.0)    
+        self.plan_and_execute(self.kinova, self.kinova_arm, sleep_time=3.0)    
 
         # ###########################################################################
         # # Plan 3 - set goal state with PoseStamped message
@@ -52,7 +82,7 @@ class PointServer(Node):
         self.logger.info("\nMOVING ARM TO CUSTOM POINT\n")
 
         # set plan start state to current state
-        self.panda_arm.set_start_state_to_current_state()
+        self.kinova_arm.set_start_state_to_current_state()
 
         # set pose goal with PoseStamped message
         from geometry_msgs.msg import PoseStamped
@@ -66,10 +96,10 @@ class PointServer(Node):
         pose_goal.pose.position.x = -0.290
         pose_goal.pose.position.y = 0.334
         pose_goal.pose.position.z = 0.9
-        self.panda_arm.set_goal_state(pose_stamped_msg=pose_goal, pose_link="end_effector_link")
+        self.kinova_arm.set_goal_state(pose_stamped_msg=pose_goal, pose_link="end_effector_link")
 
         # plan to goal
-        self.plan_and_execute(self.panda, self.panda_arm, sleep_time=3.0)
+        self.plan_and_execute(self.kinova, self.kinova_arm, sleep_time=3.0)
 
         
         self.logger.info("DONE MOVING ARM AROUND")

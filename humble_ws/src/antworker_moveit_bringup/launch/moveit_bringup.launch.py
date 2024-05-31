@@ -195,7 +195,6 @@ def generate_launch_description():
         trajectory_server_sim,
         ros2_control_node,
         robot_state_publisher,
-        #base_to_arm_static_tf,
         rviz_node
     ] + load_controllers
 

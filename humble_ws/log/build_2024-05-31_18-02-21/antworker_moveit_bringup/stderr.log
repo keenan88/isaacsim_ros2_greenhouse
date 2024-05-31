@@ -1,0 +1,5 @@
+  File "/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/ee_point_server.py", line 60
+    for method in dir(self.scene) if callable(getattr(self.scene, method)):
+                                                                          ^
+SyntaxError: invalid syntax
+
