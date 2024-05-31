@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/antworker_description/antworker_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/antworker_description/antworker_description.egg-info/dependency_links.txt
+writing entry points to ../../build/antworker_description/antworker_description.egg-info/entry_points.txt
+writing requirements to ../../build/antworker_description/antworker_description.egg-info/requires.txt
+writing top-level names to ../../build/antworker_description/antworker_description.egg-info/top_level.txt
+reading manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying description/combined/worker_with_arm.urdf -> /home/humble_ws/install/antworker_description/share/antworker_description/description/combined
+running install_egg_info
+removing '/home/humble_ws/install/antworker_description/lib/python3.10/site-packages/antworker_description-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/antworker_description/antworker_description.egg-info to /home/humble_ws/install/antworker_description/lib/python3.10/site-packages/antworker_description-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/humble_ws/build/antworker_description/install.log'
