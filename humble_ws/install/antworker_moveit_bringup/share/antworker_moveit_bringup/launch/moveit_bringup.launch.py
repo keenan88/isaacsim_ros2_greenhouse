@@ -94,10 +94,10 @@ def generate_launch_description():
         name="robot_state_publisher",
         output="screen",
         parameters=[
-            # moveit_config.robot_description,
+            moveit_config.robot_description,
             {
                 "use_sim_time": is_simulation,
-                "robot_description": robot_description_content
+            #    "robot_description": robot_description_content
             }
         ],
     )
@@ -190,14 +190,14 @@ def generate_launch_description():
     ]
 
     simulation_launch = [
-        #ee_point_server,
-        #move_group,
-        #trajectory_server_sim,
-        #ros2_control_node,
+        ee_point_server,
+        move_group,
+        trajectory_server_sim,
+        ros2_control_node,
         robot_state_publisher,
         #base_to_arm_static_tf,
         rviz_node
-    ] #+ load_controllers
+    ] + load_controllers
 
 
 

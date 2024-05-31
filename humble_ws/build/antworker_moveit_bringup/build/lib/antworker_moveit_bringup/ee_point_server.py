@@ -40,7 +40,7 @@ class PointServer(Node):
         self.panda_arm.set_start_state_to_current_state()
 
         # set pose goal using predefined state
-        self.panda_arm.set_goal_state(configuration_name="pose3")
+        self.panda_arm.set_goal_state(configuration_name="jagged")
 
         # plan to goal
         self.plan_and_execute(self.panda, self.panda_arm, sleep_time=3.0)    
