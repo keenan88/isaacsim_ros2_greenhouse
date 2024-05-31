@@ -54,7 +54,7 @@ services:
       - ./fastdds.xml:/root/.ros/fastdds.xml:rw
     #privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
     #network_mode: "host"
-    working_dir: /home/humble_ws/src/antworker_navigation/launch
+    working_dir: /home/humble_ws/src/
     restart: "no"
     entrypoint: /isaac-sim/scripts/nav_entrypoint.sh
 
