@@ -132,7 +132,7 @@ def generate_launch_description():
         "ros2_controllers.yaml",
     )
 
-    ros2_control_node = Node(
+    ros2_controller_manager = Node(
         package="controller_manager",
         executable="ros2_control_node",
         parameters=[
@@ -145,7 +145,7 @@ def generate_launch_description():
         output="screen",
     )
 
-    spawn_sim_controller = ExecuteProcess(
+    spawn_joint_trajectory_controller = ExecuteProcess(
         cmd=["ros2 run controller_manager spawner {}".format("kinova_arm_controller")],
         shell=True,
         output="screen"
@@ -225,9 +225,9 @@ def generate_launch_description():
     simulation_launch = [
         ee_point_server,
         robot_state_publisher,
-        ros2_control_node,
-        spawn_sim_controller,
-        #spawn_joint_state_brodcaster,
+        ros2_controller_manager,
+        spawn_joint_trajectory_controller,
+        spawn_joint_state_brodcaster,
         joint_command_forwarder,
         #rviz_node
     ]
