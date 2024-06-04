@@ -31,49 +31,53 @@ class PointServer(Node):
 
         # instantiate MoveItPy instance and get planning component
         self.kinova = MoveItPy(node_name = "moveit_py")
-        self.kinova_arm = self.kinova.get_planning_component("kinova_arm")
-        self.logger.info("MoveItPy instance created")
+        self.kinova_planner = self.kinova.get_planning_component("kinova_arm")
+
+
+
+        #self.logger.info("MoveItPy instance created")
 
         self.planning_scene_monitor = self.kinova.get_planning_scene_monitor()
 
-        with self.planning_scene_monitor.read_write() as scene:
+        # with self.planning_scene_monitor.read_write() as scene:
 
-            dimensions = [0.1, 0.1, 0.1]
-            collision_object = CollisionObject()
-            collision_object.header.frame_id = "arm_base_link"
-            collision_object.id = "boxes"
+        #     dimensions = [0.1, 0.1, 0.1]
+        #     collision_object = CollisionObject()
+        #     collision_object.header.frame_id = "arm_base_link"
+        #     collision_object.id = "boxes"
 
-            box_pose = Pose()
-            box_pose.position.x = 1.0
-            box_pose.position.y = 0.1
-            box_pose.position.z = 0.6
+        #     box_pose = Pose()
+        #     box_pose.position.x = -0.2
+        #     box_pose.position.y = 0.1
+        #     box_pose.position.z = 0.6
 
-            box = SolidPrimitive()
-            box.type = SolidPrimitive.BOX
-            box.dimensions = dimensions
+        #     box = SolidPrimitive()
+        #     box.type = SolidPrimitive.BOX
+        #     box.dimensions = dimensions
 
-            collision_object.primitives.append(box)
-            collision_object.primitive_poses.append(box_pose)
-            collision_object.operation = CollisionObject.ADD
+        #     collision_object.primitives.append(box)
+        #     collision_object.primitive_poses.append(box_pose)
+        #     collision_object.operation = CollisionObject.ADD
 
 
-            scene.apply_collision_object(collision_object)
-            scene.current_state.update()  # Important to ensure the scene is updated
+        #     scene.apply_collision_object(collision_object)
+        #     scene.current_state.update()  # Important to ensure the scene is updated
 
         ###########################################################################
         # Plan 1 - set states with predefined string
         ###########################################################################
 
-        self.logger.info("\nMOVING ARM TO PRESET POINT\n")
+        # self.logger.info("\nMOVING ARM TO PRESET POINT\n")
 
-        # set plan start state using predefined state
-        self.kinova_arm.set_start_state_to_current_state()
+        # # set plan start state using predefined state
+        # self.kinova_planner.set_start_state_to_current_state()
 
-        # set pose goal using predefined state
-        self.kinova_arm.set_goal_state(configuration_name="jagged")
+        # # set pose goal using predefined state
+        # self.kinova_planner.set_goal_state(configuration_name="jagged")
 
-        # plan to goal
-        self.plan_and_execute(self.kinova, self.kinova_arm, sleep_time=3.0)    
+        # # plan to goal
+        # self.plan_and_execute(self.kinova, self.kinova_planner, sleep_time=3.0)   
+
 
         # ###########################################################################
         # # Plan 3 - set goal state with PoseStamped message
@@ -82,51 +86,77 @@ class PointServer(Node):
         self.logger.info("\nMOVING ARM TO CUSTOM POINT\n")
 
         # set plan start state to current state
-        self.kinova_arm.set_start_state_to_current_state()
+        self.kinova_planner.set_start_state_to_current_state()
 
         # set pose goal with PoseStamped message
         from geometry_msgs.msg import PoseStamped
 
         pose_goal = PoseStamped()
         pose_goal.header.frame_id = "arm_base_link"        
-        pose_goal.pose.orientation.x = -0.322
-        pose_goal.pose.orientation.y = 0.250
-        pose_goal.pose.orientation.z = 0.627
-        pose_goal.pose.orientation.w = 0.664
-        pose_goal.pose.position.x = -0.290
-        pose_goal.pose.position.y = 0.334
+        pose_goal.pose.orientation.x = 0.0
+        pose_goal.pose.orientation.y = 0.0
+        pose_goal.pose.orientation.z = 1.0
+        pose_goal.pose.orientation.w = 0.0
+        pose_goal.pose.position.x = 0.2
+        pose_goal.pose.position.y = 0.0
         pose_goal.pose.position.z = 0.9
-        self.kinova_arm.set_goal_state(pose_stamped_msg=pose_goal, pose_link="end_effector_link")
+        self.kinova_planner.set_goal_state(pose_stamped_msg = pose_goal, pose_link = "end_effector_link")
 
         # plan to goal
-        self.plan_and_execute(self.kinova, self.kinova_arm, sleep_time=3.0)
-
-        
-        self.logger.info("DONE MOVING ARM AROUND")
-
-    def plan_and_execute(self, robot, planning_component, single_plan_parameters=None, multi_plan_parameters=None, sleep_time=0.0):
         self.logger.info("Planning trajectory")
-        if multi_plan_parameters is not None:
-            plan_result = planning_component.plan(
-                multi_plan_parameters=multi_plan_parameters
-            )
-        elif single_plan_parameters is not None:
-            plan_result = planning_component.plan(
-                single_plan_parameters=single_plan_parameters
-            )
-        else:
-            plan_result = planning_component.plan()
 
-        # execute the plan
+        plan_result = self.kinova_planner.plan()
+
         if plan_result:
             self.logger.info("Executing plan")
             robot_trajectory = plan_result.trajectory
-            robot.execute(robot_trajectory, controllers=[])
+            self.kinova.execute(robot_trajectory, controllers=[])
         else:
             self.logger.error("Planning failed")
 
-        time.sleep(sleep_time)
+        time.sleep(10.0)
 
+        # ###########################################################################
+        # # Plan 3 - set goal state with PoseStamped message
+        # ###########################################################################
+
+        # self.logger.info("\nMOVING ARM TO CUSTOM POINT 2\n")
+
+        # # set plan start state to current state
+        # self.kinova_planner.set_start_state_to_current_state()
+
+        # # set pose goal with PoseStamped message
+        # from geometry_msgs.msg import PoseStamped
+
+        # pose_goal = PoseStamped()
+        # pose_goal.header.frame_id = "arm_base_link"        
+        # pose_goal.pose.orientation.x = 0.0
+        # pose_goal.pose.orientation.y = 0.0
+        # pose_goal.pose.orientation.z = 1.0
+        # pose_goal.pose.orientation.w = 0.0
+        # pose_goal.pose.position.x = -0.2
+        # pose_goal.pose.position.y = 0.0
+        # pose_goal.pose.position.z = 0.9
+        # self.kinova_planner.set_goal_state(pose_stamped_msg=pose_goal, pose_link="end_effector_link")
+
+        # # plan to goal
+        # self.logger.info("Planning trajectory")
+
+        # plan_result = self.kinova_planner.plan()
+
+        # if plan_result:
+        #     self.logger.info("Executing plan")
+        #     robot_trajectory = plan_result.trajectory
+        #     self.kinova.execute(robot_trajectory, controllers=[])
+        # else:
+        #     self.logger.error("Planning failed")
+
+        # time.sleep(10.0)
+
+        
+        self.logger.info("DONE Sending arm commands")
+
+    
 
 def main(args=None):
     rclpy.init(args=args)

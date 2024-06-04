@@ -1,0 +1,16 @@
+
+name: domain_bridge
+#from_domain: 1
+#to_domain: 3
+
+topics:
+  joint_commands:
+    type: sensor_msgs/msg/JointState
+    from_domain: 1
+    to_domain: 3
+    remap: joint_states
+
+  ee_target_pose:
+    type: TFMessage 
+    from_domain: 3
+    to_domain: 1

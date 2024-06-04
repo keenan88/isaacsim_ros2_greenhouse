@@ -27,20 +27,20 @@ def generate_launch_description():
             package_name="antworker_moveit_description",
         )
         .robot_description(
-            file_path="config/antworker.urdf.xacro"
+            file_path = "config/antworker.urdf.xacro"
         )
-        .trajectory_execution(file_path="config/moveit_controllers.yaml")
+        .trajectory_execution(file_path = "config/moveit_controllers.yaml")
         .moveit_cpp(
-            file_path=get_package_share_directory("antworker_moveit_bringup")
+            file_path = get_package_share_directory("antworker_moveit_bringup")
             + "/config/moveit_py_params.yaml"
         )
         .planning_pipelines(
-            pipelines=["ompl", "chomp", "pilz_industrial_motion_planner", "stomp"]
+            pipelines = ["ompl"] # "chomp", "pilz_industrial_motion_planner", "stomp"
         )
         .planning_scene_monitor(
-            publish_robot_description=True, publish_robot_description_semantic=True
+            publish_robot_description = True, publish_robot_description_semantic = True
         )
-        .robot_description_semantic(file_path="config/antworker.srdf")
+        .robot_description_semantic(file_path = "config/antworker.srdf")
         .to_moveit_configs()
     )
 
@@ -86,8 +86,6 @@ def generate_launch_description():
 
     urdf_file_path = Path("/home/humble_ws/src/antworker_description/description/combined/worker_with_arm.urdf")
 
-    robot_description_content = urdf_file_path.read_text()
-
     robot_state_publisher = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
@@ -96,11 +94,37 @@ def generate_launch_description():
         parameters=[
             moveit_config.robot_description,
             {
-                "use_sim_time": is_simulation,
-            #    "robot_description": robot_description_content
+                "use_sim_time": is_simulation
             }
         ],
     )
+
+    target_robot_state_publisher = Node(
+        package="robot_state_publisher",
+        executable="robot_state_publisher",
+        name="target_robot_state_publisher",
+        output="screen",
+        parameters=[
+            moveit_config.robot_description,
+            {
+                "use_sim_time": is_simulation,
+                "ros_domain_id": 3
+            }
+        ]
+    )
+
+    # domain_bridge_config_path = os.path.join(
+    #     get_package_share_directory('antworker_moveit_bringup'), 
+    #     'config', 
+    #     'target_to_actual_bridge.yaml'
+    # )
+
+    # domain_bridge = Node(
+    #     package="domain_bridge",
+    #     executable="domain_bridge",
+    #     name = "domain_bridge",
+    #     arguments = [domain_bridge_config_path]
+    # )
 
     ros2_controllers_path = os.path.join(
         get_package_share_directory("antworker_moveit_description"),
@@ -121,18 +145,18 @@ def generate_launch_description():
         output="screen",
     )
 
-    load_controllers = []
-    for controller in [
-        "kinova_arm_controller",
-        # "joint_state_broadcaster",
-    ]:
-        load_controllers += [
-            ExecuteProcess(
-                cmd=["ros2 run controller_manager spawner {}".format(controller)],
-                shell=True,
-                output="screen"
-            )
-        ]
+    spawn_sim_controller = ExecuteProcess(
+        cmd=["ros2 run controller_manager spawner {}".format("kinova_arm_controller")],
+        shell=True,
+        output="screen"
+    )
+
+    spawn_joint_state_brodcaster = ExecuteProcess(
+        cmd=["ros2 run controller_manager spawner {}".format("joint_state_broadcaster")],
+        shell=True,
+        output="screen"
+    )
+    
 
     move_group = Node(
         package="moveit_ros_move_group",
@@ -157,6 +181,15 @@ def generate_launch_description():
     trajectory_server_sim = Node(
         package="antworker_moveit_bringup",
         executable="trajectory_server_sim",
+        output="screen",
+        parameters = [
+            {"use_sim_time": is_simulation}
+        ]
+    )
+
+    joint_command_forwarder = Node(
+        package="antworker_moveit_bringup",
+        executable="joint_command_forwarder",
         output="screen",
         parameters = [
             {"use_sim_time": is_simulation}
@@ -191,12 +224,15 @@ def generate_launch_description():
 
     simulation_launch = [
         ee_point_server,
-        move_group,
-        trajectory_server_sim,
-        ros2_control_node,
+        # trajectory_server_sim,
         robot_state_publisher,
-        rviz_node
-    ] + load_controllers
+        ros2_control_node,
+        spawn_sim_controller,
+        joint_command_forwarder
+        #target_robot_state_publisher,
+        #domain_bridge
+        #rviz_node
+    ]
 
 
 

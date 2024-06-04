@@ -27,6 +27,7 @@ setup(
             'ee_point_server = antworker_moveit_bringup.ee_point_server:main',
             'trajectory_server = antworker_moveit_bringup.trajectory_server:main',
             'trajectory_server_sim = antworker_moveit_bringup.trajectory_server_sim:main',
+            'joint_command_forwarder = antworker_moveit_bringup.joint_command_forwarder:main',
         ],
     },
 )

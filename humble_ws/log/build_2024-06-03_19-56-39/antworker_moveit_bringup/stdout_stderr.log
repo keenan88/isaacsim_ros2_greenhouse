@@ -1,0 +1,29 @@
+running egg_info
+writing ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/PKG-INFO
+writing dependency_links to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/dependency_links.txt
+writing entry points to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/entry_points.txt
+writing requirements to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/requires.txt
+writing top-level names to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/top_level.txt
+reading manifest file '../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/SOURCES.txt'
+writing manifest file '../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/SOURCES.txt'
+running build
+running build_py
+copying antworker_moveit_bringup/trajectory_server_sim.py -> /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup
+running install
+running install_lib
+copying /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup/trajectory_server_sim.py -> /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup
+byte-compiling /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/trajectory_server_sim.py to trajectory_server_sim.cpython-310.pyc
+  File "/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/trajectory_server_sim.py", line 37
+    self.tf_target_listener = TransformListener(self.target_tf_buffer, topic='tf_target', self)
+                                                                                              ^
+SyntaxError: positional argument follows keyword argument
+
+running install_data
+running install_egg_info
+removing '/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info to /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ee_point_server script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+Installing trajectory_server script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+Installing trajectory_server_sim script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+writing list of installed files to '/home/humble_ws/build/antworker_moveit_bringup/install.log'
