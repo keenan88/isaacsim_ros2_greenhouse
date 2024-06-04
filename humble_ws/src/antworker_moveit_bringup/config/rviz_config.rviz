@@ -255,13 +255,9 @@ Visualization Manager:
           Value: true
         forearm_link:
           Value: false
-        front_wheel_link:
-          Value: false
         map:
           Value: false
         odom:
-          Value: false
-        rear_wheel_link:
           Value: false
         shoulder_link:
           Value: false
@@ -293,10 +289,6 @@ Visualization Manager:
                               camera_link:
                                 {}
               base_link:
-                {}
-              front_wheel_link:
-                {}
-              rear_wheel_link:
                 {}
       Update Interval: 0
       Value: true
@@ -361,10 +353,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5447973608970642
+      Pitch: 0.6547973155975342
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.495393753051758
+      Yaw: 2.9853932857513428
     Saved: ~
 Window Geometry:
   Displays:

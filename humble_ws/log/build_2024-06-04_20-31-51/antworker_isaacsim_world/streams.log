@@ -1,0 +1,20 @@
+[1.490s] Invoking command in '/home/humble_ws/src/antworker_isaacsim_world': PYTHONPATH=/home/humble_ws/build/antworker_isaacsim_world/prefix_override:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_isaacsim_world build --build-base /home/humble_ws/build/antworker_isaacsim_world/build install --record /home/humble_ws/build/antworker_isaacsim_world/install.log --single-version-externally-managed install_data
+[1.737s] running egg_info
+[1.738s] writing ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/PKG-INFO
+[1.738s] writing dependency_links to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/dependency_links.txt
+[1.738s] writing entry points to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/entry_points.txt
+[1.738s] writing requirements to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/requires.txt
+[1.738s] writing top-level names to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/top_level.txt
+[1.740s] reading manifest file '../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/SOURCES.txt'
+[1.741s] writing manifest file '../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/SOURCES.txt'
+[1.741s] running build
+[1.741s] running build_py
+[1.741s] running install
+[1.742s] running install_lib
+[1.743s] running install_data
+[1.743s] running install_egg_info
+[1.745s] removing '/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages/antworker_isaacsim_world-0.0.0-py3.10.egg-info' (and everything under it)
+[1.745s] Copying ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info to /home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages/antworker_isaacsim_world-0.0.0-py3.10.egg-info
+[1.747s] running install_scripts
+[1.771s] writing list of installed files to '/home/humble_ws/build/antworker_isaacsim_world/install.log'
+[1.811s] Invoked command in '/home/humble_ws/src/antworker_isaacsim_world' returned '0': PYTHONPATH=/home/humble_ws/build/antworker_isaacsim_world/prefix_override:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_isaacsim_world build --build-base /home/humble_ws/build/antworker_isaacsim_world/build install --record /home/humble_ws/build/antworker_isaacsim_world/install.log --single-version-externally-managed install_data

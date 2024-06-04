@@ -43,8 +43,21 @@ class PointServer(Node):
             collision_object.id = "boxes"
 
             box_pose = Pose()
-            box_pose.position.x = -0.2
-            box_pose.position.y = 0.1
+            box_pose.position.x = -0.125
+            box_pose.position.y = 0.0
+            box_pose.position.z = 0.6
+
+            box = SolidPrimitive()
+            box.type = SolidPrimitive.BOX
+            box.dimensions = dimensions
+
+            collision_object.primitives.append(box)
+            collision_object.primitive_poses.append(box_pose)
+            collision_object.operation = CollisionObject.ADD
+
+            box_pose = Pose()
+            box_pose.position.x = 0.125
+            box_pose.position.y = 0.0
             box_pose.position.z = 0.6
 
             box = SolidPrimitive()
@@ -59,21 +72,43 @@ class PointServer(Node):
             scene.apply_collision_object(collision_object)
             scene.current_state.update() 
 
-        self.logger.info("\n\n\n")
+        # self.logger.info("\n\n\n")
 
+        # self.kinova_planner.set_start_state_to_current_state()
+        # self.kinova_planner.set_goal_state(configuration_name='extended')
+
+        # plan_result = self.kinova_planner.plan()
+
+        # if plan_result:
+
+        #     self.logger.info("Number of trajectory points: ")
+        #     self.logger.info(f'{len(plan_result.trajectory.get_robot_trajectory_msg().joint_trajectory.points)}')
+        #     for traj_point in plan_result.trajectory.get_robot_trajectory_msg().joint_trajectory.points:            
+        #        self.logger.info(f'{np.round(traj_point.positions, 4)}')
+
+        #     self.kinova.execute(plan_result.trajectory, controllers=[])
+
+        # time.sleep(5) # TODO - find a better way of validating that movement is finished than just blind time
+
+        # self.logger.info("\n\n\n")
         self.kinova_planner.set_start_state_to_current_state()
-        self.kinova_planner.set_goal_state(configuration_name='extended')
+
+        pose_goal = PoseStamped()
+        pose_goal.header.frame_id = "arm_base_link"        
+        pose_goal.pose.orientation.x = 0.0
+        pose_goal.pose.orientation.y = 0.0
+        pose_goal.pose.orientation.z = 1.0
+        pose_goal.pose.orientation.w = 0.0
+        pose_goal.pose.position.x = 0.2
+        pose_goal.pose.position.y = 0.0
+        pose_goal.pose.position.z = 0.9
+        self.kinova_planner.set_goal_state(pose_stamped_msg = pose_goal, pose_link = "end_effector_link")
 
         plan_result = self.kinova_planner.plan()
 
         if plan_result:
-
-            self.logger.info("Number of trajectory points: ")
-            self.logger.info(f'{len(plan_result.trajectory.get_robot_trajectory_msg().joint_trajectory.points)}')
-            for traj_point in plan_result.trajectory.get_robot_trajectory_msg().joint_trajectory.points:            
-               self.logger.info(f'{np.round(traj_point.positions, 4)}')
-
             self.kinova.execute(plan_result.trajectory, controllers=[])
+
 
         time.sleep(5) # TODO - find a better way of validating that movement is finished than just blind time
 
@@ -86,7 +121,7 @@ class PointServer(Node):
         pose_goal.pose.orientation.y = 0.0
         pose_goal.pose.orientation.z = 1.0
         pose_goal.pose.orientation.w = 0.0
-        pose_goal.pose.position.x = 0.2
+        pose_goal.pose.position.x = -0.4
         pose_goal.pose.position.y = 0.0
         pose_goal.pose.position.z = 0.9
         self.kinova_planner.set_goal_state(pose_stamped_msg = pose_goal, pose_link = "end_effector_link")
