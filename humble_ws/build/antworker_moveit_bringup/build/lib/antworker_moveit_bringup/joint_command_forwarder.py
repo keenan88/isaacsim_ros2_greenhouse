@@ -2,10 +2,11 @@ import rclpy
 from rclpy.node import Node
 from control_msgs.msg import JointTrajectoryControllerState
 from sensor_msgs.msg import JointState
+import numpy as np
 
 class JointForwarder(Node):
     def __init__(self):
-        super().__init__('joint_state_publisher')
+        super().__init__('joint_forwarder')
         self.subscription = self.create_subscription(
             JointTrajectoryControllerState,
             '/kinova_arm_controller/controller_state',
@@ -24,7 +25,9 @@ class JointForwarder(Node):
         # joint_state_msg.velocity = msg.actual.velocities
         # joint_state_msg.effort = msg.actual.effort
 
-        self.publisher.publish(joint_state_msg)
+        # kinova_arm_controller/controller_state continually publishes, and if given no trajectory
+        if not np.sum(np.abs(np.array(joint_state_msg.position))) == 0:
+            self.publisher.publish(joint_state_msg)
 
 def main(args=None):
     rclpy.init(args=args)

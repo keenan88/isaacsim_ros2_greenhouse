@@ -90,7 +90,7 @@ def generate_launch_description():
         package="robot_state_publisher",
         executable="robot_state_publisher",
         name="robot_state_publisher",
-        output="screen",
+        output="log",
         parameters=[
             moveit_config.robot_description,
             {
@@ -190,7 +190,7 @@ def generate_launch_description():
     joint_command_forwarder = Node(
         package="antworker_moveit_bringup",
         executable="joint_command_forwarder",
-        output="screen",
+        output="log",
         parameters = [
             {"use_sim_time": is_simulation}
         ]
@@ -219,18 +219,16 @@ def generate_launch_description():
         trajectory_server_hardware, 
         base_to_arm_static_tf,
         rviz_node,
-        robot_state_publisher
+        robot_state_publisher,
     ]
 
     simulation_launch = [
         ee_point_server,
-        # trajectory_server_sim,
         robot_state_publisher,
         ros2_control_node,
         spawn_sim_controller,
-        joint_command_forwarder
-        #target_robot_state_publisher,
-        #domain_bridge
+        #spawn_joint_state_brodcaster,
+        joint_command_forwarder,
         #rviz_node
     ]
 

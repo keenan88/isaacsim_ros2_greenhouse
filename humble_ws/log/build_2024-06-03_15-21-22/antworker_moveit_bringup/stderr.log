@@ -1,5 +1,0 @@
-  File "/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/trajectory_server_sim.py", line 66
-    def self.update_joint_states(self, joint_states):
-            ^
-SyntaxError: invalid syntax
-
