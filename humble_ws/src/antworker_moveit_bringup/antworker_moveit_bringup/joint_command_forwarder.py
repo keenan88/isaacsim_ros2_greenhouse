@@ -6,7 +6,7 @@ import numpy as np
 
 class JointForwarder(Node):
     def __init__(self):
-        super().__init__('joint_forwarder')
+        super().__init__('joint_command_forwarder')
         self.subscription = self.create_subscription(
             JointTrajectoryControllerState,
             '/kinova_arm_controller/controller_state',

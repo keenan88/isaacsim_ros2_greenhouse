@@ -38,7 +38,7 @@ def generate_launch_description():
             pipelines = ["ompl"] # "chomp", "pilz_industrial_motion_planner", "stomp"
         )
         .planning_scene_monitor(
-            publish_robot_description = True, publish_robot_description_semantic = True
+            publish_robot_description = False, publish_robot_description_semantic = True
         )
         .robot_description_semantic(file_path = "config/antworker.srdf")
         .to_moveit_configs()
@@ -98,33 +98,6 @@ def generate_launch_description():
             }
         ],
     )
-
-    target_robot_state_publisher = Node(
-        package="robot_state_publisher",
-        executable="robot_state_publisher",
-        name="target_robot_state_publisher",
-        output="screen",
-        parameters=[
-            moveit_config.robot_description,
-            {
-                "use_sim_time": is_simulation,
-                "ros_domain_id": 3
-            }
-        ]
-    )
-
-    # domain_bridge_config_path = os.path.join(
-    #     get_package_share_directory('antworker_moveit_bringup'), 
-    #     'config', 
-    #     'target_to_actual_bridge.yaml'
-    # )
-
-    # domain_bridge = Node(
-    #     package="domain_bridge",
-    #     executable="domain_bridge",
-    #     name = "domain_bridge",
-    #     arguments = [domain_bridge_config_path]
-    # )
 
     ros2_controllers_path = os.path.join(
         get_package_share_directory("antworker_moveit_description"),
@@ -196,6 +169,15 @@ def generate_launch_description():
         ]
     )
 
+    joint_state_forwarder = Node(
+        package="antworker_moveit_bringup",
+        executable="joint_state_forwarder",
+        output="log",
+        parameters = [
+            {"use_sim_time": is_simulation}
+        ]
+    )
+
     # realsense_node = Node(
     #     package="realsense2_camera",
     #     executable="realsense2_camera_node",
@@ -229,7 +211,7 @@ def generate_launch_description():
         spawn_joint_trajectory_controller,
         spawn_joint_state_brodcaster,
         joint_command_forwarder,
-        #rviz_node
+        rviz_node
     ]
 
 

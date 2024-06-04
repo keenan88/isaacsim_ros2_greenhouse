@@ -1,9 +1,11 @@
+/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/joint_state_forwarder.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/target_ee_pose_isolator.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/trajectory_server_sim.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/ee_point_server.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/trajectory_server.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/joint_command_forwarder.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__init__.py
+/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/joint_state_forwarder.cpython-310.pyc
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/target_ee_pose_isolator.cpython-310.pyc
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/trajectory_server_sim.cpython-310.pyc
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/ee_point_server.cpython-310.pyc
@@ -25,5 +27,6 @@
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup-0.0.0-py3.10.egg-info/entry_points.txt
 /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/ee_point_server
 /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/joint_command_forwarder
+/home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/joint_state_forwarder
 /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/trajectory_server
 /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/trajectory_server_sim
