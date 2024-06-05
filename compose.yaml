@@ -58,27 +58,27 @@ services:
   #   restart: "no"
   #   entrypoint: /isaac-sim/scripts/nav_entrypoint.sh
 
-  # humble-moveit:
-  #   container_name: humble-moveit
-  #   build:
-  #     context: ./dockerfiles/
-  #     dockerfile: moveit_humble_dockerfile
-  #   image: moveit_humble
-  #   tty: true
-  #   stdin_open: true
-  #   environment:
-  #     - DISPLAY=${DISPLAY}
-  #     - USE_SIM=${USE_SIM}
-  #   volumes:
-  #     - /tmp/.X11-unix:/tmp/.X11-unix
-  #     - ./humble_ws:/home/humble_ws:rw
-  #     - ./moveit:/home/moveit:rw
-  #     - ./docker_entry_scripts/joint_state_translater_entrypoint.sh:/home/scripts/joint_state_translater_entrypoint.sh:rw
-  #   network_mode: "host"
-  #   privileged: true
-  #   working_dir: /home/humble_ws
-  #   restart: "no"
-  #   # entrypoint: /home/scripts/joint_state_translater_entrypoint.sh
+  humble-moveit:
+    container_name: humble-moveit
+    build:
+      context: ./dockerfiles/
+      dockerfile: moveit_humble_dockerfile
+    image: moveit_humble
+    tty: true
+    stdin_open: true
+    environment:
+      - DISPLAY=${DISPLAY}
+      - USE_SIM=${USE_SIM}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./humble_ws:/home/humble_ws:rw
+      - ./moveit:/home/moveit:rw
+      - ./docker_entry_scripts/joint_state_translater_entrypoint.sh:/home/scripts/joint_state_translater_entrypoint.sh:rw
+    network_mode: "host"
+    privileged: true
+    working_dir: /home/humble_ws
+    restart: "no"
+    # entrypoint: /home/scripts/joint_state_translater_entrypoint.sh
 
   # humble-kortex:
   #   container_name: humble-kortex
