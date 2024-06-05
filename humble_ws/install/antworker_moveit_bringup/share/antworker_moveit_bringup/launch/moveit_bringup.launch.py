@@ -130,36 +130,6 @@ def generate_launch_description():
         output="screen"
     )
     
-
-    move_group = Node(
-        package="moveit_ros_move_group",
-        executable="move_group",
-        output="screen",
-        parameters=[
-            moveit_config.to_dict(),
-            {"use_sim_time": is_simulation}
-        ],
-        arguments=["--ros-args", "--log-level", "info"],
-    )
-
-    trajectory_server_hardware = Node(
-        package="antworker_moveit_bringup",
-        executable="trajectory_server",
-        output="screen",
-        parameters = [
-            {"use_sim_time": is_simulation}
-        ]
-    )
-
-    trajectory_server_sim = Node(
-        package="antworker_moveit_bringup",
-        executable="trajectory_server_sim",
-        output="screen",
-        parameters = [
-            {"use_sim_time": is_simulation}
-        ]
-    )
-
     joint_command_forwarder = Node(
         package="antworker_moveit_bringup",
         executable="joint_command_forwarder",
@@ -169,36 +139,8 @@ def generate_launch_description():
         ]
     )
 
-    joint_state_forwarder = Node(
-        package="antworker_moveit_bringup",
-        executable="joint_state_forwarder",
-        output="log",
-        parameters = [
-            {"use_sim_time": is_simulation}
-        ]
-    )
-
-    # realsense_node = Node(
-    #     package="realsense2_camera",
-    #     executable="realsense2_camera_node",
-    #     output="screen"
-    # )
-
-    # static_tf_camera = Node(
-    #     package="tf2_ros",
-    #     executable="static_transform_publisher",
-    #     name="static_transform_publisher",
-    #     output="screen",
-    #     arguments=["--frame-id", "kbase_link", "--child-frame-id", "camera_link"],
-    #     parameters = [
-    #         {"use_sim_time": is_simulation}
-    #     ]
-    # )
-
     hardware_launch_description = [
         ee_point_server, 
-        move_group, 
-        trajectory_server_hardware, 
         base_to_arm_static_tf,
         rviz_node,
         robot_state_publisher,

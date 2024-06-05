@@ -19,6 +19,7 @@ config/moveit_py_params.yaml
 config/rviz_config.rviz
 config/target_to_actual_bridge.yaml
 launch/moveit_bringup.launch.py
+launch/realsense.launch.py
 resource/antworker_moveit_bringup
 test/test_copyright.py
 test/test_flake8.py

@@ -1,0 +1,30 @@
+[1.273s] Invoking command in '/home/humble_ws/src/antworker_moveit_bringup': PYTHONPATH=/home/humble_ws/build/antworker_moveit_bringup/prefix_override:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_moveit_bringup build --build-base /home/humble_ws/build/antworker_moveit_bringup/build install --record /home/humble_ws/build/antworker_moveit_bringup/install.log --single-version-externally-managed install_data
+[1.491s] running egg_info
+[1.492s] writing ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/PKG-INFO
+[1.492s] writing dependency_links to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/dependency_links.txt
+[1.492s] writing entry points to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/entry_points.txt
+[1.492s] writing requirements to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/requires.txt
+[1.492s] writing top-level names to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/top_level.txt
+[1.494s] reading manifest file '../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/SOURCES.txt'
+[1.495s] writing manifest file '../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/SOURCES.txt'
+[1.495s] running build
+[1.495s] running build_py
+[1.495s] copying antworker_moveit_bringup/ee_point_server.py -> /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup
+[1.496s] running install
+[1.496s] running install_lib
+[1.497s] copying /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup/ee_point_server.py -> /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup
+[1.497s] byte-compiling /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/ee_point_server.py to ee_point_server.cpython-310.pyc
+[1.498s] running install_data
+[1.498s] copying launch/realsense.launch.py -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/launch
+[1.499s] copying launch/moveit_bringup.launch.py -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/launch
+[1.499s] running install_egg_info
+[1.500s] removing '/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup-0.0.0-py3.10.egg-info' (and everything under it)
+[1.501s] Copying ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info to /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup-0.0.0-py3.10.egg-info
+[1.502s] running install_scripts
+[1.521s] Installing ee_point_server script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+[1.521s] Installing joint_command_forwarder script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+[1.521s] Installing joint_state_forwarder script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+[1.522s] Installing trajectory_server script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+[1.522s] Installing trajectory_server_sim script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+[1.522s] writing list of installed files to '/home/humble_ws/build/antworker_moveit_bringup/install.log'
+[1.551s] Invoked command in '/home/humble_ws/src/antworker_moveit_bringup' returned '0': PYTHONPATH=/home/humble_ws/build/antworker_moveit_bringup/prefix_override:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_moveit_bringup build --build-base /home/humble_ws/build/antworker_moveit_bringup/build install --record /home/humble_ws/build/antworker_moveit_bringup/install.log --single-version-externally-managed install_data

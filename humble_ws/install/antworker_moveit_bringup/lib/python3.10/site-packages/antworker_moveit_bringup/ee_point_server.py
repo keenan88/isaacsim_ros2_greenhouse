@@ -100,7 +100,7 @@ class PointServer(Node):
         pose_goal.pose.orientation.z = 1.0
         pose_goal.pose.orientation.w = 0.0
         pose_goal.pose.position.x = 0.2
-        pose_goal.pose.position.y = 0.0
+        pose_goal.pose.position.y = 0.01
         pose_goal.pose.position.z = 0.9
         self.kinova_planner.set_goal_state(pose_stamped_msg = pose_goal, pose_link = "end_effector_link")
 
@@ -122,7 +122,7 @@ class PointServer(Node):
         pose_goal.pose.orientation.z = 1.0
         pose_goal.pose.orientation.w = 0.0
         pose_goal.pose.position.x = -0.4
-        pose_goal.pose.position.y = 0.0
+        pose_goal.pose.position.y = 0.01
         pose_goal.pose.position.z = 0.9
         self.kinova_planner.set_goal_state(pose_stamped_msg = pose_goal, pose_link = "end_effector_link")
 
