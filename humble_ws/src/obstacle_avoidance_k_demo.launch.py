@@ -72,15 +72,6 @@ def generate_launch_description():
         ],
     )
 
-    # # Static TF
-    # static_tf_node = Node(
-    #     package="tf2_ros",
-    #     executable="static_transform_publisher",
-    #     name="static_transform_publisher",
-    #     output="log",
-    #     arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "world", "panda_link0"],
-    # )
-
     # Publish TF
     robot_state_publisher = Node(
         package="robot_state_publisher",
@@ -93,51 +84,52 @@ def generate_launch_description():
         ],
     )
 
-    # # ros2_control using FakeSystem as hardware
-    # ros2_controllers_path = os.path.join(
-    #     get_package_share_directory("antworker_moveit_description"),
-    #     "config",
-    #     "ros2_controllers.yaml",
-    # )
+    # ros2_control using FakeSystem as hardware
+    ros2_controllers_path = os.path.join(
+        get_package_share_directory("antworker_moveit_description"),
+        "config",
+        "ros2_controllers.yaml",
+    )
     
-    # ros2_control_node = Node(
-    #     package="controller_manager",
-    #     executable="ros2_control_node",
-    #     parameters=[
-    #         ros2_controllers_path,
-    #         {"use_sim_time": True}
-    #     ],
-    #     remappings=[
-    #         ("/controller_manager/robot_description", "/robot_description"),
-    #     ],
-    #     output="screen",
-    # )
+    ros2_control_node = Node(
+        package="controller_manager",
+        executable="ros2_control_node",
+        parameters=[
+            ros2_controllers_path,
+            {"use_sim_time": True}
+        ],
+        remappings=[
+            ("/controller_manager/robot_description", "/robot_description"),
+        ],
+        output="screen",
+    )
 
-    # joint_state_broadcaster_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=[
-    #         "joint_state_broadcaster",
-    #         "--controller-manager",
-    #         "/controller_manager",
-    #     ],
-    # )
+    joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "joint_state_broadcaster",
+            "--controller-manager",
+            "/controller_manager",
+        ],
+    )
 
-    # panda_arm_controller_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["kinova_arm_controller", "-c", "/controller_manager"],
-    # )
+    panda_arm_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["kinova_arm_controller", "-c", "/controller_manager"],
+    )
+
+    
 
     return LaunchDescription(
         [
             rviz_config_arg,
             rviz_node,
-            #static_tf_node,
             robot_state_publisher,
             move_group_node,
-            # ros2_control_node,
-            # joint_state_broadcaster_spawner,
-            # panda_arm_controller_spawner,
+            ros2_control_node,
+            joint_state_broadcaster_spawner,
+            panda_arm_controller_spawner
         ]
     )
