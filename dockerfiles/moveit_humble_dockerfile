@@ -21,7 +21,8 @@ RUN apt update -y
 RUN apt dist-upgrade -y
 RUN rosdep update -y
 
-# These are all the packages that are installed by rosdep install --from-paths /home/moveit --ignore-src -r -y
+# These are all the packages that are installed by rosdep install --from-paths /home/moveit --ignore-src -r -y,
+# for the moveit2 source code workspace
 # But since I cant run that in a dockerfile since the volumes are mounted after image build, 
 # I am just manually installing all the packages here
 RUN apt-get install -y ros-humble-topic-tools
@@ -52,6 +53,11 @@ RUN apt-get install -y ros-humble-ompl
 RUN apt-get install -y ros-humble-gripper-controllers
 RUN apt-get install -y ros-humble-joint-state-broadcaster
 RUN apt-get install -y ros-humble-joint-trajectory-controller
+
+# rosdep install -r --from-paths . --ignore-src --rosdistro rolling -y packages installed
+# for moveit2_tutorials workspace
+RUN apt-get install -y librange-v3-dev
+RUN apt-get install -y jupyter-notebook
 
 RUN apt install gnome-terminal dbus-x11 -y
 

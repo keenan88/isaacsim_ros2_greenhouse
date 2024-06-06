@@ -11,7 +11,19 @@ from moveit_configs_utils import MoveItConfigsBuilder
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from pathlib import Path
+import yaml
+from ament_index_python.packages import get_package_share_directory
 
+
+def load_yaml(package_name, file_path):
+    package_path = get_package_share_directory(package_name)
+    absolute_file_path = os.path.join(package_path, file_path)
+
+    try:
+        with open(absolute_file_path, 'r') as file:
+            return yaml.safe_load(file)
+    except EnvironmentError: # parent of IOError, OSError *and* WindowsError where available
+        return None
 
 
 def generate_launch_description():
@@ -41,8 +53,19 @@ def generate_launch_description():
             publish_robot_description = False, publish_robot_description_semantic = True
         )
         .robot_description_semantic(file_path = "config/antworker.srdf")
+        .sensors_3d(
+            file_path = "config/sensors_3d.yaml"
+        )
         .to_moveit_configs()
     )
+
+    octomap_config = {
+        'octomap_frame': 'sim_camera', 
+        'octomap_resolution': 0.05,
+        'max_range': 5.0
+    }
+
+    octomap_updater_config = load_yaml('antworker_moveit_description', 'config/not_sensors_3d.yaml')
 
     ee_point_server = Node(
         name="ee_point_server",
@@ -51,7 +74,15 @@ def generate_launch_description():
         output="screen",
         parameters=[
             moveit_config.to_dict(),
-            {"use_sim_time": is_simulation}
+            # {
+            #     "use_sim_time": is_simulation,
+            #     "octomap_resolution": 5.0,
+            #     "octomap_frame": "odom",
+            #     "max_range": 1.0
+            # },
+            octomap_config,
+            octomap_updater_config
+            
         ],
     )
 
