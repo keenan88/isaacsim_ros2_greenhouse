@@ -234,37 +234,43 @@ Visualization Manager:
       Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: false
+        All Enabled: true
         arm_base_link:
           Value: true
         base_link:
-          Value: false
+          Value: true
         bicep_link:
-          Value: false
+          Value: true
         bracelet_link:
-          Value: false
+          Value: true
         camera_color_frame:
-          Value: false
+          Value: true
         camera_depth_frame:
-          Value: false
+          Value: true
         camera_link:
-          Value: false
+          Value: true
         chassis_link:
-          Value: false
+          Value: true
         end_effector_link:
           Value: true
         forearm_link:
-          Value: false
+          Value: true
+        front_wheel_link:
+          Value: true
         map:
-          Value: false
+          Value: true
         odom:
-          Value: false
+          Value: true
+        rear_wheel_link:
+          Value: true
         shoulder_link:
-          Value: false
+          Value: true
+        sim_camera:
+          Value: true
         spherical_wrist_1_link:
-          Value: false
+          Value: true
         spherical_wrist_2_link:
-          Value: false
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
@@ -289,6 +295,12 @@ Visualization Manager:
                               camera_link:
                                 {}
               base_link:
+                {}
+              front_wheel_link:
+                {}
+              rear_wheel_link:
+                {}
+              sim_camera:
                 {}
       Update Interval: 0
       Value: true
@@ -353,10 +365,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6547973155975342
+      Pitch: 0.3547973334789276
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.9853932857513428
+      Yaw: 2.78039288520813
     Saved: ~
 Window Geometry:
   Displays:
