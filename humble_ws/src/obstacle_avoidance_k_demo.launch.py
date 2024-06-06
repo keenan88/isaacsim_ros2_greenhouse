@@ -22,24 +22,13 @@ def generate_launch_description():
         "db", default_value="False", description="Database flag"
     )
 
-    ros2_control_hardware_type = DeclareLaunchArgument(
-        "ros2_control_hardware_type",
-        default_value="mock_components",
-        description="ROS 2 control hardware interface type to use for the launch file -- possible values: [mock_components, isaac]",
-    )
-
     moveit_config = (
         MoveItConfigsBuilder(
             robot_name="antworker", 
             package_name="antworker_moveit_description",
         )
         .robot_description(
-            file_path="config/antworker.urdf.xacro",
-            # mappings={
-            #     "ros2_control_hardware_type": LaunchConfiguration(
-            #         "ros2_control_hardware_type"
-            #     )
-            # },
+            file_path="config/antworker.urdf.xacro"
         )
         .robot_description_semantic(file_path="config/antworker.srdf")
         .planning_scene_monitor(
@@ -57,7 +46,11 @@ def generate_launch_description():
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
-        parameters=[moveit_config.to_dict()],
+        parameters=[
+            moveit_config.to_dict(),
+            {"use_sim_time": True}
+            
+        ],
         arguments=["--ros-args", "--log-level", "info"],
     )
 
@@ -75,6 +68,7 @@ def generate_launch_description():
             moveit_config.planning_pipelines,
             moveit_config.robot_description_kinematics,
             moveit_config.joint_limits,
+            {"use_sim_time": True}
         ],
     )
 
@@ -93,67 +87,51 @@ def generate_launch_description():
         executable="robot_state_publisher",
         name="robot_state_publisher",
         output="both",
-        parameters=[moveit_config.robot_description],
+        parameters=[
+            moveit_config.robot_description,
+            {"use_sim_time": True}    
+        ],
     )
 
-    # ros2_control using FakeSystem as hardware
-    ros2_controllers_path = os.path.join(
-        get_package_share_directory("antworker_moveit_description"),
-        "config",
-        "ros2_controllers.yaml",
-    )
+    # # ros2_control using FakeSystem as hardware
+    # ros2_controllers_path = os.path.join(
+    #     get_package_share_directory("antworker_moveit_description"),
+    #     "config",
+    #     "ros2_controllers.yaml",
+    # )
     
-    ros2_control_node = Node(
-        package="controller_manager",
-        executable="ros2_control_node",
-        parameters=[ros2_controllers_path],
-        remappings=[
-            ("/controller_manager/robot_description", "/robot_description"),
-        ],
-        output="screen",
-    )
-
-    joint_state_broadcaster_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=[
-            "joint_state_broadcaster",
-            "--controller-manager",
-            "/controller_manager",
-        ],
-    )
-
-    panda_arm_controller_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["kinova_arm_controller", "-c", "/controller_manager"],
-    )
-
-    # panda_hand_controller_spawner = Node(
+    # ros2_control_node = Node(
     #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["panda_hand_controller", "-c", "/controller_manager"],
+    #     executable="ros2_control_node",
+    #     parameters=[
+    #         ros2_controllers_path,
+    #         {"use_sim_time": True}
+    #     ],
+    #     remappings=[
+    #         ("/controller_manager/robot_description", "/robot_description"),
+    #     ],
+    #     output="screen",
     # )
 
-    # Warehouse mongodb server
-    db_config = LaunchConfiguration("db")
-    mongodb_server_node = Node(
-        package="warehouse_ros_mongo",
-        executable="mongo_wrapper_ros.py",
-        parameters=[
-            {"warehouse_port": 33829},
-            {"warehouse_host": "localhost"},
-            {"warehouse_plugin": "warehouse_ros_mongo::MongoDatabaseConnection"},
-        ],
-        output="screen",
-        condition=IfCondition(db_config),
-    )
+    # joint_state_broadcaster_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=[
+    #         "joint_state_broadcaster",
+    #         "--controller-manager",
+    #         "/controller_manager",
+    #     ],
+    # )
+
+    # panda_arm_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["kinova_arm_controller", "-c", "/controller_manager"],
+    # )
 
     return LaunchDescription(
         [
             rviz_config_arg,
-            db_arg,
-            ros2_control_hardware_type,
             rviz_node,
             #static_tf_node,
             robot_state_publisher,
@@ -161,7 +139,5 @@ def generate_launch_description():
             # ros2_control_node,
             # joint_state_broadcaster_spawner,
             # panda_arm_controller_spawner,
-            # #panda_hand_controller_spawner,
-            # mongodb_server_node,
         ]
     )
