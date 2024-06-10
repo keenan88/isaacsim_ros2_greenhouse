@@ -15,6 +15,10 @@ antworker_moveit_bringup/joint_state_forwarder.py
 antworker_moveit_bringup/target_ee_pose_isolator.py
 antworker_moveit_bringup/trajectory_server.py
 antworker_moveit_bringup/trajectory_server_sim.py
+config/common_hybrid_planning_params.yaml
+config/global_planner.yaml
+config/hybrid_planning_manager.yaml
+config/local_planner.yaml
 config/moveit_py_params.yaml
 config/rviz_config.rviz
 config/target_to_actual_bridge.yaml

@@ -1,4 +1,4 @@
-import os
+import os, yaml
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
@@ -7,7 +7,20 @@ from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 from ament_index_python.packages import get_package_share_directory
 from moveit_configs_utils import MoveItConfigsBuilder
+from launch_ros.actions import ComposableNodeContainer
+from launch_ros.descriptions import ComposableNode
 
+def load_yaml(package_name, file_path):
+    package_path = get_package_share_directory(package_name)
+    absolute_file_path = os.path.join(package_path, file_path)
+
+    try:
+        with open(absolute_file_path, "r") as file:
+            return yaml.safe_load(file)
+    except (
+        EnvironmentError
+    ):  # parent of IOError, OSError *and* WindowsError where available
+        return None
 
 def generate_launch_description():
 
@@ -32,7 +45,7 @@ def generate_launch_description():
         )
         .robot_description_semantic(file_path="config/antworker.srdf")
         .planning_scene_monitor(
-            publish_robot_description=True, publish_robot_description_semantic=True
+            publish_robot_description = True, publish_robot_description_semantic = True
         )
         .trajectory_execution(file_path="config/moveit_controllers.yaml")
         .planning_pipelines(
@@ -120,6 +133,60 @@ def generate_launch_description():
         arguments=["kinova_arm_controller", "-c", "/controller_manager"],
     )
 
+    global_planner_param = load_yaml(
+        "antworker_moveit_bringup", "config/global_planner.yaml"
+    )
+    local_planner_param = load_yaml(
+        "antworker_moveit_bringup", "config/local_planner.yaml"
+    )
+    hybrid_planning_manager_param = load_yaml(
+        "antworker_moveit_bringup", "config/hybrid_planning_manager.yaml"
+    )
+
+    common_hybrid_planning_param = load_yaml(
+        "antworker_moveit_bringup", "config/common_hybrid_planning_params.yaml"
+    )
+
+    # Generate launch description with multiple components
+    container = ComposableNodeContainer(
+        name="hybrid_planning_container",
+        namespace="/",
+        package="rclcpp_components",
+        executable="component_container",
+        composable_node_descriptions=[
+            ComposableNode(
+                package="moveit_hybrid_planning",
+                plugin="moveit::hybrid_planning::GlobalPlannerComponent",
+                name="global_planner",
+                parameters=[
+                    global_planner_param,
+                    moveit_config.to_dict(),
+                    common_hybrid_planning_param
+                ],
+            ),
+            ComposableNode(
+                package="moveit_hybrid_planning",
+                plugin="moveit::hybrid_planning::LocalPlannerComponent",
+                name="local_planner",
+                parameters=[
+                    local_planner_param,
+                    moveit_config.to_dict(),
+                    common_hybrid_planning_param
+                ],
+            ),
+            ComposableNode(
+                package="moveit_hybrid_planning",
+                plugin="moveit::hybrid_planning::HybridPlanningManager",
+                name="hybrid_planning_manager",
+                parameters=[
+                    hybrid_planning_manager_param,
+                    common_hybrid_planning_param
+                ],
+            ),
+        ],
+        output="screen",
+    )
+
     
 
     return LaunchDescription(
@@ -130,6 +197,7 @@ def generate_launch_description():
             move_group_node,
             ros2_control_node,
             joint_state_broadcaster_spawner,
-            panda_arm_controller_spawner
+            panda_arm_controller_spawner,
+            container
         ]
     )

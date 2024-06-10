@@ -16,8 +16,12 @@
 /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/package.xml
 /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/launch/realsense.launch.py
 /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/launch/moveit_bringup.launch.py
+/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config/global_planner.yaml
 /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config/moveit_py_params.yaml
+/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config/local_planner.yaml
 /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config/target_to_actual_bridge.yaml
+/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config/common_hybrid_planning_params.yaml
+/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config/hybrid_planning_manager.yaml
 /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config/rviz_config.rviz
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup-0.0.0-py3.10.egg-info/requires.txt
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup-0.0.0-py3.10.egg-info/SOURCES.txt
