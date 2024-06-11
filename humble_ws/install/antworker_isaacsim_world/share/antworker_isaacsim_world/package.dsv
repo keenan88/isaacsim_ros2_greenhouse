@@ -1,6 +1,0 @@
-source;share/antworker_isaacsim_world/hook/pythonpath.ps1
-source;share/antworker_isaacsim_world/hook/pythonpath.dsv
-source;share/antworker_isaacsim_world/hook/pythonpath.sh
-source;share/antworker_isaacsim_world/hook/ament_prefix_path.ps1
-source;share/antworker_isaacsim_world/hook/ament_prefix_path.dsv
-source;share/antworker_isaacsim_world/hook/ament_prefix_path.sh
