@@ -28,7 +28,7 @@ class MoveGroupActionClientNode(Node):
     def generate_goal_msg(self):
         goal_msg = MoveGroup.Goal()
 
-        goal_msg.planning_options.plan_only = True
+        goal_msg.planning_options.plan_only = False
         goal_msg.planning_options.look_around = False
         goal_msg.planning_options.replan = False
 
@@ -50,12 +50,12 @@ class MoveGroupActionClientNode(Node):
 
         bounding_prim = SolidPrimitive()
         bounding_prim.type = 1 # 1 is box
-        bounding_prim.dimensions = [0.1, 0.1, 0.1]
+        bounding_prim.dimensions = [0.01, 0.01, 0.01]
 
         # is the bounding box in the arm_base_link frame or the end effector frame?
         bounding_prim_pose = Pose()
-        bounding_prim_pose.position.x = 0.2
-        bounding_prim_pose.position.y = 0.01
+        bounding_prim_pose.position.x = 0.0
+        bounding_prim_pose.position.y = 0.0
         bounding_prim_pose.position.z = 0.9
         bounding_prim_pose.orientation.x = 0.0
         bounding_prim_pose.orientation.y = 0.0
@@ -72,9 +72,9 @@ class MoveGroupActionClientNode(Node):
         ee_orient_constraint.header.frame_id = "arm_base_link"
         ee_orient_constraint.link_name = "end_effector_link"
         ee_orient_constraint.orientation.x = 0.0
-        ee_orient_constraint.orientation.x = 0.0
-        ee_orient_constraint.orientation.x = 1.0
-        ee_orient_constraint.orientation.x = 0.0
+        ee_orient_constraint.orientation.y = 0.0
+        ee_orient_constraint.orientation.z = 1.0
+        ee_orient_constraint.orientation.w = 0.0
 
         constraints = Constraints()
         constraints.position_constraints.append(ee_pose_constraint)
@@ -103,6 +103,11 @@ class MoveGroupActionClientNode(Node):
     def get_result_callback(self, future):
         result = future.result().result
         self.get_logger().info('Result: {0}'.format(result))
+
+        for traj_point in result.planned_trajectory.joint_trajectory.points:
+            print(traj_point)
+            print()
+
         rclpy.shutdown()
 
 

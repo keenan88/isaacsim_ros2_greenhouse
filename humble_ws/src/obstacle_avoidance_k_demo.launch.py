@@ -123,6 +123,12 @@ def generate_launch_description():
         arguments=["kinova_arm_controller", "-c", "/controller_manager"],
     )
 
+    joint_command_forwarder = Node(
+        package = "antworker_moveit_bringup",
+        executable = "joint_command_forwarder",
+        output = "screen"
+    )
+
     
 
     return LaunchDescription(
@@ -133,6 +139,7 @@ def generate_launch_description():
             move_group_node,
             ros2_control_node,
             joint_state_broadcaster_spawner,
-            panda_arm_controller_spawner
+            panda_arm_controller_spawner,
+            joint_command_forwarder
         ]
     )
