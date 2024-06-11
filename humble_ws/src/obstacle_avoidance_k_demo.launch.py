@@ -38,9 +38,6 @@ def generate_launch_description():
         .planning_pipelines(
             pipelines=["chomp", "pilz_industrial_motion_planner"] # stomp, ompl
         )
-        .move_group_capabilities(
-            
-        )
         .to_moveit_configs()
     )
 
