@@ -19,6 +19,13 @@ def generate_launch_description():
     robot_description = get_robot_description()
     robot_description_semantic = get_robot_description_semantic()
 
+    # print("robot_description_semantic")
+    # print(robot_description_semantic)
+
+
+    # print("robot_description")
+    # print(robot_description)
+
     # Demo node
     common_hybrid_planning_param = load_yaml(
         "moveit_hybrid_planning", "config/common_hybrid_planning_params.yaml"
@@ -29,8 +36,8 @@ def generate_launch_description():
         name="hybrid_planning_demo_node",
         output="screen",
         parameters=[
-            get_robot_description(),
-            get_robot_description_semantic(),
+            robot_description,
+            robot_description_semantic,
             common_hybrid_planning_param,
             {"use_sim_time" : True}
         ],

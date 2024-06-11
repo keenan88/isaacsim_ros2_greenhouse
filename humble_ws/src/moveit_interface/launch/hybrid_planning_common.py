@@ -173,7 +173,10 @@ def generate_common_hybrid_launch_description():
         executable="robot_state_publisher",
         name="robot_state_publisher",
         output="both",
-        parameters=[robot_description],
+        parameters=[
+            robot_description,
+            {"use_sim_time" : True}
+        ],
     )
 
     # ros2_control using FakeSystem as hardware
@@ -215,11 +218,10 @@ def generate_common_hybrid_launch_description():
 
     launched_nodes = [
         container,
-        static_tf,
         rviz_node,
         robot_state_publisher,
         ros2_control_node,
-        joint_state_broadcaster_spawner,
+        #joint_state_broadcaster_spawner,
         #kinova_joint_group_position_controller_spawner,
     ]
 

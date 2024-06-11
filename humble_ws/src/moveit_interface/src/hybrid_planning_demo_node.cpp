@@ -201,8 +201,8 @@ public:
     const auto robot_state = std::make_shared<moveit::core::RobotState>(robot_model);
     const moveit::core::JointModelGroup* joint_model_group = robot_state->getJointModelGroup(planning_group);
 
-    // Configure a valid robot state
-    robot_state->setToDefaultValues(joint_model_group, "ready");
+    // // Configure a valid robot state
+    robot_state->setToDefaultValues(joint_model_group, "extended");
     robot_state->update();
     // Lock the planning scene as briefly as possible
     {
@@ -223,7 +223,7 @@ public:
     goal_motion_request.pipeline_id = "ompl";
 
     moveit::core::RobotState goal_state(robot_model);
-    std::vector<double> joint_values = { 0.0, 0.0, 0.0, 0.0, 0.0, 1.571, 0.785 };
+    std::vector<double> joint_values = { 0.0, 0.0, 0.0, 0.0, 0.0, 1.571};
     goal_state.setJointGroupPositions(joint_model_group, joint_values);
 
     goal_motion_request.goal_constraints.resize(1);

@@ -1,0 +1,26 @@
+[0.743s] Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/moveit_interface -- -j16 -l16
+[0.799s] [35m[1mConsolidate compiler generated dependencies of target hybrid_planning_demo_node[0m
+[0.853s] [ 50%] [32mBuilding CXX object CMakeFiles/hybrid_planning_demo_node.dir/src/hybrid_planning_demo_node.cpp.o[0m
+[15.852s] [100%] [32m[1mLinking CXX executable hybrid_planning_demo_node[0m
+[16.558s] [100%] Built target hybrid_planning_demo_node
+[16.570s] Invoked command in '/home/humble_ws/build/moveit_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/moveit_interface -- -j16 -l16
+[16.597s] Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --install /home/humble_ws/build/moveit_interface
+[16.604s] -- Install configuration: ""
+[16.604s] -- Installing: /home/humble_ws/install/moveit_interface/lib/moveit_interface/hybrid_planning_demo_node
+[16.611s] -- Set runtime path of "/home/humble_ws/install/moveit_interface/lib/moveit_interface/hybrid_planning_demo_node" to ""
+[16.611s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/package_run_dependencies/moveit_interface
+[16.611s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/parent_prefix_path/moveit_interface
+[16.611s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/ament_prefix_path.sh
+[16.611s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/ament_prefix_path.dsv
+[16.611s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/path.sh
+[16.612s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/path.dsv
+[16.612s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.bash
+[16.612s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.sh
+[16.612s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.zsh
+[16.612s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.dsv
+[16.612s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/package.dsv
+[16.612s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/packages/moveit_interface
+[16.612s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/cmake/moveit_interfaceConfig.cmake
+[16.612s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/cmake/moveit_interfaceConfig-version.cmake
+[16.612s] -- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/package.xml
+[16.614s] Invoked command in '/home/humble_ws/build/moveit_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --install /home/humble_ws/build/moveit_interface

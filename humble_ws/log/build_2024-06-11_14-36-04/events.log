@@ -1,0 +1,335 @@
+[0.000000] (-) TimerEvent: {}
+[0.000637] (antworker_description) JobQueued: {'identifier': 'antworker_description', 'dependencies': OrderedDict()}
+[0.000731] (antworker_isaacsim_world) JobQueued: {'identifier': 'antworker_isaacsim_world', 'dependencies': OrderedDict()}
+[0.000762] (antworker_moveit_bringup) JobQueued: {'identifier': 'antworker_moveit_bringup', 'dependencies': OrderedDict()}
+[0.000785] (antworker_navigation) JobQueued: {'identifier': 'antworker_navigation', 'dependencies': OrderedDict()}
+[0.000806] (moveit_interface) JobQueued: {'identifier': 'moveit_interface', 'dependencies': OrderedDict()}
+[0.000831] (antworker_moveit_description) JobQueued: {'identifier': 'antworker_moveit_description', 'dependencies': OrderedDict([('antworker_description', '/home/humble_ws/install/antworker_description')])}
+[0.000860] (antworker_description) JobStarted: {'identifier': 'antworker_description'}
+[0.009228] (antworker_isaacsim_world) JobStarted: {'identifier': 'antworker_isaacsim_world'}
+[0.014442] (antworker_moveit_bringup) JobStarted: {'identifier': 'antworker_moveit_bringup'}
+[0.019287] (antworker_navigation) JobStarted: {'identifier': 'antworker_navigation'}
+[0.024247] (moveit_interface) JobStarted: {'identifier': 'moveit_interface'}
+[0.099614] (-) TimerEvent: {}
+[0.199953] (-) TimerEvent: {}
+[0.300283] (-) TimerEvent: {}
+[0.400590] (-) TimerEvent: {}
+[0.500893] (-) TimerEvent: {}
+[0.601232] (-) TimerEvent: {}
+[0.701560] (-) TimerEvent: {}
+[0.801891] (-) TimerEvent: {}
+[0.829473] (moveit_interface) JobProgress: {'identifier': 'moveit_interface', 'progress': 'cmake'}
+[0.830104] (moveit_interface) JobProgress: {'identifier': 'moveit_interface', 'progress': 'build'}
+[0.830843] (moveit_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/humble_ws/build/moveit_interface', '--', '-j16', '-l16'], 'cwd': '/home/humble_ws/build/moveit_interface', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/humble_ws/install'), ('USE_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('RTI_NC_LICENSE_ACCEPTED', 'yes'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble'), ('PWD', '/home/humble_ws/build/moveit_interface'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble')]), 'shell': False}
+[0.894438] (moveit_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hybrid_planning_demo_node\x1b[0m\n'}
+[0.902003] (-) TimerEvent: {}
+[0.946727] (moveit_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/hybrid_planning_demo_node.dir/src/hybrid_planning_demo_node.cpp.o\x1b[0m\n'}
+[1.002113] (-) TimerEvent: {}
+[1.102578] (-) TimerEvent: {}
+[1.180572] (antworker_isaacsim_world) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/antworker_isaacsim_world', 'build', '--build-base', '/home/humble_ws/build/antworker_isaacsim_world/build', 'install', '--record', '/home/humble_ws/build/antworker_isaacsim_world/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/humble_ws/src/antworker_isaacsim_world', 'env': {'HOSTNAME': 'keenan-Legion-5-15ACH6', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/home/humble_ws/install', 'USE_SIM': 'True', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'RTI_NC_LICENSE_ACCEPTED': 'yes', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble', 'PWD': '/home/humble_ws/build/antworker_isaacsim_world', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/humble_ws/build/antworker_isaacsim_world/prefix_override:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_moveit_description'}, 'shell': False}
+[1.184202] (antworker_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/antworker_description', 'build', '--build-base', '/home/humble_ws/build/antworker_description/build', 'install', '--record', '/home/humble_ws/build/antworker_description/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/humble_ws/src/antworker_description', 'env': {'HOSTNAME': 'keenan-Legion-5-15ACH6', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/home/humble_ws/install', 'USE_SIM': 'True', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'RTI_NC_LICENSE_ACCEPTED': 'yes', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble', 'PWD': '/home/humble_ws/build/antworker_description', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/humble_ws/build/antworker_description/prefix_override:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_moveit_description'}, 'shell': False}
+[1.188313] (antworker_moveit_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/antworker_moveit_bringup', 'build', '--build-base', '/home/humble_ws/build/antworker_moveit_bringup/build', 'install', '--record', '/home/humble_ws/build/antworker_moveit_bringup/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/humble_ws/src/antworker_moveit_bringup', 'env': {'HOSTNAME': 'keenan-Legion-5-15ACH6', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/home/humble_ws/install', 'USE_SIM': 'True', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'RTI_NC_LICENSE_ACCEPTED': 'yes', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble', 'PWD': '/home/humble_ws/build/antworker_moveit_bringup', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/humble_ws/build/antworker_moveit_bringup/prefix_override:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_moveit_description'}, 'shell': False}
+[1.193815] (antworker_navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/antworker_navigation', 'build', '--build-base', '/home/humble_ws/build/antworker_navigation/build', 'install', '--record', '/home/humble_ws/build/antworker_navigation/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/humble_ws/src/antworker_navigation', 'env': {'HOSTNAME': 'keenan-Legion-5-15ACH6', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/home/humble_ws/install', 'USE_SIM': 'True', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'RTI_NC_LICENSE_ACCEPTED': 'yes', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble', 'PWD': '/home/humble_ws/build/antworker_navigation', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/humble_ws/build/antworker_navigation/prefix_override:/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_moveit_description'}, 'shell': False}
+[1.202679] (-) TimerEvent: {}
+[1.303106] (-) TimerEvent: {}
+[1.403432] (-) TimerEvent: {}
+[1.404494] (antworker_isaacsim_world) StdoutLine: {'line': b'running egg_info\n'}
+[1.405228] (antworker_isaacsim_world) StdoutLine: {'line': b'writing ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/PKG-INFO\n'}
+[1.405472] (antworker_isaacsim_world) StdoutLine: {'line': b'writing dependency_links to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/dependency_links.txt\n'}
+[1.405630] (antworker_isaacsim_world) StdoutLine: {'line': b'writing entry points to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/entry_points.txt\n'}
+[1.405771] (antworker_isaacsim_world) StdoutLine: {'line': b'writing requirements to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/requires.txt\n'}
+[1.405882] (antworker_isaacsim_world) StdoutLine: {'line': b'writing top-level names to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/top_level.txt\n'}
+[1.407444] (antworker_isaacsim_world) StdoutLine: {'line': b"reading manifest file '../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/SOURCES.txt'\n"}
+[1.408236] (antworker_isaacsim_world) StdoutLine: {'line': b"writing manifest file '../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/SOURCES.txt'\n"}
+[1.408448] (antworker_isaacsim_world) StdoutLine: {'line': b'running build\n'}
+[1.408569] (antworker_isaacsim_world) StdoutLine: {'line': b'running build_py\n'}
+[1.408682] (antworker_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[1.408795] (antworker_isaacsim_world) StdoutLine: {'line': b'running install\n'}
+[1.408909] (antworker_isaacsim_world) StdoutLine: {'line': b'running install_lib\n'}
+[1.409106] (antworker_navigation) StdoutLine: {'line': b'writing ../../build/antworker_navigation/antworker_navigation.egg-info/PKG-INFO\n'}
+[1.409334] (antworker_navigation) StdoutLine: {'line': b'writing dependency_links to ../../build/antworker_navigation/antworker_navigation.egg-info/dependency_links.txt\n'}
+[1.409495] (antworker_navigation) StdoutLine: {'line': b'writing entry points to ../../build/antworker_navigation/antworker_navigation.egg-info/entry_points.txt\n'}
+[1.409639] (antworker_navigation) StdoutLine: {'line': b'writing requirements to ../../build/antworker_navigation/antworker_navigation.egg-info/requires.txt\n'}
+[1.409772] (antworker_navigation) StdoutLine: {'line': b'writing top-level names to ../../build/antworker_navigation/antworker_navigation.egg-info/top_level.txt\n'}
+[1.409917] (antworker_description) StdoutLine: {'line': b'running egg_info\n'}
+[1.410092] (antworker_isaacsim_world) StdoutLine: {'line': b'running install_data\n'}
+[1.410208] (antworker_isaacsim_world) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.410581] (antworker_description) StdoutLine: {'line': b'writing ../../build/antworker_description/antworker_description.egg-info/PKG-INFO\n'}
+[1.410822] (antworker_description) StdoutLine: {'line': b'writing dependency_links to ../../build/antworker_description/antworker_description.egg-info/dependency_links.txt\n'}
+[1.411008] (antworker_description) StdoutLine: {'line': b'writing entry points to ../../build/antworker_description/antworker_description.egg-info/entry_points.txt\n'}
+[1.411148] (antworker_description) StdoutLine: {'line': b'writing requirements to ../../build/antworker_description/antworker_description.egg-info/requires.txt\n'}
+[1.411267] (antworker_description) StdoutLine: {'line': b'writing top-level names to ../../build/antworker_description/antworker_description.egg-info/top_level.txt\n'}
+[1.411395] (antworker_navigation) StdoutLine: {'line': b"reading manifest file '../../build/antworker_navigation/antworker_navigation.egg-info/SOURCES.txt'\n"}
+[1.412234] (antworker_navigation) StdoutLine: {'line': b"writing manifest file '../../build/antworker_navigation/antworker_navigation.egg-info/SOURCES.txt'\n"}
+[1.412405] (antworker_navigation) StdoutLine: {'line': b'running build\n'}
+[1.412518] (antworker_navigation) StdoutLine: {'line': b'running build_py\n'}
+[1.412683] (antworker_navigation) StdoutLine: {'line': b'running install\n'}
+[1.412838] (antworker_isaacsim_world) StdoutLine: {'line': b"removing '/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages/antworker_isaacsim_world-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.413292] (antworker_navigation) StdoutLine: {'line': b'running install_lib\n'}
+[1.413467] (antworker_description) StdoutLine: {'line': b"reading manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'\n"}
+[1.413606] (antworker_isaacsim_world) StdoutLine: {'line': b'Copying ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info to /home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages/antworker_isaacsim_world-0.0.0-py3.10.egg-info\n'}
+[1.413858] (antworker_moveit_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[1.414502] (antworker_isaacsim_world) StdoutLine: {'line': b'running install_scripts\n'}
+[1.414609] (antworker_navigation) StdoutLine: {'line': b'running install_data\n'}
+[1.414730] (antworker_navigation) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.414840] (antworker_description) StdoutLine: {'line': b"writing manifest file '../../build/antworker_description/antworker_description.egg-info/SOURCES.txt'\n"}
+[1.415014] (antworker_description) StdoutLine: {'line': b'running build\n'}
+[1.415170] (antworker_description) StdoutLine: {'line': b'running build_py\n'}
+[1.415280] (antworker_moveit_bringup) StdoutLine: {'line': b'writing ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/PKG-INFO\n'}
+[1.415460] (antworker_description) StdoutLine: {'line': b'running install\n'}
+[1.415593] (antworker_moveit_bringup) StdoutLine: {'line': b'writing dependency_links to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/dependency_links.txt\n'}
+[1.415706] (antworker_description) StdoutLine: {'line': b'running install_lib\n'}
+[1.415875] (antworker_moveit_bringup) StdoutLine: {'line': b'writing entry points to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/entry_points.txt\n'}
+[1.415986] (antworker_moveit_bringup) StdoutLine: {'line': b'writing requirements to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/requires.txt\n'}
+[1.416138] (antworker_moveit_bringup) StdoutLine: {'line': b'writing top-level names to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/top_level.txt\n'}
+[1.416867] (antworker_description) StdoutLine: {'line': b'running install_data\n'}
+[1.417564] (antworker_navigation) StdoutLine: {'line': b"removing '/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages/antworker_navigation-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.417702] (antworker_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.417962] (antworker_navigation) StdoutLine: {'line': b'Copying ../../build/antworker_navigation/antworker_navigation.egg-info to /home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages/antworker_navigation-0.0.0-py3.10.egg-info\n'}
+[1.418708] (antworker_moveit_bringup) StdoutLine: {'line': b"reading manifest file '../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/SOURCES.txt'\n"}
+[1.419124] (antworker_navigation) StdoutLine: {'line': b'running install_scripts\n'}
+[1.420372] (antworker_moveit_bringup) StdoutLine: {'line': b"writing manifest file '../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/SOURCES.txt'\n"}
+[1.420573] (antworker_moveit_bringup) StdoutLine: {'line': b'running build\n'}
+[1.420689] (antworker_moveit_bringup) StdoutLine: {'line': b'running build_py\n'}
+[1.420853] (antworker_description) StdoutLine: {'line': b"removing '/home/humble_ws/install/antworker_description/lib/python3.10/site-packages/antworker_description-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.421032] (antworker_description) StdoutLine: {'line': b'Copying ../../build/antworker_description/antworker_description.egg-info to /home/humble_ws/install/antworker_description/lib/python3.10/site-packages/antworker_description-0.0.0-py3.10.egg-info\n'}
+[1.421560] (antworker_moveit_bringup) StdoutLine: {'line': b'running install\n'}
+[1.422055] (antworker_moveit_bringup) StdoutLine: {'line': b'running install_lib\n'}
+[1.422187] (antworker_description) StdoutLine: {'line': b'running install_scripts\n'}
+[1.424527] (antworker_moveit_bringup) StdoutLine: {'line': b'running install_data\n'}
+[1.425033] (antworker_moveit_bringup) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.428911] (antworker_moveit_bringup) StdoutLine: {'line': b"removing '/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.429488] (antworker_moveit_bringup) StdoutLine: {'line': b'Copying ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info to /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup-0.0.0-py3.10.egg-info\n'}
+[1.431067] (antworker_moveit_bringup) StdoutLine: {'line': b'running install_scripts\n'}
+[1.437923] (antworker_isaacsim_world) StdoutLine: {'line': b"writing list of installed files to '/home/humble_ws/build/antworker_isaacsim_world/install.log'\n"}
+[1.441659] (antworker_navigation) StdoutLine: {'line': b"writing list of installed files to '/home/humble_ws/build/antworker_navigation/install.log'\n"}
+[1.446812] (antworker_description) StdoutLine: {'line': b"writing list of installed files to '/home/humble_ws/build/antworker_description/install.log'\n"}
+[1.462886] (antworker_moveit_bringup) StdoutLine: {'line': b'Installing ee_point_server script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup\n'}
+[1.463204] (antworker_moveit_bringup) StdoutLine: {'line': b'Installing joint_command_forwarder script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup\n'}
+[1.463371] (antworker_moveit_bringup) StdoutLine: {'line': b'Installing joint_state_forwarder script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup\n'}
+[1.463530] (antworker_moveit_bringup) StdoutLine: {'line': b'Installing trajectory_server script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup\n'}
+[1.463700] (antworker_moveit_bringup) StdoutLine: {'line': b'Installing trajectory_server_sim script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup\n'}
+[1.464197] (antworker_moveit_bringup) StdoutLine: {'line': b"writing list of installed files to '/home/humble_ws/build/antworker_moveit_bringup/install.log'\n"}
+[1.475372] (antworker_isaacsim_world) CommandEnded: {'returncode': 0}
+[1.486223] (antworker_isaacsim_world) JobEnded: {'identifier': 'antworker_isaacsim_world', 'rc': 0}
+[1.487602] (antworker_navigation) CommandEnded: {'returncode': 0}
+[1.493385] (antworker_navigation) JobEnded: {'identifier': 'antworker_navigation', 'rc': 0}
+[1.494598] (antworker_description) CommandEnded: {'returncode': 0}
+[1.500080] (antworker_description) JobEnded: {'identifier': 'antworker_description', 'rc': 0}
+[1.501114] (antworker_moveit_description) JobStarted: {'identifier': 'antworker_moveit_description'}
+[1.503845] (-) TimerEvent: {}
+[1.508036] (antworker_moveit_bringup) CommandEnded: {'returncode': 0}
+[1.515625] (antworker_moveit_bringup) JobEnded: {'identifier': 'antworker_moveit_bringup', 'rc': 0}
+[1.516867] (antworker_moveit_description) JobProgress: {'identifier': 'antworker_moveit_description', 'progress': 'cmake'}
+[1.517509] (antworker_moveit_description) JobProgress: {'identifier': 'antworker_moveit_description', 'progress': 'build'}
+[1.517780] (antworker_moveit_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/humble_ws/build/antworker_moveit_description', '--', '-j16', '-l16'], 'cwd': '/home/humble_ws/build/antworker_moveit_description', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/humble_ws/install'), ('USE_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('RTI_NC_LICENSE_ACCEPTED', 'yes'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/humble_ws/install/antworker_description:/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/opt/ros/humble'), ('PWD', '/home/humble_ws/build/antworker_moveit_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble')]), 'shell': False}
+[1.564035] (antworker_moveit_description) CommandEnded: {'returncode': 0}
+[1.589537] (antworker_moveit_description) JobProgress: {'identifier': 'antworker_moveit_description', 'progress': 'install'}
+[1.600284] (antworker_moveit_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/humble_ws/build/antworker_moveit_description'], 'cwd': '/home/humble_ws/build/antworker_moveit_description', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/humble_ws/install'), ('USE_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('RTI_NC_LICENSE_ACCEPTED', 'yes'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/humble_ws/install/antworker_description:/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/opt/ros/humble'), ('PWD', '/home/humble_ws/build/antworker_moveit_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble')]), 'shell': False}
+[1.603929] (-) TimerEvent: {}
+[1.608876] (antworker_moveit_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.609086] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/ament_index/resource_index/package_run_dependencies/antworker_moveit_description\n'}
+[1.609182] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/ament_index/resource_index/parent_prefix_path/antworker_moveit_description\n'}
+[1.609261] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/environment/ament_prefix_path.sh\n'}
+[1.609384] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/environment/ament_prefix_path.dsv\n'}
+[1.609512] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/environment/path.sh\n'}
+[1.609599] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/environment/path.dsv\n'}
+[1.609673] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/local_setup.bash\n'}
+[1.609753] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/local_setup.sh\n'}
+[1.609876] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/local_setup.zsh\n'}
+[1.609952] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/local_setup.dsv\n'}
+[1.610060] (antworker_moveit_description) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.dsv\n'}
+[1.610131] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/ament_index/resource_index/packages/antworker_moveit_description\n'}
+[1.610201] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/cmake/antworker_moveit_descriptionConfig.cmake\n'}
+[1.610271] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/cmake/antworker_moveit_descriptionConfig-version.cmake\n'}
+[1.610340] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.xml\n'}
+[1.610410] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch\n'}
+[1.610480] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/demo.launch.py\n'}
+[1.610568] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/setup_assistant.launch.py\n'}
+[1.610639] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/move_group.launch.py\n'}
+[1.610709] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/__pycache__\n'}
+[1.610840] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/__pycache__/demo.launch.cpython-310.pyc\n'}
+[1.610909] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/__pycache__/move_group.launch.cpython-310.pyc\n'}
+[1.611006] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/warehouse_db.launch.py\n'}
+[1.611077] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/static_virtual_joint_tfs.launch.py\n'}
+[1.611152] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/spawn_controllers.launch.py\n'}
+[1.611229] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/rsp.launch.py\n'}
+[1.611295] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/launch/moveit_rviz.launch.py\n'}
+[1.611360] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config\n'}
+[1.611441] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/antworker.srdf\n'}
+[1.611511] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/antworker.ros2_control.xacro\n'}
+[1.611591] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/joint_limits.yaml\n'}
+[1.611681] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/ros2_controllers.yaml\n'}
+[1.611749] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/pilz_cartesian_limits.yaml\n'}
+[1.611822] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/not_sensors_3d.yaml\n'}
+[1.612074] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/moveit.rviz\n'}
+[1.612157] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/ompl_planning.yaml\n'}
+[1.612240] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/kinematics.yaml\n'}
+[1.612346] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/initial_positions.yaml\n'}
+[1.612424] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/antworker.urdf.xacro\n'}
+[1.612493] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/config/moveit_controllers.yaml\n'}
+[1.612561] (antworker_moveit_description) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/.setup_assistant\n'}
+[1.613193] (antworker_moveit_description) CommandEnded: {'returncode': 0}
+[1.651652] (antworker_moveit_description) JobEnded: {'identifier': 'antworker_moveit_description', 'rc': 0}
+[1.704058] (-) TimerEvent: {}
+[1.804366] (-) TimerEvent: {}
+[1.904674] (-) TimerEvent: {}
+[2.004984] (-) TimerEvent: {}
+[2.105284] (-) TimerEvent: {}
+[2.205594] (-) TimerEvent: {}
+[2.305894] (-) TimerEvent: {}
+[2.406182] (-) TimerEvent: {}
+[2.506464] (-) TimerEvent: {}
+[2.606765] (-) TimerEvent: {}
+[2.707079] (-) TimerEvent: {}
+[2.807382] (-) TimerEvent: {}
+[2.907737] (-) TimerEvent: {}
+[3.008087] (-) TimerEvent: {}
+[3.108405] (-) TimerEvent: {}
+[3.208754] (-) TimerEvent: {}
+[3.309048] (-) TimerEvent: {}
+[3.409348] (-) TimerEvent: {}
+[3.509636] (-) TimerEvent: {}
+[3.609922] (-) TimerEvent: {}
+[3.710226] (-) TimerEvent: {}
+[3.810511] (-) TimerEvent: {}
+[3.910805] (-) TimerEvent: {}
+[4.011106] (-) TimerEvent: {}
+[4.111396] (-) TimerEvent: {}
+[4.211681] (-) TimerEvent: {}
+[4.311971] (-) TimerEvent: {}
+[4.412407] (-) TimerEvent: {}
+[4.512725] (-) TimerEvent: {}
+[4.613039] (-) TimerEvent: {}
+[4.713320] (-) TimerEvent: {}
+[4.813612] (-) TimerEvent: {}
+[4.913908] (-) TimerEvent: {}
+[5.014213] (-) TimerEvent: {}
+[5.114526] (-) TimerEvent: {}
+[5.214815] (-) TimerEvent: {}
+[5.315153] (-) TimerEvent: {}
+[5.415438] (-) TimerEvent: {}
+[5.515728] (-) TimerEvent: {}
+[5.616057] (-) TimerEvent: {}
+[5.716518] (-) TimerEvent: {}
+[5.816843] (-) TimerEvent: {}
+[5.917166] (-) TimerEvent: {}
+[6.017486] (-) TimerEvent: {}
+[6.117804] (-) TimerEvent: {}
+[6.218205] (-) TimerEvent: {}
+[6.318616] (-) TimerEvent: {}
+[6.418951] (-) TimerEvent: {}
+[6.519258] (-) TimerEvent: {}
+[6.619569] (-) TimerEvent: {}
+[6.719871] (-) TimerEvent: {}
+[6.820156] (-) TimerEvent: {}
+[6.920455] (-) TimerEvent: {}
+[7.020758] (-) TimerEvent: {}
+[7.121044] (-) TimerEvent: {}
+[7.221336] (-) TimerEvent: {}
+[7.321627] (-) TimerEvent: {}
+[7.421914] (-) TimerEvent: {}
+[7.522184] (-) TimerEvent: {}
+[7.622470] (-) TimerEvent: {}
+[7.722770] (-) TimerEvent: {}
+[7.823079] (-) TimerEvent: {}
+[7.923373] (-) TimerEvent: {}
+[8.023668] (-) TimerEvent: {}
+[8.124166] (-) TimerEvent: {}
+[8.224463] (-) TimerEvent: {}
+[8.324762] (-) TimerEvent: {}
+[8.425076] (-) TimerEvent: {}
+[8.525413] (-) TimerEvent: {}
+[8.625700] (-) TimerEvent: {}
+[8.725988] (-) TimerEvent: {}
+[8.826295] (-) TimerEvent: {}
+[8.926596] (-) TimerEvent: {}
+[9.026988] (-) TimerEvent: {}
+[9.127397] (-) TimerEvent: {}
+[9.227724] (-) TimerEvent: {}
+[9.328087] (-) TimerEvent: {}
+[9.428388] (-) TimerEvent: {}
+[9.528694] (-) TimerEvent: {}
+[9.628990] (-) TimerEvent: {}
+[9.729284] (-) TimerEvent: {}
+[9.829592] (-) TimerEvent: {}
+[9.929918] (-) TimerEvent: {}
+[10.030222] (-) TimerEvent: {}
+[10.130531] (-) TimerEvent: {}
+[10.231334] (-) TimerEvent: {}
+[10.331643] (-) TimerEvent: {}
+[10.431991] (-) TimerEvent: {}
+[10.532283] (-) TimerEvent: {}
+[10.632578] (-) TimerEvent: {}
+[10.732887] (-) TimerEvent: {}
+[10.833198] (-) TimerEvent: {}
+[10.933554] (-) TimerEvent: {}
+[11.033864] (-) TimerEvent: {}
+[11.134167] (-) TimerEvent: {}
+[11.234462] (-) TimerEvent: {}
+[11.334784] (-) TimerEvent: {}
+[11.435105] (-) TimerEvent: {}
+[11.535401] (-) TimerEvent: {}
+[11.635686] (-) TimerEvent: {}
+[11.735996] (-) TimerEvent: {}
+[11.836278] (-) TimerEvent: {}
+[11.936579] (-) TimerEvent: {}
+[12.036867] (-) TimerEvent: {}
+[12.137176] (-) TimerEvent: {}
+[12.237509] (-) TimerEvent: {}
+[12.337783] (-) TimerEvent: {}
+[12.438078] (-) TimerEvent: {}
+[12.538377] (-) TimerEvent: {}
+[12.638671] (-) TimerEvent: {}
+[12.738997] (-) TimerEvent: {}
+[12.839354] (-) TimerEvent: {}
+[12.939639] (-) TimerEvent: {}
+[13.039930] (-) TimerEvent: {}
+[13.140220] (-) TimerEvent: {}
+[13.240504] (-) TimerEvent: {}
+[13.340781] (-) TimerEvent: {}
+[13.441074] (-) TimerEvent: {}
+[13.541372] (-) TimerEvent: {}
+[13.641689] (-) TimerEvent: {}
+[13.741995] (-) TimerEvent: {}
+[13.842333] (-) TimerEvent: {}
+[13.942678] (-) TimerEvent: {}
+[14.042993] (-) TimerEvent: {}
+[14.143288] (-) TimerEvent: {}
+[14.243578] (-) TimerEvent: {}
+[14.343892] (-) TimerEvent: {}
+[14.444216] (-) TimerEvent: {}
+[14.544612] (-) TimerEvent: {}
+[14.560943] (moveit_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable hybrid_planning_demo_node\x1b[0m\n'}
+[14.644689] (-) TimerEvent: {}
+[14.745033] (-) TimerEvent: {}
+[14.845384] (-) TimerEvent: {}
+[14.945707] (-) TimerEvent: {}
+[15.046141] (-) TimerEvent: {}
+[15.146455] (-) TimerEvent: {}
+[15.187623] (moveit_interface) StdoutLine: {'line': b'[100%] Built target hybrid_planning_demo_node\n'}
+[15.199353] (moveit_interface) CommandEnded: {'returncode': 0}
+[15.225088] (moveit_interface) JobProgress: {'identifier': 'moveit_interface', 'progress': 'install'}
+[15.225777] (moveit_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/humble_ws/build/moveit_interface'], 'cwd': '/home/humble_ws/build/moveit_interface', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/humble_ws/install'), ('USE_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('RTI_NC_LICENSE_ACCEPTED', 'yes'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble'), ('PWD', '/home/humble_ws/build/moveit_interface'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/humble_ws/install/moveit_interface:/home/humble_ws/install/antworker_moveit_description:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble')]), 'shell': False}
+[15.233486] (moveit_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.233678] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/lib/moveit_interface/hybrid_planning_demo_node\n'}
+[15.239522] (moveit_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/humble_ws/install/moveit_interface/lib/moveit_interface/hybrid_planning_demo_node" to ""\n'}
+[15.239720] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/package_run_dependencies/moveit_interface\n'}
+[15.239821] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/parent_prefix_path/moveit_interface\n'}
+[15.239971] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/ament_prefix_path.sh\n'}
+[15.240048] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/ament_prefix_path.dsv\n'}
+[15.240132] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/path.sh\n'}
+[15.240219] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/path.dsv\n'}
+[15.240295] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.bash\n'}
+[15.240377] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.sh\n'}
+[15.240447] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.zsh\n'}
+[15.240507] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.dsv\n'}
+[15.240564] (moveit_interface) StdoutLine: {'line': b'-- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/package.dsv\n'}
+[15.240649] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/packages/moveit_interface\n'}
+[15.240712] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/cmake/moveit_interfaceConfig.cmake\n'}
+[15.240765] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/cmake/moveit_interfaceConfig-version.cmake\n'}
+[15.240820] (moveit_interface) StdoutLine: {'line': b'-- Up-to-date: /home/humble_ws/install/moveit_interface/share/moveit_interface/package.xml\n'}
+[15.242047] (moveit_interface) CommandEnded: {'returncode': 0}
+[15.246611] (-) TimerEvent: {}
+[15.276373] (moveit_interface) JobEnded: {'identifier': 'moveit_interface', 'rc': 0}
+[15.277066] (-) EventReactorShutdown: {}

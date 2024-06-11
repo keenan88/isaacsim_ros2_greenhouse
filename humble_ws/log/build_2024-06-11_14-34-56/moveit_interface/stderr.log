@@ -1,0 +1,4 @@
+[01m[K/home/humble_ws/src/moveit_interface/src/hybrid_planning_demo_node.cpp:[m[K In member function ‘[01m[Kvoid HybridPlanningDemo::run()[m[K’:
+[01m[K/home/humble_ws/src/moveit_interface/src/hybrid_planning_demo_node.cpp:202:42:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kjoint_model_group[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  202 |     const moveit::core::JointModelGroup* [01;35m[Kjoint_model_group[m[K = robot_state->getJointModelGroup(planning_group);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~[m[K
