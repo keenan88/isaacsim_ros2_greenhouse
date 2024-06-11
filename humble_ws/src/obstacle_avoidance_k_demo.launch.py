@@ -18,10 +18,6 @@ def generate_launch_description():
         description="RViz configuration file",
     )
 
-    db_arg = DeclareLaunchArgument(
-        "db", default_value="False", description="Database flag"
-    )
-
     moveit_config = (
         MoveItConfigsBuilder(
             robot_name="antworker", 
@@ -30,13 +26,20 @@ def generate_launch_description():
         .robot_description(
             file_path="config/antworker.urdf.xacro"
         )
-        .robot_description_semantic(file_path="config/antworker.srdf")
-        .planning_scene_monitor(
-            publish_robot_description=True, publish_robot_description_semantic=True
+        .robot_description_semantic(
+            file_path="config/antworker.srdf"
         )
-        .trajectory_execution(file_path="config/moveit_controllers.yaml")
+        .planning_scene_monitor(
+            publish_robot_description = True, publish_robot_description_semantic = True
+        )
+        .trajectory_execution(
+            file_path="config/moveit_controllers.yaml"
+        )
         .planning_pipelines(
             pipelines=["chomp", "pilz_industrial_motion_planner"] # stomp, ompl
+        )
+        .move_group_capabilities(
+            
         )
         .to_moveit_configs()
     )
