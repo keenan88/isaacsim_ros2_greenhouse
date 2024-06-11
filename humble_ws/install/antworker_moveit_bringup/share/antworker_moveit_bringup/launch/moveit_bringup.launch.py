@@ -65,27 +65,6 @@ def generate_launch_description():
         'max_range': 5.0
     }
 
-    octomap_updater_config = load_yaml('antworker_moveit_description', 'config/not_sensors_3d.yaml')
-
-    ee_point_server = Node(
-        name="ee_point_server",
-        package="antworker_moveit_bringup",
-        executable="ee_point_server",
-        output="screen",
-        parameters=[
-            moveit_config.to_dict(),
-            # {
-            #     "use_sim_time": is_simulation,
-            #     "octomap_resolution": 5.0,
-            #     "octomap_frame": "odom",
-            #     "max_range": 1.0
-            # },
-            octomap_config,
-            octomap_updater_config
-            
-        ],
-    )
-
     rviz_config_file = os.path.join(
         "/home/humble_ws/src/antworker_moveit_bringup/config",
         "rviz_config.rviz",
@@ -114,8 +93,6 @@ def generate_launch_description():
             {"use_sim_time": is_simulation}
         ]
     )
-
-    urdf_file_path = Path("/home/humble_ws/src/antworker_description/description/combined/worker_with_arm.urdf")
 
     robot_state_publisher = Node(
         package="robot_state_publisher",

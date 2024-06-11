@@ -12,6 +12,7 @@ antworker_moveit_bringup/__init__.py
 antworker_moveit_bringup/ee_point_server.py
 antworker_moveit_bringup/joint_command_forwarder.py
 antworker_moveit_bringup/joint_state_forwarder.py
+antworker_moveit_bringup/move_action_interface.py
 antworker_moveit_bringup/target_ee_pose_isolator.py
 antworker_moveit_bringup/trajectory_server.py
 antworker_moveit_bringup/trajectory_server_sim.py
