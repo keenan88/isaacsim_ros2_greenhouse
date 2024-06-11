@@ -212,7 +212,7 @@ def generate_common_hybrid_launch_description():
     )
 
     launched_nodes = [
-        #container,
+        container,
         rviz_node,
         robot_state_publisher,
         ros2_controller_manager,
