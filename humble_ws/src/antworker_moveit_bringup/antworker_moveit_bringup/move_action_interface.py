@@ -1,4 +1,5 @@
 import rclpy
+from rclpy.node import Node
 from rclpy.action import ActionClient
 from moveit_msgs.action import MoveGroup
 from moveit_msgs.msg import Constraints
@@ -6,16 +7,25 @@ from moveit_msgs.msg import PositionConstraint, OrientationConstraint, BoundingV
 from geometry_msgs.msg import Pose
 from shape_msgs.msg import SolidPrimitive
 
-class MoveGroupActionClientNode:
-    def __init__(self):
-        self.node = rclpy.create_node('move_action_action_client')
 
-        self.move_group_action_client = ActionClient(self.node, MoveGroup, 'move_action')
+class MoveGroupActionClientNode(Node):
+    def __init__(self):
+        super().__init__('move_group_action_client')
+
+        self.move_group_action_client = ActionClient(self, MoveGroup, 'move_action')
 
         while not self.move_group_action_client.wait_for_server(timeout_sec=1.0):
-            self.node.get_logger().info('Action server not available, waiting again...')
+            self.get_logger().info('Action server not available, waiting again...')
 
-    def send_goal(self):
+        goal_msg = self.generate_goal_msg()
+
+        self.move_group_action_client.wait_for_server()
+
+        self.future = self.move_group_action_client.send_goal_async(goal_msg, feedback_callback = self.feedback_callback)
+
+        self.future.add_done_callback(self.goal_response_callback)
+
+    def generate_goal_msg(self):
         goal_msg = MoveGroup.Goal()
 
         goal_msg.planning_options.plan_only = True
@@ -28,8 +38,6 @@ class MoveGroupActionClientNode:
         goal_msg.request.allowed_planning_time = 1.0 # seconds
         goal_msg.request.group_name = "kinova_arm"
         goal_msg.request.planner_id = "PTP"
-
-        
 
         ee_pose_constraint = PositionConstraint()
         ee_pose_constraint.header.frame_id = "arm_base_link"
@@ -74,37 +82,38 @@ class MoveGroupActionClientNode:
 
         goal_msg.request.goal_constraints.append(constraints)
 
+        return goal_msg
 
+    def goal_response_callback(self, future):
+        goal_handle = future.result()
+        if not goal_handle.accepted:
+            self.get_logger().info('Goal rejected :(')
+            return
+
+        self.get_logger().info('Goal accepted :)')
+
+        self._get_result_future = goal_handle.get_result_async()
+        self._get_result_future.add_done_callback(self.get_result_callback)
         
-
-        
-
-        self.future = self.move_group_action_client.send_goal_async(goal_msg, feedback_callback = self.feedback_callback)
-
-        rclpy.spin_until_future_complete(self.node, self.future)
-
-        if self.future.result() is not None:
-            self.node.get_logger().info('Goal succeeded!')
-        else:
-            self.node.get_logger().info('Goal failed!')
 
     def feedback_callback(self, feedback_msg):
-        self.node.get_logger().info('Received feedback: {0}'.format(feedback_msg))
+        feedback = feedback_msg.feedback
+        self.get_logger().info('Received feedback: {0}'.format(feedback))
 
-    def destroy_node(self):
-        self.move_group_action_client.destroy()
-        self.node.destroy_node()
+    def get_result_callback(self, future):
+        result = future.result().result
+        self.get_logger().info('Result: {0}'.format(result))
+        rclpy.shutdown()
+
+
 
 def main(args=None):
     rclpy.init(args=args)
     move_group_node = MoveGroupActionClientNode()
 
-    # Send a goal to the action server
-    move_group_node.send_goal()
+    rclpy.spin(move_group_node)
 
-    # Cleanup
-    move_group_node.destroy_node()
-    rclpy.shutdown()
+    
 
 if __name__ == '__main__':
     main()
