@@ -80,8 +80,8 @@ def generate_launch_description():
             #     "octomap_frame": "odom",
             #     "max_range": 1.0
             # },
-            octomap_config,
-            octomap_updater_config
+            #octomap_config,
+            #octomap_updater_config
             
         ],
     )

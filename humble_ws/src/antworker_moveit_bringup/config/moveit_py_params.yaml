@@ -1,17 +1,17 @@
-planning_scene_monitor_options:
-  name: "planning_scene_monitor"
-  robot_description: "robot_description"
-  joint_state_topic: "/joint_states"
+# planning_scene_monitor_options:
+#   name: "planning_scene_monitor"
+#   robot_description: "robot_description"
+#   joint_state_topic: "/joint_states"
 
-  #attached_collision_object_topic: "/moveit_py/planning_scene_monitor" # Im pretty sure these subscriptions are for dynamically adding/removing objects
-  #monitored_planning_scene_topic: "/moveit_cpp/monitored_planning_scene" # Im pretty sure these subscriptions are for dynamically adding/removing objects
+#   #attached_collision_object_topic: "/moveit_py/planning_scene_monitor" # Im pretty sure these subscriptions are for dynamically adding/removing objects
+#   #monitored_planning_scene_topic: "/moveit_cpp/monitored_planning_scene" # Im pretty sure these subscriptions are for dynamically adding/removing objects
 
-  #publish_planning_scene_topic: "/moveit_cpp/publish_planning_scene"
+#   #publish_planning_scene_topic: "/moveit_cpp/publish_planning_scene"
 
-  wait_for_initial_state_timeout: 10.0
+#   wait_for_initial_state_timeout: 10.0
 
 planning_pipelines:
-  pipeline_names: ["ompl"] # "pilz_industrial_motion_planner", "chomp"
+  pipeline_names: ["pilz_industrial_motion_planner"] # "pilz_industrial_motion_planner", "chomp"
 
 plan_request_params:
   planning_attempts: 100
@@ -37,10 +37,10 @@ pilz_lin:
     max_acceleration_scaling_factor: 1.0
     planning_time: 0.8
 
-chomp_planner:
-  plan_request_params:
-    planning_attempts: 1
-    planning_pipeline: chomp
-    max_velocity_scaling_factor: 1.0
-    max_acceleration_scaling_factor: 1.0
-    planning_time: 1.5
+# chomp_planner:
+#   plan_request_params:
+#     planning_attempts: 1
+#     planning_pipeline: chomp
+#     max_velocity_scaling_factor: 1.0
+#     max_acceleration_scaling_factor: 1.0
+#     planning_time: 1.5

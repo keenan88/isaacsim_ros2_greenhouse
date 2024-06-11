@@ -1,0 +1,73 @@
+[0.835s] Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake /home/humble_ws/src/moveit_interface -DCMAKE_INSTALL_PREFIX=/home/humble_ws/install/moveit_interface
+[0.987s] -- The C compiler identification is GNU 11.4.0
+[1.106s] -- The CXX compiler identification is GNU 11.4.0
+[1.116s] -- Detecting C compiler ABI info
+[1.209s] -- Detecting C compiler ABI info - done
+[1.220s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.221s] -- Detecting C compile features
+[1.221s] -- Detecting C compile features - done
+[1.222s] -- Detecting CXX compiler ABI info
+[1.328s] -- Detecting CXX compiler ABI info - done
+[1.335s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.336s] -- Detecting CXX compile features
+[1.336s] -- Detecting CXX compile features - done
+[1.347s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.524s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.650s] -- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.873s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.949s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.959s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.973s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.997s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.026s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.003s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[3.029s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[3.130s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.136s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[3.182s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.199s] -- Found Threads: TRUE  
+[3.373s] -- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[3.429s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[3.576s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[3.740s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.740s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.316s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[4.802s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[5.102s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[5.505s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.600s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.600s] -- Configured cppcheck include dirs: 
+[5.600s] -- Configured cppcheck exclude dirs and/or files: 
+[5.604s] -- Added test 'lint_cmake' to check CMake code style
+[5.606s] -- Added test 'uncrustify' to check C / C++ code style
+[5.606s] -- Configured uncrustify additional arguments: 
+[5.626s] -- Added test 'xmllint' to check XML markup files
+[5.628s] -- Configuring done
+[5.664s] -- Generating done
+[5.666s] -- Build files have been written to: /home/humble_ws/build/moveit_interface
+[5.680s] Invoked command in '/home/humble_ws/build/moveit_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake /home/humble_ws/src/moveit_interface -DCMAKE_INSTALL_PREFIX=/home/humble_ws/install/moveit_interface
+[5.681s] Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/moveit_interface -- -j16 -l16
+[5.745s] [ 50%] [32mBuilding CXX object CMakeFiles/moveit_interface.dir/src/moveit_interface.cpp.o[0m
+[13.185s] [100%] [32m[1mLinking CXX executable moveit_interface[0m
+[13.539s] [100%] Built target moveit_interface
+[13.551s] Invoked command in '/home/humble_ws/build/moveit_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/moveit_interface -- -j16 -l16
+[13.578s] Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --install /home/humble_ws/build/moveit_interface
+[13.585s] -- Install configuration: ""
+[13.586s] -- Installing: /home/humble_ws/install/moveit_interface/lib/moveit_interface/moveit_interface
+[13.587s] -- Set runtime path of "/home/humble_ws/install/moveit_interface/lib/moveit_interface/moveit_interface" to ""
+[13.587s] -- Installing: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/package_run_dependencies/moveit_interface
+[13.587s] -- Installing: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/parent_prefix_path/moveit_interface
+[13.588s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/ament_prefix_path.sh
+[13.588s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/ament_prefix_path.dsv
+[13.588s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/path.sh
+[13.588s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/environment/path.dsv
+[13.588s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.bash
+[13.589s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.sh
+[13.589s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.zsh
+[13.589s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/local_setup.dsv
+[13.589s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/package.dsv
+[13.589s] -- Installing: /home/humble_ws/install/moveit_interface/share/ament_index/resource_index/packages/moveit_interface
+[13.589s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/cmake/moveit_interfaceConfig.cmake
+[13.590s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/cmake/moveit_interfaceConfig-version.cmake
+[13.590s] -- Installing: /home/humble_ws/install/moveit_interface/share/moveit_interface/package.xml
+[13.592s] Invoked command in '/home/humble_ws/build/moveit_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --install /home/humble_ws/build/moveit_interface
