@@ -37,7 +37,7 @@ def get_robot_description():
         os.path.join(
             get_package_share_directory("antworker_moveit_description"),
             "config",
-            "antworker.urdf.xacro",
+            "antworker.urdf.xacro"
         )
     )
     robot_description = {"robot_description": robot_description_config.toxml()}
@@ -181,48 +181,43 @@ def generate_common_hybrid_launch_description():
 
     # ros2_control using FakeSystem as hardware
     ros2_controllers_path = os.path.join(
-        get_package_share_directory("moveit_hybrid_planning"),
+        get_package_share_directory("antworker_moveit_description"),
         "config",
-        "demo_controller.yaml",
+        "ros2_controllers.yaml",
     )
-    ros2_control_node = Node(
+
+    ros2_controller_manager = Node(
         package="controller_manager",
         executable="ros2_control_node",
         parameters=[
-            robot_description, 
             ros2_controllers_path,
-            {'use_sim_time' : True}
+            {"use_sim_time": True}
+        ],
+        remappings=[
+            ("/controller_manager/robot_description", "/robot_description"),
         ],
         output="screen",
     )
 
-    joint_state_broadcaster_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=[
-            "joint_state_broadcaster",
-            "--controller-manager",
-            "/controller_manager",
-        ],
+    spawn_joint_state_brodcaster = ExecuteProcess(
+        cmd=["ros2 run controller_manager spawner {}".format("joint_state_broadcaster")],
+        shell=True,
+        output="screen"
     )
 
-    # kinova_joint_group_position_controller_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=[
-    #         "kinova_joint_group_position_controller",
-    #         "-c",
-    #         "/controller_manager",
-    #     ],
-    # )
+    kinova_arm_controller = ExecuteProcess(
+        cmd=["ros2 run controller_manager spawner {}".format("kinova_arm_controller")],
+        shell=True,
+        output="screen"
+    )
 
     launched_nodes = [
-        container,
+        #container,
         rviz_node,
         robot_state_publisher,
-        ros2_control_node,
-        #joint_state_broadcaster_spawner,
-        #kinova_joint_group_position_controller_spawner,
+        ros2_controller_manager,
+        spawn_joint_state_brodcaster,
+        kinova_arm_controller,
     ]
 
     return launched_nodes

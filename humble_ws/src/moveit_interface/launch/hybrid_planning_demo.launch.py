@@ -5,7 +5,7 @@ import sys
 from launch_ros.actions import Node
 
 sys.path.append(os.path.dirname(__file__))
-from hybrid_planning_common import (
+from k_hybrid_planning_common import (
     generate_common_hybrid_launch_description,
     get_robot_description,
     get_robot_description_semantic,
