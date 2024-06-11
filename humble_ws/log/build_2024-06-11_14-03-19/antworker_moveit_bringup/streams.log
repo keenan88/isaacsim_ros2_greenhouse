@@ -1,0 +1,67 @@
+[1.219s] Invoking command in '/home/humble_ws/src/antworker_moveit_bringup': PYTHONPATH=/home/humble_ws/build/antworker_moveit_bringup/prefix_override:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_moveit_bringup build --build-base /home/humble_ws/build/antworker_moveit_bringup/build install --record /home/humble_ws/build/antworker_moveit_bringup/install.log --single-version-externally-managed install_data
+[1.402s] running egg_info
+[1.402s] creating ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info
+[1.402s] writing ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/PKG-INFO
+[1.402s] writing dependency_links to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/dependency_links.txt
+[1.403s] writing entry points to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/entry_points.txt
+[1.403s] writing requirements to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/requires.txt
+[1.403s] writing top-level names to ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/top_level.txt
+[1.403s] writing manifest file '../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/SOURCES.txt'
+[1.404s] reading manifest file '../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/SOURCES.txt'
+[1.405s] writing manifest file '../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/SOURCES.txt'
+[1.405s] running build
+[1.406s] running build_py
+[1.406s] creating /home/humble_ws/build/antworker_moveit_bringup/build
+[1.406s] creating /home/humble_ws/build/antworker_moveit_bringup/build/lib
+[1.406s] creating /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup
+[1.406s] copying antworker_moveit_bringup/joint_state_forwarder.py -> /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup
+[1.406s] copying antworker_moveit_bringup/target_ee_pose_isolator.py -> /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup
+[1.407s] copying antworker_moveit_bringup/trajectory_server_sim.py -> /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup
+[1.407s] copying antworker_moveit_bringup/ee_point_server.py -> /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup
+[1.407s] copying antworker_moveit_bringup/trajectory_server.py -> /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup
+[1.408s] copying antworker_moveit_bringup/joint_command_forwarder.py -> /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup
+[1.408s] copying antworker_moveit_bringup/__init__.py -> /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup
+[1.408s] running install
+[1.408s] running install_lib
+[1.410s] creating /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup
+[1.410s] copying /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup/joint_state_forwarder.py -> /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup
+[1.411s] copying /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup/target_ee_pose_isolator.py -> /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup
+[1.411s] copying /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup/trajectory_server_sim.py -> /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup
+[1.411s] copying /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup/ee_point_server.py -> /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup
+[1.411s] copying /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup/trajectory_server.py -> /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup
+[1.411s] copying /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup/joint_command_forwarder.py -> /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup
+[1.411s] copying /home/humble_ws/build/antworker_moveit_bringup/build/lib/antworker_moveit_bringup/__init__.py -> /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup
+[1.411s] byte-compiling /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/joint_state_forwarder.py to joint_state_forwarder.cpython-310.pyc
+[1.412s] byte-compiling /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/target_ee_pose_isolator.py to target_ee_pose_isolator.cpython-310.pyc
+[1.412s] byte-compiling /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/trajectory_server_sim.py to trajectory_server_sim.cpython-310.pyc
+[1.413s] byte-compiling /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/ee_point_server.py to ee_point_server.cpython-310.pyc
+[1.413s] byte-compiling /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/trajectory_server.py to trajectory_server.cpython-310.pyc
+[1.413s] byte-compiling /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/joint_command_forwarder.py to joint_command_forwarder.cpython-310.pyc
+[1.414s] byte-compiling /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__init__.py to __init__.cpython-310.pyc
+[1.414s] running install_data
+[1.414s] creating /home/humble_ws/install/antworker_moveit_bringup/share/ament_index
+[1.414s] creating /home/humble_ws/install/antworker_moveit_bringup/share/ament_index/resource_index
+[1.414s] creating /home/humble_ws/install/antworker_moveit_bringup/share/ament_index/resource_index/packages
+[1.414s] copying resource/antworker_moveit_bringup -> /home/humble_ws/install/antworker_moveit_bringup/share/ament_index/resource_index/packages
+[1.415s] copying package.xml -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup
+[1.415s] creating /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/launch
+[1.415s] copying launch/realsense.launch.py -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/launch
+[1.415s] copying launch/moveit_bringup.launch.py -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/launch
+[1.415s] creating /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config
+[1.415s] copying config/global_planner.yaml -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config
+[1.415s] copying config/moveit_py_params.yaml -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config
+[1.415s] copying config/local_planner.yaml -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config
+[1.415s] copying config/target_to_actual_bridge.yaml -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config
+[1.415s] copying config/common_hybrid_planning_params.yaml -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config
+[1.415s] copying config/hybrid_planning_manager.yaml -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config
+[1.416s] copying config/rviz_config.rviz -> /home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/config
+[1.416s] running install_egg_info
+[1.417s] Copying ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info to /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup-0.0.0-py3.10.egg-info
+[1.419s] running install_scripts
+[1.438s] Installing ee_point_server script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+[1.438s] Installing joint_command_forwarder script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+[1.438s] Installing joint_state_forwarder script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+[1.438s] Installing trajectory_server script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+[1.438s] Installing trajectory_server_sim script to /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup
+[1.439s] writing list of installed files to '/home/humble_ws/build/antworker_moveit_bringup/install.log'
+[1.479s] Invoked command in '/home/humble_ws/src/antworker_moveit_bringup' returned '0': PYTHONPATH=/home/humble_ws/build/antworker_moveit_bringup/prefix_override:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_moveit_bringup build --build-base /home/humble_ws/build/antworker_moveit_bringup/build install --record /home/humble_ws/build/antworker_moveit_bringup/install.log --single-version-externally-managed install_data

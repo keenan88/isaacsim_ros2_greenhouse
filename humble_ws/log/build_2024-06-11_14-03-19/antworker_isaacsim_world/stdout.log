@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info
+writing ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/PKG-INFO
+writing dependency_links to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/dependency_links.txt
+writing entry points to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/entry_points.txt
+writing requirements to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/requires.txt
+writing top-level names to ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/top_level.txt
+writing manifest file '../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/SOURCES.txt'
+reading manifest file '../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/SOURCES.txt'
+writing manifest file '../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/humble_ws/build/antworker_isaacsim_world/build
+creating /home/humble_ws/build/antworker_isaacsim_world/build/lib
+creating /home/humble_ws/build/antworker_isaacsim_world/build/lib/antworker_isaacsim_world
+copying antworker_isaacsim_world/__init__.py -> /home/humble_ws/build/antworker_isaacsim_world/build/lib/antworker_isaacsim_world
+running install
+running install_lib
+creating /home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages/antworker_isaacsim_world
+copying /home/humble_ws/build/antworker_isaacsim_world/build/lib/antworker_isaacsim_world/__init__.py -> /home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages/antworker_isaacsim_world
+byte-compiling /home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages/antworker_isaacsim_world/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/humble_ws/install/antworker_isaacsim_world/share/ament_index
+creating /home/humble_ws/install/antworker_isaacsim_world/share/ament_index/resource_index
+creating /home/humble_ws/install/antworker_isaacsim_world/share/ament_index/resource_index/packages
+copying resource/antworker_isaacsim_world -> /home/humble_ws/install/antworker_isaacsim_world/share/ament_index/resource_index/packages
+copying package.xml -> /home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world
+running install_egg_info
+Copying ../../build/antworker_isaacsim_world/antworker_isaacsim_world.egg-info to /home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages/antworker_isaacsim_world-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/humble_ws/build/antworker_isaacsim_world/install.log'

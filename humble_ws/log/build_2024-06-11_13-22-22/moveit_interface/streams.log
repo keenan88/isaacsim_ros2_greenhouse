@@ -1,9 +1,0 @@
-[0.012s] Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/moveit_interface -- -j16 -l16
-[0.065s] [35m[1mConsolidate compiler generated dependencies of target moveit_interface[0m
-[0.112s] [ 50%] [32mBuilding CXX object CMakeFiles/moveit_interface.dir/src/moveit_interface.cpp.o[0m
-[0.117s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/humble_ws/src/moveit_interface/src/moveit_interface.cpp: No such file or directory
-[0.118s] compilation terminated.
-[0.118s] gmake[2]: *** [CMakeFiles/moveit_interface.dir/build.make:76: CMakeFiles/moveit_interface.dir/src/moveit_interface.cpp.o] Error 1
-[0.118s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/moveit_interface.dir/all] Error 2
-[0.119s] gmake: *** [Makefile:146: all] Error 2
-[0.121s] Invoked command in '/home/humble_ws/build/moveit_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_ws/install/antworker_navigation:/home/humble_ws/install/antworker_moveit_bringup:/home/humble_ws/install/antworker_isaacsim_world:/home/humble_ws/install/antworker_description:/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/moveit_interface -- -j16 -l16

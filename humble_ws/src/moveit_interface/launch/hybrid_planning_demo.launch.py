@@ -24,7 +24,7 @@ def generate_launch_description():
         "moveit_hybrid_planning", "config/common_hybrid_planning_params.yaml"
     )
     demo_node = Node(
-        package="moveit_hybrid_planning",
+        package="moveit_interface",
         executable="hybrid_planning_demo_node",
         name="hybrid_planning_demo_node",
         output="screen",
@@ -32,6 +32,7 @@ def generate_launch_description():
             get_robot_description(),
             get_robot_description_semantic(),
             common_hybrid_planning_param,
+            {"use_sim_time" : True}
         ],
     )
 

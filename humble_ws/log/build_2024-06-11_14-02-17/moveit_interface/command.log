@@ -1,0 +1,6 @@
+Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/humble_ws/src/moveit_interface -DCMAKE_INSTALL_PREFIX=/home/humble_ws/install/moveit_interface
+Invoked command in '/home/humble_ws/build/moveit_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/humble_ws/src/moveit_interface -DCMAKE_INSTALL_PREFIX=/home/humble_ws/install/moveit_interface
+Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/moveit_interface -- -j16 -l16
+Invoked command in '/home/humble_ws/build/moveit_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/humble_ws/build/moveit_interface -- -j16 -l16
+Invoking command in '/home/humble_ws/build/moveit_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/humble_ws/build/moveit_interface
+Invoked command in '/home/humble_ws/build/moveit_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/humble_ws/build/moveit_interface

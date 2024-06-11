@@ -35,9 +35,9 @@ def load_yaml(package_name, file_path):
 def get_robot_description():
     robot_description_config = xacro.process_file(
         os.path.join(
-            get_package_share_directory("moveit_resources_panda_moveit_config"),
+            get_package_share_directory("antworker_moveit_description"),
             "config",
-            "panda.urdf.xacro",
+            "antworker.urdf.xacro",
         )
     )
     robot_description = {"robot_description": robot_description_config.toxml()}
@@ -46,7 +46,7 @@ def get_robot_description():
 
 def get_robot_description_semantic():
     robot_description_semantic_config = load_file(
-        "moveit_resources_panda_moveit_config", "config/panda.srdf"
+        "antworker_moveit_description", "config/antworker.srdf"
     )
     robot_description_semantic = {
         "robot_description_semantic": robot_description_semantic_config
@@ -60,7 +60,7 @@ def generate_common_hybrid_launch_description():
     robot_description_semantic = get_robot_description_semantic()
 
     kinematics_yaml = load_yaml(
-        "moveit_resources_panda_moveit_config", "config/kinematics.yaml"
+        "antworker_moveit_description", "config/kinematics.yaml"
     )
 
     # The global planner uses the typical OMPL parameters
@@ -72,12 +72,12 @@ def generate_common_hybrid_launch_description():
         }
     }
     ompl_planning_yaml = load_yaml(
-        "moveit_resources_panda_moveit_config", "config/ompl_planning.yaml"
+        "antworker_moveit_description", "config/ompl_planning.yaml"
     )
     planning_pipelines_config["ompl"].update(ompl_planning_yaml)
 
     moveit_simple_controllers_yaml = load_yaml(
-        "moveit_resources_panda_moveit_config", "config/moveit_controllers.yaml"
+        "antworker_moveit_description", "config/moveit_controllers.yaml"
     )
     moveit_controllers = {
         "moveit_simple_controller_manager": moveit_simple_controllers_yaml,
@@ -155,7 +155,7 @@ def generate_common_hybrid_launch_description():
         name="rviz2",
         output="log",
         arguments=["-d", rviz_config_file],
-        parameters=[robot_description, robot_description_semantic],
+        parameters=[robot_description, robot_description_semantic, {"use_sim_time" : True}],
     )
 
     # Static TF
@@ -164,7 +164,7 @@ def generate_common_hybrid_launch_description():
         executable="static_transform_publisher",
         name="static_transform_publisher",
         output="log",
-        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "world", "panda_link0"],
+        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "world", "arm_base_link"],
     )
 
     # Publish TF
@@ -185,7 +185,11 @@ def generate_common_hybrid_launch_description():
     ros2_control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
-        parameters=[robot_description, ros2_controllers_path],
+        parameters=[
+            robot_description, 
+            ros2_controllers_path,
+            {'use_sim_time' : True}
+        ],
         output="screen",
     )
 
@@ -199,15 +203,15 @@ def generate_common_hybrid_launch_description():
         ],
     )
 
-    panda_joint_group_position_controller_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=[
-            "panda_joint_group_position_controller",
-            "-c",
-            "/controller_manager",
-        ],
-    )
+    # kinova_joint_group_position_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=[
+    #         "kinova_joint_group_position_controller",
+    #         "-c",
+    #         "/controller_manager",
+    #     ],
+    # )
 
     launched_nodes = [
         container,
@@ -216,7 +220,7 @@ def generate_common_hybrid_launch_description():
         robot_state_publisher,
         ros2_control_node,
         joint_state_broadcaster_spawner,
-        panda_joint_group_position_controller_spawner,
+        #kinova_joint_group_position_controller_spawner,
     ]
 
     return launched_nodes
