@@ -10,6 +10,7 @@ setup.py
 ../../build/realsense_bringup/realsense_bringup.egg-info/zip-safe
 launch/realsense_bringup.launch.py
 realsense_bringup/__init__.py
+realsense_bringup/tf_filter.py
 resource/realsense_bringup
 test/test_copyright.py
 test/test_flake8.py

@@ -1,0 +1,16 @@
+
+name: domain_bridge
+from_domain: 3
+to_domain: 1
+topics:
+  /tf_static_no_base_link:
+    type: tf2_msgs/msg/TFMessage
+    from_domain: 3
+    to_domain: 1
+    remap: static_tf
+
+  /camera/camera/depth/color/points:
+    type: sensor_msgs/msg/PointCloud2
+    from_domain: 3
+    to_domain: 1
+

@@ -23,29 +23,35 @@ def generate_launch_description():
     )
 
 
-    arm_base_to_camera_static_tf = Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='arm_base_to_camera_static_tf',
-            output='screen',
-            arguments=[
-                 '--x', '1.0', 
-                 '--y', '2.0', 
-                 '--z', '3.0',       # translation (x, y, z)
-                 '--qx', '0.0', 
-                 '--qy', '0.0', 
-                 '--qz', '0.0', 
-                 '--qw', '1.0', # rotation (quaternion: x, y, z, w)
-                '--frame-id', 'camera_link',                # parent frame
-                '--child-frame-id', 'arm_base_link'                     # child frame
-            ]
-        )
+    # arm_base_to_camera_static_tf = Node(
+    #         package='tf2_ros',
+    #         executable='static_transform_publisher',
+    #         name='arm_base_to_camera_static_tf',
+    #         output='screen',
+    #         arguments=[
+    #              '--x', '0.0', 
+    #              '--y', '0.0', 
+    #              '--z', '1.0',       # translation (x, y, z)
+    #              '--qx', '0.0', 
+    #              '--qy', '0.0', 
+    #              '--qz', '0.0', 
+    #              '--qw', '1.0', # rotation (quaternion: x, y, z, w)
+    #             '--frame-id', 'camera_link',                # parent frame
+    #             '--child-frame-id', 'arm_base_link'                     # child frame
+    #         ]
+    #     )
+
+    tf_replace_base_link = Node(
+        package = "realsense_bringup",
+        executable = "tf_filter",
+        output = "screen"
+    )
 
     
 
     return LaunchDescription(
         [
             realsense_pointcloud_launch,
-            arm_base_to_camera_static_tf
+            tf_replace_base_link
         ]    
     )
