@@ -9,7 +9,8 @@ topics:
     to_domain: 1
     remap: joint_states
 
-  joint_trajectory_controller/joint_trajectory:
-    type: trajectory_msgs/msg/JointTrajectory 
-    from_domain: 1
-    to_domain: 2
+  # /kinova_arm_controller/joint_trajectory:
+  #   type: trajectory_msgs/msg/JointTrajectory 
+  #   from_domain: 1
+  #   to_domain: 2
+  #   remap: joint_trajectory_controller/joint_trajectory

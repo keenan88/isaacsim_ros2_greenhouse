@@ -11,6 +11,10 @@ from moveit_configs_utils import MoveItConfigsBuilder
 
 def generate_launch_description():
 
+    is_simulation = os.getenv('USE_SIM')
+    if is_simulation == 'False': is_simulation = False
+    else: is_simulation = True
+
     # Command-line arguments
     rviz_config_arg = DeclareLaunchArgument(
         "rviz_config",
@@ -51,7 +55,7 @@ def generate_launch_description():
         output="screen",
         parameters=[
             moveit_config.to_dict(),
-            {"use_sim_time": True}
+            {"use_sim_time": is_simulation}
             
         ],
         arguments=["--ros-args", "--log-level", "info"],
@@ -71,7 +75,7 @@ def generate_launch_description():
             moveit_config.planning_pipelines,
             moveit_config.robot_description_kinematics,
             moveit_config.joint_limits,
-            {"use_sim_time": True}
+            {"use_sim_time": is_simulation}
         ],
     )
 
@@ -83,7 +87,7 @@ def generate_launch_description():
         output="both",
         parameters=[
             moveit_config.robot_description,
-            {"use_sim_time": True}    
+            {"use_sim_time": is_simulation}    
         ],
     )
 
@@ -99,7 +103,7 @@ def generate_launch_description():
         executable="ros2_control_node",
         parameters=[
             ros2_controllers_path,
-            {"use_sim_time": True}
+            {"use_sim_time": is_simulation}
         ],
         remappings=[
             ("/controller_manager/robot_description", "/robot_description"),
@@ -129,17 +133,29 @@ def generate_launch_description():
         output = "screen"
     )
 
+    sim_launch = [
+        rviz_config_arg,
+        rviz_node,
+        robot_state_publisher,
+        move_group_node,
+        ros2_control_node,
+        joint_state_broadcaster_spawner,
+        panda_arm_controller_spawner,
+        joint_command_forwarder
+    ]
+
+    hw_launch = [
+        rviz_config_arg,
+        rviz_node,
+        robot_state_publisher,
+        move_group_node,
+        ros2_control_node,
+        joint_state_broadcaster_spawner,
+        panda_arm_controller_spawner,
+    ]
+
     
 
     return LaunchDescription(
-        [
-            rviz_config_arg,
-            rviz_node,
-            robot_state_publisher,
-            move_group_node,
-            ros2_control_node,
-            joint_state_broadcaster_spawner,
-            panda_arm_controller_spawner,
-            joint_command_forwarder
-        ]
+        hw_launch    
     )
