@@ -1,40 +1,40 @@
 
 services:
 
-  isaac-sim:
-    build:
-      context: ./dockerfiles/
-      dockerfile: isaacsim_humble_dockerfile
-    image: isaacsim_humble
+  # isaac-sim:
+  #   build:
+  #     context: ./dockerfiles/
+  #     dockerfile: isaacsim_humble_dockerfile
+  #   image: isaacsim_humble
 
-    container_name: humble-isaac-sim
-    stdin_open: true
-    tty: true
-    environment:
-      - ACCEPT_EULA=Y
-      - PRIVACY_CONSENT=Y
-      - USE_SIM=${USE_SIM}
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - capabilities:
-                - gpu
-    volumes:
-      - ./fastdds.xml:/root/.ros/fastdds.xml:rw
-      # - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
-      - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
-      # - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
-      # - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
-      # - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
-      # - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
-      # - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
-      # - ~/docker/isaac-sim/documents:/root/Documents:rw
-      - ./humble_ws:/isaac-sim/humble_ws:rw
-      - ./docker_entry_scripts/isaacsim_entrypoint.sh:/isaac-sim/scripts/isaacsim_entrypoint.sh:rw
-    network_mode: "host"
-    restart: "no"
-    entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
+  #   container_name: humble-isaac-sim
+  #   stdin_open: true
+  #   tty: true
+  #   environment:
+  #     - ACCEPT_EULA=Y
+  #     - PRIVACY_CONSENT=Y
+  #     - USE_SIM=${USE_SIM}
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - capabilities:
+  #               - gpu
+  #   volumes:
+  #     - ./fastdds.xml:/root/.ros/fastdds.xml:rw
+  #     # - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
+  #     - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
+  #     # - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
+  #     # - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
+  #     # - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
+  #     # - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
+  #     # - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
+  #     # - ~/docker/isaac-sim/documents:/root/Documents:rw
+  #     - ./humble_ws:/isaac-sim/humble_ws:rw
+  #     - ./docker_entry_scripts/isaacsim_entrypoint.sh:/isaac-sim/scripts/isaacsim_entrypoint.sh:rw
+  #   network_mode: "host"
+  #   restart: "no"
+  #   entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
 
   # humble-desktop-navigation:
   #   container_name: humble-desktop-navigation
@@ -93,7 +93,6 @@ services:
       - USE_SIM=${USE_SIM}
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - ./kortex_ws:/home/kortex_ws:rw
       - ./humble_kortex_interface_ws:/home/humble_kortex_interface_ws:rw
     network_mode: "host"
     privileged: true

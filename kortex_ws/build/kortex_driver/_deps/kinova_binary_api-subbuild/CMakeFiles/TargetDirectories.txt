@@ -1,3 +1,0 @@
-/home/kortex_ws/build/kortex_driver/_deps/kinova_binary_api-subbuild/CMakeFiles/kinova_binary_api-populate.dir
-/home/kortex_ws/build/kortex_driver/_deps/kinova_binary_api-subbuild/CMakeFiles/edit_cache.dir
-/home/kortex_ws/build/kortex_driver/_deps/kinova_binary_api-subbuild/CMakeFiles/rebuild_cache.dir

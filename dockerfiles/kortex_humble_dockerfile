@@ -5,38 +5,8 @@ RUN apt install vim -y
 
 RUN apt install gnome-terminal dbus-x11 -y
 
-# Kortex source install instructions here: https://github.com/Kinovarobotics/ros2_kortex/tree/33ec22cddfe9feed7642c8e18d0a00320a017926
-# Kortex runs a couple of nodes that I dont want, so I will install source and comment those nodes out
-# Necessary libraries for source install of Kortex
-RUN apt install python3-colcon-common-extensions python3-vcstool -y
-RUN apt-get install -y ros-humble-ackermann-msgs
-RUN apt-get install -y liburdfdom-tools
-RUN apt-get install -y ros-humble-joint-state-publisher-gui
-RUN apt-get install -y python3-pygraphviz
-RUN apt-get install -y python3-rospkg
-RUN apt-get install -y ros-humble-joint-state-publisher
-RUN apt-get install -y ros-humble-ament-clang-format
-RUN apt-get install -y ros-humble-ament-clang-tidy
-RUN apt-get install -y ros-humble-picknik-reset-fault-controller
-RUN apt-get install -y ros-humble-picknik-twist-controller
-RUN apt-get install -y ros-humble-kinematics-interface-kdl
-RUN apt-get install -y ros-humble-control-toolbox
-RUN apt-get install -y ros-humble-kinematics-interface
-RUN apt-get install -y ros-humble-filters
-RUN apt-get install -y ros-humble-backward-ros
-RUN apt-get install -y ros-humble-xacro
-RUN apt-get install -y ros-humble-gazebo-ros2-control
-RUN apt-get install -y ros-humble-moveit-ros-move-group
-RUN apt-get install -y ros-humble-moveit-kinematics
-RUN apt-get install -y ros-humble-moveit-planners
-RUN apt-get install -y ros-humble-moveit-simple-controller-manager
-RUN apt-get install -y ros-humble-moveit-configs-utils
-RUN apt-get install -y ros-humble-moveit-ros-visualization
-RUN apt-get install -y ros-humble-moveit-ros-warehouse
-RUN apt-get install -y ros-humble-moveit-setup-assistant
-
-RUN apt-get install -y pip
-RUN pip install setuptools==58.2.0
+RUN apt install ros-humble-kortex-bringup -y
+RUN apt install ros-humble-kinova-gen3-7dof-robotiq-2f-85-moveit-config -y
 
 # Reccomended DDS for moveit is cyclone
 RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
@@ -45,5 +15,4 @@ ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 RUN apt-get install ros-humble-domain-bridge -y
 ENV ROS_DOMAIN_ID=2
 
-RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-RUN echo "source /home/kortex_ws/install/setup.bash" >> ~/.bashrc 
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc 
