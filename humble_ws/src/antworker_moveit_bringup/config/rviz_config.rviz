@@ -9,7 +9,6 @@ Panels:
         - /PlanningScene1
         - /TF1
         - /TF1/Frames1
-        - /TF1/Frames1/end_effector_link1
         - /TF1/Tree1
       Splitter Ratio: 0.5
     Tree Height: 801
@@ -254,17 +253,7 @@ Visualization Manager:
           Value: true
         forearm_link:
           Value: false
-        front_wheel_link:
-          Value: false
-        map:
-          Value: false
-        odom:
-          Value: false
-        rear_wheel_link:
-          Value: false
         shoulder_link:
-          Value: false
-        sim_camera:
           Value: false
         spherical_wrist_1_link:
           Value: false
@@ -292,15 +281,6 @@ Visualization Manager:
                           camera_link:
                             {}
           base_link:
-            {}
-          front_wheel_link:
-            {}
-          rear_wheel_link:
-            {}
-          sim_camera:
-            {}
-        map:
-          odom:
             {}
       Update Interval: 0
       Value: true
@@ -350,25 +330,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 2.7528786659240723
+      Distance: 3.083224058151245
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.0721789225935936
-        Y: 0.17955651879310608
-        Z: 0.7339142560958862
+        X: 0.15886364877223969
+        Y: 0.0508304163813591
+        Z: 0.6565786600112915
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.2447962611913681
+      Pitch: 0.5297960042953491
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.9403919577598572
+      Yaw: 3.690394639968872
     Saved: ~
 Window Geometry:
   Displays:
