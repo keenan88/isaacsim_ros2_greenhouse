@@ -44,6 +44,7 @@ class TFStaticFilterNode(Node):
         ]
 
         print('removed_transforms: ', removed_transforms)
+        
 
         # Add a static transform from arm_base_link to camera_link
         additional_transform = TransformStamped()
@@ -59,6 +60,16 @@ class TFStaticFilterNode(Node):
         additional_transform.transform.rotation.w = 1.0  # No rotation
 
         filtered_transforms.append(additional_transform)
+
+        for i in range(len(filtered_transforms)):
+            print(filtered_transforms[i].header.frame_id)
+            if filtered_transforms[i].header.frame_id == 'camera_link':
+                filtered_transforms[i].header.frame_id = 'realsense_camera_link'
+
+            if filtered_transforms[i].header.frame_id == 'camera_link':
+                filtered_transforms[i].child_frame_id = 'realsense_camera_link'
+            
+            
         
         if filtered_transforms:
             self.publisher.publish(TFMessage(transforms=filtered_transforms))

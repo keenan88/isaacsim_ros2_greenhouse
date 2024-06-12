@@ -5,6 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
+        - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
         - /Camera1
@@ -229,7 +230,7 @@ Visualization Manager:
       Value: true
     - Class: rviz_default_plugins/TF
       Enabled: true
-      Frame Timeout: 15
+      Frame Timeout: 5
       Frames:
         All Enabled: false
         arm_base_link:
@@ -237,53 +238,55 @@ Visualization Manager:
         base_link:
           Value: false
         bicep_link:
-          Value: true
+          Value: false
         bracelet_link:
           Value: false
         camera_accel_frame:
-          Value: true
+          Value: false
         camera_accel_optical_frame:
-          Value: true
+          Value: false
         camera_bottom_screw_frame:
-          Value: true
+          Value: false
         camera_color_frame:
           Value: false
         camera_color_optical_frame:
-          Value: true
+          Value: false
         camera_depth_frame:
           Value: false
         camera_depth_optical_frame:
-          Value: true
+          Value: false
         camera_gyro_frame:
-          Value: true
+          Value: false
         camera_gyro_optical_frame:
-          Value: true
+          Value: false
         camera_imu_optical_frame:
-          Value: true
+          Value: false
         camera_infra1_frame:
-          Value: true
+          Value: false
         camera_infra1_optical_frame:
-          Value: true
+          Value: false
         camera_infra2_frame:
-          Value: true
+          Value: false
         camera_infra2_optical_frame:
-          Value: true
+          Value: false
         camera_link:
           Value: false
         camera_usb_plug_link:
-          Value: true
+          Value: false
         chassis_link:
-          Value: true
+          Value: false
         end_effector_link:
-          Value: true
+          Value: false
         forearm_link:
+          Value: false
+        realsense_camera_link:
           Value: true
         shoulder_link:
-          Value: true
+          Value: false
         spherical_wrist_1_link:
-          Value: true
+          Value: false
         spherical_wrist_2_link:
-          Value: true
+          Value: false
       Marker Scale: 1
       Name: TF
       Show Arrows: false
@@ -292,6 +295,28 @@ Visualization Manager:
       Tree:
         chassis_link:
           arm_base_link:
+            realsense_camera_link:
+              camera_accel_frame:
+                camera_accel_optical_frame:
+                  {}
+              camera_color_frame:
+                camera_color_optical_frame:
+                  {}
+              camera_depth_frame:
+                camera_depth_optical_frame:
+                  {}
+              camera_gyro_frame:
+                camera_gyro_optical_frame:
+                  camera_imu_optical_frame:
+                    {}
+              camera_infra1_frame:
+                camera_infra1_optical_frame:
+                  {}
+              camera_infra2_frame:
+                camera_infra2_optical_frame:
+                  {}
+              camera_usb_plug_link:
+                {}
             shoulder_link:
               bicep_link:
                 forearm_link:
@@ -299,31 +324,10 @@ Visualization Manager:
                     spherical_wrist_2_link:
                       bracelet_link:
                         end_effector_link:
-                          {}
+                          camera_link:
+                            {}
           base_link:
-            camera_bottom_screw_frame:
-              camera_link:
-                camera_accel_frame:
-                  camera_accel_optical_frame:
-                    {}
-                camera_color_frame:
-                  camera_color_optical_frame:
-                    {}
-                camera_depth_frame:
-                  camera_depth_optical_frame:
-                    {}
-                camera_gyro_frame:
-                  camera_gyro_optical_frame:
-                    camera_imu_optical_frame:
-                      {}
-                camera_infra1_frame:
-                  camera_infra1_optical_frame:
-                    {}
-                camera_infra2_frame:
-                  camera_infra2_optical_frame:
-                    {}
-                camera_usb_plug_link:
-                  {}
+            {}
       Update Interval: 0
       Value: true
     - Class: rviz_default_plugins/Camera
@@ -349,7 +353,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: camera_depth_frame
+    Fixed Frame: arm_base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -392,25 +396,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 4.281981468200684
+      Distance: 3.5923373699188232
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.003794051008298993
-        Y: -0.049128565937280655
-        Z: 0.440488338470459
+        X: 0.05434569716453552
+        Y: 0.28334856033325195
+        Z: 0.1555420160293579
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.32979604601860046
+      Pitch: 0.6047959327697754
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.052206516265869
+      Yaw: 5.980389595031738
     Saved: ~
 Window Geometry:
   Camera:

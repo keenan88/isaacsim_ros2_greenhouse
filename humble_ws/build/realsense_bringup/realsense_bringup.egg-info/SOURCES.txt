@@ -8,6 +8,7 @@ setup.py
 ../../build/realsense_bringup/realsense_bringup.egg-info/requires.txt
 ../../build/realsense_bringup/realsense_bringup.egg-info/top_level.txt
 ../../build/realsense_bringup/realsense_bringup.egg-info/zip-safe
+config/realsense_domain_bridge.yaml
 launch/realsense_bringup.launch.py
 realsense_bringup/__init__.py
 realsense_bringup/tf_filter.py

@@ -44,23 +44,40 @@ class TFStaticFilterNode(Node):
         ]
 
         print('removed_transforms: ', removed_transforms)
+        
 
         # Add a static transform from arm_base_link to camera_link
         additional_transform = TransformStamped()
         additional_transform.header.stamp = self.get_clock().now().to_msg()
         additional_transform.header.frame_id = 'arm_base_link'
         additional_transform.child_frame_id = 'camera_link'
-        additional_transform.transform.translation.x = 0.0
-        additional_transform.transform.translation.y = 0.0
-        additional_transform.transform.translation.z = 1.0  # 1 meter z displacement
+        # arm_base_link -> camera: (x,y,z) = (0.7, 0.07, 0.835) is an approximation
+        # arm_base_link -> camera: (Rx,Ry,Rz) = (0, 135 degrees, 0) is an approximation
+        additional_transform.transform.translation.x = 0.7
+        additional_transform.transform.translation.y = 0.07
+        additional_transform.transform.translation.z = 0.835
         additional_transform.transform.rotation.x = 0.0
-        additional_transform.transform.rotation.y = 0.0
+        additional_transform.transform.rotation.y = 0.9238795
         additional_transform.transform.rotation.z = 0.0
-        additional_transform.transform.rotation.w = 1.0  # No rotation
+        additional_transform.transform.rotation.w = 0.3826834
+
 
         filtered_transforms.append(additional_transform)
+
+        for i in range(len(filtered_transforms)):
+            print(filtered_transforms[i].header.frame_id)
+            if filtered_transforms[i].header.frame_id == 'camera_link':
+                filtered_transforms[i].header.frame_id = 'realsense_camera_link'
+
+            if filtered_transforms[i].child_frame_id == 'camera_link':
+                filtered_transforms[i].child_frame_id = 'realsense_camera_link'
+
+            print(filtered_transforms[i].header.frame_id)
+            print()
+            
         
         if filtered_transforms:
+            print(filtered_transforms)
             self.publisher.publish(TFMessage(transforms=filtered_transforms))
             self.get_logger().debug(f"Published {len(filtered_transforms)} filtered static transforms.")
 

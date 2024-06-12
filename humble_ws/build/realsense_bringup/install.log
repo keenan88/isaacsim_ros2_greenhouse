@@ -5,7 +5,7 @@
 /home/humble_ws/install/realsense_bringup/share/ament_index/resource_index/packages/realsense_bringup
 /home/humble_ws/install/realsense_bringup/share/realsense_bringup/package.xml
 /home/humble_ws/install/realsense_bringup/share/realsense_bringup/launch/realsense_bringup.launch.py
-/home/humble_ws/install/realsense_bringup/share/realsense_bringup/config
+/home/humble_ws/install/realsense_bringup/share/realsense_bringup/config/realsense_domain_bridge.yaml
 /home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages/realsense_bringup-0.0.0-py3.10.egg-info/requires.txt
 /home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages/realsense_bringup-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages/realsense_bringup-0.0.0-py3.10.egg-info/zip-safe
