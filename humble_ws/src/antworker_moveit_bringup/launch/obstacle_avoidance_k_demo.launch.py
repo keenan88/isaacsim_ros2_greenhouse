@@ -141,19 +141,6 @@ def generate_launch_description():
         output = "screen"
     )
 
-    arm_base_to_camera_static_tf = Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='arm_base_to_camera_static_tf',
-            output='screen',
-            arguments=[
-                '1.0', '2.0', '3.0',       # translation (x, y, z)
-                '0.0', '0.0', '0.0', '1.0', # rotation (quaternion: x, y, z, w)
-                'arm_base_link',                # parent frame
-                'laser'                     # child frame
-            ]
-        )
-
     sim_launch = [
         rviz_config_arg,
         rviz_node,

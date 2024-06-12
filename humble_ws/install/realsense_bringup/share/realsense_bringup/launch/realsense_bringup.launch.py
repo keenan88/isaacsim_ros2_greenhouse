@@ -29,10 +29,15 @@ def generate_launch_description():
             name='arm_base_to_camera_static_tf',
             output='screen',
             arguments=[
-                '1.0', '2.0', '3.0',       # translation (x, y, z)
-                '0.0', '0.0', '0.0', '1.0', # rotation (quaternion: x, y, z, w)
-                'arm_base_link',                # parent frame
-                'laser'                     # child frame
+                 '--x', '1.0', 
+                 '--y', '2.0', 
+                 '--z', '3.0',       # translation (x, y, z)
+                 '--qx', '0.0', 
+                 '--qy', '0.0', 
+                 '--qz', '0.0', 
+                 '--qw', '1.0', # rotation (quaternion: x, y, z, w)
+                '--frame-id', 'camera_link',                # parent frame
+                '--child-frame-id', 'arm_base_link'                     # child frame
             ]
         )
 
@@ -40,6 +45,7 @@ def generate_launch_description():
 
     return LaunchDescription(
         [
-            realsense_pointcloud_launch
+            realsense_pointcloud_launch,
+            arm_base_to_camera_static_tf
         ]    
     )
