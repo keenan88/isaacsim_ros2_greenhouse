@@ -5,6 +5,18 @@ RUN apt install vim -y
 
 RUN apt install gnome-terminal dbus-x11 -y
 
+# Intel Realsense SDK Installation - gives us access to PointCloud2 message
+RUN mkdir -p /etc/apt/keyrings
+RUN curl -sSf https://librealsense.intel.com/Debian/librealsense.pgp | sudo tee /etc/apt/keyrings/librealsense.pgp > /dev/null
+RUN apt-get install apt-transport-https -y
+RUN echo "deb [signed-by=/etc/apt/keyrings/librealsense.pgp] https://librealsense.intel.com/Debian/apt-repo `lsb_release -cs` main" | sudo tee /etc/apt/sources.list.d/librealsense.list
+RUN apt-get update
+RUN apt-get install librealsense2-dkms -y
+RUN apt-get install librealsense2-utils -y
+RUN apt-get install librealsense2-dev -y
+RUN apt-get install librealsense2-dbg -y
+RUN apt install ros-humble-librealsense2* -y
+
 ENV ROS_DOMAIN_ID=1
 
 # Reccomended DDS for moveit is cyclone

@@ -13,10 +13,14 @@ RUN echo "deb [signed-by=/etc/apt/keyrings/librealsense.pgp] https://librealsens
 RUN apt-get update
 RUN apt-get install librealsense2-dkms -y
 RUN apt-get install librealsense2-utils -y
+RUN apt-get install librealsense2-dev -y
+RUN apt-get install librealsense2-dbg -y
+RUN apt install ros-humble-librealsense2* -y
 
-# Intel Realsense ROS2 wrapper installation
-RUN apt install ros-humble-realsense2-* -y
+RUN apt-get install ros-humble-domain-bridge -y
+ENV ROS_DOMAIN_ID=3
 
-ENV ROS_DOMAIN_ID=1
+RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
+ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc 
