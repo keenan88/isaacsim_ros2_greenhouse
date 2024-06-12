@@ -52,14 +52,14 @@ class TFStaticFilterNode(Node):
         additional_transform.header.frame_id = 'arm_base_link'
         additional_transform.child_frame_id = 'camera_link'
         # arm_base_link -> camera: (x,y,z) = (0.7, 0.07, 0.835) is an approximation
-        # arm_base_link -> camera: (Rx,Ry,Rz) = (0, 135 degrees, 0) is an approximation
-        additional_transform.transform.translation.x = 0.7
-        additional_transform.transform.translation.y = 0.07
-        additional_transform.transform.translation.z = 0.835
-        additional_transform.transform.rotation.x = 0.0
-        additional_transform.transform.rotation.y = 0.9238795
-        additional_transform.transform.rotation.z = 0.0
-        additional_transform.transform.rotation.w = 0.3826834
+        # arm_base_link -> camera: (Rx,Ry,Rz) = (0, -127 degrees, 0) is an approximation
+        additional_transform.transform.translation.x = 0.60
+        additional_transform.transform.translation.y = -0.02
+        additional_transform.transform.translation.z = 0.8
+        additional_transform.transform.rotation.x = -0.42
+        additional_transform.transform.rotation.y = 0.0
+        additional_transform.transform.rotation.z = 0.906
+        additional_transform.transform.rotation.w = 0.0
 
 
         filtered_transforms.append(additional_transform)
