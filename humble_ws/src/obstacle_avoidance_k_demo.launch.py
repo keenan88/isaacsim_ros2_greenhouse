@@ -133,6 +133,12 @@ def generate_launch_description():
         output = "screen"
     )
 
+    dummy_wheel_joint_publisher = Node(
+        package = "antworker_moveit_bringup",
+        executable = "dummy_wheel_joint_publisher",
+        output = "screen"
+    )
+
     sim_launch = [
         rviz_config_arg,
         rviz_node,
@@ -152,6 +158,7 @@ def generate_launch_description():
         ros2_control_node,
         # joint_state_broadcaster_spawner,
         panda_arm_controller_spawner,
+        dummy_wheel_joint_publisher
     ]
 
     

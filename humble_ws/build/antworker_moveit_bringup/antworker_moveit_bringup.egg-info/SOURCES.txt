@@ -9,6 +9,7 @@ setup.py
 ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/top_level.txt
 ../../build/antworker_moveit_bringup/antworker_moveit_bringup.egg-info/zip-safe
 antworker_moveit_bringup/__init__.py
+antworker_moveit_bringup/dummy_wheel_joint_publisher.py
 antworker_moveit_bringup/ee_point_server.py
 antworker_moveit_bringup/joint_command_forwarder.py
 antworker_moveit_bringup/joint_state_forwarder.py

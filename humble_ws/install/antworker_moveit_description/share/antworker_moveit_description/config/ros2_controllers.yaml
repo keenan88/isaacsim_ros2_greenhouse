@@ -17,6 +17,9 @@ joint_state_broadcaster:
 
 kinova_arm_controller:
   ros__parameters:
+    #state_publish_rate: 10.0
+    #update_rate: 10.0
+
     joints:
       - joint_1
       - joint_2
@@ -61,5 +64,7 @@ kinova_arm_controller:
       joint_6:
         trajectory: 0.1 # Maximum error before triggering corrective action
         goal: 0.03 # Maximum tolerable goal deviation before goal considered to be reached
+
+  
 
     

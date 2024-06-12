@@ -24,7 +24,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'joint_pruner = kortex_interface.joint_pruner:main'
+            'joint_pruner = kortex_interface.joint_pruner:main',
+            'hw_joint_command_forwarder = kortex_interface.hw_joint_command_forwarder:main'
         ],
     },
 )

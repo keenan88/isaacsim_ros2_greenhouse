@@ -1,4 +1,5 @@
 [console_scripts]
+dummy_wheel_joint_publisher = antworker_moveit_bringup.dummy_wheel_joint_publisher:main
 ee_point_server = antworker_moveit_bringup.ee_point_server:main
 joint_command_forwarder = antworker_moveit_bringup.joint_command_forwarder:main
 joint_state_forwarder = antworker_moveit_bringup.joint_state_forwarder:main

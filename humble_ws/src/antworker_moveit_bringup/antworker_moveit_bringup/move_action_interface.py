@@ -40,7 +40,7 @@ class MoveGroupActionClientNode(Node):
         goal_msg.request.planner_id = "PTP"
 
         ee_pose_constraint = PositionConstraint()
-        ee_pose_constraint.header.frame_id = "arm_base_link"
+        ee_pose_constraint.header.frame_id = "chassis_link"
         ee_pose_constraint.link_name = "end_effector_link"
         ee_pose_constraint.target_point_offset.x = 0.0
         ee_pose_constraint.target_point_offset.y = 0.0
@@ -55,7 +55,7 @@ class MoveGroupActionClientNode(Node):
         # is the bounding box in the arm_base_link frame or the end effector frame?
         bounding_prim_pose = Pose()
         bounding_prim_pose.position.x = 0.0
-        bounding_prim_pose.position.y = 0.0
+        bounding_prim_pose.position.y = 0.2
         bounding_prim_pose.position.z = 0.9
         bounding_prim_pose.orientation.x = 0.0
         bounding_prim_pose.orientation.y = 0.0
@@ -102,11 +102,13 @@ class MoveGroupActionClientNode(Node):
 
     def get_result_callback(self, future):
         result = future.result().result
-        self.get_logger().info('Result: {0}'.format(result))
+        #self.get_logger().info('Result: {0}'.format(result))
 
         for traj_point in result.planned_trajectory.joint_trajectory.points:
             print(traj_point)
             print()
+
+        
 
         rclpy.shutdown()
 

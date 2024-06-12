@@ -43,8 +43,15 @@ def generate_launch_description():
         arguments = [domain_bridge_config_path]
     )
 
+    joint_command_forwarder = Node(
+        package = "kortex_interface",
+        executable = "hw_joint_command_forwarder",
+        output = "screen"
+    )
+
     return LaunchDescription([
         gen3_bringup,
         joint_pruner,
-        domain_bridge
+        domain_bridge,
+        joint_command_forwarder
     ])

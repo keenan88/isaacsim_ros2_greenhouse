@@ -1,5 +1,7 @@
+/home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface/hw_joint_command_forwarder.py
 /home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface/__init__.py
 /home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface/joint_pruner.py
+/home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface/__pycache__/hw_joint_command_forwarder.cpython-310.pyc
 /home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface/__pycache__/__init__.cpython-310.pyc
 /home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface/__pycache__/joint_pruner.cpython-310.pyc
 /home/humble_kortex_interface_ws/install/kortex_interface/share/ament_index/resource_index/packages/kortex_interface
@@ -13,4 +15,5 @@
 /home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface-0.0.0-py3.10.egg-info/top_level.txt
 /home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface-0.0.0-py3.10.egg-info/PKG-INFO
 /home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface-0.0.0-py3.10.egg-info/entry_points.txt
+/home/humble_kortex_interface_ws/install/kortex_interface/lib/kortex_interface/hw_joint_command_forwarder
 /home/humble_kortex_interface_ws/install/kortex_interface/lib/kortex_interface/joint_pruner
