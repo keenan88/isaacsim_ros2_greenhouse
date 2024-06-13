@@ -1,0 +1,42 @@
+[1.347s] Invoking command in '/home/humble_ws/src/realsense_bringup': PYTHONPATH=/home/humble_ws/build/realsense_bringup/prefix_override:/home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/realsense_bringup build --build-base /home/humble_ws/build/realsense_bringup/build install --record /home/humble_ws/build/realsense_bringup/install.log --single-version-externally-managed install_data
+[1.569s] running egg_info
+[1.569s] creating ../../build/realsense_bringup/realsense_bringup.egg-info
+[1.569s] writing ../../build/realsense_bringup/realsense_bringup.egg-info/PKG-INFO
+[1.570s] writing dependency_links to ../../build/realsense_bringup/realsense_bringup.egg-info/dependency_links.txt
+[1.570s] writing entry points to ../../build/realsense_bringup/realsense_bringup.egg-info/entry_points.txt
+[1.570s] writing requirements to ../../build/realsense_bringup/realsense_bringup.egg-info/requires.txt
+[1.570s] writing top-level names to ../../build/realsense_bringup/realsense_bringup.egg-info/top_level.txt
+[1.570s] writing manifest file '../../build/realsense_bringup/realsense_bringup.egg-info/SOURCES.txt'
+[1.572s] reading manifest file '../../build/realsense_bringup/realsense_bringup.egg-info/SOURCES.txt'
+[1.573s] writing manifest file '../../build/realsense_bringup/realsense_bringup.egg-info/SOURCES.txt'
+[1.573s] running build
+[1.573s] running build_py
+[1.573s] creating /home/humble_ws/build/realsense_bringup/build
+[1.573s] creating /home/humble_ws/build/realsense_bringup/build/lib
+[1.573s] creating /home/humble_ws/build/realsense_bringup/build/lib/realsense_bringup
+[1.573s] copying realsense_bringup/tf_filter.py -> /home/humble_ws/build/realsense_bringup/build/lib/realsense_bringup
+[1.573s] copying realsense_bringup/__init__.py -> /home/humble_ws/build/realsense_bringup/build/lib/realsense_bringup
+[1.574s] running install
+[1.574s] running install_lib
+[1.575s] creating /home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages/realsense_bringup
+[1.575s] copying /home/humble_ws/build/realsense_bringup/build/lib/realsense_bringup/tf_filter.py -> /home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages/realsense_bringup
+[1.576s] copying /home/humble_ws/build/realsense_bringup/build/lib/realsense_bringup/__init__.py -> /home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages/realsense_bringup
+[1.576s] byte-compiling /home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages/realsense_bringup/tf_filter.py to tf_filter.cpython-310.pyc
+[1.577s] byte-compiling /home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages/realsense_bringup/__init__.py to __init__.cpython-310.pyc
+[1.577s] running install_data
+[1.578s] creating /home/humble_ws/install/realsense_bringup/share/ament_index
+[1.578s] creating /home/humble_ws/install/realsense_bringup/share/ament_index/resource_index
+[1.578s] creating /home/humble_ws/install/realsense_bringup/share/ament_index/resource_index/packages
+[1.578s] copying resource/realsense_bringup -> /home/humble_ws/install/realsense_bringup/share/ament_index/resource_index/packages
+[1.578s] copying package.xml -> /home/humble_ws/install/realsense_bringup/share/realsense_bringup
+[1.578s] creating /home/humble_ws/install/realsense_bringup/share/realsense_bringup/launch
+[1.578s] copying launch/realsense_bringup.launch.py -> /home/humble_ws/install/realsense_bringup/share/realsense_bringup/launch
+[1.578s] creating /home/humble_ws/install/realsense_bringup/share/realsense_bringup/config
+[1.579s] copying config/realsense_viewer.rviz -> /home/humble_ws/install/realsense_bringup/share/realsense_bringup/config
+[1.579s] copying config/realsense_domain_bridge.yaml -> /home/humble_ws/install/realsense_bringup/share/realsense_bringup/config
+[1.579s] running install_egg_info
+[1.583s] Copying ../../build/realsense_bringup/realsense_bringup.egg-info to /home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages/realsense_bringup-0.0.0-py3.10.egg-info
+[1.584s] running install_scripts
+[1.608s] Installing tf_filter script to /home/humble_ws/install/realsense_bringup/lib/realsense_bringup
+[1.608s] writing list of installed files to '/home/humble_ws/build/realsense_bringup/install.log'
+[1.639s] Invoked command in '/home/humble_ws/src/realsense_bringup' returned '0': PYTHONPATH=/home/humble_ws/build/realsense_bringup/prefix_override:/home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/realsense_bringup build --build-base /home/humble_ws/build/realsense_bringup/build install --record /home/humble_ws/build/realsense_bringup/install.log --single-version-externally-managed install_data

@@ -7,6 +7,8 @@ from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 from ament_index_python.packages import get_package_share_directory
 from moveit_configs_utils import MoveItConfigsBuilder
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
@@ -94,6 +96,12 @@ def generate_launch_description():
     )
 
     # ros2_control using FakeSystem as hardware
+    # ros2_controllers_path = os.path.join(
+    #     get_package_share_directory("antworker_moveit_description"),
+    #     "config",
+    #     "ros2_controllers.yaml",
+    # )
+
     ros2_controllers_path = os.path.join(
         get_package_share_directory("antworker_moveit_description"),
         "config",
@@ -141,15 +149,26 @@ def generate_launch_description():
         output = "screen"
     )
 
+    ctrl_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            os.path.join(
+                get_package_share_directory('antworker_moveit_description'),
+                'launch',
+                'spawn_controllers.launch.py'
+            )
+        ])
+    )
+
     sim_launch = [
         rviz_config_arg,
         rviz_node,
         robot_state_publisher,
         move_group_node,
         ros2_control_node,
-        joint_state_broadcaster_spawner,
-        panda_arm_controller_spawner,
-        joint_command_forwarder
+        #joint_state_broadcaster_spawner,
+        #panda_arm_controller_spawner,
+        joint_command_forwarder,
+        ctrl_launch
     ]
 
     hw_launch = [
@@ -157,9 +176,9 @@ def generate_launch_description():
         rviz_node,
         robot_state_publisher,
         move_group_node,
-        ros2_control_node,
+        # ros2_control_node,
         # joint_state_broadcaster_spawner,
-        panda_arm_controller_spawner,
+        # panda_arm_controller_spawner,
         dummy_wheel_joint_publisher
     ]
 

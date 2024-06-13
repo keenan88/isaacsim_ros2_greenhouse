@@ -53,5 +53,5 @@ def generate_launch_description():
         gen3_bringup,
         joint_pruner,
         domain_bridge,
-        joint_command_forwarder
+        # joint_command_forwarder
     ])
