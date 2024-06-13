@@ -29,7 +29,8 @@ setup(
             'trajectory_server_sim = antworker_moveit_bringup.trajectory_server_sim:main',
             'joint_command_forwarder = antworker_moveit_bringup.joint_command_forwarder:main',
             'joint_state_forwarder = antworker_moveit_bringup.joint_state_forwarder:main',
-            'dummy_wheel_joint_publisher = antworker_moveit_bringup.dummy_wheel_joint_publisher:main'
+            'dummy_wheel_joint_publisher = antworker_moveit_bringup.dummy_wheel_joint_publisher:main',
+            'move_action_interface = antworker_moveit_bringup.move_action_interface:main'
         ],
     },
 )

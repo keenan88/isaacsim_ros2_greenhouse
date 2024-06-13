@@ -18,7 +18,7 @@ joint_state_broadcaster:
 kinova_arm_controller:
   ros__parameters:
     #state_publish_rate: 10.0
-    #update_rate: 10.0
+    update_rate: 10
 
     joints:
       - joint_1
@@ -32,7 +32,7 @@ kinova_arm_controller:
     # command_joints: [joint_1, joint_2, joint_3, joint_4, joint_5, joint_6]
     state_interfaces:
       - position
-      - velocity
+#      - velocity
 
     state_publish_rate: 10.0
     action_monitor_rate: 10.0 

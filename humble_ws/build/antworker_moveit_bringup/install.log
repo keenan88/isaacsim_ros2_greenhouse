@@ -34,5 +34,6 @@
 /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/ee_point_server
 /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/joint_command_forwarder
 /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/joint_state_forwarder
+/home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/move_action_interface
 /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/trajectory_server
 /home/humble_ws/install/antworker_moveit_bringup/lib/antworker_moveit_bringup/trajectory_server_sim

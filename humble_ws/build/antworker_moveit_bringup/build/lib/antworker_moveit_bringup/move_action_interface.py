@@ -30,7 +30,9 @@ class MoveGroupActionClientNode(Node):
 
         goal_msg.planning_options.plan_only = False
         goal_msg.planning_options.look_around = False
-        goal_msg.planning_options.replan = False
+        goal_msg.planning_options.replan = True
+        goal_msg.planning_options.replan_attempts = 10
+        goal_msg.planning_options.replan_delay = 1.0
 
         goal_msg.request.max_velocity_scaling_factor = 0.5
         goal_msg.request.max_acceleration_scaling_factor = 0.5
@@ -55,7 +57,7 @@ class MoveGroupActionClientNode(Node):
         # is the bounding box in the arm_base_link frame or the end effector frame?
         bounding_prim_pose = Pose()
         bounding_prim_pose.position.x = 0.0
-        bounding_prim_pose.position.y = 0.2
+        bounding_prim_pose.position.y = 0.0
         bounding_prim_pose.position.z = 0.9
         bounding_prim_pose.orientation.x = 0.0
         bounding_prim_pose.orientation.y = 0.0
@@ -69,7 +71,7 @@ class MoveGroupActionClientNode(Node):
         
 
         ee_orient_constraint = OrientationConstraint()
-        ee_orient_constraint.header.frame_id = "arm_base_link"
+        ee_orient_constraint.header.frame_id = "chassis_link"
         ee_orient_constraint.link_name = "end_effector_link"
         ee_orient_constraint.orientation.x = 0.0
         ee_orient_constraint.orientation.y = 0.0
@@ -104,7 +106,19 @@ class MoveGroupActionClientNode(Node):
         result = future.result().result
         #self.get_logger().info('Result: {0}'.format(result))
 
+        print("planned trajectory:")
+
         for traj_point in result.planned_trajectory.joint_trajectory.points:
+            print(traj_point)
+            print()
+
+        print()
+        print()
+        print()
+
+        print("executed trajectory:")
+
+        for traj_point in result.executed_trajectory.joint_trajectory.points:
             print(traj_point)
             print()
 

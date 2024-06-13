@@ -163,8 +163,8 @@ def generate_launch_description():
         dummy_wheel_joint_publisher
     ]
 
-    
+    launch = sim_launch if is_simulation else hw_launch
 
     return LaunchDescription(
-        sim_launch    
+        launch        
     )
