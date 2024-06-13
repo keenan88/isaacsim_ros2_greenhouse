@@ -58,25 +58,25 @@ services:
   #   restart: "no"
   #   entrypoint: /isaac-sim/scripts/nav_entrypoint.sh
 
-  # humble-kortex:
-  #   container_name: humble-kortex
-  #   build:
-  #     context: ./dockerfiles/
-  #     dockerfile: kortex_humble_dockerfile
-  #   image: kinova_humble
-  #   tty: true
-  #   stdin_open: true
-  #   environment:
-  #     - DISPLAY=${DISPLAY}
-  #     - USE_SIM=${USE_SIM}
-  #   volumes:
-  #     - /tmp/.X11-unix:/tmp/.X11-unix
-  #     - ./humble_kortex_interface_ws:/home/humble_kortex_interface_ws:rw
-  #   network_mode: "host"
-  #   privileged: true
-  #   working_dir: /home/humble_kortex_interface_ws
-  #   restart: "no"
-  #   # entrypoint: /home/scripts/joint_state_translater_entrypoint.sh
+  humble-kortex:
+    container_name: humble-kortex
+    build:
+      context: ./dockerfiles/
+      dockerfile: kortex_humble_dockerfile
+    image: kinova_humble
+    tty: true
+    stdin_open: true
+    environment:
+      - DISPLAY=${DISPLAY}
+      - USE_SIM=${USE_SIM}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./humble_kortex_interface_ws:/home/humble_kortex_interface_ws:rw
+    network_mode: "host"
+    privileged: true
+    working_dir: /home/humble_kortex_interface_ws
+    restart: "no"
+    # entrypoint: /home/scripts/joint_state_translater_entrypoint.sh
 
   realsense-humble:
     container_name: humble-realsense

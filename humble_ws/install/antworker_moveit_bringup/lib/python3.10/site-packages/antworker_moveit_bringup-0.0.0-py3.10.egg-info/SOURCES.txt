@@ -21,7 +21,7 @@ config/moveit_py_params.yaml
 config/rviz_config.rviz
 config/target_to_actual_bridge.yaml
 launch/moveit_bringup.launch.py
-launch/obstacle_avoidance_k_demo.launch.py
+launch/old1_moveit_bringup.launch.py
 resource/antworker_moveit_bringup
 test/test_copyright.py
 test/test_flake8.py

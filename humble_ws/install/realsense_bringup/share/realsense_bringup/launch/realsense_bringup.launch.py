@@ -17,9 +17,22 @@ def generate_launch_description():
 
     realsense_pointcloud_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
-            os.path.join(get_package_share_directory('realsense2_camera'), 'examples', 'pointcloud'),
-            '/rs_d455_pointcloud_launch.py'
-        ])
+            os.path.join(
+                get_package_share_directory('realsense2_camera'),
+                'launch',
+                'rs_launch.py'
+            )
+        ]),
+        launch_arguments = {
+            'camera_name' :  "camera",
+            'rgb_camera.color_profile': '424x240x5',
+            'depth_module.depth_profile': '424x240x5',
+            'depth_module.infra_profile': '424x240x5',
+            #'depth_module.color_profile': '480,270,6',
+            'pointcloud.enable': 'true'
+
+
+        }.items()
     )
 
     tf_replace_base_link = Node(
@@ -41,12 +54,20 @@ def generate_launch_description():
         arguments = [domain_bridge_config_path]
     )
 
+    rviz2_node = Node(
+        package = "rviz2",
+        executable = "rviz2",
+        output = 'screen',
+        arguments = ['-d', '/home/humble_ws/src/realsense_bringup/config/realsense_viewer.rviz']
+    )
+
     
 
     return LaunchDescription(
         [
             realsense_pointcloud_launch,
-            #tf_replace_base_link,
-            domain_bridge
+            tf_replace_base_link,
+            domain_bridge,
+            rviz2_node
         ]    
     )

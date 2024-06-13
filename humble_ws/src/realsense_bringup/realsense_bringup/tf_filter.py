@@ -33,18 +33,7 @@ class TFStaticFilterNode(Node):
 
     def tf_callback(self, msg: TFMessage):
         # Filter out transforms with 'base_link' as parent or child
-        filtered_transforms = [
-            transform for transform in msg.transforms
-            if 'base_link' not in (transform.header.frame_id, transform.child_frame_id)
-        ]
-
-        removed_transforms = [
-            transform for transform in msg.transforms
-            if 'base_link' in (transform.header.frame_id, transform.child_frame_id)
-        ]
-
-        print('removed_transforms: ', removed_transforms)
-        
+        filtered_transforms = msg.transforms        
 
         # Add a static transform from arm_base_link to camera_link
         additional_transform = TransformStamped()
@@ -71,13 +60,10 @@ class TFStaticFilterNode(Node):
 
             if filtered_transforms[i].child_frame_id == 'camera_link':
                 filtered_transforms[i].child_frame_id = 'realsense_camera_link'
-
-            print(filtered_transforms[i].header.frame_id)
-            print()
             
         
         if filtered_transforms:
-            print(filtered_transforms)
+            # print(filtered_transforms)
             self.publisher.publish(TFMessage(transforms=filtered_transforms))
             self.get_logger().debug(f"Published {len(filtered_transforms)} filtered static transforms.")
 

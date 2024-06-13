@@ -14,3 +14,13 @@ topics:
     from_domain: 3
     to_domain: 1
 
+  /camera/camera/depth/camera_info:
+    type: sensor_msgs/msg/CameraInfo
+    from_domain: 3
+    to_domain: 1
+
+  /camera/camera/depth/metadata:
+    type: realsense2_camera_msgs/msg/Metadata
+    from_domain: 3
+    to_domain: 1
+

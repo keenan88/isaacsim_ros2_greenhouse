@@ -1,5 +1,0 @@
-  File "/home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages/realsense_bringup/tf_filter.py", line 65
-    filtered_transforms[i].header.frame_id == 'realsense_camera_link':
-                                                                     ^
-SyntaxError: invalid syntax
-
