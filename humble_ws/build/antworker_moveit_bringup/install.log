@@ -5,6 +5,7 @@
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/ee_point_server.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/move_action_interface.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/trajectory_server.py
+/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/test_traj_server.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/joint_command_forwarder.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__init__.py
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/joint_state_forwarder.cpython-310.pyc
@@ -14,6 +15,7 @@
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/ee_point_server.cpython-310.pyc
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/move_action_interface.cpython-310.pyc
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/trajectory_server.cpython-310.pyc
+/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/test_traj_server.cpython-310.pyc
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/joint_command_forwarder.cpython-310.pyc
 /home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages/antworker_moveit_bringup/__pycache__/__init__.cpython-310.pyc
 /home/humble_ws/install/antworker_moveit_bringup/share/ament_index/resource_index/packages/antworker_moveit_bringup

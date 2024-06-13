@@ -22,6 +22,6 @@ topics:
 actions:
   joint_trajectory_controller/follow_joint_trajectory:
     type: control_msgs/action/FollowJointTrajectory
-    # from_domain: 2
-    # to_domain: 1
+    from_domain: 2
+    to_domain: 1
     bidirectional: True

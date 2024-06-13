@@ -20,7 +20,8 @@ def generate_launch_description():
         launch_arguments={
             'robot_ip': '192.168.1.10',
             'dof': '6',
-            'launch_rviz': 'false'
+            'launch_rviz': 'false',
+            'gripper' : "" # It would appear that contrary to https://github.com/Kinovarobotics/ros2_kortex/tree/main, an empty string for gripper does not mean no gripper will be loaded
         }.items()
     )
 
