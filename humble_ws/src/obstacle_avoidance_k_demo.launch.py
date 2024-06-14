@@ -7,17 +7,9 @@ from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 from ament_index_python.packages import get_package_share_directory
 from moveit_configs_utils import MoveItConfigsBuilder
-from launch.actions import IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-
-    is_simulation = os.getenv('USE_SIM')
-    if is_simulation == 'False': is_simulation = False
-    else: is_simulation = True
-
-    print("is_simulation: ", is_simulation)
 
     # Command-line arguments
     rviz_config_arg = DeclareLaunchArgument(
@@ -26,28 +18,36 @@ def generate_launch_description():
         description="RViz configuration file",
     )
 
+    db_arg = DeclareLaunchArgument(
+        "db", default_value="False", description="Database flag"
+    )
+
+    ros2_control_hardware_type = DeclareLaunchArgument(
+        "ros2_control_hardware_type",
+        default_value="mock_components",
+        description="ROS 2 control hardware interface type to use for the launch file -- possible values: [mock_components, isaac]",
+    )
+
     moveit_config = (
         MoveItConfigsBuilder(
             robot_name="antworker", 
             package_name="antworker_moveit_description",
         )
         .robot_description(
-            file_path="config/antworker.urdf.xacro"
+            file_path="config/antworker.urdf.xacro",
+            # mappings={
+            #     "ros2_control_hardware_type": LaunchConfiguration(
+            #         "ros2_control_hardware_type"
+            #     )
+            # },
         )
-        .robot_description_semantic(
-            file_path="config/antworker.srdf"
-        )
+        .robot_description_semantic(file_path="config/antworker.srdf")
         .planning_scene_monitor(
-            publish_robot_description = True, publish_robot_description_semantic = True
+            publish_robot_description=True, publish_robot_description_semantic=True
         )
-        .trajectory_execution(
-            file_path="config/moveit_controllers.yaml"
-        )
+        .trajectory_execution(file_path="config/moveit_controllers.yaml")
         .planning_pipelines(
-            pipelines=["pilz_industrial_motion_planner"] # stomp, ompl
-        )
-        .moveit_cpp(
-            file_path = "/home/humble_ws/src/antworker_moveit_bringup/config/moveit_py_params.yaml"
+            pipelines=["chomp", "pilz_industrial_motion_planner"] # stomp, ompl
         )
         .to_moveit_configs()
     )
@@ -57,11 +57,7 @@ def generate_launch_description():
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
-        parameters=[
-            moveit_config.to_dict(),
-            {"use_sim_time": is_simulation}
-            
-        ],
+        parameters=[moveit_config.to_dict()],
         arguments=["--ros-args", "--log-level", "info"],
     )
 
@@ -79,9 +75,17 @@ def generate_launch_description():
             moveit_config.planning_pipelines,
             moveit_config.robot_description_kinematics,
             moveit_config.joint_limits,
-            {"use_sim_time": is_simulation}
         ],
     )
+
+    # # Static TF
+    # static_tf_node = Node(
+    #     package="tf2_ros",
+    #     executable="static_transform_publisher",
+    #     name="static_transform_publisher",
+    #     output="log",
+    #     arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "world", "panda_link0"],
+    # )
 
     # Publish TF
     robot_state_publisher = Node(
@@ -89,13 +93,10 @@ def generate_launch_description():
         executable="robot_state_publisher",
         name="robot_state_publisher",
         output="both",
-        parameters=[
-            moveit_config.robot_description,
-            {"use_sim_time": is_simulation}    
-        ],
+        parameters=[moveit_config.robot_description],
     )
 
-
+    # ros2_control using FakeSystem as hardware
     ros2_controllers_path = os.path.join(
         get_package_share_directory("antworker_moveit_description"),
         "config",
@@ -105,10 +106,7 @@ def generate_launch_description():
     ros2_control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
-        parameters=[
-            ros2_controllers_path,
-            {"use_sim_time": is_simulation}
-        ],
+        parameters=[ros2_controllers_path],
         remappings=[
             ("/controller_manager/robot_description", "/robot_description"),
         ],
@@ -131,52 +129,39 @@ def generate_launch_description():
         arguments=["kinova_arm_controller", "-c", "/controller_manager"],
     )
 
-    joint_command_forwarder = Node(
-        package = "antworker_moveit_bringup",
-        executable = "joint_command_forwarder",
-        output = "screen"
+    # panda_hand_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["panda_hand_controller", "-c", "/controller_manager"],
+    # )
+
+    # Warehouse mongodb server
+    db_config = LaunchConfiguration("db")
+    mongodb_server_node = Node(
+        package="warehouse_ros_mongo",
+        executable="mongo_wrapper_ros.py",
+        parameters=[
+            {"warehouse_port": 33829},
+            {"warehouse_host": "localhost"},
+            {"warehouse_plugin": "warehouse_ros_mongo::MongoDatabaseConnection"},
+        ],
+        output="screen",
+        condition=IfCondition(db_config),
     )
-
-    dummy_wheel_joint_publisher = Node(
-        package = "antworker_moveit_bringup",
-        executable = "dummy_wheel_joint_publisher",
-        output = "screen"
-    )
-
-    ctrl_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            os.path.join(
-                get_package_share_directory('antworker_moveit_description'),
-                'launch',
-                'spawn_controllers.launch.py'
-            )
-        ])
-    )
-
-    sim_launch = [
-        rviz_config_arg,
-        rviz_node,
-        robot_state_publisher,
-        move_group_node,
-        # ros2_control_node,
-        # joint_state_broadcaster_spawner,
-        # panda_arm_controller_spawner,
-        # joint_command_forwarder  
-    ]
-
-    hw_launch = [
-        rviz_config_arg,
-        rviz_node,
-        # robot_state_publisher,
-        move_group_node,
-        # ros2_control_node,    
-        # joint_state_broadcaster_spawner,
-        # panda_arm_controller_spawner,
-        # dummy_wheel_joint_publisher
-    ]
-
-    launch = sim_launch if is_simulation else hw_launch
 
     return LaunchDescription(
-        launch        
+        [
+            rviz_config_arg,
+            db_arg,
+            ros2_control_hardware_type,
+            rviz_node,
+            #static_tf_node,
+            robot_state_publisher,
+            move_group_node,
+            # ros2_control_node,
+            # joint_state_broadcaster_spawner,
+            # panda_arm_controller_spawner,
+            # #panda_hand_controller_spawner,
+            # mongodb_server_node,
+        ]
     )

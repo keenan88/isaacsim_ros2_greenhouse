@@ -1,3 +1,0 @@
-[console_scripts]
-tf_filter = realsense_bringup.tf_filter:main
-
