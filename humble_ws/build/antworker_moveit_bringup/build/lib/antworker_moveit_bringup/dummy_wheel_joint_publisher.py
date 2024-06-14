@@ -13,7 +13,9 @@ class StaticJointStatePublisher(Node):
     def publish_joint_state(self):
         joint_state_msg = JointState()
         joint_state_msg.header.stamp = self.get_clock().now().to_msg()
-        joint_state_msg.name = ['front_wheel_joint', 'rear_wheel_joint', 'joint_1', 'joint_2', 'joint_3', 'joint_4', 'joint_5', 'joint_6']
+        joint_state_msg.name = [
+            'front_wheel_joint', 'rear_wheel_joint', 'joint_1', 
+            'joint_2', 'joint_3', 'joint_4', 'joint_5', 'joint_6']
         joint_state_msg.position = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
         self.publisher_.publish(joint_state_msg)
 

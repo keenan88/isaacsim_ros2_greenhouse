@@ -3,7 +3,7 @@
 import rclpy
 from rclpy.node import Node
 from tf2_msgs.msg import TFMessage
-from rclpy.qos import QoSProfile, QoSDurabilityPolicy, QoSReliabilityPolicy
+from rclpy.qos import QoSProfile, ReliabilityPolicy, DurabilityPolicy
 from geometry_msgs.msg import TransformStamped
 
 
@@ -13,8 +13,8 @@ class TFStaticFilterNode(Node):
 
         # QoS profile for tf_static
         qos_profile = QoSProfile(
-            reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_RELIABLE,
-            durability=QoSDurabilityPolicy.RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL,
+            reliability=ReliabilityPolicy.RELIABLE,
+            durability=DurabilityPolicy.TRANSIENT_LOCAL,
             depth=1
         )
 

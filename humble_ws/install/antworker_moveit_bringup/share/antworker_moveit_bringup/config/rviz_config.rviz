@@ -5,9 +5,17 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
+        - /PlanningScene1
+        - /PlanningScene1/Scene Geometry1
+        - /PlanningScene1/Scene Robot1
         - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
+        - /TF1/Tree1/chassis_link1
+        - /TF1/Tree1/chassis_link1/arm_base_link1
+        - /TF1/Tree1/chassis_link1/arm_base_link1/realsense_camera_link1
+        - /TF1/Tree1/chassis_link1/arm_base_link1/realsense_camera_link1/camera_color_frame1
+        - /TF1/Tree1/chassis_link1/arm_base_link1/realsense_camera_link1/camera_depth_frame1
         - /PointCloud21
         - /PointCloud21/Topic1
       Splitter Ratio: 0.5
@@ -52,7 +60,7 @@ Visualization Manager:
         Scene Display Time: 0.20000000298023224
         Show Scene Geometry: true
         Voxel Coloring: Z-Axis
-        Voxel Rendering: Occupied Voxels
+        Voxel Rendering: All Voxels
       Scene Robot:
         Attached Body Color: 150; 50; 150
         Links:
@@ -241,14 +249,20 @@ Visualization Manager:
           Value: false
         camera_color_frame:
           Value: false
+        camera_color_optical_frame:
+          Value: true
         camera_depth_frame:
           Value: false
+        camera_depth_optical_frame:
+          Value: true
         camera_link:
           Value: false
         chassis_link:
           Value: true
         end_effector_link:
           Value: false
+        realsense_camera_link:
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: false
@@ -257,7 +271,13 @@ Visualization Manager:
       Tree:
         chassis_link:
           arm_base_link:
-            {}
+            realsense_camera_link:
+              camera_color_frame:
+                camera_color_optical_frame:
+                  {}
+              camera_depth_frame:
+                camera_depth_optical_frame:
+                  {}
           base_link:
             {}
       Update Interval: 0
@@ -342,25 +362,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 3.7395644187927246
+      Distance: 3.7923803329467773
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.300583153963089
-        Y: 0.2792493402957916
-        Z: -0.24720999598503113
+        X: 0.11799399554729462
+        Y: 0.29580482840538025
+        Z: -0.16999413073062897
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5397959351539612
+      Pitch: 0.6697959899902344
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.080391883850098
+      Yaw: 5.340391635894775
     Saved: ~
 Window Geometry:
   Displays:
