@@ -9,7 +9,7 @@ class JointForwarder(Node):
         super().__init__('joint_command_forwarder')
         self.subscription = self.create_subscription(
             JointTrajectoryControllerState,
-            '/kinova_arm_controller/controller_state',
+            '/joint_trajectory_controller/controller_state',
             self.listener_callback,
             10
         )

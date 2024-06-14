@@ -56,9 +56,9 @@ class MoveGroupActionClientNode(Node):
 
         # is the bounding box in the arm_base_link frame or the end effector frame?
         bounding_prim_pose = Pose()
-        bounding_prim_pose.position.x = 0.0
+        bounding_prim_pose.position.x = 0.2
         bounding_prim_pose.position.y = 0.0
-        bounding_prim_pose.position.z = 0.9
+        bounding_prim_pose.position.z = 0.8
         bounding_prim_pose.orientation.x = 0.0
         bounding_prim_pose.orientation.y = 0.0
         bounding_prim_pose.orientation.z = 0.0

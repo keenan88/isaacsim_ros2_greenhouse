@@ -4,10 +4,10 @@ default_sensor:
   far_clipping_plane_distance: 5.0
   filtered_cloud_topic: ""
   image_topic: /depth
-  max_update_rate: 1.0
+  max_update_rate: 25.0
   near_clipping_plane_distance: 0.1
-  padding_offset: 0.03
-  padding_scale: 4.0
+  padding_offset: 0.03 # Distance required for arm to be from obstacles
+  padding_scale: 4.0 # Scales padding based on distance to obstacle
   queue_size: 5
   sensor_plugin: occupancy_map_monitor/DepthImageOctomapUpdater
   shadow_threshold: 0.2
