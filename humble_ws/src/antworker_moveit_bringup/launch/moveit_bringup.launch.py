@@ -95,12 +95,6 @@ def generate_launch_description():
         ],
     )
 
-    # ros2_control using FakeSystem as hardware
-    # ros2_controllers_path = os.path.join(
-    #     get_package_share_directory("antworker_moveit_description"),
-    #     "config",
-    #     "ros2_controllers.yaml",
-    # )
 
     ros2_controllers_path = os.path.join(
         get_package_share_directory("antworker_moveit_description"),
@@ -165,10 +159,9 @@ def generate_launch_description():
         robot_state_publisher,
         move_group_node,
         ros2_control_node,
-        #joint_state_broadcaster_spawner,
-        #panda_arm_controller_spawner,
-        joint_command_forwarder,
-        ctrl_launch
+        joint_state_broadcaster_spawner,
+        panda_arm_controller_spawner,
+        joint_command_forwarder  
     ]
 
     hw_launch = [
