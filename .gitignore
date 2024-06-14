@@ -1,4 +1,4 @@
 # Ignore everything in specific directories
-humble_ws/src/install/*
-humble_ws/src/log/*
-humble_ws/src/build/*
+humble_ws/install/*
+humble_ws/log/*
+humble_ws/build/*
