@@ -26,6 +26,8 @@ setup(
 
         (os.path.join('share', package_name, 'description/combined'), glob(os.path.join('description/combined', 'worker_with_arm.urdf'))),
 
+        (os.path.join('share', package_name, 'description/arm/urdf'), glob(os.path.join('description/arm/urdf', 'GEN3_6DOF_VISION_URDF_ARM_V01.urdf'))),
+
         (os.path.join('share', package_name, 'description/arm/meshes'), glob(os.path.join('description/arm/meshes', '*'))),
         (os.path.join('share', package_name, 'description/base/meshes'), glob(os.path.join('description/base/meshes', '*'))),
 

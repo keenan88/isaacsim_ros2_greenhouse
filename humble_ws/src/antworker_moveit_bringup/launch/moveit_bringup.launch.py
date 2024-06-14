@@ -28,14 +28,14 @@ def generate_launch_description():
 
     moveit_config = (
         MoveItConfigsBuilder(
-            robot_name="antworker", 
+            robot_name="GEN3_6DOF_VISION_URDF_ARM_V01", 
             package_name="antworker_moveit_description2",
         )
         .robot_description(
-            file_path="config/antworker.urdf.xacro"
+            file_path="config/GEN3_6DOF_VISION_URDF_ARM_V01.urdf.xacro"
         )
         .robot_description_semantic(
-            file_path="config/antworker.srdf"
+            file_path="config/GEN3_6DOF_VISION_URDF_ARM_V01.srdf"
         )
         .planning_scene_monitor(
             publish_robot_description = True, publish_robot_description_semantic = True
@@ -158,10 +158,10 @@ def generate_launch_description():
         rviz_node,
         robot_state_publisher,
         move_group_node,
-        ros2_control_node,
-        joint_state_broadcaster_spawner,
-        panda_arm_controller_spawner,
-        joint_command_forwarder  
+        # ros2_control_node,
+        # joint_state_broadcaster_spawner,
+        # panda_arm_controller_spawner,
+        # joint_command_forwarder  
     ]
 
     hw_launch = [
