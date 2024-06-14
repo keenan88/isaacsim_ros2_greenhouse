@@ -1,8 +1,7 @@
-FROM moveit/moveit2:humble-release
+FROM osrf/ros:humble-desktop
 
 RUN apt-get update
 RUN apt install vim -y
-
 RUN apt install gnome-terminal dbus-x11 -y
 
 ENV ROS_DOMAIN_ID=1
