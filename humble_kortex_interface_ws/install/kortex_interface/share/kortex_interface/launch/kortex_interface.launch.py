@@ -52,7 +52,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         gen3_bringup,
-        joint_pruner,
-        domain_bridge,
+        #joint_pruner,
+        #domain_bridge,
         # joint_command_forwarder
     ])

@@ -1,0 +1,404 @@
+[0.172s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.172s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x72602f7aa740>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72602f6aef20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72602f6aef20>>, mixin_verb=('build',))
+[0.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.311s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.311s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.312s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/humble_ws'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'python_setup_py'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_description) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_description) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_description) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_description) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_description) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_description) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_description) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_description) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_description) by extension 'ros'
+[0.327s] DEBUG:colcon.colcon_core.package_identification:Package 'src/antworker_description' with type 'ros.ament_python' and name 'antworker_description'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_isaacsim_world) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_isaacsim_world) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_isaacsim_world) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_isaacsim_world) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_isaacsim_world) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_isaacsim_world) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_isaacsim_world) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_isaacsim_world) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_isaacsim_world) by extension 'ros'
+[0.327s] DEBUG:colcon.colcon_core.package_identification:Package 'src/antworker_isaacsim_world' with type 'ros.ament_python' and name 'antworker_isaacsim_world'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_bringup) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_bringup) by extension 'ignore_ament_install'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_bringup) by extensions ['colcon_pkg']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_bringup) by extension 'colcon_pkg'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_bringup) by extensions ['colcon_meta']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_bringup) by extension 'colcon_meta'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_bringup) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_bringup) by extension 'ros'
+[0.328s] DEBUG:colcon.colcon_core.package_identification:Package 'src/antworker_moveit_bringup' with type 'ros.ament_python' and name 'antworker_moveit_bringup'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_description) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_description) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_description) by extension 'ignore_ament_install'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_description) by extensions ['colcon_pkg']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_description) by extension 'colcon_pkg'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_description) by extensions ['colcon_meta']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_description) by extension 'colcon_meta'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_description) by extensions ['ros']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_moveit_description) by extension 'ros'
+[0.329s] DEBUG:colcon.colcon_core.package_identification:Package 'src/antworker_moveit_description' with type 'ros.ament_cmake' and name 'antworker_moveit_description'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_navigation) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_navigation) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_navigation) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_navigation) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_navigation) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_navigation) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_navigation) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/antworker_navigation) by extension 'ros'
+[0.330s] DEBUG:colcon.colcon_core.package_identification:Package 'src/antworker_navigation' with type 'ros.ament_python' and name 'antworker_navigation'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_bringup) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_bringup) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_bringup) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_bringup) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_bringup) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_bringup) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_bringup) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_bringup) by extension 'ros'
+[0.331s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense_bringup' with type 'ros.ament_python' and name 'realsense_bringup'
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'antworker_description' build argument 'cmake_args' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'antworker_description' build argument 'cmake_target' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'antworker_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'antworker_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.353s] DEBUG:colcon.colcon_core.verb:Building package 'antworker_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/humble_ws/build/antworker_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/humble_ws/install/antworker_description', 'merge_install': False, 'path': '/home/humble_ws/src/antworker_description', 'symlink_install': False, 'test_result_base': None}
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_isaacsim_world' build argument 'cmake_args' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_isaacsim_world' build argument 'cmake_target' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_isaacsim_world' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_isaacsim_world' build argument 'cmake_clean_cache' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_isaacsim_world' build argument 'cmake_clean_first' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_isaacsim_world' build argument 'cmake_force_configure' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_isaacsim_world' build argument 'ament_cmake_args' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_isaacsim_world' build argument 'catkin_cmake_args' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_isaacsim_world' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.353s] DEBUG:colcon.colcon_core.verb:Building package 'antworker_isaacsim_world' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/humble_ws/build/antworker_isaacsim_world', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/humble_ws/install/antworker_isaacsim_world', 'merge_install': False, 'path': '/home/humble_ws/src/antworker_isaacsim_world', 'symlink_install': False, 'test_result_base': None}
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_bringup' build argument 'cmake_args' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_bringup' build argument 'cmake_target' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.354s] DEBUG:colcon.colcon_core.verb:Building package 'antworker_moveit_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/humble_ws/build/antworker_moveit_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/humble_ws/install/antworker_moveit_bringup', 'merge_install': False, 'path': '/home/humble_ws/src/antworker_moveit_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'antworker_navigation' build argument 'cmake_args' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'antworker_navigation' build argument 'cmake_target' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'antworker_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'antworker_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'antworker_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'antworker_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'antworker_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'antworker_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'antworker_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.354s] DEBUG:colcon.colcon_core.verb:Building package 'antworker_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/humble_ws/build/antworker_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/humble_ws/install/antworker_navigation', 'merge_install': False, 'path': '/home/humble_ws/src/antworker_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'realsense_bringup' build argument 'cmake_args' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'realsense_bringup' build argument 'cmake_target' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'realsense_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'realsense_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'realsense_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'realsense_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'realsense_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'realsense_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'realsense_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.354s] DEBUG:colcon.colcon_core.verb:Building package 'realsense_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/humble_ws/build/realsense_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/humble_ws/install/realsense_bringup', 'merge_install': False, 'path': '/home/humble_ws/src/realsense_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_description' build argument 'cmake_args' from command line to 'None'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_description' build argument 'cmake_target' from command line to 'None'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'antworker_moveit_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.355s] DEBUG:colcon.colcon_core.verb:Building package 'antworker_moveit_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/humble_ws/build/antworker_moveit_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/humble_ws/install/antworker_moveit_description', 'merge_install': False, 'path': '/home/humble_ws/src/antworker_moveit_description', 'symlink_install': False, 'test_result_base': None}
+[0.355s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.356s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.356s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/humble_ws/src/antworker_description' with build type 'ament_python'
+[0.356s] Level 1:colcon.colcon_core.shell:create_environment_hook('antworker_description', 'ament_prefix_path')
+[0.360s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_description/share/antworker_description/hook/ament_prefix_path.ps1'
+[0.361s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/antworker_description/share/antworker_description/hook/ament_prefix_path.dsv'
+[0.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_description/share/antworker_description/hook/ament_prefix_path.sh'
+[0.362s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.366s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/humble_ws/src/antworker_isaacsim_world' with build type 'ament_python'
+[0.366s] Level 1:colcon.colcon_core.shell:create_environment_hook('antworker_isaacsim_world', 'ament_prefix_path')
+[0.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/hook/ament_prefix_path.ps1'
+[0.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/hook/ament_prefix_path.dsv'
+[0.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/hook/ament_prefix_path.sh'
+[0.367s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.368s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.370s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/humble_ws/src/antworker_moveit_bringup' with build type 'ament_python'
+[0.370s] Level 1:colcon.colcon_core.shell:create_environment_hook('antworker_moveit_bringup', 'ament_prefix_path')
+[0.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/hook/ament_prefix_path.ps1'
+[0.370s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/hook/ament_prefix_path.dsv'
+[0.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/hook/ament_prefix_path.sh'
+[0.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.371s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.373s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/humble_ws/src/antworker_navigation' with build type 'ament_python'
+[0.373s] Level 1:colcon.colcon_core.shell:create_environment_hook('antworker_navigation', 'ament_prefix_path')
+[0.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/hook/ament_prefix_path.ps1'
+[0.373s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/hook/ament_prefix_path.dsv'
+[0.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/hook/ament_prefix_path.sh'
+[0.374s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.374s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.376s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/humble_ws/src/realsense_bringup' with build type 'ament_python'
+[0.376s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_bringup', 'ament_prefix_path')
+[0.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/hook/ament_prefix_path.ps1'
+[0.377s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/hook/ament_prefix_path.dsv'
+[0.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/hook/ament_prefix_path.sh'
+[0.377s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.377s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.532s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/humble_ws/src/antworker_description'
+[0.532s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.532s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.690s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/humble_ws/src/antworker_isaacsim_world'
+[0.691s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.691s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.849s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/humble_ws/src/antworker_moveit_bringup'
+[0.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.849s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.025s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/humble_ws/src/antworker_navigation'
+[1.025s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.025s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.190s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/humble_ws/src/realsense_bringup'
+[1.191s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.191s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/humble_ws/src/antworker_navigation': PYTHONPATH=/home/humble_ws/build/antworker_navigation/prefix_override:/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_navigation build --build-base /home/humble_ws/build/antworker_navigation/build install --record /home/humble_ws/build/antworker_navigation/install.log --single-version-externally-managed install_data
+[1.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/humble_ws/src/realsense_bringup': PYTHONPATH=/home/humble_ws/build/realsense_bringup/prefix_override:/home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/realsense_bringup build --build-base /home/humble_ws/build/realsense_bringup/build install --record /home/humble_ws/build/realsense_bringup/install.log --single-version-externally-managed install_data
+[1.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/humble_ws/src/antworker_isaacsim_world': PYTHONPATH=/home/humble_ws/build/antworker_isaacsim_world/prefix_override:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_isaacsim_world build --build-base /home/humble_ws/build/antworker_isaacsim_world/build install --record /home/humble_ws/build/antworker_isaacsim_world/install.log --single-version-externally-managed install_data
+[1.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/humble_ws/src/antworker_description': PYTHONPATH=/home/humble_ws/build/antworker_description/prefix_override:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_description build --build-base /home/humble_ws/build/antworker_description/build install --record /home/humble_ws/build/antworker_description/install.log --single-version-externally-managed install_data
+[1.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/humble_ws/src/antworker_moveit_bringup': PYTHONPATH=/home/humble_ws/build/antworker_moveit_bringup/prefix_override:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_moveit_bringup build --build-base /home/humble_ws/build/antworker_moveit_bringup/build install --record /home/humble_ws/build/antworker_moveit_bringup/install.log --single-version-externally-managed install_data
+[1.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/humble_ws/src/antworker_isaacsim_world' returned '0': PYTHONPATH=/home/humble_ws/build/antworker_isaacsim_world/prefix_override:/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_isaacsim_world build --build-base /home/humble_ws/build/antworker_isaacsim_world/build install --record /home/humble_ws/build/antworker_isaacsim_world/install.log --single-version-externally-managed install_data
+[1.766s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_isaacsim_world' for CMake module files
+[1.767s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_isaacsim_world' for CMake config files
+[1.767s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_isaacsim_world/lib'
+[1.768s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_isaacsim_world/bin'
+[1.768s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_isaacsim_world/lib/pkgconfig/antworker_isaacsim_world.pc'
+[1.768s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_isaacsim_world/lib/python3.10/site-packages'
+[1.768s] Level 1:colcon.colcon_core.shell:create_environment_hook('antworker_isaacsim_world', 'pythonpath')
+[1.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/hook/pythonpath.ps1'
+[1.769s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/hook/pythonpath.dsv'
+[1.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/hook/pythonpath.sh'
+[1.770s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_isaacsim_world/bin'
+[1.770s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(antworker_isaacsim_world)
+[1.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/package.ps1'
+[1.771s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/package.dsv'
+[1.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/package.sh'
+[1.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/package.bash'
+[1.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_isaacsim_world/share/antworker_isaacsim_world/package.zsh'
+[1.775s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/humble_ws/install/antworker_isaacsim_world/share/colcon-core/packages/antworker_isaacsim_world)
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_description' for CMake module files
+[1.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/humble_ws/src/antworker_description' returned '0': PYTHONPATH=/home/humble_ws/build/antworker_description/prefix_override:/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_description build --build-base /home/humble_ws/build/antworker_description/build install --record /home/humble_ws/build/antworker_description/install.log --single-version-externally-managed install_data
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_description' for CMake config files
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_description/lib'
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_description/bin'
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_description/lib/pkgconfig/antworker_description.pc'
+[1.779s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_description/lib/python3.10/site-packages'
+[1.779s] Level 1:colcon.colcon_core.shell:create_environment_hook('antworker_description', 'pythonpath')
+[1.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_description/share/antworker_description/hook/pythonpath.ps1'
+[1.779s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/antworker_description/share/antworker_description/hook/pythonpath.dsv'
+[1.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_description/share/antworker_description/hook/pythonpath.sh'
+[1.780s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_description/bin'
+[1.780s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(antworker_description)
+[1.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_description/share/antworker_description/package.ps1'
+[1.781s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/humble_ws/install/antworker_description/share/antworker_description/package.dsv'
+[1.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_description/share/antworker_description/package.sh'
+[1.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_description/share/antworker_description/package.bash'
+[1.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_description/share/antworker_description/package.zsh'
+[1.783s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/humble_ws/install/antworker_description/share/colcon-core/packages/antworker_description)
+[1.783s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/humble_ws/src/antworker_moveit_description' with build type 'ament_cmake'
+[1.783s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/humble_ws/src/antworker_moveit_description'
+[1.784s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.784s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.787s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/realsense_bringup' for CMake module files
+[1.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/humble_ws/src/realsense_bringup' returned '0': PYTHONPATH=/home/humble_ws/build/realsense_bringup/prefix_override:/home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/realsense_bringup build --build-base /home/humble_ws/build/realsense_bringup/build install --record /home/humble_ws/build/realsense_bringup/install.log --single-version-externally-managed install_data
+[1.788s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/realsense_bringup' for CMake config files
+[1.789s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/realsense_bringup/lib'
+[1.789s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/realsense_bringup/bin'
+[1.789s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/realsense_bringup/lib/pkgconfig/realsense_bringup.pc'
+[1.789s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/realsense_bringup/lib/python3.10/site-packages'
+[1.789s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_bringup', 'pythonpath')
+[1.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/hook/pythonpath.ps1'
+[1.790s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/hook/pythonpath.dsv'
+[1.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/hook/pythonpath.sh'
+[1.791s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/realsense_bringup/bin'
+[1.791s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_bringup)
+[1.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/package.ps1'
+[1.792s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/package.dsv'
+[1.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/package.sh'
+[1.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/package.bash'
+[1.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/realsense_bringup/share/realsense_bringup/package.zsh'
+[1.793s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/humble_ws/install/realsense_bringup/share/colcon-core/packages/realsense_bringup)
+[1.793s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_navigation' for CMake module files
+[1.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/humble_ws/src/antworker_navigation' returned '0': PYTHONPATH=/home/humble_ws/build/antworker_navigation/prefix_override:/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_navigation build --build-base /home/humble_ws/build/antworker_navigation/build install --record /home/humble_ws/build/antworker_navigation/install.log --single-version-externally-managed install_data
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_navigation' for CMake config files
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_navigation/lib'
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_navigation/bin'
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_navigation/lib/pkgconfig/antworker_navigation.pc'
+[1.796s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_navigation/lib/python3.10/site-packages'
+[1.796s] Level 1:colcon.colcon_core.shell:create_environment_hook('antworker_navigation', 'pythonpath')
+[1.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/hook/pythonpath.ps1'
+[1.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/hook/pythonpath.dsv'
+[1.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/hook/pythonpath.sh'
+[1.797s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_navigation/bin'
+[1.797s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(antworker_navigation)
+[1.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/package.ps1'
+[1.798s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/package.dsv'
+[1.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/package.sh'
+[1.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/package.bash'
+[1.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_navigation/share/antworker_navigation/package.zsh'
+[1.799s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/humble_ws/install/antworker_navigation/share/colcon-core/packages/antworker_navigation)
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_bringup' for CMake module files
+[1.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/humble_ws/src/antworker_moveit_bringup' returned '0': PYTHONPATH=/home/humble_ws/build/antworker_moveit_bringup/prefix_override:/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/antworker_moveit_bringup build --build-base /home/humble_ws/build/antworker_moveit_bringup/build install --record /home/humble_ws/build/antworker_moveit_bringup/install.log --single-version-externally-managed install_data
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_bringup' for CMake config files
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_bringup/lib'
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_bringup/bin'
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_bringup/lib/pkgconfig/antworker_moveit_bringup.pc'
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_bringup/lib/python3.10/site-packages'
+[1.802s] Level 1:colcon.colcon_core.shell:create_environment_hook('antworker_moveit_bringup', 'pythonpath')
+[1.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/hook/pythonpath.ps1'
+[1.803s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/hook/pythonpath.dsv'
+[1.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/hook/pythonpath.sh'
+[1.804s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_bringup/bin'
+[1.804s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(antworker_moveit_bringup)
+[1.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/package.ps1'
+[1.804s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/package.dsv'
+[1.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/package.sh'
+[1.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/package.bash'
+[1.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_bringup/share/antworker_moveit_bringup/package.zsh'
+[1.806s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/humble_ws/install/antworker_moveit_bringup/share/colcon-core/packages/antworker_moveit_bringup)
+[1.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/humble_ws/build/antworker_moveit_description': AMENT_PREFIX_PATH=/home/humble_ws/install/antworker_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/humble_ws/build/antworker_moveit_description -- -j16 -l16
+[1.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/humble_ws/build/antworker_moveit_description' returned '0': AMENT_PREFIX_PATH=/home/humble_ws/install/antworker_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/humble_ws/build/antworker_moveit_description -- -j16 -l16
+[1.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/humble_ws/build/antworker_moveit_description': AMENT_PREFIX_PATH=/home/humble_ws/install/antworker_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/humble_ws/build/antworker_moveit_description
+[1.930s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(antworker_moveit_description)
+[1.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/humble_ws/build/antworker_moveit_description' returned '0': AMENT_PREFIX_PATH=/home/humble_ws/install/antworker_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/humble_ws/install/antworker_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/humble_ws/build/antworker_moveit_description
+[1.931s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description' for CMake module files
+[1.931s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description' for CMake config files
+[1.932s] Level 1:colcon.colcon_core.shell:create_environment_hook('antworker_moveit_description', 'cmake_prefix_path')
+[1.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/hook/cmake_prefix_path.ps1'
+[1.932s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/hook/cmake_prefix_path.dsv'
+[1.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/hook/cmake_prefix_path.sh'
+[1.933s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description/bin'
+[1.933s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description/lib/pkgconfig/antworker_moveit_description.pc'
+[1.933s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description/lib/python3.10/site-packages'
+[1.933s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description/bin'
+[1.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.ps1'
+[1.933s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.dsv'
+[1.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.sh'
+[1.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.bash'
+[1.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.zsh'
+[1.935s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/humble_ws/install/antworker_moveit_description/share/colcon-core/packages/antworker_moveit_description)
+[1.956s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(antworker_moveit_description)
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description' for CMake module files
+[1.957s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description' for CMake config files
+[1.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('antworker_moveit_description', 'cmake_prefix_path')
+[1.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/hook/cmake_prefix_path.ps1'
+[1.957s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/hook/cmake_prefix_path.dsv'
+[1.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/hook/cmake_prefix_path.sh'
+[1.958s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description/bin'
+[1.958s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description/lib/pkgconfig/antworker_moveit_description.pc'
+[1.958s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description/lib/python3.10/site-packages'
+[1.958s] Level 1:colcon.colcon_core.environment:checking '/home/humble_ws/install/antworker_moveit_description/bin'
+[1.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.ps1'
+[1.959s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.dsv'
+[1.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.sh'
+[1.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.bash'
+[1.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/humble_ws/install/antworker_moveit_description/share/antworker_moveit_description/package.zsh'
+[1.960s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/humble_ws/install/antworker_moveit_description/share/colcon-core/packages/antworker_moveit_description)
+[1.961s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.961s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.961s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.961s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.971s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.971s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.971s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.971s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.981s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally with the following error: Authorization required, but no authorization protocol specified
+Autolaunch error: X11 initialization failed.
+
+[1.981s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.982s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/humble_ws/install/local_setup.ps1'
+[1.982s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/humble_ws/install/_local_setup_util_ps1.py'
+[1.983s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/humble_ws/install/setup.ps1'
+[1.984s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/humble_ws/install/local_setup.sh'
+[1.985s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/humble_ws/install/_local_setup_util_sh.py'
+[1.985s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/humble_ws/install/setup.sh'
+[1.986s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/humble_ws/install/local_setup.bash'
+[1.986s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/humble_ws/install/setup.bash'
+[1.987s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/humble_ws/install/local_setup.zsh'
+[1.987s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/humble_ws/install/setup.zsh'
