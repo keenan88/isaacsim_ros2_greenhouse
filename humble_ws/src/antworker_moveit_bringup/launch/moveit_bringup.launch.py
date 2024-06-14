@@ -29,7 +29,7 @@ def generate_launch_description():
     moveit_config = (
         MoveItConfigsBuilder(
             robot_name="antworker", 
-            package_name="antworker_moveit_description",
+            package_name="antworker_moveit_description2",
         )
         .robot_description(
             file_path="config/antworker.urdf.xacro"
@@ -97,7 +97,7 @@ def generate_launch_description():
 
 
     ros2_controllers_path = os.path.join(
-        get_package_share_directory("antworker_moveit_description"),
+        get_package_share_directory("antworker_moveit_description2"),
         "config",
         "ros2_controllers.yaml",
     )
@@ -146,7 +146,7 @@ def generate_launch_description():
     ctrl_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             os.path.join(
-                get_package_share_directory('antworker_moveit_description'),
+                get_package_share_directory('antworker_moveit_description2'),
                 'launch',
                 'spawn_controllers.launch.py'
             )
