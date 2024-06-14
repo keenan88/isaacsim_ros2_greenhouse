@@ -174,12 +174,12 @@ def generate_launch_description():
     hw_launch = [
         rviz_config_arg,
         rviz_node,
-        robot_state_publisher,
+        # robot_state_publisher,
         move_group_node,
         # ros2_control_node,    
         # joint_state_broadcaster_spawner,
         # panda_arm_controller_spawner,
-        dummy_wheel_joint_publisher
+        # dummy_wheel_joint_publisher
     ]
 
     launch = sim_launch if is_simulation else hw_launch

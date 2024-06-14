@@ -1,9 +1,10 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, SetEnvironmentVariable
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
-from launch_ros.actions import Node
-import os 
+from launch_ros.actions import Node, PushRosNamespace
+import os
+
 
 
 
@@ -15,14 +16,16 @@ def generate_launch_description():
                 get_package_share_directory('kortex_bringup'),
                 'launch',
                 'gen3.launch.py'
-            )
+            ),
+            
         ),
         launch_arguments={
             'robot_ip': '192.168.1.10',
             'dof': '6',
             'launch_rviz': 'false',
-            'gripper' : "" # It would appear that contrary to https://github.com/Kinovarobotics/ros2_kortex/tree/main, an empty string for gripper does not mean no gripper will be loaded
-        }.items()
+            'gripper' : ""
+        }.items(),
+        
     )
 
     joint_pruner = Node(
@@ -50,7 +53,13 @@ def generate_launch_description():
         output = "screen"
     )
 
+    namespace = 'fdsa'
+
     return LaunchDescription([
+        SetEnvironmentVariable('TF2_ROS_MAP_TOPIC', f'/{namespace}/tf'),
+        SetEnvironmentVariable('TF2_ROS_STATIC_MAP_TOPIC', f'/{namespace}/tf_static'),
+
+        PushRosNamespace(namespace),
         gen3_bringup,
         #joint_pruner,
         #domain_bridge,
