@@ -17,7 +17,7 @@ class MoveGroupActionClientNode(Node):
         while not self.move_group_action_client.wait_for_server(timeout_sec=1.0):
             self.get_logger().info('Action server not available, waiting again...')
 
-        goal_msg = self.generate_beyond_wall_pose()
+        goal_msg = self.generate_behind_wall_pose()
 
         self.move_group_action_client.wait_for_server()
 
@@ -38,7 +38,7 @@ class MoveGroupActionClientNode(Node):
     def generate_beyond_wall_pose(self):
         goal_msg = MoveGroup.Goal()
 
-        goal_msg.planning_options.plan_only = True
+        goal_msg.planning_options.plan_only = False
         goal_msg.planning_options.look_around = False
         goal_msg.planning_options.replan = True
         goal_msg.planning_options.replan_attempts = 10
@@ -99,7 +99,7 @@ class MoveGroupActionClientNode(Node):
     def generate_behind_wall_pose(self):
         goal_msg = MoveGroup.Goal()
 
-        goal_msg.planning_options.plan_only = True
+        goal_msg.planning_options.plan_only = False
         goal_msg.planning_options.look_around = False
         goal_msg.planning_options.replan = True
         goal_msg.planning_options.replan_attempts = 10

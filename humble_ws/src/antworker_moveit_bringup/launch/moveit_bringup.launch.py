@@ -44,7 +44,7 @@ def generate_launch_description():
             file_path="config/moveit_controllers.yaml"
         )
         .planning_pipelines(
-            pipelines=["pilz_industrial_motion_planner"]
+            pipelines=["pilz_industrial_motion_planner", "chomp"]
         )
         .moveit_cpp(
             file_path = "/home/humble_ws/src/antworker_moveit_bringup/config/moveit_py_params.yaml"
