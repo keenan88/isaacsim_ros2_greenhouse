@@ -11,7 +11,7 @@ planning_scene_monitor_options:
   wait_for_initial_state_timeout: 10.0
 
 planning_pipelines:
-  pipeline_names: ["pilz_industrial_motion_planner", "chomp"] # "pilz_industrial_motion_planner", "chomp"
+  pipeline_names: ["chomp", "pilz_industrial_motion_planner", "ompl"]
 
 plan_request_params:
   planning_attempts: 100
@@ -39,8 +39,9 @@ pilz_lin:
 
 chomp_planner:
   plan_request_params:
-    planning_attempts: 1
+    ridge_factor: 0.0
+    collision_clearance: 0.01
     planning_pipeline: chomp
-    max_velocity_scaling_factor: 1.0
-    max_acceleration_scaling_factor: 1.0
-    planning_time: 1.5
+    planning_time: 3.0
+    obstacle_cost_weight: 1.0 # 1.0 is a hard  constraint to avoid obstacles
+    planning_attempts: 10
