@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
 from moveit_msgs.action import MoveGroup
+from moveit_msgs.msg import PlanningScene, PlanningSceneWorld, CollisionObject
 from moveit_msgs.msg import Constraints
 from moveit_msgs.msg import PositionConstraint, OrientationConstraint, BoundingVolume
 from geometry_msgs.msg import Pose
@@ -17,7 +18,7 @@ class MoveGroupActionClientNode(Node):
         while not self.move_group_action_client.wait_for_server(timeout_sec=1.0):
             self.get_logger().info('Action server not available, waiting again...')
 
-        goal_msg = self.generate_behind_wall_pose()
+        goal_msg = self.generate_beyond_wall_pose()
 
         self.move_group_action_client.wait_for_server()
 
@@ -38,7 +39,7 @@ class MoveGroupActionClientNode(Node):
     def generate_beyond_wall_pose(self):
         goal_msg = MoveGroup.Goal()
 
-        goal_msg.planning_options.plan_only = False
+        goal_msg.planning_options.plan_only = True
         goal_msg.planning_options.look_around = False
         goal_msg.planning_options.replan = True
         goal_msg.planning_options.replan_attempts = 10
@@ -49,7 +50,7 @@ class MoveGroupActionClientNode(Node):
         goal_msg.request.num_planning_attempts = 100
         goal_msg.request.allowed_planning_time = 1.0 # seconds
         goal_msg.request.group_name = "kinova_arm"
-        goal_msg.request.planner_id = "PTP"
+        goal_msg.request.planner_id = "RRTConnectkConfigDefault"
 
         ee_pose_constraint = PositionConstraint()
         ee_pose_constraint.header.frame_id = "arm_base_link"
@@ -94,6 +95,12 @@ class MoveGroupActionClientNode(Node):
 
         goal_msg.request.goal_constraints.append(constraints)
 
+        
+
+
+
+
+
         return goal_msg
 
     def generate_behind_wall_pose(self):
@@ -110,7 +117,7 @@ class MoveGroupActionClientNode(Node):
         goal_msg.request.num_planning_attempts = 100
         goal_msg.request.allowed_planning_time = 1.0 # seconds
         goal_msg.request.group_name = "kinova_arm"
-        goal_msg.request.planner_id = "PTP"
+        goal_msg.request.planner_id = "RRTConnectkConfigDefault"
 
         ee_pose_constraint = PositionConstraint()
         ee_pose_constraint.header.frame_id = "arm_base_link"
