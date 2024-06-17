@@ -158,8 +158,8 @@ def generate_launch_description():
         rviz_node,
         robot_state_publisher,
         move_group_node,
-        # ros2_control_node,
-        # joint_state_broadcaster_spawner,
+        ros2_control_node,
+        joint_state_broadcaster_spawner,
         # panda_arm_controller_spawner,
         # joint_command_forwarder  
     ]
@@ -169,7 +169,7 @@ def generate_launch_description():
         rviz_node,
         # robot_state_publisher,
         move_group_node,
-        # ros2_control_node,    
+        ros2_control_node,    
         # joint_state_broadcaster_spawner,
         # panda_arm_controller_spawner,
         # dummy_wheel_joint_publisher
