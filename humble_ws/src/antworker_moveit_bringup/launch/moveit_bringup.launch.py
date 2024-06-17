@@ -44,7 +44,7 @@ def generate_launch_description():
             file_path="config/moveit_controllers.yaml"
         )
         .planning_pipelines(
-            pipelines=["pilz_industrial_motion_planner"] # stomp, ompl
+            pipelines=["pilz_industrial_motion_planner"]
         )
         .moveit_cpp(
             file_path = "/home/humble_ws/src/antworker_moveit_bringup/config/moveit_py_params.yaml"
@@ -160,8 +160,8 @@ def generate_launch_description():
         move_group_node,
         ros2_control_node,
         joint_state_broadcaster_spawner,
-        # panda_arm_controller_spawner,
-        # joint_command_forwarder  
+        panda_arm_controller_spawner,
+        joint_command_forwarder  
     ]
 
     hw_launch = [

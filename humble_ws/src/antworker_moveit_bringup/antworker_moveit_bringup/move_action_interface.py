@@ -17,7 +17,13 @@ class MoveGroupActionClientNode(Node):
         while not self.move_group_action_client.wait_for_server(timeout_sec=1.0):
             self.get_logger().info('Action server not available, waiting again...')
 
-        
+        goal_msg = self.generate_goal_msg()
+
+        self.move_group_action_client.wait_for_server()
+
+        self.future = self.move_group_action_client.send_goal_async(goal_msg, feedback_callback = self.feedback_callback)
+
+        self.future.add_done_callback(self.goal_response_callback)
 
         # self.move_group_action_client.wait_for_server()
 
@@ -27,13 +33,7 @@ class MoveGroupActionClientNode(Node):
 
         # self.future.add_done_callback(self.goal_response_callback)
 
-        goal_msg = self.generate_goal_msg()
-
-        self.move_group_action_client.wait_for_server()
-
-        self.future = self.move_group_action_client.send_goal_async(goal_msg, feedback_callback = self.feedback_callback)
-
-        self.future.add_done_callback(self.goal_response_callback)
+        
 
     def generate_goal_msg(self):
         goal_msg = MoveGroup.Goal()
@@ -52,7 +52,7 @@ class MoveGroupActionClientNode(Node):
         goal_msg.request.planner_id = "PTP"
 
         ee_pose_constraint = PositionConstraint()
-        ee_pose_constraint.header.frame_id = "chassis_link"
+        ee_pose_constraint.header.frame_id = "arm_base_link"
         ee_pose_constraint.link_name = "end_effector_link"
         ee_pose_constraint.target_point_offset.x = 0.0
         ee_pose_constraint.target_point_offset.y = 0.0
@@ -67,8 +67,8 @@ class MoveGroupActionClientNode(Node):
         # is the bounding box in the arm_base_link frame or the end effector frame?
         bounding_prim_pose = Pose()
         bounding_prim_pose.position.x = 0.0
-        bounding_prim_pose.position.y = 0.8
-        bounding_prim_pose.position.z = -0.1
+        bounding_prim_pose.position.y = 0.7
+        bounding_prim_pose.position.z = 0.2
         bounding_prim_pose.orientation.x = 0.0
         bounding_prim_pose.orientation.y = 0.0
         bounding_prim_pose.orientation.z = 0.0
