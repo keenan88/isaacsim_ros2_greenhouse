@@ -59,7 +59,10 @@ def generate_launch_description():
         output="screen",
         parameters=[
             moveit_config.to_dict(),
-            {"use_sim_time": is_simulation}
+            {
+                "use_sim_time": is_simulation,
+                "octomap_resolution": 0.05
+            }
             
         ],
         arguments=["--ros-args", "--log-level", "info"],

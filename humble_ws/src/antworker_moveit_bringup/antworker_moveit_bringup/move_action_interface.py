@@ -17,7 +17,7 @@ class MoveGroupActionClientNode(Node):
         while not self.move_group_action_client.wait_for_server(timeout_sec=1.0):
             self.get_logger().info('Action server not available, waiting again...')
 
-        goal_msg = self.generate_goal_msg()
+        goal_msg = self.generate_beyond_wall_pose()
 
         self.move_group_action_client.wait_for_server()
 
@@ -27,7 +27,7 @@ class MoveGroupActionClientNode(Node):
 
         # self.move_group_action_client.wait_for_server()
 
-        # goal_msg = self.generate_goal_msg2()
+        # goal_msg = self.generate_behind_wall_pose()
 
         # self.future = self.move_group_action_client.send_goal_async(goal_msg, feedback_callback = self.feedback_callback)
 
@@ -35,10 +35,10 @@ class MoveGroupActionClientNode(Node):
 
         
 
-    def generate_goal_msg(self):
+    def generate_beyond_wall_pose(self):
         goal_msg = MoveGroup.Goal()
 
-        goal_msg.planning_options.plan_only = False
+        goal_msg.planning_options.plan_only = True
         goal_msg.planning_options.look_around = False
         goal_msg.planning_options.replan = True
         goal_msg.planning_options.replan_attempts = 10
@@ -62,13 +62,13 @@ class MoveGroupActionClientNode(Node):
 
         bounding_prim = SolidPrimitive()
         bounding_prim.type = 1 # 1 is box
-        bounding_prim.dimensions = [0.01, 0.01, 0.01]
+        bounding_prim.dimensions = [0.05, 0.05, 0.05]
 
         # is the bounding box in the arm_base_link frame or the end effector frame?
         bounding_prim_pose = Pose()
-        bounding_prim_pose.position.x = 0.0
-        bounding_prim_pose.position.y = 0.7
-        bounding_prim_pose.position.z = 0.2
+        bounding_prim_pose.position.x = -0.73
+        bounding_prim_pose.position.y = 0.0
+        bounding_prim_pose.position.z = 0.7
         bounding_prim_pose.orientation.x = 0.0
         bounding_prim_pose.orientation.y = 0.0
         bounding_prim_pose.orientation.z = 0.0
@@ -81,11 +81,11 @@ class MoveGroupActionClientNode(Node):
         
 
         ee_orient_constraint = OrientationConstraint()
-        ee_orient_constraint.header.frame_id = "chassis_link"
+        ee_orient_constraint.header.frame_id = "arm_base_link"
         ee_orient_constraint.link_name = "end_effector_link"
-        ee_orient_constraint.orientation.x = 0.0
-        ee_orient_constraint.orientation.y = 1.0
-        ee_orient_constraint.orientation.z = 0.0
+        ee_orient_constraint.orientation.x = -0.49
+        ee_orient_constraint.orientation.y = 0.0
+        ee_orient_constraint.orientation.z = 0.87
         ee_orient_constraint.orientation.w = 0.0
 
         constraints = Constraints()
@@ -96,10 +96,10 @@ class MoveGroupActionClientNode(Node):
 
         return goal_msg
 
-    def generate_goal_msg2(self):
+    def generate_behind_wall_pose(self):
         goal_msg = MoveGroup.Goal()
 
-        goal_msg.planning_options.plan_only = False
+        goal_msg.planning_options.plan_only = True
         goal_msg.planning_options.look_around = False
         goal_msg.planning_options.replan = True
         goal_msg.planning_options.replan_attempts = 10
@@ -113,7 +113,7 @@ class MoveGroupActionClientNode(Node):
         goal_msg.request.planner_id = "PTP"
 
         ee_pose_constraint = PositionConstraint()
-        ee_pose_constraint.header.frame_id = "chassis_link"
+        ee_pose_constraint.header.frame_id = "arm_base_link"
         ee_pose_constraint.link_name = "end_effector_link"
         ee_pose_constraint.target_point_offset.x = 0.0
         ee_pose_constraint.target_point_offset.y = 0.0
@@ -123,17 +123,17 @@ class MoveGroupActionClientNode(Node):
 
         bounding_prim = SolidPrimitive()
         bounding_prim.type = 1 # 1 is box
-        bounding_prim.dimensions = [0.01, 0.01, 0.01]
+        bounding_prim.dimensions = [0.05, 0.05, 0.05]
 
         # is the bounding box in the arm_base_link frame or the end effector frame?
         bounding_prim_pose = Pose()
-        bounding_prim_pose.position.x = -0.5
-        bounding_prim_pose.position.y = 0.3
-        bounding_prim_pose.position.z = 0.1
-        bounding_prim_pose.orientation.x = 0.0
-        bounding_prim_pose.orientation.y = 0.0
-        bounding_prim_pose.orientation.z = 0.0
-        bounding_prim_pose.orientation.w = 1.0
+        bounding_prim_pose.position.x = 0.0
+        bounding_prim_pose.position.y = -0.71
+        bounding_prim_pose.position.z = 0.0
+        bounding_prim_pose.orientation.x = 0.56
+        bounding_prim_pose.orientation.y = 0.57
+        bounding_prim_pose.orientation.z = -0.42
+        bounding_prim_pose.orientation.w = 0.42
 
         bounding_volume.primitives.append(bounding_prim)
         bounding_volume.primitive_poses.append(bounding_prim_pose)
@@ -142,7 +142,7 @@ class MoveGroupActionClientNode(Node):
         
 
         ee_orient_constraint = OrientationConstraint()
-        ee_orient_constraint.header.frame_id = "chassis_link"
+        ee_orient_constraint.header.frame_id = "arm_base_link"
         ee_orient_constraint.link_name = "end_effector_link"
         ee_orient_constraint.orientation.x = 0.0
         ee_orient_constraint.orientation.y = 1.0
