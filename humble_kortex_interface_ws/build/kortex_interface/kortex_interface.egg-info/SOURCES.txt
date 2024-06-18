@@ -10,6 +10,7 @@ setup.py
 ../../build/kortex_interface/kortex_interface.egg-info/zip-safe
 config/kortex_domain_bridge.yaml
 kortex_interface/__init__.py
+kortex_interface/joint_command_forwarder.py
 kortex_interface/joint_pruner.py
 launch/kortex_interface.launch.py
 resource/kortex_interface

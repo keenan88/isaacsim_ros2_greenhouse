@@ -1,0 +1,36 @@
+[0.028s] Invoking command in '/home/kortex_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_kortex_interface_ws/install/kortex_interface:/home/kortex_ws/install/rqt_joint_trajectory_controller:/home/kortex_ws/install/rqt_controller_manager:/home/kortex_ws/install/ros2controlcli:/home/kortex_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/kortex_ws/build/serial -- -j16 -l16
+[0.151s] [100%] Built target serial
+[0.284s] Invoked command in '/home/kortex_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_kortex_interface_ws/install/kortex_interface:/home/kortex_ws/install/rqt_joint_trajectory_controller:/home/kortex_ws/install/rqt_controller_manager:/home/kortex_ws/install/ros2controlcli:/home/kortex_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/kortex_ws/build/serial -- -j16 -l16
+[0.370s] Invoking command in '/home/kortex_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_kortex_interface_ws/install/kortex_interface:/home/kortex_ws/install/rqt_joint_trajectory_controller:/home/kortex_ws/install/rqt_controller_manager:/home/kortex_ws/install/ros2controlcli:/home/kortex_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --install /home/kortex_ws/build/serial
+[0.393s] -- Install configuration: "Release"
+[0.393s] -- Up-to-date: /home/kortex_ws/install/serial/lib/libserial.a
+[0.393s] -- Up-to-date: /home/kortex_ws/install/serial/include
+[0.393s] -- Up-to-date: /home/kortex_ws/install/serial/include/serial
+[0.393s] -- Up-to-date: /home/kortex_ws/install/serial/include/serial/serial.h
+[0.393s] -- Up-to-date: /home/kortex_ws/install/serial/include/serial/v8stdint.h
+[0.394s] -- Up-to-date: /home/kortex_ws/install/serial/include/serial/impl
+[0.395s] -- Up-to-date: /home/kortex_ws/install/serial/include/serial/impl/win.h
+[0.396s] -- Up-to-date: /home/kortex_ws/install/serial/include/serial/impl/unix.h
+[0.396s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/environment/library_path.sh
+[0.397s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/environment/library_path.dsv
+[0.397s] -- Up-to-date: /home/kortex_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[0.397s] -- Up-to-date: /home/kortex_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[0.397s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[0.397s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[0.397s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/environment/path.sh
+[0.397s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/environment/path.dsv
+[0.397s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/local_setup.bash
+[0.397s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/local_setup.sh
+[0.398s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/local_setup.zsh
+[0.398s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/local_setup.dsv
+[0.399s] -- Installing: /home/kortex_ws/install/serial/share/serial/package.dsv
+[0.399s] -- Up-to-date: /home/kortex_ws/install/serial/share/ament_index/resource_index/packages/serial
+[0.399s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/cmake/export_serialExport.cmake
+[0.399s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/cmake/export_serialExport-release.cmake
+[0.399s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.400s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[0.400s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/cmake/ament_cmake_export_targets-extras.cmake
+[0.400s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[0.400s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[0.400s] -- Up-to-date: /home/kortex_ws/install/serial/share/serial/package.xml
+[0.420s] Invoked command in '/home/kortex_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/humble_kortex_interface_ws/install/kortex_interface:/home/kortex_ws/install/rqt_joint_trajectory_controller:/home/kortex_ws/install/rqt_controller_manager:/home/kortex_ws/install/ros2controlcli:/home/kortex_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --install /home/kortex_ws/build/serial

@@ -10,6 +10,28 @@ import os
 
 def generate_launch_description():
 
+    is_simulation = os.getenv('USE_SIM')
+    if is_simulation == 'False': is_simulation = False
+    else: is_simulation = True
+
+    gen3_sim_args = {
+        'robot_ip': 'yyy.yyy.yyy.yyy',
+        'use_fake_hardware': "true",
+        'dof': '6',
+        'gripper' : '""',
+        # 'launch_rviz': 'false',
+    }.items()
+
+    gen3_hw_args = {
+        'robot_ip': '192.168.1.10',
+        'use_fake_hardware': "false",
+        'dof': '6',
+        'gripper' : '""',
+        # 'launch_rviz': 'false',
+    }.items()
+
+    gen3_args = gen3_sim_args if is_simulation else gen3_hw_args
+
     gen3_bringup = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
@@ -17,51 +39,31 @@ def generate_launch_description():
                 'launch',
                 'gen3.launch.py'
             ),
-            
         ),
-        launch_arguments={
-            # 'robot_ip': '192.168.1.10',
-            'robot_ip': 'yyy.yyy.yyy.yyy',
-            'dof': '6',
-            # 'launch_rviz': 'false',
-            'gripper' : '""',
-            'use_fake_hardware': "true"
-        }.items(),
-        
-    )
-
-    joint_pruner = Node(
-        package="kortex_interface",
-        executable = "joint_pruner",
-        name = "joint_pruner"
-    )
-
-    domain_bridge_config_path = os.path.join(
-        get_package_share_directory('kortex_interface'), 
-        'config', 
-        'kortex_domain_bridge.yaml'
-    )
-
-    domain_bridge = Node(
-        package="domain_bridge",
-        executable="domain_bridge",
-        name = "domain_bridge",
-        arguments = [domain_bridge_config_path]
+        launch_arguments = gen3_args,
     )
 
     joint_command_forwarder = Node(
         package = "kortex_interface",
-        executable = "hw_joint_command_forwarder",
+        executable = "joint_command_forwarder",
         output = "screen"
     )
 
-    namespace = 'fdsa'
+    namespace = 'kortex_interface'
 
-    return LaunchDescription([
-       
-        # PushRosNamespace(namespace),
+    sim_launch = [
+        PushRosNamespace(namespace),
         gen3_bringup,
-        #joint_pruner,
-        #domain_bridge,
-        # joint_command_forwarder
-    ])
+        joint_command_forwarder
+    ]
+
+    hw_launch = [
+        #PushRosNamespace(namespace),
+        gen3_bringup
+    ]
+
+    gen3_launch = sim_launch if is_simulation else hw_launch
+
+    return LaunchDescription(
+        hw_launch
+    )

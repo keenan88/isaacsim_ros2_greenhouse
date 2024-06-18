@@ -16,7 +16,7 @@ def generate_launch_description():
 
     gen3_sim_args = {
         'robot_ip': 'yyy.yyy.yyy.yyy',
-        'use_fake_hardware': "true"
+        'use_fake_hardware': "true",
         'dof': '6',
         'gripper' : '""',
         # 'launch_rviz': 'false',
@@ -24,7 +24,7 @@ def generate_launch_description():
 
     gen3_hw_args = {
         'robot_ip': '192.168.1.10',
-        'use_fake_hardware': "false"
+        'use_fake_hardware': "false",
         'dof': '6',
         'gripper' : '""',
         # 'launch_rviz': 'false',
@@ -49,19 +49,21 @@ def generate_launch_description():
         output = "screen"
     )
 
+    namespace = 'kortex_interface'
+
     sim_launch = [
-        PushRosNamespace(namespace)
+        PushRosNamespace(namespace),
         gen3_bringup,
         joint_command_forwarder
     ]
 
     hw_launch = [
-        PushRosNamespace(namespace)
+        #PushRosNamespace(namespace),
         gen3_bringup
     ]
 
-    gen3_launch = sim_launch is is_sim else hw_launch
+    gen3_launch = sim_launch if is_simulation else hw_launch
 
     return LaunchDescription(
-        gen3_launch
+        hw_launch
     )
