@@ -28,9 +28,10 @@ def generate_launch_description():
 
     launch_arguments = {
         "robot_ip": "192.168.1.10",
-        "use_fake_hardware": "true",
+        "use_fake_hardware": "false",
         "gripper": "robotiq_2f_85",
         "dof": "6",
+        "prefix": "kinova/"
     }
 
     moveit_config = (
@@ -88,7 +89,7 @@ def generate_launch_description():
         executable="static_transform_publisher",
         name="static_transform_publisher",
         output="log",
-        arguments=["--frame-id", "world", "--child-frame-id", "base_link"],
+        arguments=["--frame-id", "world", "--child-frame-id", "kinova/base_link"],
     )
 
     # Publish TF
@@ -156,8 +157,7 @@ def generate_launch_description():
         run_move_group_node,
         ros2_control_node,
         joint_state_broadcaster_spawner,
-        arm_controller_spawner,
-        # hand_controller_spawner,
+        arm_controller_spawner
     ]
 
     launch = sim_launch if is_simulation else hw_launch
