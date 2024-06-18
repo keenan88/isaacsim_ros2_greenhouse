@@ -32,10 +32,11 @@
     <!-- convert to property to use substitution in function -->
     <xacro:property name="initial_positions_file" default="$(arg initial_positions_file)"/>
     <link name="world" />
+    <!-- $(arg gripper) -->
     <xacro:load_robot
         parent="world"
         arm="$(arg arm)"
-        gripper=""
+        gripper="" 
         gripper_joint_name="$(arg gripper_joint_name)"
         gripper_max_velocity="$(arg gripper_max_velocity)"
         gripper_max_force="$(arg gripper_max_force)"

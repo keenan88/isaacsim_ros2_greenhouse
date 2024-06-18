@@ -112,9 +112,6 @@ def launch_setup(context, *args, **kwargs):
             " ",
         ]
     )
-
-    print(robot_description_content)
-
     robot_description = {"robot_description": robot_description_content}
 
     robot_controllers = PathJoinSubstitution(

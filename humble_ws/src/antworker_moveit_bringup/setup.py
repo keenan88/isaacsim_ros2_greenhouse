@@ -24,12 +24,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'ee_point_server = antworker_moveit_bringup.ee_point_server:main',
-            'trajectory_server = antworker_moveit_bringup.trajectory_server:main',
-            'trajectory_server_sim = antworker_moveit_bringup.trajectory_server_sim:main',
-            'joint_command_forwarder = antworker_moveit_bringup.joint_command_forwarder:main',
-            'joint_state_forwarder = antworker_moveit_bringup.joint_state_forwarder:main',
-            'dummy_wheel_joint_publisher = antworker_moveit_bringup.dummy_wheel_joint_publisher:main',
             'move_action_interface = antworker_moveit_bringup.move_action_interface:main'
         ],
     },

@@ -133,7 +133,7 @@ def generate_launch_description():
             "use_fake_hardware": use_fake_hardware,
             "fake_sensor_commands": fake_sensor_commands,
             "robot_controller": robot_controller,
-            "gripper": "",
+            "gripper": gripper,
             "use_internal_bus_gripper_comm": use_internal_bus_gripper_comm,
             "gripper_max_velocity": gripper_max_velocity,
             "gripper_max_force": gripper_max_force,

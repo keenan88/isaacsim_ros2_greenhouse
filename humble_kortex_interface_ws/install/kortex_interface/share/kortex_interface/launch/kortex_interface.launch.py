@@ -20,10 +20,12 @@ def generate_launch_description():
             
         ),
         launch_arguments={
-            'robot_ip': '192.168.1.10',
+            # 'robot_ip': '192.168.1.10',
+            'robot_ip': 'yyy.yyy.yyy.yyy',
             'dof': '6',
-            'launch_rviz': 'false',
-            'gripper' : ""
+            # 'launch_rviz': 'false',
+            'gripper' : '""',
+            'use_fake_hardware': "true"
         }.items(),
         
     )
@@ -56,10 +58,8 @@ def generate_launch_description():
     namespace = 'fdsa'
 
     return LaunchDescription([
-        SetEnvironmentVariable('TF2_ROS_MAP_TOPIC', f'/{namespace}/tf'),
-        SetEnvironmentVariable('TF2_ROS_STATIC_MAP_TOPIC', f'/{namespace}/tf_static'),
-
-        PushRosNamespace(namespace),
+       
+        # PushRosNamespace(namespace),
         gen3_bringup,
         #joint_pruner,
         #domain_bridge,

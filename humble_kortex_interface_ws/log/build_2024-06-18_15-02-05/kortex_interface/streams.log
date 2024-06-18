@@ -1,0 +1,23 @@
+[0.504s] Invoking command in '/home/humble_kortex_interface_ws/src/kortex_interface': PYTHONPATH=/home/humble_kortex_interface_ws/build/kortex_interface/prefix_override:/home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/kortex_interface build --build-base /home/humble_kortex_interface_ws/build/kortex_interface/build install --record /home/humble_kortex_interface_ws/build/kortex_interface/install.log --single-version-externally-managed install_data
+[0.695s] running egg_info
+[0.695s] writing ../../build/kortex_interface/kortex_interface.egg-info/PKG-INFO
+[0.695s] writing dependency_links to ../../build/kortex_interface/kortex_interface.egg-info/dependency_links.txt
+[0.695s] writing entry points to ../../build/kortex_interface/kortex_interface.egg-info/entry_points.txt
+[0.696s] writing requirements to ../../build/kortex_interface/kortex_interface.egg-info/requires.txt
+[0.696s] writing top-level names to ../../build/kortex_interface/kortex_interface.egg-info/top_level.txt
+[0.697s] reading manifest file '../../build/kortex_interface/kortex_interface.egg-info/SOURCES.txt'
+[0.697s] writing manifest file '../../build/kortex_interface/kortex_interface.egg-info/SOURCES.txt'
+[0.698s] running build
+[0.698s] running build_py
+[0.698s] running install
+[0.698s] running install_lib
+[0.699s] running install_data
+[0.699s] copying launch/kortex_interface.launch.py -> /home/humble_kortex_interface_ws/install/kortex_interface/share/kortex_interface/launch
+[0.699s] running install_egg_info
+[0.701s] removing '/home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface-0.0.0-py3.10.egg-info' (and everything under it)
+[0.701s] Copying ../../build/kortex_interface/kortex_interface.egg-info to /home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages/kortex_interface-0.0.0-py3.10.egg-info
+[0.702s] running install_scripts
+[0.716s] Installing hw_joint_command_forwarder script to /home/humble_kortex_interface_ws/install/kortex_interface/lib/kortex_interface
+[0.717s] Installing joint_pruner script to /home/humble_kortex_interface_ws/install/kortex_interface/lib/kortex_interface
+[0.717s] writing list of installed files to '/home/humble_kortex_interface_ws/build/kortex_interface/install.log'
+[0.737s] Invoked command in '/home/humble_kortex_interface_ws/src/kortex_interface' returned '0': PYTHONPATH=/home/humble_kortex_interface_ws/build/kortex_interface/prefix_override:/home/humble_kortex_interface_ws/install/kortex_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/kortex_interface build --build-base /home/humble_kortex_interface_ws/build/kortex_interface/build install --record /home/humble_kortex_interface_ws/build/kortex_interface/install.log --single-version-externally-managed install_data
