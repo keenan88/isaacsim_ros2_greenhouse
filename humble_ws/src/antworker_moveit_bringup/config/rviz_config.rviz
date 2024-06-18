@@ -1,18 +1,19 @@
 Panels:
   - Class: rviz_common/Displays
-    Help Height: 71
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
         - /Global Options1
         - /Status1
+        - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
         - /MotionPlanning1
         - /MotionPlanning1/Scene Geometry1
         - /MotionPlanning1/Scene Robot1
       Splitter Ratio: 0.5
-    Tree Height: 211
+    Tree Height: 282
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Views
@@ -51,7 +52,7 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        arm_base_link:
+        base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -66,23 +67,56 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        camera_color_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        camera_depth_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        camera_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         end_effector_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
         forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_left_finger_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_left_finger_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_left_inner_knuckle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_left_knuckle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_right_finger_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_right_finger_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_right_inner_knuckle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_right_knuckle_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -102,6 +136,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Loop Animation: false
       Name: Trajectory
       Robot Alpha: 0.5
@@ -120,41 +158,41 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        arm_base_link:
-          Value: false
         base_link:
           Value: false
         bicep_link:
           Value: false
         bracelet_link:
           Value: false
-        camera_color_frame:
-          Value: false
-        camera_depth_frame:
-          Value: false
-        camera_link:
-          Value: false
-        chassis_link:
-          Value: true
         end_effector_link:
-          Value: true
+          Value: false
         forearm_link:
           Value: false
-        front_wheel_link:
+        robotiq_85_base_link:
           Value: false
-        map:
+        robotiq_85_left_finger_link:
           Value: false
-        odom:
+        robotiq_85_left_finger_tip_link:
           Value: false
-        rear_wheel_link:
+        robotiq_85_left_inner_knuckle_link:
+          Value: false
+        robotiq_85_left_knuckle_link:
+          Value: false
+        robotiq_85_right_finger_link:
+          Value: false
+        robotiq_85_right_finger_tip_link:
+          Value: false
+        robotiq_85_right_inner_knuckle_link:
+          Value: false
+        robotiq_85_right_knuckle_link:
           Value: false
         shoulder_link:
           Value: false
-        sim_camera:
-          Value: true
         spherical_wrist_1_link:
           Value: false
         spherical_wrist_2_link:
+          Value: false
+        world:
           Value: false
       Marker Scale: 1
       Name: TF
@@ -162,31 +200,28 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        map:
-          odom:
-            chassis_link:
-              arm_base_link:
-                shoulder_link:
-                  bicep_link:
-                    forearm_link:
-                      spherical_wrist_1_link:
-                        spherical_wrist_2_link:
-                          bracelet_link:
-                            end_effector_link:
-                              camera_color_frame:
-                                {}
-                              camera_depth_frame:
-                                {}
-                              camera_link:
-                                {}
-              base_link:
-                {}
-              front_wheel_link:
-                {}
-              rear_wheel_link:
-                {}
-              sim_camera:
-                {}
+        world:
+          base_link:
+            shoulder_link:
+              bicep_link:
+                forearm_link:
+                  spherical_wrist_1_link:
+                    spherical_wrist_2_link:
+                      bracelet_link:
+                        end_effector_link:
+                          robotiq_85_base_link:
+                            robotiq_85_left_inner_knuckle_link:
+                              {}
+                            robotiq_85_left_knuckle_link:
+                              robotiq_85_left_finger_link:
+                                robotiq_85_left_finger_tip_link:
+                                  {}
+                            robotiq_85_right_inner_knuckle_link:
+                              {}
+                            robotiq_85_right_knuckle_link:
+                              robotiq_85_right_finger_link:
+                                robotiq_85_right_finger_tip_link:
+                                  {}
       Update Interval: 0
       Value: true
     - Acceleration_Scaling_Factor: 0.1
@@ -220,7 +255,7 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          arm_base_link:
+          base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -235,23 +270,56 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          camera_color_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_depth_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
           end_effector_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
           forearm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_left_finger_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_left_finger_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_left_inner_knuckle_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_left_knuckle_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_right_finger_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_right_finger_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_right_inner_knuckle_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_right_knuckle_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -271,6 +339,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Loop Animation: false
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
@@ -294,7 +366,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: kinova_arm
+        Planning Group: gripper
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -317,7 +389,7 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          arm_base_link:
+          base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -332,23 +404,56 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          camera_color_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_depth_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
           end_effector_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
           forearm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_left_finger_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_left_finger_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_left_inner_knuckle_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_left_knuckle_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_right_finger_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_right_finger_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_right_inner_knuckle_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          robotiq_85_right_knuckle_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -368,6 +473,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
@@ -376,7 +485,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: arm_base_link
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -419,7 +528,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 4.631601810455322
+      Distance: 2.777549982070923
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -434,10 +543,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4747966229915619
+      Pitch: 0.7197964787483215
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.618582725524902
+      Yaw: 4.023576736450195
     Saved: ~
 Window Geometry:
   Displays:
