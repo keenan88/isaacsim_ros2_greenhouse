@@ -1,0 +1,119 @@
+[0.028s] Invoking command in '/home/kortex_ws/build/admittance_controller': AMENT_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/joint_trajectory_controller/lib:/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/ros2_controllers/admittance_controller -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/admittance_controller
+[0.097s] -- The CXX compiler identification is GNU 11.4.0
+[0.104s] -- Detecting CXX compiler ABI info
+[0.193s] -- Detecting CXX compiler ABI info - done
+[0.199s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.199s] -- Detecting CXX compile features
+[0.199s] -- Detecting CXX compile features - done
+[0.206s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.356s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.490s] -- Found backward_ros: 1.0.2 (/opt/ros/humble/share/backward_ros/cmake)
+[0.501s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[0.508s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[0.508s] -- BACKWARD_HAS_UNWIND=1
+[0.509s] -- BACKWARD_HAS_BACKTRACE=0
+[0.509s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[0.509s] -- BACKWARD_HAS_DW=1
+[0.509s] -- BACKWARD_HAS_BFD=0
+[0.509s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[0.514s] -- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+[0.517s] -- Found control_msgs: 4.6.0 (/home/kortex_ws/install/control_msgs/share/control_msgs/cmake)
+[0.583s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.594s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.609s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.628s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.656s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.174s] -- Found control_toolbox: 3.2.0 (/opt/ros/humble/share/control_toolbox/cmake)
+[1.276s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.282s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.334s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.356s] -- Looking for C++ include pthread.h
+[1.481s] -- Looking for C++ include pthread.h - found
+[1.481s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.614s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.614s] -- Found Threads: TRUE  
+[1.820s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.864s] -- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.971s] -- Found controller_interface: 2.41.0 (/home/kortex_ws/install/controller_interface/share/controller_interface/cmake)
+[2.198s] -- Found joint_trajectory_controller: 2.35.0 (/home/kortex_ws/install/joint_trajectory_controller/share/joint_trajectory_controller/cmake)
+[2.509s] -- Found kinematics_interface: 0.3.0 (/opt/ros/humble/share/kinematics_interface/cmake)
+[2.519s] -- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)
+[2.537s] -- Found tf2_eigen: 0.25.6 (/opt/ros/humble/share/tf2_eigen/cmake)
+[2.781s] -- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.801s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.802s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.802s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.815s] -- Found tf2_kdl: 0.25.6 (/opt/ros/humble/share/tf2_kdl/cmake)
+[3.088s] -- Found ament_cmake_gmock: 1.3.8 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[3.089s] -- Found controller_manager: 2.41.0 (/home/kortex_ws/install/controller_manager/share/controller_manager/cmake)
+[3.362s] -- Found ros2_control_test_assets: 2.41.0 (/home/kortex_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake)
+[3.374s] -- Found kinematics_interface_kdl: 0.3.0 (/opt/ros/humble/share/kinematics_interface_kdl/cmake)
+[3.402s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[3.447s] -- The C compiler identification is GNU 11.4.0
+[3.455s] -- Detecting C compiler ABI info
+[3.575s] -- Detecting C compiler ABI info - done
+[3.581s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.581s] -- Detecting C compile features
+[3.581s] -- Detecting C compile features - done
+[3.591s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.592s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[4.128s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[4.128s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[4.128s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[4.414s] -- Configuring done
+[4.484s] -- Generating done
+[4.486s] -- Build files have been written to: /home/kortex_ws/build/admittance_controller
+[4.498s] Invoked command in '/home/kortex_ws/build/admittance_controller' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/joint_trajectory_controller/lib:/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/ros2_controllers/admittance_controller -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/admittance_controller
+[4.499s] Invoking command in '/home/kortex_ws/build/admittance_controller': AMENT_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/joint_trajectory_controller/lib:/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/admittance_controller -- -j16 -l16
+[4.560s] [ 30%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/kortex_ws/build/admittance_controller/admittance_controller_parameters/include//admittance_controller_parameters.hpp /home/kortex_ws/src/ros2_controllers/admittance_controller/src/admittance_controller_parameters.yaml `[0m
+[4.560s] [ 30%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[4.560s] [ 30%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[5.069s] [ 30%] Built target admittance_controller_parameters
+[5.099s] [ 40%] [32mBuilding CXX object CMakeFiles/admittance_controller.dir/src/admittance_controller.cpp.o[0m
+[11.117s] [ 50%] [32m[1mLinking CXX static library libgmock.a[0m
+[11.217s] [ 50%] Built target gmock
+[11.245s] [ 60%] [32mBuilding CXX object CMakeFiles/test_load_admittance_controller.dir/test/test_load_admittance_controller.cpp.o[0m
+[16.386s] [ 70%] [32m[1mLinking CXX executable test_load_admittance_controller[0m
+[16.612s] [ 70%] Built target test_load_admittance_controller
+[28.167s] [ 80%] [32m[1mLinking CXX shared library libadmittance_controller.so[0m
+[28.397s] [ 80%] Built target admittance_controller
+[28.424s] [ 90%] [32mBuilding CXX object CMakeFiles/test_admittance_controller.dir/test/test_admittance_controller.cpp.o[0m
+[46.513s] [100%] [32m[1mLinking CXX executable test_admittance_controller[0m
+[46.762s] [100%] Built target test_admittance_controller
+[46.775s] Invoked command in '/home/kortex_ws/build/admittance_controller' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/joint_trajectory_controller/lib:/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/admittance_controller -- -j16 -l16
+[46.819s] Invoking command in '/home/kortex_ws/build/admittance_controller': AMENT_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/joint_trajectory_controller/lib:/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/admittance_controller
+[46.828s] -- Install configuration: "Release"
+[46.828s] -- Installing: /home/kortex_ws/install/admittance_controller/include/admittance_controller_parameters
+[46.828s] -- Installing: /home/kortex_ws/install/admittance_controller/include/admittance_controller_parameters/admittance_controller_parameters.hpp
+[46.828s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/admittance_controller.xml
+[46.828s] -- Installing: /home/kortex_ws/install/admittance_controller/include/admittance_controller
+[46.828s] -- Installing: /home/kortex_ws/install/admittance_controller/include/admittance_controller/admittance_controller
+[46.828s] -- Installing: /home/kortex_ws/install/admittance_controller/include/admittance_controller/admittance_controller/admittance_rule.hpp
+[46.829s] -- Installing: /home/kortex_ws/install/admittance_controller/include/admittance_controller/admittance_controller/visibility_control.h
+[46.829s] -- Installing: /home/kortex_ws/install/admittance_controller/include/admittance_controller/admittance_controller/admittance_controller.hpp
+[46.829s] -- Installing: /home/kortex_ws/install/admittance_controller/include/admittance_controller/admittance_controller/admittance_rule_impl.hpp
+[46.829s] -- Installing: /home/kortex_ws/install/admittance_controller/lib/libadmittance_controller.so
+[46.833s] -- Set runtime path of "/home/kortex_ws/install/admittance_controller/lib/libadmittance_controller.so" to ""
+[46.833s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/environment/library_path.sh
+[46.833s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/environment/library_path.dsv
+[46.833s] -- Installing: /home/kortex_ws/install/admittance_controller/share/ament_index/resource_index/package_run_dependencies/admittance_controller
+[46.833s] -- Installing: /home/kortex_ws/install/admittance_controller/share/ament_index/resource_index/parent_prefix_path/admittance_controller
+[46.833s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/environment/ament_prefix_path.sh
+[46.834s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/environment/ament_prefix_path.dsv
+[46.834s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/environment/path.sh
+[46.834s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/environment/path.dsv
+[46.834s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/local_setup.bash
+[46.834s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/local_setup.sh
+[46.834s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/local_setup.zsh
+[46.834s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/local_setup.dsv
+[46.835s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/package.dsv
+[46.835s] -- Installing: /home/kortex_ws/install/admittance_controller/share/ament_index/resource_index/packages/admittance_controller
+[46.835s] -- Installing: /home/kortex_ws/install/admittance_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/admittance_controller
+[46.835s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/cmake/export_admittance_controllerExport.cmake
+[46.835s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/cmake/export_admittance_controllerExport-release.cmake
+[46.836s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/cmake/ament_cmake_export_targets-extras.cmake
+[46.836s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[46.836s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/cmake/admittance_controllerConfig.cmake
+[46.836s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/cmake/admittance_controllerConfig-version.cmake
+[46.836s] -- Installing: /home/kortex_ws/install/admittance_controller/share/admittance_controller/package.xml
+[46.838s] Invoked command in '/home/kortex_ws/build/admittance_controller' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/joint_trajectory_controller:/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/joint_trajectory_controller/lib:/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/admittance_controller

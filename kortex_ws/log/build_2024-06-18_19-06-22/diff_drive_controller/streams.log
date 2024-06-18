@@ -1,0 +1,112 @@
+[0.026s] Invoking command in '/home/kortex_ws/build/diff_drive_controller': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/ros2_controllers/diff_drive_controller -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/diff_drive_controller
+[0.096s] -- The CXX compiler identification is GNU 11.4.0
+[0.106s] -- Detecting CXX compiler ABI info
+[0.195s] -- Detecting CXX compiler ABI info - done
+[0.204s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.205s] -- Detecting CXX compile features
+[0.205s] -- Detecting CXX compile features - done
+[0.213s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.361s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.498s] -- Found backward_ros: 1.0.2 (/opt/ros/humble/share/backward_ros/cmake)
+[0.508s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[0.515s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[0.515s] -- BACKWARD_HAS_UNWIND=1
+[0.515s] -- BACKWARD_HAS_BACKTRACE=0
+[0.515s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[0.515s] -- BACKWARD_HAS_DW=1
+[0.515s] -- BACKWARD_HAS_BFD=0
+[0.516s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[0.516s] -- Found controller_interface: 2.41.0 (/home/kortex_ws/install/controller_interface/share/controller_interface/cmake)
+[0.581s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.592s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.607s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.627s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.655s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.310s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.317s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.363s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.383s] -- Looking for C++ include pthread.h
+[1.502s] -- Looking for C++ include pthread.h - found
+[1.503s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.617s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.618s] -- Found Threads: TRUE  
+[1.861s] -- Found generate_parameter_library: 0.3.8 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[1.866s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.911s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.988s] -- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[2.034s] -- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)
+[2.047s] -- Found tf2_msgs: 0.25.6 (/opt/ros/humble/share/tf2_msgs/cmake)
+[2.360s] -- Found ament_cmake_gmock: 1.3.8 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[2.361s] -- Found controller_manager: 2.41.0 (/home/kortex_ws/install/controller_manager/share/controller_manager/cmake)
+[2.592s] -- Found ros2_control_test_assets: 2.41.0 (/home/kortex_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake)
+[2.598s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[2.644s] -- The C compiler identification is GNU 11.4.0
+[2.652s] -- Detecting C compiler ABI info
+[2.764s] -- Detecting C compiler ABI info - done
+[2.774s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.774s] -- Detecting C compile features
+[2.775s] -- Detecting C compile features - done
+[2.789s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.790s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.226s] -- Configuring done
+[3.329s] -- Generating done
+[3.332s] -- Build files have been written to: /home/kortex_ws/build/diff_drive_controller
+[3.347s] Invoked command in '/home/kortex_ws/build/diff_drive_controller' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/ros2_controllers/diff_drive_controller -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/diff_drive_controller
+[3.349s] Invoking command in '/home/kortex_ws/build/diff_drive_controller': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/diff_drive_controller -- -j16 -l16
+[3.415s] [ 14%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[3.416s] [ 14%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[3.416s] [ 21%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[3.418s] [ 28%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/kortex_ws/build/diff_drive_controller/diff_drive_controller_parameters/include//diff_drive_controller_parameters.hpp /home/kortex_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller_parameter.yaml `[0m
+[4.247s] [ 28%] Built target diff_drive_controller_parameters
+[4.279s] [ 35%] [32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/odometry.cpp.o[0m
+[4.282s] [ 50%] [32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/diff_drive_controller.cpp.o[0m
+[4.283s] [ 50%] [32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/speed_limiter.cpp.o[0m
+[4.650s] [ 57%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[4.738s] [ 57%] Built target gmock_main
+[10.596s] [ 64%] [32m[1mLinking CXX static library libgmock.a[0m
+[10.684s] [ 64%] Built target gmock
+[10.710s] [ 71%] [32mBuilding CXX object CMakeFiles/test_load_diff_drive_controller.dir/test/test_load_diff_drive_controller.cpp.o[0m
+[16.049s] [ 78%] [32m[1mLinking CXX executable test_load_diff_drive_controller[0m
+[16.279s] [ 78%] Built target test_load_diff_drive_controller
+[22.784s] [ 85%] [32m[1mLinking CXX shared library libdiff_drive_controller.so[0m
+[23.008s] [ 85%] Built target diff_drive_controller
+[23.035s] [ 92%] [32mBuilding CXX object CMakeFiles/test_diff_drive_controller.dir/test/test_diff_drive_controller.cpp.o[0m
+[31.458s] [100%] [32m[1mLinking CXX executable test_diff_drive_controller[0m
+[31.728s] [100%] Built target test_diff_drive_controller
+[31.742s] Invoked command in '/home/kortex_ws/build/diff_drive_controller' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/diff_drive_controller -- -j16 -l16
+[31.788s] Invoking command in '/home/kortex_ws/build/diff_drive_controller': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/diff_drive_controller
+[31.796s] -- Install configuration: "Release"
+[31.796s] -- Installing: /home/kortex_ws/install/diff_drive_controller/include/diff_drive_controller_parameters
+[31.797s] -- Installing: /home/kortex_ws/install/diff_drive_controller/include/diff_drive_controller_parameters/diff_drive_controller_parameters.hpp
+[31.797s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/diff_drive_plugin.xml
+[31.797s] -- Installing: /home/kortex_ws/install/diff_drive_controller/include/diff_drive_controller
+[31.797s] -- Installing: /home/kortex_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller
+[31.797s] -- Installing: /home/kortex_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller/diff_drive_controller.hpp
+[31.797s] -- Installing: /home/kortex_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller/visibility_control.h
+[31.798s] -- Installing: /home/kortex_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller/speed_limiter.hpp
+[31.798s] -- Installing: /home/kortex_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller/odometry.hpp
+[31.798s] -- Installing: /home/kortex_ws/install/diff_drive_controller/lib/libdiff_drive_controller.so
+[31.802s] -- Set runtime path of "/home/kortex_ws/install/diff_drive_controller/lib/libdiff_drive_controller.so" to ""
+[31.802s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/environment/library_path.sh
+[31.802s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/environment/library_path.dsv
+[31.803s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/ament_index/resource_index/package_run_dependencies/diff_drive_controller
+[31.803s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/ament_index/resource_index/parent_prefix_path/diff_drive_controller
+[31.803s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/environment/ament_prefix_path.sh
+[31.803s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/environment/ament_prefix_path.dsv
+[31.803s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/environment/path.sh
+[31.804s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/environment/path.dsv
+[31.804s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.bash
+[31.804s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.sh
+[31.804s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.zsh
+[31.804s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.dsv
+[31.804s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/package.dsv
+[31.805s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/ament_index/resource_index/packages/diff_drive_controller
+[31.805s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/diff_drive_controller
+[31.805s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/export_diff_drive_controllerExport.cmake
+[31.805s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/export_diff_drive_controllerExport-release.cmake
+[31.805s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[31.805s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[31.806s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/diff_drive_controllerConfig.cmake
+[31.806s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/diff_drive_controllerConfig-version.cmake
+[31.806s] -- Installing: /home/kortex_ws/install/diff_drive_controller/share/diff_drive_controller/package.xml
+[31.808s] Invoked command in '/home/kortex_ws/build/diff_drive_controller' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/home/kortex_ws/install/serial:/home/kortex_ws/install/kortex_bringup:/home/kortex_ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/kortex_ws/install/kortex_description:/home/kortex_ws/install/picknik_twist_controller:/home/kortex_ws/install/picknik_reset_fault_controller:/home/kortex_ws/install/kortex_driver:/home/kortex_ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/diff_drive_controller

@@ -1,0 +1,59 @@
+[0.008s] Invoking command in '/home/kortex_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kortex_ws/src/serial -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/serial
+[0.072s] -- The C compiler identification is GNU 11.4.0
+[0.131s] -- The CXX compiler identification is GNU 11.4.0
+[0.138s] -- Detecting C compiler ABI info
+[0.225s] -- Detecting C compiler ABI info - done
+[0.234s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.234s] -- Detecting C compile features
+[0.235s] -- Detecting C compile features - done
+[0.239s] -- Detecting CXX compiler ABI info
+[0.354s] -- Detecting CXX compiler ABI info - done
+[0.365s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.366s] -- Detecting CXX compile features
+[0.366s] -- Detecting CXX compile features - done
+[0.373s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.567s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.773s] -- Configuring done
+[0.778s] -- Generating done
+[0.780s] -- Build files have been written to: /home/kortex_ws/build/serial
+[0.865s] Invoked command in '/home/kortex_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kortex_ws/src/serial -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/serial
+[0.867s] Invoking command in '/home/kortex_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kortex_ws/build/serial -- -j16 -l16
+[0.928s] [ 50%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[0.928s] [ 50%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[0.929s] [ 75%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[1.749s] [100%] [32m[1mLinking CXX static library libserial.a[0m
+[1.817s] [100%] Built target serial
+[1.828s] Invoked command in '/home/kortex_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kortex_ws/build/serial -- -j16 -l16
+[1.864s] Invoking command in '/home/kortex_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kortex_ws/build/serial
+[1.871s] -- Install configuration: "Release"
+[1.871s] -- Installing: /home/kortex_ws/install/serial/lib/libserial.a
+[1.872s] -- Installing: /home/kortex_ws/install/serial/include
+[1.872s] -- Installing: /home/kortex_ws/install/serial/include/serial
+[1.872s] -- Installing: /home/kortex_ws/install/serial/include/serial/serial.h
+[1.872s] -- Installing: /home/kortex_ws/install/serial/include/serial/v8stdint.h
+[1.872s] -- Installing: /home/kortex_ws/install/serial/include/serial/impl
+[1.872s] -- Installing: /home/kortex_ws/install/serial/include/serial/impl/win.h
+[1.872s] -- Installing: /home/kortex_ws/install/serial/include/serial/impl/unix.h
+[1.872s] -- Installing: /home/kortex_ws/install/serial/share/serial/environment/library_path.sh
+[1.873s] -- Installing: /home/kortex_ws/install/serial/share/serial/environment/library_path.dsv
+[1.873s] -- Installing: /home/kortex_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[1.873s] -- Installing: /home/kortex_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[1.873s] -- Installing: /home/kortex_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[1.873s] -- Installing: /home/kortex_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[1.873s] -- Installing: /home/kortex_ws/install/serial/share/serial/environment/path.sh
+[1.874s] -- Installing: /home/kortex_ws/install/serial/share/serial/environment/path.dsv
+[1.874s] -- Installing: /home/kortex_ws/install/serial/share/serial/local_setup.bash
+[1.874s] -- Installing: /home/kortex_ws/install/serial/share/serial/local_setup.sh
+[1.874s] -- Installing: /home/kortex_ws/install/serial/share/serial/local_setup.zsh
+[1.874s] -- Installing: /home/kortex_ws/install/serial/share/serial/local_setup.dsv
+[1.874s] -- Installing: /home/kortex_ws/install/serial/share/serial/package.dsv
+[1.874s] -- Installing: /home/kortex_ws/install/serial/share/ament_index/resource_index/packages/serial
+[1.875s] -- Installing: /home/kortex_ws/install/serial/share/serial/cmake/export_serialExport.cmake
+[1.875s] -- Installing: /home/kortex_ws/install/serial/share/serial/cmake/export_serialExport-release.cmake
+[1.875s] -- Installing: /home/kortex_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.875s] -- Installing: /home/kortex_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[1.875s] -- Installing: /home/kortex_ws/install/serial/share/serial/cmake/ament_cmake_export_targets-extras.cmake
+[1.875s] -- Installing: /home/kortex_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[1.875s] -- Installing: /home/kortex_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[1.876s] -- Installing: /home/kortex_ws/install/serial/share/serial/package.xml
+[1.877s] Invoked command in '/home/kortex_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kortex_ws/build/serial

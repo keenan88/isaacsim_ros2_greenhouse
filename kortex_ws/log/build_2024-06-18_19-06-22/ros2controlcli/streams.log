@@ -1,0 +1,84 @@
+[0.539s] Invoking command in '/home/kortex_ws/src/ros2_control/ros2controlcli': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/build/ros2controlcli/prefix_override:/home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages:/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ros2controlcli build --build-base /home/kortex_ws/build/ros2controlcli/build install --record /home/kortex_ws/build/ros2controlcli/install.log --single-version-externally-managed install_data
+[0.727s] running egg_info
+[0.727s] creating ../../../build/ros2controlcli/ros2controlcli.egg-info
+[0.727s] writing ../../../build/ros2controlcli/ros2controlcli.egg-info/PKG-INFO
+[0.728s] writing dependency_links to ../../../build/ros2controlcli/ros2controlcli.egg-info/dependency_links.txt
+[0.728s] writing entry points to ../../../build/ros2controlcli/ros2controlcli.egg-info/entry_points.txt
+[0.728s] writing requirements to ../../../build/ros2controlcli/ros2controlcli.egg-info/requires.txt
+[0.728s] writing top-level names to ../../../build/ros2controlcli/ros2controlcli.egg-info/top_level.txt
+[0.728s] writing manifest file '../../../build/ros2controlcli/ros2controlcli.egg-info/SOURCES.txt'
+[0.729s] reading manifest file '../../../build/ros2controlcli/ros2controlcli.egg-info/SOURCES.txt'
+[0.730s] writing manifest file '../../../build/ros2controlcli/ros2controlcli.egg-info/SOURCES.txt'
+[0.730s] running build
+[0.730s] running build_py
+[0.730s] creating /home/kortex_ws/build/ros2controlcli/build
+[0.731s] creating /home/kortex_ws/build/ros2controlcli/build/lib
+[0.731s] creating /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli
+[0.731s] copying ros2controlcli/__init__.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli
+[0.731s] creating /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.731s] copying ros2controlcli/verb/load_controller.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.731s] copying ros2controlcli/verb/set_controller_state.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.731s] copying ros2controlcli/verb/view_controller_chains.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.731s] copying ros2controlcli/verb/switch_controllers.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.731s] copying ros2controlcli/verb/list_controller_types.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.731s] copying ros2controlcli/verb/set_hardware_component_state.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.731s] copying ros2controlcli/verb/list_hardware_components.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.731s] copying ros2controlcli/verb/list_controllers.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.732s] copying ros2controlcli/verb/__init__.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.732s] copying ros2controlcli/verb/list_hardware_interfaces.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.732s] copying ros2controlcli/verb/unload_controller.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.732s] copying ros2controlcli/verb/reload_controller_libraries.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[0.732s] creating /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/api
+[0.732s] copying ros2controlcli/api/__init__.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/api
+[0.732s] creating /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/command
+[0.732s] copying ros2controlcli/command/control.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/command
+[0.732s] copying ros2controlcli/command/__init__.py -> /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/command
+[0.733s] running install
+[0.733s] running install_lib
+[0.733s] creating /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli
+[0.733s] creating /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/load_controller.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/set_controller_state.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/view_controller_chains.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/switch_controllers.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/list_controller_types.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/set_hardware_component_state.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/list_hardware_components.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/list_controllers.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/__init__.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/list_hardware_interfaces.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.734s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/unload_controller.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.735s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/verb/reload_controller_libraries.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[0.735s] creating /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/api
+[0.735s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/api/__init__.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/api
+[0.735s] creating /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/command
+[0.735s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/command/control.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/command
+[0.735s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/command/__init__.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/command
+[0.735s] copying /home/kortex_ws/build/ros2controlcli/build/lib/ros2controlcli/__init__.py -> /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli
+[0.736s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/load_controller.py to load_controller.cpython-310.pyc
+[0.736s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/set_controller_state.py to set_controller_state.cpython-310.pyc
+[0.737s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/view_controller_chains.py to view_controller_chains.cpython-310.pyc
+[0.738s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/switch_controllers.py to switch_controllers.cpython-310.pyc
+[0.738s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/list_controller_types.py to list_controller_types.cpython-310.pyc
+[0.738s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/set_hardware_component_state.py to set_hardware_component_state.cpython-310.pyc
+[0.739s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/list_hardware_components.py to list_hardware_components.cpython-310.pyc
+[0.739s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/list_controllers.py to list_controllers.cpython-310.pyc
+[0.739s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/__init__.py to __init__.cpython-310.pyc
+[0.740s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/list_hardware_interfaces.py to list_hardware_interfaces.cpython-310.pyc
+[0.740s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/unload_controller.py to unload_controller.cpython-310.pyc
+[0.740s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/reload_controller_libraries.py to reload_controller_libraries.cpython-310.pyc
+[0.740s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/api/__init__.py to __init__.cpython-310.pyc
+[0.741s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/command/control.py to control.cpython-310.pyc
+[0.741s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/command/__init__.py to __init__.cpython-310.pyc
+[0.741s] byte-compiling /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/__init__.py to __init__.cpython-310.pyc
+[0.741s] running install_data
+[0.742s] copying package.xml -> /home/kortex_ws/install/ros2controlcli/share/ros2controlcli
+[0.742s] creating /home/kortex_ws/install/ros2controlcli/share/ament_index
+[0.742s] creating /home/kortex_ws/install/ros2controlcli/share/ament_index/resource_index
+[0.742s] creating /home/kortex_ws/install/ros2controlcli/share/ament_index/resource_index/packages
+[0.742s] copying resource/ros2controlcli -> /home/kortex_ws/install/ros2controlcli/share/ament_index/resource_index/packages
+[0.742s] running install_egg_info
+[0.743s] Copying ../../../build/ros2controlcli/ros2controlcli.egg-info to /home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli-2.41.0-py3.10.egg-info
+[0.744s] running install_scripts
+[0.760s] writing list of installed files to '/home/kortex_ws/build/ros2controlcli/install.log'
+[0.784s] Invoked command in '/home/kortex_ws/src/ros2_control/ros2controlcli' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/build/ros2controlcli/prefix_override:/home/kortex_ws/install/ros2controlcli/lib/python3.10/site-packages:/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ros2controlcli build --build-base /home/kortex_ws/build/ros2controlcli/build install --record /home/kortex_ws/build/ros2controlcli/install.log --single-version-externally-managed install_data

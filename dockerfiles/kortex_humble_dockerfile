@@ -32,8 +32,9 @@ RUN apt-get install -y python3-pygraphviz
 RUN apt-get install -y ros-humble-ackermann-msgs
 RUN apt-get install -y python3-rospkg
 RUN apt-get install -y ros-humble-kinematics-interface-kdl
-
-
+RUN apt-get install -y ros-humble-joint-trajectory-controller
+RUN apt-get install -y ros-humble-robotiq-description
+RUN apt-get install -y ros-humble-joint-state-broadcaster
 
 
 RUN apt-get install -y pip

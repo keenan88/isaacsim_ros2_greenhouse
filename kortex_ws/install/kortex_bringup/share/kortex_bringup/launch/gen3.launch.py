@@ -71,9 +71,9 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "gripper",
-            default_value="",
+            default_value="robotiq_2f_85",
             description="Name of the gripper attached to the arm",
-            #choices=["robotiq_2f_85", "robotiq_2f_140"],
+            choices=["robotiq_2f_85", "robotiq_2f_140"],
         )
     )
     declared_arguments.append(
@@ -122,7 +122,6 @@ def generate_launch_description():
     gripper_joint_name = LaunchConfiguration("gripper_joint_name")
     launch_rviz = LaunchConfiguration("launch_rviz")
     controllers_file = LaunchConfiguration("controllers_file")
-
 
     base_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([ThisLaunchFileDir(), "/kortex_control.launch.py"]),

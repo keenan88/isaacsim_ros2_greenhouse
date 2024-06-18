@@ -205,7 +205,7 @@ def launch_setup(context, *args, **kwargs):
         delay_rviz_after_joint_state_broadcaster_spawner,
         robot_traj_controller_spawner,
         robot_pos_controller_spawner,
-        # robot_hand_controller_spawner,
+        robot_hand_controller_spawner,
         fault_controller_spawner,
     ]
 

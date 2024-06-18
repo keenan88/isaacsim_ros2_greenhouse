@@ -26,31 +26,40 @@ def generate_launch_description():
         description="RViz configuration file",
     )
 
+    launch_arguments = {
+        "robot_ip": "xxx.yyy.zzz.www",
+        "use_fake_hardware": "true",
+        "gripper": "robotiq_2f_85",
+        "dof": "6",
+    }
+
     moveit_config = (
         MoveItConfigsBuilder(
-            robot_name="GEN3_6DOF_VISION_URDF_ARM_V01", 
-            package_name="antworker_moveit_description2",
+            robot_name="gen3", 
+            package_name="kinova_gen3_6dof_robotiq_2f_85_moveit_config",
         )
-        .robot_description(
-            file_path="config/GEN3_6DOF_VISION_URDF_ARM_V01.urdf.xacro"
-        )
-        .robot_description_semantic(
-            file_path="config/GEN3_6DOF_VISION_URDF_ARM_V01.srdf"
-        )
-        .planning_scene_monitor(
-            publish_robot_description = True, publish_robot_description_semantic = True
-        )
-        .trajectory_execution(
-            file_path="config/moveit_controllers.yaml"
-        )
-        .planning_pipelines(
-            pipelines=["chomp", "pilz_industrial_motion_planner", "ompl"]
-        )
-        .moveit_cpp(
-            file_path = "/home/humble_ws/src/antworker_moveit_bringup/config/moveit_py_params.yaml"
-        )
+        .robot_description(mappings = launch_arguments)
+        # .robot_description(
+        #     file_path="config/GEN3_6DOF_VISION_URDF_ARM_V01.urdf.xacro"
+        # )
+        # .robot_description_semantic(
+        #     file_path="config/gen3.srdf"
+        # )
+        # .planning_scene_monitor(
+        #     publish_robot_description = True, publish_robot_description_semantic = True
+        # )
+        # .trajectory_execution(
+        #     file_path="config/moveit_controllers.yaml"
+        # )
+        # .planning_pipelines(
+        #     pipelines=["chomp", "pilz_industrial_motion_planner", "ompl"]
+        # )
+        # .moveit_cpp(
+        #     file_path = "/home/humble_ws/src/antworker_moveit_bringup/config/moveit_py_params.yaml"
+        # )
         .to_moveit_configs()
     )
+
 
     # Start the actual move_group node/action server
     move_group_node = Node(
@@ -87,16 +96,16 @@ def generate_launch_description():
     )
 
     # Publish TF
-    robot_state_publisher = Node(
-        package="robot_state_publisher",
-        executable="robot_state_publisher",
-        name="robot_state_publisher",
-        output="both",
-        parameters=[
-            moveit_config.robot_description,
-            {"use_sim_time": is_simulation}    
-        ],
-    )
+    # robot_state_publisher = Node(
+    #     package="robot_state_publisher",
+    #     executable="robot_state_publisher",
+    #     name="robot_state_publisher",
+    #     output="both",
+    #     parameters=[
+    #         moveit_config.robot_description,
+    #         {"use_sim_time": is_simulation}    
+    #     ],
+    # )
 
     # ros2_controllers_path = os.path.join(
     #     get_package_share_directory("antworker_moveit_description2"),
@@ -133,20 +142,20 @@ def generate_launch_description():
     #     arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
     # )
 
-    ctrl_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            os.path.join(
-                get_package_share_directory('antworker_moveit_description2'),
-                'launch',
-                'spawn_controllers.launch.py'
-            )
-        ])
-    )
+    # ctrl_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource([
+    #         os.path.join(
+    #             get_package_share_directory('antworker_moveit_description2'),
+    #             'launch',
+    #             'spawn_controllers.launch.py'
+    #         )
+    #     ])
+    # )
 
     sim_launch = [
         rviz_config_arg,
         rviz_node,
-        robot_state_publisher,
+        # robot_state_publisher,
         move_group_node,
         # ros2_control_node,
         # joint_state_broadcaster_spawner,
