@@ -98,53 +98,40 @@ def generate_launch_description():
         ],
     )
 
-
-    ros2_controllers_path = os.path.join(
-        get_package_share_directory("antworker_moveit_description2"),
-        "config",
-        "ros2_controllers.yaml",
-    )
+    # ros2_controllers_path = os.path.join(
+    #     get_package_share_directory("antworker_moveit_description2"),
+    #     "config",
+    #     "ros2_controllers.yaml",
+    # )
     
-    ros2_control_node = Node(
-        package="controller_manager",
-        executable="ros2_control_node",
-        parameters=[
-            ros2_controllers_path,
-            {"use_sim_time": is_simulation}
-        ],
-        remappings=[
-            ("/controller_manager/robot_description", "/robot_description"),
-        ],
-        output="screen",
-    )
+    # ros2_control_node = Node(
+    #     package="controller_manager",
+    #     executable="ros2_control_node",
+    #     parameters=[
+    #         ros2_controllers_path,
+    #         {"use_sim_time": is_simulation}
+    #     ],
+    #     remappings=[
+    #         ("/controller_manager/robot_description", "/robot_description"),
+    #     ],
+    #     output="screen",
+    # )
 
-    joint_state_broadcaster_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=[
-            "joint_state_broadcaster",
-            "--controller-manager",
-            "/controller_manager",
-        ],
-    )
+    # joint_state_broadcaster_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=[
+    #         "joint_state_broadcaster",
+    #         "--controller-manager",
+    #         "/controller_manager",
+    #     ],
+    # )
 
-    panda_arm_controller_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
-    )
-
-    joint_command_forwarder = Node(
-        package = "antworker_moveit_bringup",
-        executable = "joint_command_forwarder",
-        output = "screen"
-    )
-
-    dummy_wheel_joint_publisher = Node(
-        package = "antworker_moveit_bringup",
-        executable = "dummy_wheel_joint_publisher",
-        output = "screen"
-    )
+    # kinova_arm_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
+    # )
 
     ctrl_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
@@ -161,10 +148,9 @@ def generate_launch_description():
         rviz_node,
         robot_state_publisher,
         move_group_node,
-        ros2_control_node,
-        joint_state_broadcaster_spawner,
-        panda_arm_controller_spawner,
-        joint_command_forwarder  
+        # ros2_control_node,
+        # joint_state_broadcaster_spawner,
+        # kinova_arm_controller_spawner
     ]
 
     hw_launch = [
@@ -174,8 +160,7 @@ def generate_launch_description():
         move_group_node,
         ros2_control_node,    
         # joint_state_broadcaster_spawner,
-        # panda_arm_controller_spawner,
-        # dummy_wheel_joint_publisher
+        # kinova_arm_controller_spawner,
     ]
 
     launch = sim_launch if is_simulation else hw_launch
