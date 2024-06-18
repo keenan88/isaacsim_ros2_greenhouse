@@ -1,0 +1,157 @@
+[0.000000] (-) TimerEvent: {}
+[0.000142] (-) JobUnselected: {'identifier': 'ackermann_steering_controller'}
+[0.000189] (-) JobUnselected: {'identifier': 'admittance_controller'}
+[0.000221] (-) JobUnselected: {'identifier': 'bicycle_steering_controller'}
+[0.000241] (-) JobUnselected: {'identifier': 'control_msgs'}
+[0.000269] (-) JobUnselected: {'identifier': 'controller_interface'}
+[0.000342] (-) JobUnselected: {'identifier': 'controller_manager_msgs'}
+[0.000416] (-) JobUnselected: {'identifier': 'diff_drive_controller'}
+[0.000445] (-) JobUnselected: {'identifier': 'effort_controllers'}
+[0.000464] (-) JobUnselected: {'identifier': 'force_torque_sensor_broadcaster'}
+[0.000490] (-) JobUnselected: {'identifier': 'forward_command_controller'}
+[0.000582] (-) JobUnselected: {'identifier': 'gripper_controllers'}
+[0.000605] (-) JobUnselected: {'identifier': 'hardware_interface'}
+[0.000625] (-) JobUnselected: {'identifier': 'hardware_interface_testing'}
+[0.000645] (-) JobUnselected: {'identifier': 'imu_sensor_broadcaster'}
+[0.000666] (-) JobUnselected: {'identifier': 'joint_limits'}
+[0.000685] (-) JobUnselected: {'identifier': 'joint_state_broadcaster'}
+[0.000705] (-) JobUnselected: {'identifier': 'joint_trajectory_controller'}
+[0.000723] (-) JobUnselected: {'identifier': 'kinova_gen3_6dof_robotiq_2f_85_moveit_config'}
+[0.000742] (-) JobUnselected: {'identifier': 'kinova_gen3_7dof_robotiq_2f_85_moveit_config'}
+[0.000762] (-) JobUnselected: {'identifier': 'kortex_api'}
+[0.000780] (-) JobUnselected: {'identifier': 'kortex_bringup'}
+[0.000797] (-) JobUnselected: {'identifier': 'kortex_description'}
+[0.000816] (-) JobUnselected: {'identifier': 'kortex_driver'}
+[0.000834] (-) JobUnselected: {'identifier': 'picknik_reset_fault_controller'}
+[0.000854] (-) JobUnselected: {'identifier': 'picknik_twist_controller'}
+[0.000873] (-) JobUnselected: {'identifier': 'position_controllers'}
+[0.000891] (-) JobUnselected: {'identifier': 'range_sensor_broadcaster'}
+[0.000909] (-) JobUnselected: {'identifier': 'robotiq_controllers'}
+[0.000928] (-) JobUnselected: {'identifier': 'robotiq_description'}
+[0.000945] (-) JobUnselected: {'identifier': 'robotiq_driver'}
+[0.000963] (-) JobUnselected: {'identifier': 'robotiq_hardware_tests'}
+[0.000981] (-) JobUnselected: {'identifier': 'ros2_control'}
+[0.000996] (-) JobUnselected: {'identifier': 'ros2_control_test_assets'}
+[0.001012] (-) JobUnselected: {'identifier': 'ros2_controllers'}
+[0.001027] (-) JobUnselected: {'identifier': 'ros2_controllers_test_nodes'}
+[0.001043] (-) JobUnselected: {'identifier': 'ros2controlcli'}
+[0.001059] (-) JobUnselected: {'identifier': 'rqt_controller_manager'}
+[0.001075] (-) JobUnselected: {'identifier': 'rqt_joint_trajectory_controller'}
+[0.001090] (-) JobUnselected: {'identifier': 'serial'}
+[0.001106] (-) JobUnselected: {'identifier': 'steering_controllers_library'}
+[0.001121] (-) JobUnselected: {'identifier': 'transmission_interface'}
+[0.001137] (-) JobUnselected: {'identifier': 'tricycle_controller'}
+[0.001152] (-) JobUnselected: {'identifier': 'tricycle_steering_controller'}
+[0.001168] (-) JobUnselected: {'identifier': 'velocity_controllers'}
+[0.001185] (controller_manager) JobQueued: {'identifier': 'controller_manager', 'dependencies': OrderedDict([('control_msgs', '/home/kortex_ws/install/control_msgs'), ('controller_manager_msgs', '/home/kortex_ws/install/controller_manager_msgs'), ('ros2_control_test_assets', '/home/kortex_ws/install/ros2_control_test_assets'), ('hardware_interface', '/home/kortex_ws/install/hardware_interface'), ('controller_interface', '/home/kortex_ws/install/controller_interface'), ('hardware_interface_testing', '/home/kortex_ws/install/hardware_interface_testing')])}
+[0.001214] (controller_manager) JobStarted: {'identifier': 'controller_manager'}
+[0.018540] (controller_manager) JobProgress: {'identifier': 'controller_manager', 'progress': 'cmake'}
+[0.019204] (controller_manager) JobProgress: {'identifier': 'controller_manager', 'progress': 'build'}
+[0.019967] (controller_manager) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kortex_ws/build/controller_manager', '--', '-j16', '-l16'], 'cwd': '/home/kortex_ws/build/controller_manager', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/humble_kortex_interface_ws'), ('ROS_PYTHON_VERSION', '3'), ('USE_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble'), ('COLCON_WS', '/home/kortex_ws'), ('PWD', '/home/kortex_ws/build/controller_manager'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble')]), 'shell': False}
+[0.073766] (controller_manager) StdoutLine: {'line': b'[  5%] Built target gmock_main\n'}
+[0.074231] (controller_manager) StdoutLine: {'line': b'[ 14%] Built target gmock\n'}
+[0.077109] (controller_manager) StdoutLine: {'line': b'[ 20%] Built target controller_manager\n'}
+[0.080930] (controller_manager) StdoutLine: {'line': b'[ 20%] Built target ament_cmake_python_copy_controller_manager_setup\n'}
+[0.081117] (controller_manager) StdoutLine: {'line': b'[ 20%] Built target ament_cmake_python_copy_controller_manager\n'}
+[0.099315] (-) TimerEvent: {}
+[0.104293] (controller_manager) StdoutLine: {'line': b'[ 54%] Built target test_controller_with_interfaces\n'}
+[0.104548] (controller_manager) StdoutLine: {'line': b'[ 54%] Built target ros2_control_node\n'}
+[0.104631] (controller_manager) StdoutLine: {'line': b'[ 54%] Built target test_controller\n'}
+[0.104706] (controller_manager) StdoutLine: {'line': b'[ 54%] Built target test_chainable_controller\n'}
+[0.104776] (controller_manager) StdoutLine: {'line': b'[ 54%] Built target test_controller_manager_urdf_passing\n'}
+[0.104847] (controller_manager) StdoutLine: {'line': b'[ 54%] Built target test_controller_failed_init\n'}
+[0.137463] (controller_manager) StdoutLine: {'line': b'[ 80%] Built target test_hardware_management_srvs\n'}
+[0.137721] (controller_manager) StdoutLine: {'line': b'[ 80%] Built target test_controllers_chaining_with_controller_manager\n'}
+[0.137819] (controller_manager) StdoutLine: {'line': b'[ 80%] Built target test_load_controller\n'}
+[0.137904] (controller_manager) StdoutLine: {'line': b'[ 80%] Built target test_release_interfaces\n'}
+[0.137990] (controller_manager) StdoutLine: {'line': b'[ 82%] Built target test_controller_manager\n'}
+[0.138289] (controller_manager) StdoutLine: {'line': b'[ 88%] Built target test_controller_manager_with_namespace.cpp\n'}
+[0.138923] (controller_manager) StdoutLine: {'line': b'[ 94%] Built target test_controller_manager_srvs\n'}
+[0.139379] (controller_manager) StdoutLine: {'line': b'[100%] Built target test_spawner_unspawner\n'}
+[0.199420] (-) TimerEvent: {}
+[0.279247] (controller_manager) StdoutLine: {'line': b'running install_scripts\n'}
+[0.283882] (controller_manager) StdoutLine: {'line': b'running egg_info\n'}
+[0.284295] (controller_manager) StdoutLine: {'line': b'writing controller_manager.egg-info/PKG-INFO\n'}
+[0.284502] (controller_manager) StdoutLine: {'line': b'writing dependency_links to controller_manager.egg-info/dependency_links.txt\n'}
+[0.284687] (controller_manager) StdoutLine: {'line': b'writing entry points to controller_manager.egg-info/entry_points.txt\n'}
+[0.284858] (controller_manager) StdoutLine: {'line': b'writing top-level names to controller_manager.egg-info/top_level.txt\n'}
+[0.286278] (controller_manager) StdoutLine: {'line': b"reading manifest file 'controller_manager.egg-info/SOURCES.txt'\n"}
+[0.286769] (controller_manager) StdoutLine: {'line': b"writing manifest file 'controller_manager.egg-info/SOURCES.txt'\n"}
+[0.297838] (controller_manager) StdoutLine: {'line': b'running egg_info\n'}
+[0.298296] (controller_manager) StdoutLine: {'line': b'writing controller_manager.egg-info/PKG-INFO\n'}
+[0.298541] (controller_manager) StdoutLine: {'line': b'writing dependency_links to controller_manager.egg-info/dependency_links.txt\n'}
+[0.298747] (controller_manager) StdoutLine: {'line': b'writing entry points to controller_manager.egg-info/entry_points.txt\n'}
+[0.298893] (controller_manager) StdoutLine: {'line': b'writing top-level names to controller_manager.egg-info/top_level.txt\n'}
+[0.299498] (-) TimerEvent: {}
+[0.300468] (controller_manager) StdoutLine: {'line': b"reading manifest file 'controller_manager.egg-info/SOURCES.txt'\n"}
+[0.301048] (controller_manager) StdoutLine: {'line': b"writing manifest file 'controller_manager.egg-info/SOURCES.txt'\n"}
+[0.302016] (controller_manager) StdoutLine: {'line': b'Installing hardware_spawner script to scripts\n'}
+[0.302164] (controller_manager) StdoutLine: {'line': b'Installing spawner script to scripts\n'}
+[0.302280] (controller_manager) StdoutLine: {'line': b'Installing unspawner script to scripts\n'}
+[0.310225] (controller_manager) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_controller_manager_egg\n'}
+[0.332147] (controller_manager) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_controller_manager_scripts\n'}
+[0.343772] (controller_manager) CommandEnded: {'returncode': 0}
+[0.399646] (-) TimerEvent: {}
+[0.415498] (controller_manager) JobProgress: {'identifier': 'controller_manager', 'progress': 'install'}
+[0.424398] (controller_manager) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kortex_ws/build/controller_manager'], 'cwd': '/home/kortex_ws/build/controller_manager', 'env': OrderedDict([('HOSTNAME', 'keenan-Legion-5-15ACH6'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/humble_kortex_interface_ws'), ('ROS_PYTHON_VERSION', '3'), ('USE_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble'), ('COLCON_WS', '/home/kortex_ws'), ('PWD', '/home/kortex_ws/build/controller_manager'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble')]), 'shell': False}
+[0.430988] (controller_manager) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.431156] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/lib/libcontroller_manager.so\n'}
+[0.431461] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/lib/controller_manager/ros2_control_node\n'}
+[0.431591] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/include\n'}
+[0.431724] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/include/controller_manager\n'}
+[0.431814] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/include/controller_manager/visibility_control.h\n'}
+[0.431870] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/include/controller_manager/controller_manager.hpp\n'}
+[0.431947] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/include/controller_manager/controller_spec.hpp\n'}
+[0.432004] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/test/test_controller/test_controller.xml\n'}
+[0.432062] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/lib/libtest_controller.so\n'}
+[0.432147] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/test/test_controller_failed_init/test_controller_failed_init.xml\n'}
+[0.432205] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/lib/libtest_controller_failed_init.so\n'}
+[0.432275] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/test/test_chainable_controller/test_chainable_controller.xml\n'}
+[0.432408] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/lib/libtest_chainable_controller.so\n'}
+[0.432552] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/test/test_controller_with_interfaces/test_controller_with_interfaces.xml\n'}
+[0.432680] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/lib/libtest_controller_with_interfaces.so\n'}
+[0.432810] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/pythonpath.sh\n'}
+[0.432890] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/pythonpath.dsv\n'}
+[0.432959] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info\n'}
+[0.433037] (controller_manager) StdoutLine: {'line': b'-- Installing: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.433105] (controller_manager) StdoutLine: {'line': b'-- Installing: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.433206] (controller_manager) StdoutLine: {'line': b'-- Installing: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info/top_level.txt\n'}
+[0.433333] (controller_manager) StdoutLine: {'line': b'-- Installing: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info/PKG-INFO\n'}
+[0.433458] (controller_manager) StdoutLine: {'line': b'-- Installing: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info/entry_points.txt\n'}
+[0.433596] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/lib/controller_manager/\n'}
+[0.433670] (controller_manager) StdoutLine: {'line': b'-- Installing: /home/kortex_ws/install/controller_manager/lib/controller_manager//spawner\n'}
+[0.433760] (controller_manager) StdoutLine: {'line': b'-- Installing: /home/kortex_ws/install/controller_manager/lib/controller_manager//hardware_spawner\n'}
+[0.433885] (controller_manager) StdoutLine: {'line': b'-- Installing: /home/kortex_ws/install/controller_manager/lib/controller_manager//unspawner\n'}
+[0.434032] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager\n'}
+[0.434120] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/controller_manager_services.py\n'}
+[0.434180] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/unspawner.py\n'}
+[0.434238] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/launch_utils.py\n'}
+[0.434306] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/spawner.py\n'}
+[0.434357] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/hardware_spawner.py\n'}
+[0.434407] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/__init__.py\n'}
+[0.457464] (controller_manager) StdoutLine: {'line': b"Listing '/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager'...\n"}
+[0.460199] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/library_path.sh\n'}
+[0.460383] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/library_path.dsv\n'}
+[0.460522] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/ament_index/resource_index/package_run_dependencies/controller_manager\n'}
+[0.460621] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/ament_index/resource_index/parent_prefix_path/controller_manager\n'}
+[0.460689] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/ament_prefix_path.sh\n'}
+[0.460757] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/ament_prefix_path.dsv\n'}
+[0.460840] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/path.sh\n'}
+[0.460942] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/path.dsv\n'}
+[0.461032] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/local_setup.bash\n'}
+[0.461087] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/local_setup.sh\n'}
+[0.461139] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/local_setup.zsh\n'}
+[0.461191] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/local_setup.dsv\n'}
+[0.461241] (controller_manager) StdoutLine: {'line': b'-- Installing: /home/kortex_ws/install/controller_manager/share/controller_manager/package.dsv\n'}
+[0.461290] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/ament_index/resource_index/packages/controller_manager\n'}
+[0.461340] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/ament_index/resource_index/controller_interface__pluginlib__plugin/controller_manager\n'}
+[0.461388] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.461459] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.461512] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.461574] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/cmake/controller_managerConfig.cmake\n'}
+[0.461624] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/cmake/controller_managerConfig-version.cmake\n'}
+[0.461672] (controller_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/package.xml\n'}
+[0.463063] (controller_manager) CommandEnded: {'returncode': 0}
+[0.499745] (-) TimerEvent: {}
+[0.549375] (controller_manager) JobEnded: {'identifier': 'controller_manager', 'rc': 0}
+[0.549938] (-) EventReactorShutdown: {}

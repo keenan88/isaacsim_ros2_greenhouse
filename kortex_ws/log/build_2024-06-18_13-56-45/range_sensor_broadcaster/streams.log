@@ -1,0 +1,111 @@
+[0.018s] Invoking command in '/home/kortex_ws/build/range_sensor_broadcaster': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/ros2_controllers/range_sensor_broadcaster -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/range_sensor_broadcaster
+[0.069s] -- The C compiler identification is GNU 11.4.0
+[0.114s] -- The CXX compiler identification is GNU 11.4.0
+[0.120s] -- Detecting C compiler ABI info
+[0.184s] -- Detecting C compiler ABI info - done
+[0.189s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.189s] -- Detecting C compile features
+[0.190s] -- Detecting C compile features - done
+[0.192s] -- Detecting CXX compiler ABI info
+[0.264s] -- Detecting CXX compiler ABI info - done
+[0.269s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.269s] -- Detecting CXX compile features
+[0.270s] -- Detecting CXX compile features - done
+[0.274s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.397s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.492s] -- Found backward_ros: 1.0.2 (/opt/ros/humble/share/backward_ros/cmake)
+[0.501s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[0.506s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[0.506s] -- BACKWARD_HAS_UNWIND=1
+[0.506s] -- BACKWARD_HAS_BACKTRACE=0
+[0.506s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[0.506s] -- BACKWARD_HAS_DW=1
+[0.506s] -- BACKWARD_HAS_BFD=0
+[0.507s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[0.507s] -- Found controller_interface: 2.41.0 (/home/kortex_ws/install/controller_interface/share/controller_interface/cmake)
+[0.553s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.560s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.571s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.586s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.607s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.174s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.178s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.216s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.273s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.275s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.284s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.291s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.298s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.306s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.319s] -- Looking for pthread.h
+[1.406s] -- Looking for pthread.h - found
+[1.406s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.493s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.494s] -- Found Threads: TRUE  
+[1.726s] -- Found generate_parameter_library: 0.3.8 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[1.730s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.768s] -- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[2.000s] -- Found ament_cmake_gmock: 1.3.8 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[2.001s] -- Found controller_manager: 2.41.0 (/home/kortex_ws/install/controller_manager/share/controller_manager/cmake)
+[2.243s] -- Found ros2_control_test_assets: 2.41.0 (/home/kortex_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake)
+[2.248s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[2.257s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.258s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.773s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[2.774s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.774s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.880s] -- Configuring done
+[2.982s] -- Generating done
+[2.985s] -- Build files have been written to: /home/kortex_ws/build/range_sensor_broadcaster
+[2.998s] Invoked command in '/home/kortex_ws/build/range_sensor_broadcaster' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/ros2_controllers/range_sensor_broadcaster -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/range_sensor_broadcaster
+[3.000s] Invoking command in '/home/kortex_ws/build/range_sensor_broadcaster': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/range_sensor_broadcaster -- -j16 -l16
+[3.058s] [ 30%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[3.058s] [ 30%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[3.058s] [ 30%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/kortex_ws/build/range_sensor_broadcaster/range_sensor_broadcaster_parameters/include//range_sensor_broadcaster_parameters.hpp /home/kortex_ws/src/ros2_controllers/range_sensor_broadcaster/src/range_sensor_broadcaster_parameters.yaml `[0m
+[3.271s] [ 30%] Built target range_sensor_broadcaster_parameters
+[3.297s] [ 40%] [32mBuilding CXX object CMakeFiles/range_sensor_broadcaster.dir/src/range_sensor_broadcaster.cpp.o[0m
+[8.967s] [ 50%] [32m[1mLinking CXX static library libgmock.a[0m
+[9.045s] [ 50%] Built target gmock
+[9.055s] [ 60%] [32m[1mLinking CXX shared library librange_sensor_broadcaster.so[0m
+[9.181s] [ 60%] Built target range_sensor_broadcaster
+[9.204s] [ 80%] [32mBuilding CXX object CMakeFiles/test_range_sensor_broadcaster.dir/test/test_range_sensor_broadcaster.cpp.o[0m
+[9.204s] [ 80%] [32mBuilding CXX object CMakeFiles/test_load_range_sensor_broadcaster.dir/test/test_load_range_sensor_broadcaster.cpp.o[0m
+[14.027s] [ 90%] [32m[1mLinking CXX executable test_load_range_sensor_broadcaster[0m
+[14.261s] [ 90%] Built target test_load_range_sensor_broadcaster
+[19.774s] [100%] [32m[1mLinking CXX executable test_range_sensor_broadcaster[0m
+[20.003s] [100%] Built target test_range_sensor_broadcaster
+[20.015s] Invoked command in '/home/kortex_ws/build/range_sensor_broadcaster' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/range_sensor_broadcaster -- -j16 -l16
+[20.052s] Invoking command in '/home/kortex_ws/build/range_sensor_broadcaster': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/range_sensor_broadcaster
+[20.060s] -- Install configuration: "Release"
+[20.060s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/include/range_sensor_broadcaster_parameters
+[20.060s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/include/range_sensor_broadcaster_parameters/range_sensor_broadcaster_parameters.hpp
+[20.060s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/range_sensor_broadcaster.xml
+[20.060s] -- Up-to-date: /home/kortex_ws/install/range_sensor_broadcaster/include
+[20.060s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/include/range_sensor_broadcaster
+[20.060s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/include/range_sensor_broadcaster/range_sensor_broadcaster.hpp
+[20.060s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/include/range_sensor_broadcaster/visibility_control.h
+[20.061s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/lib/librange_sensor_broadcaster.so
+[20.061s] -- Set runtime path of "/home/kortex_ws/install/range_sensor_broadcaster/lib/librange_sensor_broadcaster.so" to ""
+[20.061s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/environment/library_path.sh
+[20.062s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/environment/library_path.dsv
+[20.062s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/ament_index/resource_index/package_run_dependencies/range_sensor_broadcaster
+[20.062s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/ament_index/resource_index/parent_prefix_path/range_sensor_broadcaster
+[20.062s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/environment/ament_prefix_path.sh
+[20.062s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/environment/ament_prefix_path.dsv
+[20.062s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/environment/path.sh
+[20.063s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/environment/path.dsv
+[20.063s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/local_setup.bash
+[20.063s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/local_setup.sh
+[20.063s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/local_setup.zsh
+[20.063s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/local_setup.dsv
+[20.063s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/package.dsv
+[20.064s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/ament_index/resource_index/packages/range_sensor_broadcaster
+[20.064s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/ament_index/resource_index/controller_interface__pluginlib__plugin/range_sensor_broadcaster
+[20.064s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/cmake/export_range_sensor_broadcasterExport.cmake
+[20.064s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/cmake/export_range_sensor_broadcasterExport-release.cmake
+[20.064s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/cmake/ament_cmake_export_targets-extras.cmake
+[20.064s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/cmake/ament_cmake_export_dependencies-extras.cmake
+[20.064s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/cmake/range_sensor_broadcasterConfig.cmake
+[20.065s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/cmake/range_sensor_broadcasterConfig-version.cmake
+[20.065s] -- Installing: /home/kortex_ws/install/range_sensor_broadcaster/share/range_sensor_broadcaster/package.xml
+[20.067s] Invoked command in '/home/kortex_ws/build/range_sensor_broadcaster' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/range_sensor_broadcaster

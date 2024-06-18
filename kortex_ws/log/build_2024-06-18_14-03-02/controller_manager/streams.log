@@ -1,0 +1,119 @@
+[0.021s] Invoking command in '/home/kortex_ws/build/controller_manager': AMENT_PREFIX_PATH=/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/controller_manager -- -j16 -l16
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target gmock_main[0m
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target gmock[0m
+[0.062s] [35m[1mConsolidate compiler generated dependencies of target controller_manager[0m
+[0.077s] [  5%] Built target gmock_main
+[0.078s] [ 14%] Built target ament_cmake_python_copy_controller_manager_setup
+[0.078s] [ 14%] Built target gmock
+[0.078s] [ 14%] Built target ament_cmake_python_copy_controller_manager
+[0.085s] [ 20%] Built target controller_manager
+[0.096s] [35m[1mConsolidate compiler generated dependencies of target test_chainable_controller[0m
+[0.096s] [35m[1mConsolidate compiler generated dependencies of target test_controller[0m
+[0.096s] [35m[1mConsolidate compiler generated dependencies of target ros2_control_node[0m
+[0.096s] [35m[1mConsolidate compiler generated dependencies of target test_controller_failed_init[0m
+[0.097s] [35m[1mConsolidate compiler generated dependencies of target test_controller_manager_urdf_passing[0m
+[0.099s] [35m[1mConsolidate compiler generated dependencies of target test_controller_with_interfaces[0m
+[0.120s] [ 31%] Built target test_chainable_controller
+[0.121s] [ 31%] Built target test_controller_failed_init
+[0.121s] [ 37%] Built target test_controller_manager_urdf_passing
+[0.122s] [ 42%] Built target test_controller
+[0.122s] [ 48%] Built target ros2_control_node
+[0.135s] [ 54%] Built target test_controller_with_interfaces
+[0.136s] [35m[1mConsolidate compiler generated dependencies of target test_load_controller[0m
+[0.136s] [35m[1mConsolidate compiler generated dependencies of target test_controller_manager_srvs[0m
+[0.137s] [35m[1mConsolidate compiler generated dependencies of target test_controller_manager[0m
+[0.137s] [35m[1mConsolidate compiler generated dependencies of target test_controller_manager_with_namespace.cpp[0m
+[0.137s] [35m[1mConsolidate compiler generated dependencies of target test_controllers_chaining_with_controller_manager[0m
+[0.138s] [35m[1mConsolidate compiler generated dependencies of target test_spawner_unspawner[0m
+[0.138s] [35m[1mConsolidate compiler generated dependencies of target test_hardware_management_srvs[0m
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target test_release_interfaces[0m
+[0.168s] [ 77%] Built target test_controller_manager_with_namespace.cpp
+[0.168s] [ 77%] Built target test_controller_manager_srvs
+[0.168s] [ 77%] Built target test_load_controller
+[0.168s] [ 77%] Built target test_spawner_unspawner
+[0.171s] [ 82%] Built target test_controller_manager
+[0.172s] [ 88%] Built target test_controllers_chaining_with_controller_manager
+[0.173s] [ 94%] Built target test_hardware_management_srvs
+[0.187s] [100%] Built target test_release_interfaces
+[0.282s] running install_scripts
+[0.284s] running egg_info
+[0.284s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.284s]   warnings.warn(
+[0.284s] writing controller_manager.egg-info/PKG-INFO
+[0.284s] writing dependency_links to controller_manager.egg-info/dependency_links.txt
+[0.284s] writing entry points to controller_manager.egg-info/entry_points.txt
+[0.285s] writing top-level names to controller_manager.egg-info/top_level.txt
+[0.286s] reading manifest file 'controller_manager.egg-info/SOURCES.txt'
+[0.287s] writing manifest file 'controller_manager.egg-info/SOURCES.txt'
+[0.302s] running egg_info
+[0.302s] writing controller_manager.egg-info/PKG-INFO
+[0.303s] writing dependency_links to controller_manager.egg-info/dependency_links.txt
+[0.303s] writing entry points to controller_manager.egg-info/entry_points.txt
+[0.303s] writing top-level names to controller_manager.egg-info/top_level.txt
+[0.305s] reading manifest file 'controller_manager.egg-info/SOURCES.txt'
+[0.306s] writing manifest file 'controller_manager.egg-info/SOURCES.txt'
+[0.306s] Installing hardware_spawner script to scripts
+[0.307s] Installing spawner script to scripts
+[0.307s] Installing unspawner script to scripts
+[0.312s] [100%] Built target ament_cmake_python_build_controller_manager_egg
+[0.337s] [100%] Built target ament_cmake_python_build_controller_manager_scripts
+[0.348s] Invoked command in '/home/kortex_ws/build/controller_manager' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/controller_manager -- -j16 -l16
+[0.435s] Invoking command in '/home/kortex_ws/build/controller_manager': AMENT_PREFIX_PATH=/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/controller_manager
+[0.443s] -- Install configuration: "Release"
+[0.443s] -- Up-to-date: /home/kortex_ws/install/controller_manager/lib/libcontroller_manager.so
+[0.443s] -- Up-to-date: /home/kortex_ws/install/controller_manager/lib/controller_manager/ros2_control_node
+[0.443s] -- Up-to-date: /home/kortex_ws/install/controller_manager/include
+[0.443s] -- Up-to-date: /home/kortex_ws/install/controller_manager/include/controller_manager
+[0.443s] -- Up-to-date: /home/kortex_ws/install/controller_manager/include/controller_manager/visibility_control.h
+[0.444s] -- Up-to-date: /home/kortex_ws/install/controller_manager/include/controller_manager/controller_manager.hpp
+[0.444s] -- Up-to-date: /home/kortex_ws/install/controller_manager/include/controller_manager/controller_spec.hpp
+[0.444s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/test/test_controller/test_controller.xml
+[0.444s] -- Up-to-date: /home/kortex_ws/install/controller_manager/lib/libtest_controller.so
+[0.444s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/test/test_controller_failed_init/test_controller_failed_init.xml
+[0.444s] -- Up-to-date: /home/kortex_ws/install/controller_manager/lib/libtest_controller_failed_init.so
+[0.444s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/test/test_chainable_controller/test_chainable_controller.xml
+[0.444s] -- Up-to-date: /home/kortex_ws/install/controller_manager/lib/libtest_chainable_controller.so
+[0.444s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/test/test_controller_with_interfaces/test_controller_with_interfaces.xml
+[0.444s] -- Up-to-date: /home/kortex_ws/install/controller_manager/lib/libtest_controller_with_interfaces.so
+[0.445s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/pythonpath.sh
+[0.445s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/pythonpath.dsv
+[0.445s] -- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info
+[0.445s] -- Installing: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info/SOURCES.txt
+[0.445s] -- Installing: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info/dependency_links.txt
+[0.445s] -- Installing: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info/top_level.txt
+[0.445s] -- Installing: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info/PKG-INFO
+[0.445s] -- Installing: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager-2.41.0-py3.10.egg-info/entry_points.txt
+[0.445s] -- Up-to-date: /home/kortex_ws/install/controller_manager/lib/controller_manager/
+[0.446s] -- Installing: /home/kortex_ws/install/controller_manager/lib/controller_manager//spawner
+[0.446s] -- Installing: /home/kortex_ws/install/controller_manager/lib/controller_manager//hardware_spawner
+[0.446s] -- Installing: /home/kortex_ws/install/controller_manager/lib/controller_manager//unspawner
+[0.446s] -- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager
+[0.446s] -- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/controller_manager_services.py
+[0.446s] -- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/unspawner.py
+[0.446s] -- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/launch_utils.py
+[0.446s] -- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/spawner.py
+[0.446s] -- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/hardware_spawner.py
+[0.446s] -- Up-to-date: /home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager/__init__.py
+[0.472s] Listing '/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages/controller_manager'...
+[0.476s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/library_path.sh
+[0.476s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/library_path.dsv
+[0.476s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/ament_index/resource_index/package_run_dependencies/controller_manager
+[0.476s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/ament_index/resource_index/parent_prefix_path/controller_manager
+[0.476s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/ament_prefix_path.sh
+[0.476s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/ament_prefix_path.dsv
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/path.sh
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/environment/path.dsv
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/local_setup.bash
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/local_setup.sh
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/local_setup.zsh
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/local_setup.dsv
+[0.477s] -- Installing: /home/kortex_ws/install/controller_manager/share/controller_manager/package.dsv
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/ament_index/resource_index/packages/controller_manager
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/ament_index/resource_index/controller_interface__pluginlib__plugin/controller_manager
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/cmake/ament_cmake_export_libraries-extras.cmake
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/cmake/controller_managerConfig.cmake
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/cmake/controller_managerConfig-version.cmake
+[0.477s] -- Up-to-date: /home/kortex_ws/install/controller_manager/share/controller_manager/package.xml
+[0.479s] Invoked command in '/home/kortex_ws/build/controller_manager' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/controller_manager

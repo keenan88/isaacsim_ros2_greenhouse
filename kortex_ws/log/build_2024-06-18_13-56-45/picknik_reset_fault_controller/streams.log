@@ -1,0 +1,79 @@
+[0.013s] Invoking command in '/home/kortex_ws/build/picknik_reset_fault_controller': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/picknik_controllers/picknik_reset_fault_controller -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/picknik_reset_fault_controller
+[0.064s] -- The C compiler identification is GNU 11.4.0
+[0.113s] -- The CXX compiler identification is GNU 11.4.0
+[0.119s] -- Detecting C compiler ABI info
+[0.181s] -- Detecting C compiler ABI info - done
+[0.186s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.186s] -- Detecting C compile features
+[0.187s] -- Detecting C compile features - done
+[0.189s] -- Detecting CXX compiler ABI info
+[0.263s] -- Detecting CXX compiler ABI info - done
+[0.268s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.268s] -- Detecting CXX compile features
+[0.269s] -- Detecting CXX compile features - done
+[0.272s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.392s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.478s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.488s] -- Found controller_interface: 2.41.0 (/home/kortex_ws/install/controller_interface/share/controller_interface/cmake)
+[0.534s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.541s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.551s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.565s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.585s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.154s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.158s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.196s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.255s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.258s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.271s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.279s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.287s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.295s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.308s] -- Looking for pthread.h
+[1.379s] -- Looking for pthread.h - found
+[1.379s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.452s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.453s] -- Found Threads: TRUE  
+[1.660s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[1.704s] -- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[1.859s] -- Configuring done
+[1.891s] -- Generating done
+[1.892s] -- Build files have been written to: /home/kortex_ws/build/picknik_reset_fault_controller
+[1.901s] Invoked command in '/home/kortex_ws/build/picknik_reset_fault_controller' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/picknik_controllers/picknik_reset_fault_controller -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/picknik_reset_fault_controller
+[1.903s] Invoking command in '/home/kortex_ws/build/picknik_reset_fault_controller': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/picknik_reset_fault_controller -- -j16 -l16
+[1.958s] [ 50%] [32mBuilding CXX object CMakeFiles/picknik_reset_fault_controller.dir/src/picknik_reset_fault_controller.cpp.o[0m
+[7.303s] [100%] [32m[1mLinking CXX shared library libpicknik_reset_fault_controller.so[0m
+[7.442s] [100%] Built target picknik_reset_fault_controller
+[7.454s] Invoked command in '/home/kortex_ws/build/picknik_reset_fault_controller' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/picknik_reset_fault_controller -- -j16 -l16
+[7.481s] Invoking command in '/home/kortex_ws/build/picknik_reset_fault_controller': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/picknik_reset_fault_controller
+[7.488s] -- Install configuration: "Release"
+[7.488s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/controller_plugins.xml
+[7.488s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/lib/libpicknik_reset_fault_controller.so
+[7.489s] -- Set runtime path of "/home/kortex_ws/install/picknik_reset_fault_controller/lib/libpicknik_reset_fault_controller.so" to ""
+[7.490s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/include
+[7.490s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/include/picknik_reset_fault_controller
+[7.490s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/include/picknik_reset_fault_controller/visibility_control.h
+[7.490s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/include/picknik_reset_fault_controller/picknik_reset_fault_controller.hpp
+[7.490s] -- Up-to-date: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/controller_plugins.xml
+[7.490s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/environment/library_path.sh
+[7.490s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/environment/library_path.dsv
+[7.490s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/ament_index/resource_index/package_run_dependencies/picknik_reset_fault_controller
+[7.491s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/ament_index/resource_index/parent_prefix_path/picknik_reset_fault_controller
+[7.491s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/environment/ament_prefix_path.sh
+[7.491s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/environment/ament_prefix_path.dsv
+[7.491s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/environment/path.sh
+[7.491s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/environment/path.dsv
+[7.491s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/local_setup.bash
+[7.491s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/local_setup.sh
+[7.492s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/local_setup.zsh
+[7.492s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/local_setup.dsv
+[7.492s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/package.dsv
+[7.492s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/ament_index/resource_index/packages/picknik_reset_fault_controller
+[7.492s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/picknik_reset_fault_controller
+[7.492s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.493s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.493s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[7.493s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/cmake/picknik_reset_fault_controllerConfig.cmake
+[7.493s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/cmake/picknik_reset_fault_controllerConfig-version.cmake
+[7.493s] -- Installing: /home/kortex_ws/install/picknik_reset_fault_controller/share/picknik_reset_fault_controller/package.xml
+[7.495s] Invoked command in '/home/kortex_ws/build/picknik_reset_fault_controller' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/picknik_reset_fault_controller

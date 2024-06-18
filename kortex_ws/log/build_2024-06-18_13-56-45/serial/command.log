@@ -1,0 +1,6 @@
+Invoking command in '/home/kortex_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kortex_ws/src/serial -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/serial
+Invoked command in '/home/kortex_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kortex_ws/src/serial -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/serial
+Invoking command in '/home/kortex_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kortex_ws/build/serial -- -j16 -l16
+Invoked command in '/home/kortex_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kortex_ws/build/serial -- -j16 -l16
+Invoking command in '/home/kortex_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kortex_ws/build/serial
+Invoked command in '/home/kortex_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kortex_ws/build/serial

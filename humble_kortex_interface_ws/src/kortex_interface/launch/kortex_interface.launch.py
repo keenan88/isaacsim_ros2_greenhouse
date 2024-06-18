@@ -56,9 +56,7 @@ def generate_launch_description():
     namespace = 'fdsa'
 
     return LaunchDescription([
-        SetEnvironmentVariable('TF2_ROS_MAP_TOPIC', f'/{namespace}/tf'),
-        SetEnvironmentVariable('TF2_ROS_STATIC_MAP_TOPIC', f'/{namespace}/tf_static'),
-
+       
         PushRosNamespace(namespace),
         gen3_bringup,
         #joint_pruner,

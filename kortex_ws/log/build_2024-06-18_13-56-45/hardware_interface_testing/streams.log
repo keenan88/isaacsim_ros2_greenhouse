@@ -1,0 +1,88 @@
+[0.010s] Invoking command in '/home/kortex_ws/build/hardware_interface_testing': AMENT_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/ros2_control/hardware_interface_testing -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/hardware_interface_testing
+[0.062s] -- The CXX compiler identification is GNU 11.4.0
+[0.068s] -- Detecting CXX compiler ABI info
+[0.138s] -- Detecting CXX compiler ABI info - done
+[0.143s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.143s] -- Detecting CXX compile features
+[0.143s] -- Detecting CXX compile features - done
+[0.147s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.267s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.352s] -- Found control_msgs: 4.6.0 (/home/kortex_ws/install/control_msgs/share/control_msgs/cmake)
+[0.395s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.401s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.412s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.425s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.443s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.853s] -- Found hardware_interface: 2.41.0 (/home/kortex_ws/install/hardware_interface/share/hardware_interface/cmake)
+[0.979s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.982s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.018s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.070s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.072s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.085s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.092s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.099s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.107s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.119s] -- Looking for C++ include pthread.h
+[1.194s] -- Looking for C++ include pthread.h - found
+[1.194s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.271s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.272s] -- Found Threads: TRUE  
+[1.393s] -- Found ros2_control_test_assets: 2.41.0 (/home/kortex_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake)
+[1.428s] -- Found ament_cmake_gmock: 1.3.8 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[1.431s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[1.467s] -- The C compiler identification is GNU 11.4.0
+[1.474s] -- Detecting C compiler ABI info
+[1.537s] -- Detecting C compiler ABI info - done
+[1.543s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.543s] -- Detecting C compile features
+[1.543s] -- Detecting C compile features - done
+[1.549s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.550s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.670s] -- Configuring done
+[1.718s] -- Generating done
+[1.720s] -- Build files have been written to: /home/kortex_ws/build/hardware_interface_testing
+[1.730s] Invoked command in '/home/kortex_ws/build/hardware_interface_testing' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/ros2_control/hardware_interface_testing -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/hardware_interface_testing
+[1.731s] Invoking command in '/home/kortex_ws/build/hardware_interface_testing': AMENT_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/hardware_interface_testing -- -j16 -l16
+[1.798s] [ 30%] [32mBuilding CXX object CMakeFiles/test_components.dir/test/test_components/test_sensor.cpp.o[0m
+[1.798s] [ 30%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[1.798s] [ 30%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[1.798s] [ 30%] [32mBuilding CXX object CMakeFiles/test_components.dir/test/test_components/test_actuator.cpp.o[0m
+[1.798s] [ 38%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[1.798s] [ 46%] [32mBuilding CXX object CMakeFiles/test_components.dir/test/test_components/test_system.cpp.o[0m
+[3.549s] [ 53%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[3.664s] [ 53%] Built target gmock_main
+[4.931s] [ 61%] [32m[1mLinking CXX shared library libtest_components.so[0m
+[5.068s] [ 61%] Built target test_components
+[8.074s] [ 69%] [32m[1mLinking CXX static library libgmock.a[0m
+[8.144s] [ 69%] Built target gmock
+[8.164s] [ 84%] [32mBuilding CXX object CMakeFiles/test_resource_manager_prepare_perform_switch.dir/test/test_resource_manager_prepare_perform_switch.cpp.o[0m
+[8.165s] [ 84%] [32mBuilding CXX object CMakeFiles/test_resource_manager.dir/test/test_resource_manager.cpp.o[0m
+[12.088s] [ 92%] [32m[1mLinking CXX executable test_resource_manager_prepare_perform_switch[0m
+[12.245s] [ 92%] Built target test_resource_manager_prepare_perform_switch
+[15.325s] [100%] [32m[1mLinking CXX executable test_resource_manager[0m
+[15.475s] [100%] Built target test_resource_manager
+[15.486s] Invoked command in '/home/kortex_ws/build/hardware_interface_testing' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/hardware_interface_testing -- -j16 -l16
+[15.525s] Invoking command in '/home/kortex_ws/build/hardware_interface_testing': AMENT_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/hardware_interface_testing
+[15.531s] -- Install configuration: "Release"
+[15.532s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/lib/libtest_components.so
+[15.532s] -- Set runtime path of "/home/kortex_ws/install/hardware_interface_testing/lib/libtest_components.so" to ""
+[15.532s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/test/test_components/test_components.xml
+[15.533s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/ament_index/resource_index/package_run_dependencies/hardware_interface_testing
+[15.533s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/ament_index/resource_index/parent_prefix_path/hardware_interface_testing
+[15.533s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/environment/ament_prefix_path.sh
+[15.533s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/environment/ament_prefix_path.dsv
+[15.533s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/environment/path.sh
+[15.533s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/environment/path.dsv
+[15.534s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/local_setup.bash
+[15.534s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/local_setup.sh
+[15.534s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/local_setup.zsh
+[15.534s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/local_setup.dsv
+[15.534s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/package.dsv
+[15.534s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/ament_index/resource_index/packages/hardware_interface_testing
+[15.534s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/hardware_interface_testing
+[15.535s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.535s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/cmake/hardware_interface_testingConfig.cmake
+[15.535s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/cmake/hardware_interface_testingConfig-version.cmake
+[15.535s] -- Installing: /home/kortex_ws/install/hardware_interface_testing/share/hardware_interface_testing/package.xml
+[15.537s] Invoked command in '/home/kortex_ws/build/hardware_interface_testing' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/hardware_interface_testing

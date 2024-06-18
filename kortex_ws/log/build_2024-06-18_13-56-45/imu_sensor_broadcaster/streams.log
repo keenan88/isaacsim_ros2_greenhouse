@@ -1,0 +1,111 @@
+[0.019s] Invoking command in '/home/kortex_ws/build/imu_sensor_broadcaster': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/ros2_controllers/imu_sensor_broadcaster -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/imu_sensor_broadcaster
+[0.080s] -- The CXX compiler identification is GNU 11.4.0
+[0.087s] -- Detecting CXX compiler ABI info
+[0.165s] -- Detecting CXX compiler ABI info - done
+[0.170s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.171s] -- Detecting CXX compile features
+[0.171s] -- Detecting CXX compile features - done
+[0.175s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.308s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.412s] -- Found backward_ros: 1.0.2 (/opt/ros/humble/share/backward_ros/cmake)
+[0.424s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[0.429s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[0.429s] -- BACKWARD_HAS_UNWIND=1
+[0.430s] -- BACKWARD_HAS_BACKTRACE=0
+[0.430s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[0.430s] -- BACKWARD_HAS_DW=1
+[0.430s] -- BACKWARD_HAS_BFD=0
+[0.430s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[0.431s] -- Found controller_interface: 2.41.0 (/home/kortex_ws/install/controller_interface/share/controller_interface/cmake)
+[0.476s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.484s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.494s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.509s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.529s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.088s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.092s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.129s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.186s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.188s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.198s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.204s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.211s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.219s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.234s] -- Looking for C++ include pthread.h
+[1.334s] -- Looking for C++ include pthread.h - found
+[1.334s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.446s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.447s] -- Found Threads: TRUE  
+[1.687s] -- Found generate_parameter_library: 0.3.8 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[1.690s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.725s] -- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[1.948s] -- Found ament_cmake_gmock: 1.3.8 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[1.948s] -- Found controller_manager: 2.41.0 (/home/kortex_ws/install/controller_manager/share/controller_manager/cmake)
+[2.162s] -- Found ros2_control_test_assets: 2.41.0 (/home/kortex_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake)
+[2.166s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[2.205s] -- The C compiler identification is GNU 11.4.0
+[2.211s] -- Detecting C compiler ABI info
+[2.302s] -- Detecting C compiler ABI info - done
+[2.307s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.307s] -- Detecting C compile features
+[2.308s] -- Detecting C compile features - done
+[2.315s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.316s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.793s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[2.793s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.793s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.896s] -- Configuring done
+[2.997s] -- Generating done
+[2.999s] -- Build files have been written to: /home/kortex_ws/build/imu_sensor_broadcaster
+[3.012s] Invoked command in '/home/kortex_ws/build/imu_sensor_broadcaster' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kortex_ws/src/ros2_controllers/imu_sensor_broadcaster -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/kortex_ws/install/imu_sensor_broadcaster
+[3.013s] Invoking command in '/home/kortex_ws/build/imu_sensor_broadcaster': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/imu_sensor_broadcaster -- -j16 -l16
+[3.073s] [ 30%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[3.073s] [ 30%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[3.073s] [ 30%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/kortex_ws/build/imu_sensor_broadcaster/imu_sensor_broadcaster_parameters/include//imu_sensor_broadcaster_parameters.hpp /home/kortex_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster_parameters.yaml `[0m
+[3.286s] [ 30%] Built target imu_sensor_broadcaster_parameters
+[3.314s] [ 40%] [32mBuilding CXX object CMakeFiles/imu_sensor_broadcaster.dir/src/imu_sensor_broadcaster.cpp.o[0m
+[8.903s] [ 50%] [32m[1mLinking CXX static library libgmock.a[0m
+[8.981s] [ 50%] Built target gmock
+[9.160s] [ 60%] [32m[1mLinking CXX shared library libimu_sensor_broadcaster.so[0m
+[9.298s] [ 60%] Built target imu_sensor_broadcaster
+[9.320s] [ 80%] [32mBuilding CXX object CMakeFiles/test_imu_sensor_broadcaster.dir/test/test_imu_sensor_broadcaster.cpp.o[0m
+[9.321s] [ 80%] [32mBuilding CXX object CMakeFiles/test_load_imu_sensor_broadcaster.dir/test/test_load_imu_sensor_broadcaster.cpp.o[0m
+[14.094s] [ 90%] [32m[1mLinking CXX executable test_load_imu_sensor_broadcaster[0m
+[14.314s] [ 90%] Built target test_load_imu_sensor_broadcaster
+[20.096s] [100%] [32m[1mLinking CXX executable test_imu_sensor_broadcaster[0m
+[20.319s] [100%] Built target test_imu_sensor_broadcaster
+[20.330s] Invoked command in '/home/kortex_ws/build/imu_sensor_broadcaster' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kortex_ws/build/imu_sensor_broadcaster -- -j16 -l16
+[20.365s] Invoking command in '/home/kortex_ws/build/imu_sensor_broadcaster': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/imu_sensor_broadcaster
+[20.372s] -- Install configuration: "Release"
+[20.372s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/include/imu_sensor_broadcaster_parameters
+[20.372s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/include/imu_sensor_broadcaster_parameters/imu_sensor_broadcaster_parameters.hpp
+[20.373s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/imu_sensor_broadcaster.xml
+[20.373s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/include/imu_sensor_broadcaster
+[20.373s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster
+[20.373s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp
+[20.373s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster/visibility_control.h
+[20.373s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/lib/libimu_sensor_broadcaster.so
+[20.375s] -- Set runtime path of "/home/kortex_ws/install/imu_sensor_broadcaster/lib/libimu_sensor_broadcaster.so" to ""
+[20.375s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/environment/library_path.sh
+[20.375s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/environment/library_path.dsv
+[20.375s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/ament_index/resource_index/package_run_dependencies/imu_sensor_broadcaster
+[20.375s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/ament_index/resource_index/parent_prefix_path/imu_sensor_broadcaster
+[20.376s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/environment/ament_prefix_path.sh
+[20.376s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/environment/ament_prefix_path.dsv
+[20.376s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/environment/path.sh
+[20.376s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/environment/path.dsv
+[20.376s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/local_setup.bash
+[20.376s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/local_setup.sh
+[20.377s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/local_setup.zsh
+[20.377s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/local_setup.dsv
+[20.377s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/package.dsv
+[20.377s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/ament_index/resource_index/packages/imu_sensor_broadcaster
+[20.377s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/ament_index/resource_index/controller_interface__pluginlib__plugin/imu_sensor_broadcaster
+[20.378s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/cmake/export_imu_sensor_broadcasterExport.cmake
+[20.378s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/cmake/export_imu_sensor_broadcasterExport-release.cmake
+[20.378s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/cmake/ament_cmake_export_targets-extras.cmake
+[20.378s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/cmake/ament_cmake_export_dependencies-extras.cmake
+[20.378s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/cmake/imu_sensor_broadcasterConfig.cmake
+[20.378s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/cmake/imu_sensor_broadcasterConfig-version.cmake
+[20.379s] -- Installing: /home/kortex_ws/install/imu_sensor_broadcaster/share/imu_sensor_broadcaster/package.xml
+[20.382s] Invoked command in '/home/kortex_ws/build/imu_sensor_broadcaster' returned '0': AMENT_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kortex_ws/install/controller_manager:/home/kortex_ws/install/hardware_interface_testing:/home/kortex_ws/install/controller_interface:/home/kortex_ws/install/hardware_interface:/home/kortex_ws/install/ros2_control_test_assets:/home/kortex_ws/install/controller_manager_msgs:/home/kortex_ws/install/control_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kortex_ws/install/controller_manager/lib:/home/kortex_ws/install/hardware_interface_testing/lib:/home/kortex_ws/install/controller_interface/lib:/home/kortex_ws/install/hardware_interface/lib:/home/kortex_ws/install/controller_manager_msgs/lib:/home/kortex_ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kortex_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/kortex_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/kortex_ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kortex_ws/build/imu_sensor_broadcaster
