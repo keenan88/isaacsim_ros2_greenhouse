@@ -9,18 +9,20 @@ topics:
     to_domain: 1
     remap: tf_static
 
-  /camera/camera/depth/color/points:
-    type: sensor_msgs/msg/PointCloud2
+  /camera/camera/depth/image_rect_raw:
+    type: sensor_msgs/msg/Image
     from_domain: 3
     to_domain: 1
+    remap: depth
 
   /camera/camera/depth/camera_info:
     type: sensor_msgs/msg/CameraInfo
     from_domain: 3
     to_domain: 1
+    remap: camera_info
 
-  /camera/camera/depth/metadata:
-    type: realsense2_camera_msgs/msg/Metadata
-    from_domain: 3
-    to_domain: 1
+  # /camera/camera/depth/metadata:
+  #   type: realsense2_camera_msgs/msg/Metadata
+  #   from_domain: 3
+  #   to_domain: 1
 
