@@ -28,7 +28,7 @@ def generate_launch_description():
 
     launch_arguments = {
         "robot_ip": "192.168.1.10",
-        "use_fake_hardware": "false",
+        "use_fake_hardware": "true",
         "gripper": "robotiq_2f_85",
         "dof": "6",
     }
@@ -157,7 +157,7 @@ def generate_launch_description():
         ros2_control_node,
         joint_state_broadcaster_spawner,
         arm_controller_spawner,
-        hand_controller_spawner,
+        # hand_controller_spawner,
     ]
 
     launch = sim_launch if is_simulation else hw_launch
