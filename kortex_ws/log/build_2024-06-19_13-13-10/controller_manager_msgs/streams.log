@@ -1,0 +1,56 @@
+[0.048s] Invoking command in '/home/kortex_ws/build/controller_manager_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kortex_ws/install/rqt_joint_trajectory_controller:/home/kortex_ws/install/rqt_controller_manager:/home/kortex_ws/install/ros2controlcli:/home/kortex_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/kortex_ws/build/controller_manager_msgs -- -j16 -l16
+[0.153s] [  2%] Built target controller_manager_msgs__cpp
+[0.153s] [ 12%] Built target controller_manager_msgs__rosidl_generator_c
+[0.187s] [ 12%] Built target ament_cmake_python_copy_controller_manager_msgs
+[0.211s] [ 36%] Built target controller_manager_msgs__rosidl_typesupport_c
+[0.211s] [ 36%] Built target controller_manager_msgs__rosidl_typesupport_cpp
+[0.222s] [ 48%] Built target controller_manager_msgs__rosidl_typesupport_fastrtps_cpp
+[0.228s] [ 60%] Built target controller_manager_msgs__rosidl_typesupport_introspection_c
+[0.232s] [ 72%] Built target controller_manager_msgs__rosidl_typesupport_introspection_cpp
+[0.261s] [ 84%] Built target controller_manager_msgs__rosidl_typesupport_fastrtps_c
+[0.305s] [ 84%] Built target controller_manager_msgs
+[0.349s] [ 85%] Built target controller_manager_msgs__py
+[0.399s] [ 96%] Built target controller_manager_msgs__rosidl_generator_py
+[0.449s] [ 98%] Built target controller_manager_msgs__rosidl_typesupport_introspection_c__pyext
+[0.450s] [ 99%] Built target controller_manager_msgs__rosidl_typesupport_c__pyext
+[0.457s] [100%] Built target controller_manager_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.517s] running egg_info
+[0.520s] writing controller_manager_msgs.egg-info/PKG-INFO
+[0.523s] writing dependency_links to controller_manager_msgs.egg-info/dependency_links.txt
+[0.529s] writing top-level names to controller_manager_msgs.egg-info/top_level.txt
+[0.536s] reading manifest file 'controller_manager_msgs.egg-info/SOURCES.txt'
+[0.555s] writing manifest file 'controller_manager_msgs.egg-info/SOURCES.txt'
+[0.577s] [100%] Built target ament_cmake_python_build_controller_manager_msgs_egg
+[0.598s] Invoked command in '/home/kortex_ws/build/controller_manager_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kortex_ws/install/rqt_joint_trajectory_controller:/home/kortex_ws/install/rqt_controller_manager:/home/kortex_ws/install/ros2controlcli:/home/kortex_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/kortex_ws/build/controller_manager_msgs -- -j16 -l16
+[0.792s] Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_cmake/build.py", line 59, in build
+    rc = await extension.build(
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/build.py", line 110, in build
+    if await has_target(args.build_base, 'install'):
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 57, in has_target
+    return target in await get_makefile_targets(path)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 77, in get_makefile_targets
+    output = await check_output([
+  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 129, in check_output
+    assert not rc, f'Expected {args} to pass: {stderr_data}'
+AssertionError: Expected ['/usr/bin/cmake', '--build', '/home/kortex_ws/build/controller_manager_msgs', '--target', 'help'] to pass: gmake: *** [Makefile:3254: help] Interrupt
+

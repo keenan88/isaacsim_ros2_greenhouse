@@ -38,7 +38,7 @@ class TFStaticFilterNode(Node):
         # Add a static transform from arm_base_link to camera_link
         additional_transform = TransformStamped()
         additional_transform.header.stamp = self.get_clock().now().to_msg()
-        additional_transform.header.frame_id = 'arm_base_link'
+        additional_transform.header.frame_id = 'kinova/base_link'
         additional_transform.child_frame_id = 'camera_link'
         # arm_base_link -> camera: (x,y,z) = (0.7, 0.07, 0.835) is an approximation
         # arm_base_link -> camera: (Rx,Ry,Rz) = (0, -127 degrees, 0) is an approximation
