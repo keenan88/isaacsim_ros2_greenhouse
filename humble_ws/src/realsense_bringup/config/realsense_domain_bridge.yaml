@@ -19,10 +19,10 @@ topics:
     from_domain: 3
     to_domain: 1
 
-  /camera/camera/depth/color/points:
-    type: sensor_msgs/msg/PointCloud2
-    from_domain: 3
-    to_domain: 1
+  # /camera/camera/depth/color/points:
+  #   type: sensor_msgs/msg/PointCloud2
+  #   from_domain: 3
+  #   to_domain: 1
 
   # /camera/camera/depth/metadata:
   #   type: realsense2_camera_msgs/msg/Metadata

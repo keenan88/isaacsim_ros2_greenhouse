@@ -29,7 +29,7 @@ def generate_launch_description():
             'depth_module.depth_profile': '424x240x5',
             'depth_module.infra_profile': '424x240x5',
             'depth_module.color_profile': '480x270x6',
-            'pointcloud.enable': 'true'
+            'pointcloud.enable': 'false'
 
         }.items()
     )
