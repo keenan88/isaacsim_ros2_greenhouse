@@ -29,7 +29,7 @@ def generate_launch_description():
             'depth_module.depth_profile': '424x240x5',
             'depth_module.infra_profile': '424x240x5',
             'depth_module.color_profile': '480x270x6',
-            'pointcloud.enable': 'false'
+            'pointcloud.enable': 'true'
 
         }.items()
     )
@@ -67,6 +67,6 @@ def generate_launch_description():
             realsense_pointcloud_launch,
             tf_replace_base_link,
             domain_bridge,
-            rviz2_node
+            # rviz2_node
         ]    
     )

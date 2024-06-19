@@ -40,14 +40,15 @@ class TFStaticFilterNode(Node):
         additional_transform.header.stamp = self.get_clock().now().to_msg()
         additional_transform.header.frame_id = 'kinova/base_link'
         additional_transform.child_frame_id = 'camera_link'
-        # arm_base_link -> camera: (x,y,z) = (0.7, 0.07, 0.835) is an approximation
-        # arm_base_link -> camera: (Rx,Ry,Rz) = (0, -127 degrees, 0) is an approximation
-        additional_transform.transform.translation.x = 0.60
-        additional_transform.transform.translation.y = -0.02
-        additional_transform.transform.translation.z = 0.8
-        additional_transform.transform.rotation.x = -0.42
+        additional_transform.transform.translation.x = 0.51
+        additional_transform.transform.translation.y = 0.06
+        additional_transform.transform.translation.z = 1.8
+
+        # -0.6087614, 0, 0.7933533, 0
+        # -0.5735764, 0, 0.819152, 0
+        additional_transform.transform.rotation.x = -0.5735764
         additional_transform.transform.rotation.y = 0.0
-        additional_transform.transform.rotation.z = 0.906
+        additional_transform.transform.rotation.z = 0.819152
         additional_transform.transform.rotation.w = 0.0
 
 
