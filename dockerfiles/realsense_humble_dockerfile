@@ -17,6 +17,7 @@ RUN apt-get install librealsense2-utils -y
 # Intel Realsense ROS2 wrapper installation
 RUN apt install ros-humble-realsense2-* -y
 
-ENV ROS_DOMAIN_ID=1
+RUN apt-get install ros-humble-domain-bridge -y
+ENV ROS_DOMAIN_ID=3
 
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc 
