@@ -25,10 +25,10 @@ def generate_launch_description():
         ]),
         launch_arguments = {
             'camera_name' :  "camera",
-            #'rgb_camera.color_profile': '424x240x5',
-            #'depth_module.depth_profile': '424x240x5',
-            #'depth_module.infra_profile': '424x240x5',
-            #'depth_module.color_profile': '480,270,6',
+            'rgb_camera.color_profile': '424x240x5',
+            'depth_module.depth_profile': '424x240x5',
+            'depth_module.infra_profile': '424x240x5',
+            'depth_module.color_profile': '480x270x6',
             'pointcloud.enable': 'false'
 
         }.items()

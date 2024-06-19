@@ -56,7 +56,7 @@
     </group_state> -->
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <!-- <end_effector name="gripper" parent_link="end_effector_link" group="gripper"/> -->
-    <end_effector name="gripper" parent_link="end_effector_link" group="manipulator"/>
+    <end_effector name="gripper" parent_link="kinova/end_effector_link" group="manipulator"/>
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
     <!-- <passive_joint name="kinova/robotiq_85_left_inner_knuckle_joint"/>
     <passive_joint name="kinova/robotiq_85_left_finger_tip_joint"/>
