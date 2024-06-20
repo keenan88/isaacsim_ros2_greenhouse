@@ -100,6 +100,12 @@ services:
     privileged: true
     working_dir: /home/humble_ws
     restart: "no"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities:
+                - gpu
     # networks:
     #   - ros2-network
     # entrypoint: /home/scripts/joint_state_translater_entrypoint.sh
@@ -121,6 +127,12 @@ services:
     privileged: true
     working_dir: /home/humble_ws
     restart: "no"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities:
+                - gpu
 
   # networks:
   #   ros2-network:

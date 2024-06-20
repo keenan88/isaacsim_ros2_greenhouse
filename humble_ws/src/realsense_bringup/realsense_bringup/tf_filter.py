@@ -34,7 +34,7 @@ class TFStaticFilterNode(Node):
         additional_transform.header.frame_id = 'kinova/base_link'
         additional_transform.child_frame_id = 'camera_link'
         additional_transform.transform.translation.x = 0.51
-        additional_transform.transform.translation.y = 0.06
+        additional_transform.transform.translation.y = -0.05
         additional_transform.transform.translation.z = 1.8
 
         additional_transform.transform.rotation.x = -0.5735764

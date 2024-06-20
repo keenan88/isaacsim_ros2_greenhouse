@@ -44,6 +44,7 @@ RUN pip install setuptools==58.2.0
 RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
+
 #RUN apt-get install ros-humble-domain-bridge -y
 ENV ROS_DOMAIN_ID=1
 

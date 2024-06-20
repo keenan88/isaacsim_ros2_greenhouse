@@ -26,10 +26,10 @@ def generate_launch_description():
         launch_arguments = {
             'camera_name' :  "camera",
             # 'rgb_camera.color_profile': '1280x800x5',
-            # 'depth_module.depth_profile': '1280x800x5',
-            # 'depth_module.infra_profile': '1280x800x5',
-            # 'depth_module.color_profile': '1280x800x5',
-            'pointcloud.enable': 'false'
+            'depth_module.depth_profile': '848x480x5',
+            'depth_module.infra_profile': '848x480x5',
+            'depth_module.color_profile': '1280x720x5',
+            'pointcloud.enable': 'true'
 
         }.items()
     )
@@ -67,6 +67,6 @@ def generate_launch_description():
             realsense_pointcloud_launch,
             tf_replace_base_link,
             # domain_bridge,
-            rviz2_node
+            # rviz2_node
         ]    
     )

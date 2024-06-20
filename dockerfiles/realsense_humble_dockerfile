@@ -23,6 +23,19 @@ RUN apt install ros-humble-realsense2-* -y
 RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
+# Nvidia driver installation
+RUN echo "keyboard-configuration keyboard-configuration/layoutcode select us" | debconf-set-selections
+RUN echo "keyboard-configuration keyboard-configuration/xkb-keymap select us" | debconf-set-selections
+ENV DEBIAN_FRONTEND=noninteractive
+ENV KEYBOARD_KEYMAP=us
+ENV KEYBOARD_MODEL=pc105
+ENV KEYBOARD_LAYOUT=us
+RUN apt-get install locales -y
+RUN locale-gen en_US en_US.UTF-8
+RUN update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+RUN export LANG=en_US.UTF-8
+RUN apt-get install nvidia-driver-535 -y
+
 
 ENV ROS_DOMAIN_ID=1
 
