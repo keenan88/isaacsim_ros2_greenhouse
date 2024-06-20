@@ -14,4 +14,7 @@ ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 # Need realsense message types
 RUN apt install ros-humble-realsense2-* -y
 
-RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc 
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN echo "source /home/kortex_ws/install/setup.bash" >> ~/.bashrc
+RUN echo "source /home/humble_ws/install/setup.bash" >> ~/.bashrc
+ 

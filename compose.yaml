@@ -77,6 +77,8 @@ services:
     privileged: true
     working_dir: /home/humble_kortex_interface_ws
     restart: "no"
+    # networks:
+    #   - ros2-network
     # entrypoint: /home/scripts/joint_state_translater_entrypoint.sh
 
   humble-humble-moveit:
@@ -98,4 +100,28 @@ services:
     privileged: true
     working_dir: /home/humble_ws
     restart: "no"
+    # networks:
+    #   - ros2-network
     # entrypoint: /home/scripts/joint_state_translater_entrypoint.sh
+
+  realsense-humble:
+    container_name: humble-realsense
+    build:
+      context: ./dockerfiles/
+      dockerfile: realsense_humble_dockerfile
+    image: realsense_humble
+    tty: true
+    stdin_open: true
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./humble_ws:/home/humble_ws:rw
+    network_mode: "host"
+    privileged: true
+    working_dir: /home/humble_ws
+    restart: "no"
+
+  # networks:
+  #   ros2-network:
+  #     external: true
