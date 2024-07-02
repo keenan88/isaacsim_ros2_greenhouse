@@ -36,27 +36,27 @@ services:
     restart: "no"
     entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
 
-  # humble-desktop-navigation:
-  #   container_name: humble-desktop-navigation
-  #   build:
-  #     context: ./dockerfiles/
-  #     dockerfile: navigation_dockerfile
-  #   image: humble_dev_img
-  #   tty: true
-  #   stdin_open: true
-  #   environment:
-  #     - DISPLAY=${DISPLAY}
-  #     - USE_SIM=${USE_SIM}
-  #   volumes:
-  #     - /tmp/.X11-unix:/tmp/.X11-unix
-  #     - ./humble_ws:/home/humble_ws:rw
-  #     - ./docker_entry_scripts/nav_entrypoint.sh:/isaac-sim/scripts/nav_entrypoint.sh:rw
-  #     - ./fastdds.xml:/root/.ros/fastdds.xml:rw
-  #   #privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
-  #   #network_mode: "host"
-  #   working_dir: /home/humble_ws/src/
-  #   restart: "no"
-  #   entrypoint: /isaac-sim/scripts/nav_entrypoint.sh
+  humble-desktop-navigation:
+    container_name: humble-desktop-navigation
+    build:
+      context: ./dockerfiles/
+      dockerfile: navigation_dockerfile
+    image: humble_dev_img
+    tty: true
+    stdin_open: true
+    environment:
+      - DISPLAY=${DISPLAY}
+      - USE_SIM=${USE_SIM}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./humble_ws:/home/humble_ws:rw
+      - ./docker_entry_scripts/nav_entrypoint.sh:/isaac-sim/scripts/nav_entrypoint.sh:rw
+      - ./fastdds.xml:/root/.ros/fastdds.xml:rw
+    privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
+    #network_mode: "host"
+    working_dir: /home/humble_ws/src/
+    restart: "no"
+    # entrypoint: /isaac-sim/scripts/nav_entrypoint.sh
 
   # humble-kortex:
   #   container_name: humble-kortex
