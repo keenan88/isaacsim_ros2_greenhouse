@@ -61,21 +61,7 @@ Visualization Manager:
           Value: false
         base_link:
           Value: true
-        bicep_link:
-          Value: false
-        bracelet_link:
-          Value: false
-        camera_color_frame:
-          Value: false
-        camera_depth_frame:
-          Value: false
-        camera_link:
-          Value: false
         chassis_link:
-          Value: false
-        end_effector_link:
-          Value: false
-        forearm_link:
           Value: false
         front_wheel_link:
           Value: true
@@ -85,11 +71,7 @@ Visualization Manager:
           Value: true
         rear_wheel_link:
           Value: true
-        shoulder_link:
-          Value: false
-        spherical_wrist_1_link:
-          Value: false
-        spherical_wrist_2_link:
+        sim_camera:
           Value: false
       Marker Scale: 0.75
       Name: TF
@@ -101,24 +83,14 @@ Visualization Manager:
           odom:
             chassis_link:
               arm_base_link:
-                shoulder_link:
-                  bicep_link:
-                    forearm_link:
-                      spherical_wrist_1_link:
-                        spherical_wrist_2_link:
-                          bracelet_link:
-                            end_effector_link:
-                              camera_color_frame:
-                                {}
-                              camera_depth_frame:
-                                {}
-                              camera_link:
-                                {}
+                {}
               base_link:
                 {}
               front_wheel_link:
                 {}
               rear_wheel_link:
+                {}
+              sim_camera:
                 {}
       Update Interval: 0
       Value: true
@@ -259,25 +231,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 5.00904655456543
+      Distance: 2.991717576980591
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.6785694360733032
-        Y: -1.4137682914733887
-        Z: -0.43804630637168884
+        X: -0.8206401467323303
+        Y: -0.644493818283081
+        Z: -0.7072797417640686
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5753962993621826
+      Pitch: 0.7353962063789368
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.12539905309677124
+      Yaw: 0.5903988480567932
     Saved: ~
 Window Geometry:
   Displays:
@@ -295,5 +267,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1920
-  X: 0
+  X: 1080
   Y: 27

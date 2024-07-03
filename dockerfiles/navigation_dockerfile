@@ -14,8 +14,8 @@ RUN apt install gnome-terminal dbus-x11 -y
 ENV LANG=en_US.UTF-8
 
 RUN apt-get update
-RUN apt install ros-humble-rmw-fastrtps-dynamic-cpp --fix-missing -y
-ENV RMW_IMPLEMENTATION=rmw_fastrtps_dynamic_cpp
+RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
+ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 ENV ROS_DOMAIN_ID=1
 
