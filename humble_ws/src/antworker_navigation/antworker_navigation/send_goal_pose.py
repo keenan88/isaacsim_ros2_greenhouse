@@ -19,10 +19,10 @@ class GoalPoseServer(Node):
 
         self.pose_stamped.header.frame_id = 'map'
         self.pose_stamped.header.stamp = self.get_clock().now().to_msg()
-        self.pose_stamped.pose.position.y = -20.0 # Assumes robot starts at (0,0,0), (0,0,0)
+        self.pose_stamped.pose.position.y = -2.0 # Assumes robot starts at (0,0,0), (0,0,0)
 
-        self.pose_stamped.pose.orientation.z = -0.73
-        self.pose_stamped.pose.orientation.w = 0.67
+        self.pose_stamped.pose.orientation.z = -0.7071068
+        self.pose_stamped.pose.orientation.w = 0.7071068
 
         self.publisher.publish(self.pose_stamped)
         print("Pose published")

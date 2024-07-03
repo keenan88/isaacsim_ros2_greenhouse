@@ -7,14 +7,14 @@
   <link name="rails">
 
     <visual>
-      <origin xyz="26.75 0.2175 0.1"/>
+      <origin xyz="26.75 0.25 0.05"/>
       <geometry>
         <box size="50 0.1 0.1"/>
       </geometry>
     </visual>
 
     <visual>
-      <origin xyz="26.75 -0.2175 0.1"/>
+      <origin xyz="26.75 -0.25 0.05"/>
       <geometry>
         <box size="50 0.1 0.1"/>
       </geometry>
@@ -35,14 +35,14 @@
 
 
     <collision>
-      <origin xyz="26.75 0.2175 0.1"/>
+      <origin xyz="26.75 0.25 0.05"/>
       <geometry>
         <box size="50 0.1 0.1"/>
       </geometry>
     </collision>
 
     <collision>
-      <origin xyz="26.75 -0.2175 0.1"/>
+      <origin xyz="26.75 -0.25 0.05"/>
       <geometry>
         <box size="50 0.1 0.1"/>
       </geometry>
