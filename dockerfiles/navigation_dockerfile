@@ -14,8 +14,13 @@ RUN apt install gnome-terminal dbus-x11 -y
 ENV LANG=en_US.UTF-8
 
 RUN apt-get update
-RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
-ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
+# Cyclone DDS causes error with Nav2: [lifecycle_manager]: Waiting for service map_server/get_state… prints out infinitely..
+# RUN apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp -y
+# ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
+#RUN apt install ros-humble-rmw-fastrtps-cpp -y
+#ENV RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 
 ENV ROS_DOMAIN_ID=1
 
