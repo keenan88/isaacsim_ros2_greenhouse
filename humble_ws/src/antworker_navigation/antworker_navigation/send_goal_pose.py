@@ -3,36 +3,29 @@ from rclpy.node import Node
 from rclpy.action import ActionClient
 from geometry_msgs.msg import PoseStamped
 from rclpy.qos import QoSProfile, ReliabilityPolicy, DurabilityPolicy, HistoryPolicy, LivelinessPolicy
-
+from time import sleep
 
 
 class GoalPoseServer(Node):
     def __init__(self):
         super().__init__('goal_pose_server')
 
-        qos_profile = QoSProfile(
-            reliability=ReliabilityPolicy.RELIABLE,
-            history=HistoryPolicy.SYSTEM_DEFAULT,
-            durability=DurabilityPolicy.VOLATILE,
-            liveliness=LivelinessPolicy.AUTOMATIC
-        )
-
         self.publisher = self.create_publisher(PoseStamped, '/goal_pose', 10)
 
-        pose_stamped = PoseStamped()
+        sleep(2) # x second timeout is necessary for message to be properly published to goal_pose
+        # without timeout, goal_pose message is published but bt_navigator does not accept
 
-        pose_stamped.header.frame_id = 'map'
-        pose_stamped.header.stamp = self.get_clock().now().to_msg()
-        pose_stamped.pose.position.y = -2.5 # Assumes robot starts at (0,0,0), (0,0,0)
+        self.pose_stamped = PoseStamped()
 
-        pose_stamped.pose.orientation.z = -0.73
-        pose_stamped.pose.orientation.w = 0.67
+        self.pose_stamped.header.frame_id = 'map'
+        self.pose_stamped.header.stamp = self.get_clock().now().to_msg()
+        self.pose_stamped.pose.position.y = -3.0 # Assumes robot starts at (0,0,0), (0,0,0)
 
-        self.publisher.publish(pose_stamped)
+        self.pose_stamped.pose.orientation.z = -0.73
+        self.pose_stamped.pose.orientation.w = 0.67
 
+        self.publisher.publish(self.pose_stamped)
         print("Pose published")
-
-
 
 
 def main(args=None):
