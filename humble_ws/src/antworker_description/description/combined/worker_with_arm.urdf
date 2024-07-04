@@ -220,7 +220,7 @@
   <!-- Decal -->
   <link name="decal">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.15"/>
       <geometry>
         <mesh filename="package://antworker_description/description/base/meshes/decal.stl" scale="0.01 0.01 0.01"/>
       </geometry>
@@ -232,7 +232,7 @@
   <joint name="decal_fixed_joint" type="fixed">
     <parent link="base_link"/>
     <child link="decal"/>
-    <origin rpy="0 0 0" xyz="0 0 0.15"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
 
 

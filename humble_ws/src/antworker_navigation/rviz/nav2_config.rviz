@@ -72,18 +72,28 @@ Visualization Manager:
           Value: false
         camera_link:
           Value: false
+        decal:
+          Value: false
         end_effector_link:
           Value: false
         forearm_link:
           Value: false
+        front_wheel_left_flange:
+          Value: false
         front_wheel_link:
           Value: true
+        front_wheel_right_flange:
+          Value: false
         map:
           Value: true
         odom:
           Value: true
+        rear_wheel_left_flange:
+          Value: false
         rear_wheel_link:
           Value: true
+        rear_wheel_right_flange:
+          Value: false
         shoulder_link:
           Value: false
         spherical_wrist_1_link:
@@ -113,10 +123,18 @@ Visualization Manager:
                                 {}
                               camera_link:
                                 {}
+              decal:
+                {}
               front_wheel_link:
-                {}
+                front_wheel_left_flange:
+                  {}
+                front_wheel_right_flange:
+                  {}
               rear_wheel_link:
-                {}
+                rear_wheel_left_flange:
+                  {}
+                rear_wheel_right_flange:
+                  {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -256,25 +274,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 3.141361951828003
+      Distance: 6.87952184677124
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 2.54866886138916
-        Y: 0.012342442758381367
-        Z: 0.157507985830307
+        X: 0.31063583493232727
+        Y: 0.09596036374568939
+        Z: -0.9232907891273499
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.149796962738037
+      Pitch: 0.9347971677780151
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.150404214859009
+      Yaw: 2.9204041957855225
     Saved: ~
 Window Geometry:
   Displays:
