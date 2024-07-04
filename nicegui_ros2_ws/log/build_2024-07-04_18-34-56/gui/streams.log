@@ -1,0 +1,22 @@
+[0.722s] Invoking command in '/ros2_ws/build/gui': PYTHONPATH=/ros2_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /ros2_ws/build/gui/build --no-deps symlink_data
+[0.953s] running develop
+[1.058s] running egg_info
+[1.058s] creating gui.egg-info
+[1.059s] writing gui.egg-info/PKG-INFO
+[1.059s] writing dependency_links to gui.egg-info/dependency_links.txt
+[1.059s] writing entry points to gui.egg-info/entry_points.txt
+[1.059s] writing requirements to gui.egg-info/requires.txt
+[1.059s] writing top-level names to gui.egg-info/top_level.txt
+[1.059s] writing manifest file 'gui.egg-info/SOURCES.txt'
+[1.061s] reading manifest file 'gui.egg-info/SOURCES.txt'
+[1.061s] writing manifest file 'gui.egg-info/SOURCES.txt'
+[1.063s] running build_ext
+[1.063s] Creating /ros2_ws/install/gui/lib/python3.10/site-packages/gui.egg-link (link to .)
+[1.064s] Installing nicegui_node script to /ros2_ws/install/gui/lib/gui
+[1.064s] 
+[1.064s] Installed /ros2_ws/build/gui
+[1.064s] running symlink_data
+[1.064s] symbolically linking /ros2_ws/build/gui/package.xml -> /ros2_ws/install/gui/share/gui
+[1.064s] creating /ros2_ws/install/gui/share/gui/launch
+[1.065s] symbolically linking /ros2_ws/build/gui/launch/main_launch.py -> /ros2_ws/install/gui/share/gui/launch
+[1.103s] Invoked command in '/ros2_ws/build/gui' returned '0': PYTHONPATH=/ros2_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /ros2_ws/build/gui/build --no-deps symlink_data

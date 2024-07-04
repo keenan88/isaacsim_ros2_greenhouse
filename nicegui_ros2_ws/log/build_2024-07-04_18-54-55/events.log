@@ -1,0 +1,54 @@
+[0.000000] (-) TimerEvent: {}
+[0.000061] (gui) JobQueued: {'identifier': 'gui', 'dependencies': OrderedDict()}
+[0.000086] (simulator) JobQueued: {'identifier': 'simulator', 'dependencies': OrderedDict()}
+[0.000106] (gui) JobStarted: {'identifier': 'gui'}
+[0.008549] (simulator) JobStarted: {'identifier': 'simulator'}
+[0.099469] (-) TimerEvent: {}
+[0.199887] (-) TimerEvent: {}
+[0.300056] (-) TimerEvent: {}
+[0.400239] (-) TimerEvent: {}
+[0.500416] (-) TimerEvent: {}
+[0.600601] (-) TimerEvent: {}
+[0.629309] (simulator) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/nicegui_ros2_ws/build/simulator/build', '--no-deps', 'symlink_data'], 'cwd': '/nicegui_ros2_ws/build/simulator', 'env': {'HOSTNAME': 'keenan-Legion-5-15ACH6', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/nicegui_ros2_ws/build/simulator', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/nicegui_ros2_ws/build/simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/nicegui_ros2_ws/install/simulator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.631048] (gui) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/nicegui_ros2_ws/build/gui/build', '--no-deps', 'symlink_data'], 'cwd': '/nicegui_ros2_ws/build/gui', 'env': {'HOSTNAME': 'keenan-Legion-5-15ACH6', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/nicegui_ros2_ws/build/gui', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/nicegui_ros2_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/nicegui_ros2_ws/install/gui/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.700723] (-) TimerEvent: {}
+[0.800911] (-) TimerEvent: {}
+[0.811435] (gui) StdoutLine: {'line': b'running develop\n'}
+[0.811615] (simulator) StdoutLine: {'line': b'running develop\n'}
+[0.894631] (simulator) StdoutLine: {'line': b'running egg_info\n'}
+[0.894800] (simulator) StdoutLine: {'line': b'writing simulator.egg-info/PKG-INFO\n'}
+[0.895054] (simulator) StdoutLine: {'line': b'writing dependency_links to simulator.egg-info/dependency_links.txt\n'}
+[0.895163] (simulator) StdoutLine: {'line': b'writing entry points to simulator.egg-info/entry_points.txt\n'}
+[0.895342] (simulator) StdoutLine: {'line': b'writing requirements to simulator.egg-info/requires.txt\n'}
+[0.895442] (simulator) StdoutLine: {'line': b'writing top-level names to simulator.egg-info/top_level.txt\n'}
+[0.896579] (simulator) StdoutLine: {'line': b"reading manifest file 'simulator.egg-info/SOURCES.txt'\n"}
+[0.897123] (simulator) StdoutLine: {'line': b"writing manifest file 'simulator.egg-info/SOURCES.txt'\n"}
+[0.897991] (gui) StdoutLine: {'line': b'running egg_info\n'}
+[0.898343] (gui) StdoutLine: {'line': b'writing gui.egg-info/PKG-INFO\n'}
+[0.898433] (simulator) StdoutLine: {'line': b'running build_ext\n'}
+[0.898558] (simulator) StdoutLine: {'line': b'Creating /nicegui_ros2_ws/install/simulator/lib/python3.10/site-packages/simulator.egg-link (link to .)\n'}
+[0.898626] (gui) StdoutLine: {'line': b'writing dependency_links to gui.egg-info/dependency_links.txt\n'}
+[0.898787] (gui) StdoutLine: {'line': b'writing entry points to gui.egg-info/entry_points.txt\n'}
+[0.898914] (gui) StdoutLine: {'line': b'writing requirements to gui.egg-info/requires.txt\n'}
+[0.898971] (gui) StdoutLine: {'line': b'writing top-level names to gui.egg-info/top_level.txt\n'}
+[0.899031] (simulator) StdoutLine: {'line': b'Installing simulator_node script to /nicegui_ros2_ws/install/simulator/lib/simulator\n'}
+[0.899161] (simulator) StdoutLine: {'line': b'\n'}
+[0.899228] (simulator) StdoutLine: {'line': b'Installed /nicegui_ros2_ws/build/simulator\n'}
+[0.899384] (simulator) StdoutLine: {'line': b'running symlink_data\n'}
+[0.899443] (simulator) StdoutLine: {'line': b'symbolically linking /nicegui_ros2_ws/build/simulator/package.xml -> /nicegui_ros2_ws/install/simulator/share/simulator\n'}
+[0.899505] (simulator) StderrLine: {'line': b"error: [Errno 17] File exists: '/nicegui_ros2_ws/build/simulator/package.xml' -> '/nicegui_ros2_ws/install/simulator/share/simulator/package.xml'\n"}
+[0.900167] (gui) StdoutLine: {'line': b"reading manifest file 'gui.egg-info/SOURCES.txt'\n"}
+[0.900712] (gui) StdoutLine: {'line': b"writing manifest file 'gui.egg-info/SOURCES.txt'\n"}
+[0.900978] (-) TimerEvent: {}
+[0.901751] (gui) StdoutLine: {'line': b'running build_ext\n'}
+[0.901907] (gui) StdoutLine: {'line': b'Creating /nicegui_ros2_ws/install/gui/lib/python3.10/site-packages/gui.egg-link (link to .)\n'}
+[0.902505] (gui) StdoutLine: {'line': b'Installing nicegui_node script to /nicegui_ros2_ws/install/gui/lib/gui\n'}
+[0.902756] (gui) StdoutLine: {'line': b'\n'}
+[0.902885] (gui) StdoutLine: {'line': b'Installed /nicegui_ros2_ws/build/gui\n'}
+[0.902937] (gui) StdoutLine: {'line': b'running symlink_data\n'}
+[0.902983] (gui) StdoutLine: {'line': b'symbolically linking /nicegui_ros2_ws/build/gui/package.xml -> /nicegui_ros2_ws/install/gui/share/gui\n'}
+[0.903029] (gui) StderrLine: {'line': b"error: [Errno 17] File exists: '/nicegui_ros2_ws/build/gui/package.xml' -> '/nicegui_ros2_ws/install/gui/share/gui/package.xml'\n"}
+[0.927132] (simulator) CommandEnded: {'returncode': 1}
+[0.927456] (simulator) JobEnded: {'identifier': 'simulator', 'rc': 1}
+[0.930080] (gui) JobEnded: {'identifier': 'gui', 'rc': 'SIGINT'}
+[0.940482] (-) EventReactorShutdown: {}

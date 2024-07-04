@@ -1,0 +1,51 @@
+[0.000000] (-) TimerEvent: {}
+[0.000074] (gui) JobQueued: {'identifier': 'gui', 'dependencies': OrderedDict()}
+[0.000103] (simulator) JobQueued: {'identifier': 'simulator', 'dependencies': OrderedDict()}
+[0.000126] (gui) JobStarted: {'identifier': 'gui'}
+[0.006865] (simulator) JobStarted: {'identifier': 'simulator'}
+[0.099392] (-) TimerEvent: {}
+[0.199562] (-) TimerEvent: {}
+[0.299760] (-) TimerEvent: {}
+[0.399948] (-) TimerEvent: {}
+[0.500130] (-) TimerEvent: {}
+[0.600327] (-) TimerEvent: {}
+[0.602876] (simulator) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ros2_ws/build/simulator/build', '--no-deps', 'symlink_data'], 'cwd': '/ros2_ws/build/simulator', 'env': {'HOSTNAME': 'keenan-Legion-5-15ACH6', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/ros2_ws/build/simulator', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2_ws/build/simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/simulator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.610189] (gui) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ros2_ws/build/gui/build', '--no-deps', 'symlink_data'], 'cwd': '/ros2_ws/build/gui', 'env': {'HOSTNAME': 'keenan-Legion-5-15ACH6', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/ros2_ws/build/gui', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/gui/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.700456] (-) TimerEvent: {}
+[0.788080] (simulator) StdoutLine: {'line': b'running develop\n'}
+[0.791576] (gui) StdoutLine: {'line': b'running develop\n'}
+[0.800546] (-) TimerEvent: {}
+[0.878621] (simulator) StdoutLine: {'line': b'running egg_info\n'}
+[0.878981] (simulator) StdoutLine: {'line': b'writing simulator.egg-info/PKG-INFO\n'}
+[0.879116] (simulator) StdoutLine: {'line': b'writing dependency_links to simulator.egg-info/dependency_links.txt\n'}
+[0.879323] (simulator) StdoutLine: {'line': b'writing entry points to simulator.egg-info/entry_points.txt\n'}
+[0.879431] (simulator) StdoutLine: {'line': b'writing requirements to simulator.egg-info/requires.txt\n'}
+[0.879504] (simulator) StdoutLine: {'line': b'writing top-level names to simulator.egg-info/top_level.txt\n'}
+[0.880708] (simulator) StdoutLine: {'line': b"reading manifest file 'simulator.egg-info/SOURCES.txt'\n"}
+[0.880802] (gui) StdoutLine: {'line': b'running egg_info\n'}
+[0.880966] (gui) StdoutLine: {'line': b'writing gui.egg-info/PKG-INFO\n'}
+[0.881146] (gui) StdoutLine: {'line': b'writing dependency_links to gui.egg-info/dependency_links.txt\n'}
+[0.881324] (gui) StdoutLine: {'line': b'writing entry points to gui.egg-info/entry_points.txt\n'}
+[0.881467] (simulator) StdoutLine: {'line': b"writing manifest file 'simulator.egg-info/SOURCES.txt'\n"}
+[0.881625] (gui) StdoutLine: {'line': b'writing requirements to gui.egg-info/requires.txt\n'}
+[0.881696] (gui) StdoutLine: {'line': b'writing top-level names to gui.egg-info/top_level.txt\n'}
+[0.882272] (simulator) StdoutLine: {'line': b'running build_ext\n'}
+[0.882433] (simulator) StdoutLine: {'line': b'Creating /ros2_ws/install/simulator/lib/python3.10/site-packages/simulator.egg-link (link to .)\n'}
+[0.882736] (gui) StdoutLine: {'line': b"reading manifest file 'gui.egg-info/SOURCES.txt'\n"}
+[0.883118] (simulator) StdoutLine: {'line': b'Installing simulator_node script to /ros2_ws/install/simulator/lib/simulator\n'}
+[0.883362] (gui) StdoutLine: {'line': b"writing manifest file 'gui.egg-info/SOURCES.txt'\n"}
+[0.883449] (simulator) StdoutLine: {'line': b'\n'}
+[0.883502] (simulator) StdoutLine: {'line': b'Installed /ros2_ws/build/simulator\n'}
+[0.883553] (simulator) StdoutLine: {'line': b'running symlink_data\n'}
+[0.884212] (gui) StdoutLine: {'line': b'running build_ext\n'}
+[0.884364] (gui) StdoutLine: {'line': b'Creating /ros2_ws/install/gui/lib/python3.10/site-packages/gui.egg-link (link to .)\n'}
+[0.884962] (gui) StdoutLine: {'line': b'Installing nicegui_node script to /ros2_ws/install/gui/lib/gui\n'}
+[0.885211] (gui) StdoutLine: {'line': b'\n'}
+[0.885293] (gui) StdoutLine: {'line': b'Installed /ros2_ws/build/gui\n'}
+[0.885415] (gui) StdoutLine: {'line': b'running symlink_data\n'}
+[0.900684] (-) TimerEvent: {}
+[0.906478] (gui) CommandEnded: {'returncode': 0}
+[0.918496] (gui) JobEnded: {'identifier': 'gui', 'rc': 0}
+[0.919312] (simulator) CommandEnded: {'returncode': 0}
+[0.924497] (simulator) JobEnded: {'identifier': 'simulator', 'rc': 0}
+[0.924961] (-) EventReactorShutdown: {}

@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating gui.egg-info
+writing gui.egg-info/PKG-INFO
+writing dependency_links to gui.egg-info/dependency_links.txt
+writing entry points to gui.egg-info/entry_points.txt
+writing requirements to gui.egg-info/requires.txt
+writing top-level names to gui.egg-info/top_level.txt
+writing manifest file 'gui.egg-info/SOURCES.txt'
+reading manifest file 'gui.egg-info/SOURCES.txt'
+writing manifest file 'gui.egg-info/SOURCES.txt'
+running build_ext
+Creating /ros2_ws/install/gui/lib/python3.10/site-packages/gui.egg-link (link to .)
+Installing nicegui_node script to /ros2_ws/install/gui/lib/gui
+
+Installed /ros2_ws/build/gui
+running symlink_data
+symbolically linking /ros2_ws/build/gui/package.xml -> /ros2_ws/install/gui/share/gui
+creating /ros2_ws/install/gui/share/gui/launch
+symbolically linking /ros2_ws/build/gui/launch/main_launch.py -> /ros2_ws/install/gui/share/gui/launch

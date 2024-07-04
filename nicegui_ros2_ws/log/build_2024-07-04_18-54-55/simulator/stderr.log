@@ -1,0 +1,1 @@
+error: [Errno 17] File exists: '/nicegui_ros2_ws/build/simulator/package.xml' -> '/nicegui_ros2_ws/install/simulator/share/simulator/package.xml'

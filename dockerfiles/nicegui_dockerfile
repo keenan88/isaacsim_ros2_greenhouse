@@ -1,0 +1,20 @@
+FROM ros:humble-ros-base
+
+RUN apt-get update && apt-get install -y \
+    python3-pip \
+    # python3-dev \
+    # build-essential \
+   && rm -rf /var/lib/apt/lists/*
+
+SHELL ["/bin/bash", "-c"]
+
+RUN pip3 install setuptools==58.2.0
+
+RUN pip3 install nicegui
+
+#EXPOSE 8080
+
+ENV ROS_DOMAIN_ID=1
+
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN echo "source /ros2_ws/install/setup.bash" >> ~/.bashrc
