@@ -125,6 +125,116 @@
     <dynamics damping="0.01" friction="0.01"/>
   </joint>
 
+  <link name="rear_wheel_left_flange">      
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.175"/>
+      </geometry>
+      <material name="green"/>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.175"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="rear_wheel_left_flange_joint" type="fixed">
+    <parent link="rear_wheel_link"/>
+    <child link="rear_wheel_left_flange"/>
+    <origin rpy="0 0 0" xyz="0 0 0.375"/>
+  </joint>
+
+  <link name="rear_wheel_right_flange">      
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.175"/>
+      </geometry>
+      <material name="green"/>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.175"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="rear_wheel_right_flange_joint" type="fixed">
+    <parent link="rear_wheel_link"/>
+    <child link="rear_wheel_right_flange"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.375"/>
+  </joint>
+
+  <link name="front_wheel_left_flange">      
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.175"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.175"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="front_wheel_left_flange_joint" type="fixed">
+    <parent link="front_wheel_link"/>
+    <child link="front_wheel_left_flange"/>
+    <origin rpy="0 0 0" xyz="0 0 0.375"/>
+  </joint>
+
+  <link name="front_wheel_right_flange">      
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.175"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.175"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="front_wheel_right_flange_joint" type="fixed">
+    <parent link="front_wheel_link"/>
+    <child link="front_wheel_right_flange"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.375"/>
+  </joint>
+
+  <!-- Decal -->
+  <link name="decal">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://antworker_description/description/base/meshes/decal.stl" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="yellow"/>
+    </visual>
+
+  </link>
+
+  <joint name="decal_fixed_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="decal"/>
+    <origin rpy="0 0 0" xyz="0 0 0.15"/>
+  </joint>
+
 
 
   <link name="arm_base_link">
@@ -149,6 +259,9 @@
       </geometry>
     </collision>
   </link>
+
+
+
 
   <joint name="arm_base_link_joint" type="fixed">
     <origin rpy="0 0 -1.57" xyz="-0.33 0.01 0.13" />
@@ -211,6 +324,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint name="joint_2" type="revolute">
     <origin xyz="0 0.005375 -0.12838" rpy="1.5708 0.0 0.0" />
     <parent link="shoulder_link" />
