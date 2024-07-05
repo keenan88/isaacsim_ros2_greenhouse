@@ -12,7 +12,7 @@ RUN pip3 install setuptools==58.2.0
 
 RUN pip3 install nicegui
 
-#EXPOSE 8080
+EXPOSE 8080
 
 ENV ROS_DOMAIN_ID=1
 
