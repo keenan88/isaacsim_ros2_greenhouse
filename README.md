@@ -10,10 +10,14 @@
 
 ## Nvidia Setup
 
-1. Follow the instructions in [Nvidia IsaacSim Installation Guide](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to download Nvidia's IsaacSim container, install Nvidai drivers [compatable with IsaacSim](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html) and [your Nvidia graphics card](https://www.nvidia.com/download/index.aspx), install docker engine (not desktop!) and the Nvidia container toolkit. You do not need to run the "container deployment" section of the Nvidia container tutorial, but can if you want to test your installation.
+1. Follow the instructions in [Nvidia IsaacSim Installation Guide](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to: 
+ - Install Nvidia drivers [compatable with IsaacSim](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html) and [your Nvidia graphics card](https://www.nvidia.com/download/index.aspx)
+ - Install docker engine (not desktop!)
+ - Download Nvidia's IsaacSim container
+ - Install the Nvidia container toolkit.
+ - You do not need to run the "container deployment" section of the Nvidia container tutorial, but can if you want to test your containerized IsaacSim installation.
 2. Download the Omniverse Launcher from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). To run the .AppImage file, ensure you install `libfuse2`, **not** `fuse`.
 3. Within the Omniverse Launcher, install the streaming client from the "exchange" window.
-
 ## Worker Navigation App Setup
 
 4. Open a terminal and enter: ```xhost +local: docker```
