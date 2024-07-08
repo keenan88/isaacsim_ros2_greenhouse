@@ -47,8 +47,6 @@ class NiceGuiNode(Node):
                     send_goal_btn = ui.button("Send goal pose").on_click(lambda e:  self.send_goal_pose(e, goal_pose_x_dist_inputter))
 
 
-
-
                 with ui.card().classes('w-44 text-center items-center'):
                     ui.label('Data').classes('text-2xl')
                     ui.label('Linear Velocity').classes('text-xs mb-[-1.8em]')
@@ -59,8 +57,13 @@ class NiceGuiNode(Node):
                     ui.label('Position').classes('text-xs mb-[-1.4em]')
                     self.position = ui.label('---')
 
-                    ui.label('Nav Status').classes('text-xs mb-[-1.4em]')
-                    self.nav_status = ui.label('---')
+                    ui.label('Behaviour Status').classes('text-xs mb-[-1.4em]')
+                    self.behaviour_status = ui.label('---')
+
+                    ui.label('Controller Status').classes('text-xs mb-[-1.4em]')
+                    self.controller_status = ui.label('---')
+
+                    
 
 
 
@@ -73,13 +76,17 @@ class NiceGuiNode(Node):
 
     def handle_diagnostic(self, msg: Log):
 
-        observed_loggers = ['controller_server', 'bt_navigator']
-
-        if msg.name in observed_loggers:
+        if msg.name == 'controller_server':
 
             date_and_time = datetime.datetime.fromtimestamp(msg.stamp.sec)
 
-            self.nav_status.text = f'{date_and_time}:\n {msg.msg}'
+            self.controller_status.text = f'{date_and_time}:\n {msg.msg}'
+
+        elif msg.name == 'bt_navigator':
+
+            date_and_time = datetime.datetime.fromtimestamp(msg.stamp.sec)
+
+            self.behaviour_status.text = f'{date_and_time}:\n {msg.msg}'
 
     def send_goal_pose(self, event, goal_pose_x_inputter):
 
