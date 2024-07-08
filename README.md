@@ -44,7 +44,7 @@
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/961b571e-49ee-48c2-a36c-e8cf8841fcc1)
 
-11. Press the play button in IsaacSim to start the simulation. The terminal should stop displaying messages about transforming from the map frame.
+11. Press the play button in IsaacSim to start the simulation. The terminal should stop displaying messages about transforming from the map frame. The Ubuntu app dock may hide the play button on the left side of the simulation screen.
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/15aad294-e4fe-433e-8257-d021e90f2acc)
 
