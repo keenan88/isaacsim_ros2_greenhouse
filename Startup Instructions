@@ -6,7 +6,7 @@ Nvidia setup:
 
 2. Download the omniverse launcher from: https://www.nvidia.com/en-us/omniverse/download/. Install libfuse2, NOT fuse.
 
-2.5 Within launcher, install the streaming client.
+2.5 Within launcher, install the streaming client from the "exchange" window.
 
 Soure code setup:
 
@@ -14,20 +14,20 @@ Soure code setup:
 
 3. Enter the root of the repo and run docker compose build
 
-4. Once build is complete, run docker compose up. A big pile of text from the isaacsim container will get spit into the terminal, and it may take ~2 minutes for the sim to fully startup. The following windows should open:
+4. Once build is complete, run docker compose up. A big pile of text from the isaacsim container will get spit into the terminal, and it may take ~2 minutes for the sim to fully startup. At the end, the terminal should repeatedly spit out the message "Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist". The following windows should open:
 
-5. Run docker network inspect isaacsim_ros2_greenhouse_default on your local machine, and find the IP address of the humble-isaac-sim container
+5. Run docker network inspect isaacsim_ros2_greenhouse_default on your local machine, and find the IP address of the humble-isaac-sim container.
 
 5. Launch the streaming client from omniverse launcher, and enter the IsaacSim container's IP. This should open a view of IsaacSim:
 
 6. Ctrl + O to open a simulation, and open to /isaac-sim/humble_ws/src/antworker_isaacsim_world/antworker_isaacsim_world/antworker_greenhouse_v3.usd. The following simulation should now be open: 
 
-7. Press the play button in IsaacSim. This will provide the navigation stack with all the time, odometry, transforms, etc. necessary.
+7. Press the play button in IsaacSim. This will provide the navigation stack with all the time, odometry, transforms, etc. necessary. The terminal should stop spitting out the message about transforming from map frame.
 
 8. Open a web browser and navigate to localhost:8080. You should see a simple control window:
 
-9. You can use the control box as a joystick to drive the robot front/back.
+9. You can use the control box as a joystick to drive the robot front/back. You should be able to see the robot move in the control window, RVIZ, and Simulation.
 
 10. You can enter a NUMBER into the text box and hit the navigation button to see the robot auto navigate to that displacement.
 
-11. The robot's position is displayed in the control window to confirm movement.
+11. The robot's position & navigation status is displayed in the control window to confirm movement.
