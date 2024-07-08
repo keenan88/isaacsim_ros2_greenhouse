@@ -18,6 +18,7 @@
  - Install the Nvidia container toolkit.
 2. Download the Omniverse Launcher (not SDK) from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). To run the .AppImage file, ensure you install `libfuse2`, **not** `fuse`.
 3. Within the Omniverse Launcher, install the streaming client from the "exchange" window.
+   
 ## Worker Navigation App Setup
 
 4. Open a terminal and enter: ```xhost +local:docker```
