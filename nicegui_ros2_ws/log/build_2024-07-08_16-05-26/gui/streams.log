@@ -1,0 +1,31 @@
+[0.410s] Invoking command in '/ros2_ws/build/gui': PYTHONPATH=/ros2_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /ros2_ws/build/gui/build
+[0.585s] running develop
+[0.672s] Removing /ros2_ws/install/gui/lib/python3.10/site-packages/gui.egg-link (link to .)
+[0.693s] Invoked command in '/ros2_ws/build/gui' returned '0': PYTHONPATH=/ros2_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /ros2_ws/build/gui/build
+[0.694s] Invoking command in '/ros2_ws/src/gui': PYTHONPATH=/ros2_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gui build --build-base /ros2_ws/build/gui/build install --record /ros2_ws/build/gui/install.log --single-version-externally-managed install_data --force
+[0.850s] running egg_info
+[0.851s] writing ../../build/gui/gui.egg-info/PKG-INFO
+[0.851s] writing dependency_links to ../../build/gui/gui.egg-info/dependency_links.txt
+[0.851s] writing entry points to ../../build/gui/gui.egg-info/entry_points.txt
+[0.851s] writing requirements to ../../build/gui/gui.egg-info/requires.txt
+[0.851s] writing top-level names to ../../build/gui/gui.egg-info/top_level.txt
+[0.852s] reading manifest file '../../build/gui/gui.egg-info/SOURCES.txt'
+[0.853s] writing manifest file '../../build/gui/gui.egg-info/SOURCES.txt'
+[0.853s] running build
+[0.853s] running build_py
+[0.853s] copying gui/node.py -> /ros2_ws/build/gui/build/lib/gui
+[0.853s] running install
+[0.854s] running install_lib
+[0.854s] copying /ros2_ws/build/gui/build/lib/gui/node.py -> /ros2_ws/install/gui/lib/python3.10/site-packages/gui
+[0.854s] copying /ros2_ws/build/gui/build/lib/gui/__init__.py -> /ros2_ws/install/gui/lib/python3.10/site-packages/gui
+[0.855s] byte-compiling /ros2_ws/install/gui/lib/python3.10/site-packages/gui/node.py to node.cpython-310.pyc
+[0.856s] byte-compiling /ros2_ws/install/gui/lib/python3.10/site-packages/gui/__init__.py to __init__.cpython-310.pyc
+[0.856s] running install_data
+[0.856s] copying package.xml -> /ros2_ws/install/gui/share/gui
+[0.856s] copying launch/main_launch.py -> /ros2_ws/install/gui/share/gui/launch
+[0.856s] running install_egg_info
+[0.857s] Copying ../../build/gui/gui.egg-info to /ros2_ws/install/gui/lib/python3.10/site-packages/gui-1.0.0-py3.10.egg-info
+[0.858s] running install_scripts
+[0.872s] Installing nicegui_node script to /ros2_ws/install/gui/lib/gui
+[0.872s] writing list of installed files to '/ros2_ws/build/gui/install.log'
+[0.887s] Invoked command in '/ros2_ws/src/gui' returned '0': PYTHONPATH=/ros2_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gui build --build-base /ros2_ws/build/gui/build install --record /ros2_ws/build/gui/install.log --single-version-externally-managed install_data --force

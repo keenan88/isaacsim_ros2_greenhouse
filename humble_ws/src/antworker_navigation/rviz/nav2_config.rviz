@@ -8,7 +8,6 @@ Panels:
         - /Status1
         - /TF1
         - /TF1/Frames1
-        - /TF1/Frames1/base_link1
         - /Path1
         - /Map1/Topic1
         - /LocalCostmap1/Topic1
@@ -274,25 +273,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 6.87952184677124
+      Distance: 5.659971237182617
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.31063583493232727
-        Y: 0.09596036374568939
-        Z: -0.9232907891273499
+        X: 1.6923856735229492
+        Y: 4.564866065979004
+        Z: 5.697049140930176
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.9347971677780151
+      Pitch: 0.9597971439361572
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.9204041957855225
+      Yaw: 1.5653995275497437
     Saved: ~
 Window Geometry:
   Displays:
@@ -310,5 +309,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1920
-  X: 1080
+  X: 0
   Y: 27

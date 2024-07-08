@@ -10,6 +10,8 @@ from rclpy.node import Node
 from rcl_interfaces.msg import Log
 
 from nicegui import Client, app, ui, ui_run
+import datetime
+
 
 
 class NiceGuiNode(Node):
@@ -18,7 +20,9 @@ class NiceGuiNode(Node):
         super().__init__('nicegui')
         self.cmd_vel_publisher = self.create_publisher(Twist, 'cmd_vel', 1)
 
-        self.subscription = self.create_subscription(Odometry, 'odom', self.handle_pose, 1)
+        self.odom_sub = self.create_subscription(Odometry, 'odom', self.handle_pose, 1)
+
+        self.vel_sub = self.create_subscription(Twist, 'cmd_vel', self.handle_velocity, 1)
 
         self.diagnostic_subscription = self.create_subscription(Log, 'rosout', self.handle_diagnostic, 10)
 
@@ -43,17 +47,25 @@ class NiceGuiNode(Node):
                     send_goal_btn = ui.button("Send goal pose").on_click(lambda e:  self.send_goal_pose(e, goal_pose_x_dist_inputter))
 
 
-
-
                 with ui.card().classes('w-44 text-center items-center'):
                     ui.label('Data').classes('text-2xl')
-                    ui.label('linear velocity').classes('text-xs mb-[-1.8em]')
+                    ui.label('Linear Velocity').classes('text-xs mb-[-1.8em]')
                     slider_props = 'readonly selection-color=transparent'
-                    self.linear = ui.slider(min=-1, max=1, step=0.05, value=0).props(slider_props)
+                    self.linear = ui.slider(min=-2.5, max=2.5, step=0.05, value=0).props(slider_props)
                     # ui.label('angular velocity').classes('text-xs mb-[-1.8em]')
                     # self.angular = ui.slider(min=-1, max=1, step=0.05, value=0).props(slider_props)
-                    ui.label('position').classes('text-xs mb-[-1.4em]')
+                    ui.label('Position').classes('text-xs mb-[-1.4em]')
                     self.position = ui.label('---')
+
+                    ui.label('Behaviour Status').classes('text-xs mb-[-1.4em]')
+                    self.behaviour_status = ui.label('---')
+
+                    ui.label('Controller Status').classes('text-xs mb-[-1.4em]')
+                    self.controller_status = ui.label('---')
+
+                    
+
+
 
                 with ui.card().classes('w-96 h-96 items-center'):
                     ui.label('Visualization').classes('text-2xl')
@@ -64,11 +76,17 @@ class NiceGuiNode(Node):
 
     def handle_diagnostic(self, msg: Log):
 
-        observed_loggers = ['controller_server', 'bt_navigator']
+        if msg.name == 'controller_server':
 
-        if msg.name in observed_loggers:
+            date_and_time = datetime.datetime.fromtimestamp(msg.stamp.sec)
 
-            pass
+            self.controller_status.text = f'{date_and_time}:\n {msg.msg}'
+
+        elif msg.name == 'bt_navigator':
+
+            date_and_time = datetime.datetime.fromtimestamp(msg.stamp.sec)
+
+            self.behaviour_status.text = f'{date_and_time}:\n {msg.msg}'
 
     def send_goal_pose(self, event, goal_pose_x_inputter):
 
@@ -88,7 +106,7 @@ class NiceGuiNode(Node):
         msg = Twist()
         msg.linear.x = x
         # msg.angular.z = -y
-        self.linear.value = x
+        
         # self.angular.value = y
         self.cmd_vel_publisher.publish(msg)
 
@@ -102,6 +120,13 @@ class NiceGuiNode(Node):
         self.position.text = f'x: {x:.2f}, y: {y:.2f}'
         self.robot_3d.move(x, y)
         self.robot_3d.rotate(0, 0, 2 * math.atan2(quat_z, quat_w))
+
+        self.linear.value = msg.twist.twist.linear.x
+
+    def handle_velocity(self, msg: Twist):
+
+        pass
+
 
 
 def main() -> None:

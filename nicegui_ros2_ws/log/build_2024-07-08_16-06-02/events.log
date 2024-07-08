@@ -1,0 +1,33 @@
+[0.000000] (-) TimerEvent: {}
+[0.000085] (-) JobUnselected: {'identifier': 'simulator'}
+[0.000116] (gui) JobQueued: {'identifier': 'gui', 'dependencies': OrderedDict()}
+[0.000141] (gui) JobStarted: {'identifier': 'gui'}
+[0.099217] (-) TimerEvent: {}
+[0.199367] (-) TimerEvent: {}
+[0.299533] (-) TimerEvent: {}
+[0.399740] (-) TimerEvent: {}
+[0.447158] (gui) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gui', 'build', '--build-base', '/ros2_ws/build/gui/build', 'install', '--record', '/ros2_ws/build/gui/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/ros2_ws/src/gui', 'env': {'HOSTNAME': '627efe5aec53', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/ros2_ws/build/gui', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/gui/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.499850] (-) TimerEvent: {}
+[0.600033] (-) TimerEvent: {}
+[0.613995] (gui) StdoutLine: {'line': b'running egg_info\n'}
+[0.614326] (gui) StdoutLine: {'line': b'writing ../../build/gui/gui.egg-info/PKG-INFO\n'}
+[0.614548] (gui) StdoutLine: {'line': b'writing dependency_links to ../../build/gui/gui.egg-info/dependency_links.txt\n'}
+[0.614749] (gui) StdoutLine: {'line': b'writing entry points to ../../build/gui/gui.egg-info/entry_points.txt\n'}
+[0.615002] (gui) StdoutLine: {'line': b'writing requirements to ../../build/gui/gui.egg-info/requires.txt\n'}
+[0.615084] (gui) StdoutLine: {'line': b'writing top-level names to ../../build/gui/gui.egg-info/top_level.txt\n'}
+[0.616383] (gui) StdoutLine: {'line': b"reading manifest file '../../build/gui/gui.egg-info/SOURCES.txt'\n"}
+[0.617128] (gui) StdoutLine: {'line': b"writing manifest file '../../build/gui/gui.egg-info/SOURCES.txt'\n"}
+[0.617300] (gui) StdoutLine: {'line': b'running build\n'}
+[0.617399] (gui) StdoutLine: {'line': b'running build_py\n'}
+[0.617578] (gui) StdoutLine: {'line': b'running install\n'}
+[0.617819] (gui) StdoutLine: {'line': b'running install_lib\n'}
+[0.618968] (gui) StdoutLine: {'line': b'running install_data\n'}
+[0.619129] (gui) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.620450] (gui) StdoutLine: {'line': b"removing '/ros2_ws/install/gui/lib/python3.10/site-packages/gui-1.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.620824] (gui) StdoutLine: {'line': b'Copying ../../build/gui/gui.egg-info to /ros2_ws/install/gui/lib/python3.10/site-packages/gui-1.0.0-py3.10.egg-info\n'}
+[0.621710] (gui) StdoutLine: {'line': b'running install_scripts\n'}
+[0.637515] (gui) StdoutLine: {'line': b'Installing nicegui_node script to /ros2_ws/install/gui/lib/gui\n'}
+[0.637793] (gui) StdoutLine: {'line': b"writing list of installed files to '/ros2_ws/build/gui/install.log'\n"}
+[0.662236] (gui) CommandEnded: {'returncode': 0}
+[0.670959] (gui) JobEnded: {'identifier': 'gui', 'rc': 0}
+[0.671403] (-) EventReactorShutdown: {}
