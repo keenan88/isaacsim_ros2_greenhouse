@@ -32,7 +32,11 @@
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/be0df0ac-0965-4e2b-800b-633421941b3d)
 
-9. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim.
+9. Start the omniverse launcher by navigating to your downloads folder and running `chmod +x omniverse-launcher-linux.AppImage` and `./omniverse-launcher-linux.AppImage`. This will open the Omniverse Launcher:
+
+![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/91172e36-8f79-4857-a11f-f74e619535fe)
+
+10. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim.
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/ef6f8f29-d14d-4bdf-9e0f-636b90bc412f)
     
