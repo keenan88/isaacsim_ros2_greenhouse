@@ -10,28 +10,33 @@
 
 ## Nvidia Setup
 
-1. Follow the instructions in [Nvidia IsaacSim Installation Guide](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to: 
- - Install Nvidia drivers [compatable with IsaacSim](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html) and [your Nvidia graphics card](https://www.nvidia.com/download/index.aspx)
+1. Checkout branch voxels_working
+2. Follow the instructions in [Nvidia IsaacSim Installation Guide](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to: 
+ - Install Nvidia drivers [compatable with IsaacSim](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html) and [your Nvidia graphics card](https://www.nvidia.com/download/index.aspx). You can check your graphics driver version with the command `nvidia-smi`, if you already have Nvidia graphics drivers installed.
  - Install docker engine (not desktop!)
- - Download Nvidia's IsaacSim container
+ - Download Nvidia's IsaacSim Docker image. You will need to generate an [NGC Api key](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html#:~:text=Generate%20your%20NGC%20API%20Key) to obtain the IsaacSim docker image.
  - Install the Nvidia container toolkit.
- - You do not need to run the "container deployment" section of the Nvidia container tutorial, but can if you want to test your containerized IsaacSim installation.
-2. Download the Omniverse Launcher (not SDK) from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). To run the .AppImage file, ensure you install `libfuse2`, **not** `fuse`.
-3. Within the Omniverse Launcher, install the streaming client from the "exchange" window.
+2. Be sure to run the IsaacSim container as detailed in the tutorial above. Close any other compute-intense applications before running it for the first time, it can take a few minutes. Be sure to close the IsaacSim container before you move on with the following instructions.
+3. Download the Omniverse Launcher (not SDK) from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). To run the .AppImage file, ensure you install `libfuse2`, **not** `fuse`.
+   
 ## Worker Navigation App Setup
 
-4. Open a terminal and enter: ```xhost +local: docker```
+4. Open a terminal and enter: ```xhost +local:docker```. You will need to run this every time you restart your computer, to access IsaacSim & RVIZ in Docker containers.
 5. Navigate to the root of this repository and run: ```docker-compose build```
 6. Once the build is complete, start the containers with: ```docker-compose up```
-7. It may take approximately 2 minutes for IsaacSim to fully start up the first time. An RVIZ window should appear with a large map: 
+7. It may take approximately 2 minutes for IsaacSim to fully start up the first time and your system may lag. An RVIZ window should appear with a large map: 
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/eb9a79eb-21ce-4491-9871-2ece68a995e6)
 
-8. Run the following command on your local machine to find the IP address of the humble-isaac-sim container: ```docker network inspect isaacsim_ros2_greenhouse_default```
+8. Run the following command on your local machine to find and copy the IP address (not including bitmask) of the humble-isaac-sim container: ```docker network inspect isaacsim_ros2_greenhouse_default```
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/be0df0ac-0965-4e2b-800b-633421941b3d)
 
-9. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim.
+9. Start the omniverse launcher by navigating to your downloads folder and running `chmod +x omniverse-launcher-linux.AppImage` and `./omniverse-launcher-linux.AppImage`. This will open the Omniverse Launcher:
+
+![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/91172e36-8f79-4857-a11f-f74e619535fe)
+
+10. Download the Streaming Client from the launcher's "Exchange" tab. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim. 
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/ef6f8f29-d14d-4bdf-9e0f-636b90bc412f)
     
@@ -39,7 +44,7 @@
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/961b571e-49ee-48c2-a36c-e8cf8841fcc1)
 
-11. Press the play button in IsaacSim to start the simulation. The terminal should stop displaying messages about transforming from the map frame.
+11. Press the play button in IsaacSim to start the simulation. The terminal should stop displaying messages about transforming from the map frame. The Ubuntu app dock may hide the play button on the left side of the simulation screen.
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/15aad294-e4fe-433e-8257-d021e90f2acc)
 
