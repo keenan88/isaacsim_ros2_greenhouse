@@ -1,39 +1,31 @@
-# isaacsim_ros2_greenhouse
+# Nvidia IsaacSim Startup Instructions
 
-# Purpose of this repo
+## Nvidia Setup
 
-To develop, test, & demonstrate behaviour of Ecoation's ANT robots in a IsaacSim + ROS2 Humble Dockerized environment.   
+1. Follow the instructions in [Nvidia IsaacSim Installation Guide](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to gain access to the IsaacSim container.
+2. Download the Omniverse Launcher from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). Ensure you install `libfuse2`, **not** `fuse`.
+3. Within the Omniverse Launcher, install the streaming client from the "exchange" window.
+
+## Source Code Setup
+
+4. Open a terminal and enter: xhost +local: docker
+5. Navigate to the root of the repository containing your source code and run: docker-compose build
+6. Once the build is complete, start the containers with: docker-compose up
+7. It may take approximately 2 minutes for IsaacSim to fully start up. At the end, you may see terminal messages regarding transforms from map not existing yet.
+8. Run the following command on your local machine to find the IP address of the `humble-isaac-sim` container: docker network inspect isaacsim_ros2_greenhouse_default.
+9. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim.
+10. Press `Ctrl + O` to open the simulation file: /isaac-sim/humble_ws/src/antworker_isaacsim_world/antworker_isaacsim_world/antworker_greenhouse_v3.usd
+11. Press the play button in IsaacSim to start the simulation. The terminal should stop displaying messages about transforming from the `map` frame.
+12. Open a web browser and navigate to:
+ ```
+ localhost:8080
+ ```
+ You should see a simple control window.
+
+12. Use the control box in the web interface as a joystick to drive the robot forward/backward. You should observe the robot's movement in the control panel, RVIZ, and IsaacSim.
+
+13. Enter a numeric value into the text box and click the navigation button to command the robot to navigate to that displacement.
+
+14. The robot's position and navigation status will be displayed in the control window to confirm movement.
 
 
-# Steps to install necessary software
-1. Verify your machine fulfills the [IsaacSim system requirements] (https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html)
-   1. I have used 535.x.x instead of the reccomended 525.x.x drivers to run IsaacSim.
-2. Download [Nvidia Omniverse](https://www.nvidia.com/en-us/omniverse/download/) and use it to install the Omniverse Streaming Client.
-3. Follow [these steps](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to install: 
-   1. Nvidia drivers
-   2. Docker
-   3. Nvidia container toolkit
-   4. IsaacSim Docker container image
-
-# Steps to launch simulation
-1. Go to the root of the repo and enter `docker compose up`
-   1. If this command works properly, you should be able to see:
-      1. A huge dump of text in the terminal from IsaacSim starting up. There should be no red text about ROS2 bridge failing to start.
-      2. 2 containers named isaac-sim and humble-desktop if you run `docker ps -a`
-2. Open a new terminal and run ifconfig to get your wifi card's inet IP address.
-3. Launch Omniverse Streaming Client from Omniverse and enter the IP address.
-4. If the connection is successful, you should see IsaacSim load up to a blank world.
-5. In IsaacSim, go to File -> Open, and navigate to */isaac-sim/humble_ws/src/antworker_description/usd* and open *greenhouse_worker_v1.usd*.
-6. If successful, you should see a world with a pipe rail, two rows of plants, and the ANT Worker robot.
-
-# Steps to drive the robot
-1. Open a new terminal and enter `docker exec -it humble-desktop bash` to enter the humble development container.
-   1. You could alternatively use the IsaacSim container.
-2. Run `source /opt/ros/humble/setup.bash`.
-3. Run `ros2 run teleop_twist_keyboard teleop_twist_keyboard`.
-4. Hit the play button in IsaacSim. 
-5. As you enter Twist commands in the teleop terminal, you should see the robot drive front/back in IsaacSim. It may move slowly if the sim has a low framerate.
-6. You can verify the velocity commands are getting to the wheels by viewing velocityCommand textbox in IsaacSim -> Action_Graph_01 -> Articulation Controller
-
-![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/f5f72a71-04d3-442c-865e-ca7e9e072263)
-*Figure 1* Fully loaded world with plants, pipe rails, and Worker robot. Also *velocityCommand* in the Articulation Controller (bottom right of the image) shows non-zero movement for both wheels.
