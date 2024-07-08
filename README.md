@@ -28,7 +28,7 @@
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/eb9a79eb-21ce-4491-9871-2ece68a995e6)
 
-8. Run the following command on your local machine to find the IP address of the humble-isaac-sim container: ```docker network inspect isaacsim_ros2_greenhouse_default```
+8. Run the following command on your local machine to find and copy the IP address (not including bitmask) of the humble-isaac-sim container: ```docker network inspect isaacsim_ros2_greenhouse_default```
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/be0df0ac-0965-4e2b-800b-633421941b3d)
 
@@ -36,7 +36,7 @@
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/91172e36-8f79-4857-a11f-f74e619535fe)
 
-10. Download the Streaming Client from the launcher's "Exchange" tab. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim.
+10. Download the Streaming Client from the launcher's "Exchange" tab. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim. 
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/ef6f8f29-d14d-4bdf-9e0f-636b90bc412f)
     
