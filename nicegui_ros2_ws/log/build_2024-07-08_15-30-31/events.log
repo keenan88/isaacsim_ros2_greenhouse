@@ -1,0 +1,66 @@
+[0.000000] (-) TimerEvent: {}
+[0.000151] (gui) JobQueued: {'identifier': 'gui', 'dependencies': OrderedDict()}
+[0.000203] (simulator) JobQueued: {'identifier': 'simulator', 'dependencies': OrderedDict()}
+[0.000910] (gui) JobStarted: {'identifier': 'gui'}
+[0.015826] (simulator) JobStarted: {'identifier': 'simulator'}
+[0.099828] (-) TimerEvent: {}
+[0.200257] (-) TimerEvent: {}
+[0.300614] (-) TimerEvent: {}
+[0.400950] (-) TimerEvent: {}
+[0.501270] (-) TimerEvent: {}
+[0.601606] (-) TimerEvent: {}
+[0.701980] (-) TimerEvent: {}
+[0.802291] (-) TimerEvent: {}
+[0.902596] (-) TimerEvent: {}
+[0.937461] (simulator) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/simulator', 'build', '--build-base', '/ros2_ws/build/simulator/build', 'install', '--record', '/ros2_ws/build/simulator/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/ros2_ws/src/simulator', 'env': {'HOSTNAME': '36a0debdac03', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/ros2_ws/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/ros2_ws/install/simulator:/ros2_ws/install/gui:/opt/ros/humble', 'PWD': '/ros2_ws/build/simulator', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2_ws/build/simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/simulator/lib/python3.10/site-packages:/ros2_ws/install/simulator/lib/python3.10/site-packages:/ros2_ws/install/gui/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.943140] (gui) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gui', 'build', '--build-base', '/ros2_ws/build/gui/build', 'install', '--record', '/ros2_ws/build/gui/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/ros2_ws/src/gui', 'env': {'HOSTNAME': '36a0debdac03', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/ros2_ws/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/ros2_ws/install/simulator:/ros2_ws/install/gui:/opt/ros/humble', 'PWD': '/ros2_ws/build/gui', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/gui/lib/python3.10/site-packages:/ros2_ws/install/simulator/lib/python3.10/site-packages:/ros2_ws/install/gui/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.002731] (-) TimerEvent: {}
+[1.103140] (-) TimerEvent: {}
+[1.170560] (simulator) StdoutLine: {'line': b'running egg_info\n'}
+[1.170985] (simulator) StdoutLine: {'line': b'writing ../../build/simulator/simulator.egg-info/PKG-INFO\n'}
+[1.171214] (simulator) StdoutLine: {'line': b'writing dependency_links to ../../build/simulator/simulator.egg-info/dependency_links.txt\n'}
+[1.171390] (simulator) StdoutLine: {'line': b'writing entry points to ../../build/simulator/simulator.egg-info/entry_points.txt\n'}
+[1.171535] (simulator) StdoutLine: {'line': b'writing requirements to ../../build/simulator/simulator.egg-info/requires.txt\n'}
+[1.171666] (simulator) StdoutLine: {'line': b'writing top-level names to ../../build/simulator/simulator.egg-info/top_level.txt\n'}
+[1.173114] (simulator) StdoutLine: {'line': b"reading manifest file '../../build/simulator/simulator.egg-info/SOURCES.txt'\n"}
+[1.178486] (simulator) StdoutLine: {'line': b"writing manifest file '../../build/simulator/simulator.egg-info/SOURCES.txt'\n"}
+[1.178778] (simulator) StdoutLine: {'line': b'running build\n'}
+[1.178890] (simulator) StdoutLine: {'line': b'running build_py\n'}
+[1.179397] (simulator) StdoutLine: {'line': b'running install\n'}
+[1.179510] (simulator) StdoutLine: {'line': b'running install_lib\n'}
+[1.180778] (simulator) StdoutLine: {'line': b'running install_data\n'}
+[1.180889] (simulator) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.182411] (simulator) StdoutLine: {'line': b"removing '/ros2_ws/install/simulator/lib/python3.10/site-packages/simulator-1.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.182833] (simulator) StdoutLine: {'line': b'Copying ../../build/simulator/simulator.egg-info to /ros2_ws/install/simulator/lib/python3.10/site-packages/simulator-1.0.0-py3.10.egg-info\n'}
+[1.183017] (gui) StdoutLine: {'line': b'running egg_info\n'}
+[1.183577] (gui) StdoutLine: {'line': b'writing ../../build/gui/gui.egg-info/PKG-INFO\n'}
+[1.183827] (gui) StdoutLine: {'line': b'writing dependency_links to ../../build/gui/gui.egg-info/dependency_links.txt\n'}
+[1.183977] (simulator) StdoutLine: {'line': b'running install_scripts\n'}
+[1.184105] (gui) StdoutLine: {'line': b'writing entry points to ../../build/gui/gui.egg-info/entry_points.txt\n'}
+[1.184224] (gui) StdoutLine: {'line': b'writing requirements to ../../build/gui/gui.egg-info/requires.txt\n'}
+[1.184327] (gui) StdoutLine: {'line': b'writing top-level names to ../../build/gui/gui.egg-info/top_level.txt\n'}
+[1.186315] (gui) StdoutLine: {'line': b"reading manifest file '../../build/gui/gui.egg-info/SOURCES.txt'\n"}
+[1.187525] (gui) StdoutLine: {'line': b"writing manifest file '../../build/gui/gui.egg-info/SOURCES.txt'\n"}
+[1.187712] (gui) StdoutLine: {'line': b'running build\n'}
+[1.187795] (gui) StdoutLine: {'line': b'running build_py\n'}
+[1.187918] (gui) StdoutLine: {'line': b'copying gui/node.py -> /ros2_ws/build/gui/build/lib/gui\n'}
+[1.188311] (gui) StdoutLine: {'line': b'running install\n'}
+[1.188660] (gui) StdoutLine: {'line': b'running install_lib\n'}
+[1.189550] (gui) StdoutLine: {'line': b'copying /ros2_ws/build/gui/build/lib/gui/node.py -> /ros2_ws/install/gui/lib/python3.10/site-packages/gui\n'}
+[1.190465] (gui) StdoutLine: {'line': b'byte-compiling /ros2_ws/install/gui/lib/python3.10/site-packages/gui/node.py to node.cpython-310.pyc\n'}
+[1.191663] (gui) StderrLine: {'line': b"Sorry: IndentationError: expected an indented block after 'if' statement on line 69 (node.py, line 73)\n"}
+[1.191840] (gui) StdoutLine: {'line': b'running install_data\n'}
+[1.192150] (gui) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.194031] (gui) StdoutLine: {'line': b"removing '/ros2_ws/install/gui/lib/python3.10/site-packages/gui-1.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.194500] (gui) StdoutLine: {'line': b'Copying ../../build/gui/gui.egg-info to /ros2_ws/install/gui/lib/python3.10/site-packages/gui-1.0.0-py3.10.egg-info\n'}
+[1.195951] (gui) StdoutLine: {'line': b'running install_scripts\n'}
+[1.203257] (-) TimerEvent: {}
+[1.204023] (simulator) StdoutLine: {'line': b'Installing simulator_node script to /ros2_ws/install/simulator/lib/simulator\n'}
+[1.204489] (simulator) StdoutLine: {'line': b"writing list of installed files to '/ros2_ws/build/simulator/install.log'\n"}
+[1.221731] (gui) StdoutLine: {'line': b'Installing nicegui_node script to /ros2_ws/install/gui/lib/gui\n'}
+[1.222254] (gui) StdoutLine: {'line': b"writing list of installed files to '/ros2_ws/build/gui/install.log'\n"}
+[1.235157] (simulator) CommandEnded: {'returncode': 0}
+[1.250876] (simulator) JobEnded: {'identifier': 'simulator', 'rc': 0}
+[1.257934] (gui) CommandEnded: {'returncode': 0}
+[1.264354] (gui) JobEnded: {'identifier': 'gui', 'rc': 0}
+[1.265102] (-) EventReactorShutdown: {}

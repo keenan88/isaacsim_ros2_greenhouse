@@ -1,0 +1,21 @@
+[0.922s] Invoking command in '/ros2_ws/src/simulator': PYTHONPATH=/ros2_ws/build/simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/simulator build --build-base /ros2_ws/build/simulator/build install --record /ros2_ws/build/simulator/install.log --single-version-externally-managed install_data
+[1.155s] running egg_info
+[1.155s] writing ../../build/simulator/simulator.egg-info/PKG-INFO
+[1.155s] writing dependency_links to ../../build/simulator/simulator.egg-info/dependency_links.txt
+[1.155s] writing entry points to ../../build/simulator/simulator.egg-info/entry_points.txt
+[1.155s] writing requirements to ../../build/simulator/simulator.egg-info/requires.txt
+[1.155s] writing top-level names to ../../build/simulator/simulator.egg-info/top_level.txt
+[1.157s] reading manifest file '../../build/simulator/simulator.egg-info/SOURCES.txt'
+[1.162s] writing manifest file '../../build/simulator/simulator.egg-info/SOURCES.txt'
+[1.163s] running build
+[1.163s] running build_py
+[1.163s] running install
+[1.163s] running install_lib
+[1.165s] running install_data
+[1.165s] running install_egg_info
+[1.166s] removing '/ros2_ws/install/simulator/lib/python3.10/site-packages/simulator-1.0.0-py3.10.egg-info' (and everything under it)
+[1.167s] Copying ../../build/simulator/simulator.egg-info to /ros2_ws/install/simulator/lib/python3.10/site-packages/simulator-1.0.0-py3.10.egg-info
+[1.168s] running install_scripts
+[1.188s] Installing simulator_node script to /ros2_ws/install/simulator/lib/simulator
+[1.188s] writing list of installed files to '/ros2_ws/build/simulator/install.log'
+[1.219s] Invoked command in '/ros2_ws/src/simulator' returned '0': PYTHONPATH=/ros2_ws/build/simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/simulator build --build-base /ros2_ws/build/simulator/build install --record /ros2_ws/build/simulator/install.log --single-version-externally-managed install_data

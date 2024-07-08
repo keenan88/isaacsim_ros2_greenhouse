@@ -7,6 +7,7 @@ from geometry_msgs.msg import Pose, Twist, PoseStamped
 from nav_msgs.msg import Odometry
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
+from rcl_interfaces.msg import Log
 
 from nicegui import Client, app, ui, ui_run
 
@@ -18,6 +19,8 @@ class NiceGuiNode(Node):
         self.cmd_vel_publisher = self.create_publisher(Twist, 'cmd_vel', 1)
 
         self.subscription = self.create_subscription(Odometry, 'odom', self.handle_pose, 1)
+
+        self.diagnostic_subscription = self.create_subscription(Log, 'rosout', self.handle_diagnostic, 10)
 
         self.goal_publisher = self.create_publisher(PoseStamped, 'goal_pose', 1)
 
@@ -58,6 +61,14 @@ class NiceGuiNode(Node):
                         with scene.group() as self.robot_3d:
                             prism = [[-0.5, -0.5], [0.5, -0.5], [0.75, 0], [0.5, 0.5], [-0.5, 0.5]]
                             self.robot_object = scene.extrusion(prism, 0.4).material('#4488ff', 0.5)
+
+    def handle_diagnostic(self, msg: Log):
+
+        observed_loggers = ['controller_server', 'bt_navigator']
+
+        if msg.name in observed_loggers:
+
+            pass
 
     def send_goal_pose(self, event, goal_pose_x_inputter):
 
