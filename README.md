@@ -17,8 +17,7 @@
  - Download Nvidia's IsaacSim Docker image. You will need to generate an [NGC Api key](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html#:~:text=Generate%20your%20NGC%20API%20Key) to obtain the IsaacSim docker image.
  - Install the Nvidia container toolkit.
 2. Be sure to run the IsaacSim container as detailed in the tutorial above. Close any other compute-intense applications before running it for the first time, it can take a few minutes. Be sure to close the IsaacSim container before you move on with the following instructions.
-2.5: Download the Omniverse Launcher (not SDK) from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). To run the .AppImage file, ensure you install `libfuse2`, **not** `fuse`.
-3. Within the Omniverse Launcher, install the streaming client from the "exchange" window.
+3. Download the Omniverse Launcher (not SDK) from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). To run the .AppImage file, ensure you install `libfuse2`, **not** `fuse`.
    
 ## Worker Navigation App Setup
 
@@ -37,7 +36,7 @@
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/91172e36-8f79-4857-a11f-f74e619535fe)
 
-10. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim.
+10. Download the Streaming Client from the launcher's "Exchange" tab. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim.
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/ef6f8f29-d14d-4bdf-9e0f-636b90bc412f)
     
