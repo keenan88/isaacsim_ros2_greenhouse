@@ -2,7 +2,7 @@
 
 ## Nvidia Setup
 
-1. Follow the instructions in [Nvidia IsaacSim Installation Guide](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to gain access to the IsaacSim container.
+1. Follow the instructions in [Nvidia IsaacSim Installation Guide](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to gain access to Nvidia's IsaacSim container.
 2. Download the Omniverse Launcher from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). Ensure you install `libfuse2`, **not** `fuse`.
 3. Within the Omniverse Launcher, install the streaming client from the "exchange" window.
 
