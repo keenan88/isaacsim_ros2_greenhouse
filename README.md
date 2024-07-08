@@ -21,7 +21,7 @@
 3. Within the Omniverse Launcher, install the streaming client from the "exchange" window.
 ## Worker Navigation App Setup
 
-4. Open a terminal and enter: ```xhost +local: docker```
+4. Open a terminal and enter: ```xhost +local:docker```
 5. Navigate to the root of this repository and run: ```docker-compose build```
 6. Once the build is complete, start the containers with: ```docker-compose up```
 7. It may take approximately 2 minutes for IsaacSim to fully start up the first time. An RVIZ window should appear with a large map: 
