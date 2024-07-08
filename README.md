@@ -16,7 +16,7 @@
  - Download Nvidia's IsaacSim container
  - Install the Nvidia container toolkit.
  - You do not need to run the "container deployment" section of the Nvidia container tutorial, but can if you want to test your containerized IsaacSim installation.
-2. Download the Omniverse Launcher from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). To run the .AppImage file, ensure you install `libfuse2`, **not** `fuse`.
+2. Download the Omniverse Launcher (not SDK) from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). To run the .AppImage file, ensure you install `libfuse2`, **not** `fuse`.
 3. Within the Omniverse Launcher, install the streaming client from the "exchange" window.
 ## Worker Navigation App Setup
 
