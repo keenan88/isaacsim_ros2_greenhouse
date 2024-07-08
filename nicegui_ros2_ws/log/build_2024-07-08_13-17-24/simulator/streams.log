@@ -1,0 +1,35 @@
+[0.702s] Invoking command in '/ros2_ws/build/simulator': PYTHONPATH=/ros2_ws/build/simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /ros2_ws/build/simulator/build
+[0.916s] running develop
+[1.025s] Removing /ros2_ws/install/simulator/lib/python3.10/site-packages/simulator.egg-link (link to .)
+[1.055s] Invoked command in '/ros2_ws/build/simulator' returned '0': PYTHONPATH=/ros2_ws/build/simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /ros2_ws/build/simulator/build
+[1.057s] Invoking command in '/ros2_ws/src/simulator': PYTHONPATH=/ros2_ws/build/simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/simulator build --build-base /ros2_ws/build/simulator/build install --record /ros2_ws/build/simulator/install.log --single-version-externally-managed install_data --force
+[1.245s] running egg_info
+[1.245s] writing ../../build/simulator/simulator.egg-info/PKG-INFO
+[1.245s] writing dependency_links to ../../build/simulator/simulator.egg-info/dependency_links.txt
+[1.245s] writing entry points to ../../build/simulator/simulator.egg-info/entry_points.txt
+[1.245s] writing requirements to ../../build/simulator/simulator.egg-info/requires.txt
+[1.246s] writing top-level names to ../../build/simulator/simulator.egg-info/top_level.txt
+[1.247s] reading manifest file '../../build/simulator/simulator.egg-info/SOURCES.txt'
+[1.248s] writing manifest file '../../build/simulator/simulator.egg-info/SOURCES.txt'
+[1.249s] running build
+[1.249s] running build_py
+[1.249s] creating /ros2_ws/build/simulator/build
+[1.249s] creating /ros2_ws/build/simulator/build/lib
+[1.249s] creating /ros2_ws/build/simulator/build/lib/simulator
+[1.249s] copying simulator/node.py -> /ros2_ws/build/simulator/build/lib/simulator
+[1.250s] copying simulator/__init__.py -> /ros2_ws/build/simulator/build/lib/simulator
+[1.250s] running install
+[1.250s] running install_lib
+[1.251s] creating /ros2_ws/install/simulator/lib/python3.10/site-packages/simulator
+[1.251s] copying /ros2_ws/build/simulator/build/lib/simulator/node.py -> /ros2_ws/install/simulator/lib/python3.10/site-packages/simulator
+[1.251s] copying /ros2_ws/build/simulator/build/lib/simulator/__init__.py -> /ros2_ws/install/simulator/lib/python3.10/site-packages/simulator
+[1.252s] byte-compiling /ros2_ws/install/simulator/lib/python3.10/site-packages/simulator/node.py to node.cpython-310.pyc
+[1.253s] byte-compiling /ros2_ws/install/simulator/lib/python3.10/site-packages/simulator/__init__.py to __init__.cpython-310.pyc
+[1.253s] running install_data
+[1.253s] copying package.xml -> /ros2_ws/install/simulator/share/simulator
+[1.253s] running install_egg_info
+[1.255s] Copying ../../build/simulator/simulator.egg-info to /ros2_ws/install/simulator/lib/python3.10/site-packages/simulator-1.0.0-py3.10.egg-info
+[1.256s] running install_scripts
+[1.273s] Installing simulator_node script to /ros2_ws/install/simulator/lib/simulator
+[1.274s] writing list of installed files to '/ros2_ws/build/simulator/install.log'
+[1.310s] Invoked command in '/ros2_ws/src/simulator' returned '0': PYTHONPATH=/ros2_ws/build/simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/simulator build --build-base /ros2_ws/build/simulator/build install --record /ros2_ws/build/simulator/install.log --single-version-externally-managed install_data --force
