@@ -8,15 +8,16 @@
 
 ## Source Code Setup
 
-4. Open a terminal and enter: xhost +local: docker
-5. Navigate to the root of the repository containing your source code and run: docker-compose build
-6. Once the build is complete, start the containers with: docker-compose up
-7. It may take approximately 2 minutes for IsaacSim to fully start up. At the end, you may see terminal messages regarding transforms from map not existing yet.
-8. Run the following command on your local machine to find the IP address of the `humble-isaac-sim` container: docker network inspect isaacsim_ros2_greenhouse_default.
-9. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim.
-10. Press `Ctrl + O` to open the simulation file: /isaac-sim/humble_ws/src/antworker_isaacsim_world/antworker_isaacsim_world/antworker_greenhouse_v3.usd
-11. Press the play button in IsaacSim to start the simulation. The terminal should stop displaying messages about transforming from the `map` frame.
-12. Open a web browser and navigate to:
+4. Open a terminal and enter:
+   ```xhost +local: docker```
+6. Navigate to the root of the repository containing your source code and run: docker-compose build
+7. Once the build is complete, start the containers with: docker-compose up
+8. It may take approximately 2 minutes for IsaacSim to fully start up. At the end, you may see terminal messages regarding transforms from map not existing yet.
+9. Run the following command on your local machine to find the IP address of the `humble-isaac-sim` container: docker network inspect isaacsim_ros2_greenhouse_default.
+10. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim.
+11. Press `Ctrl + O` to open the simulation file: /isaac-sim/humble_ws/src/antworker_isaacsim_world/antworker_isaacsim_world/antworker_greenhouse_v3.usd
+12. Press the play button in IsaacSim to start the simulation. The terminal should stop displaying messages about transforming from the `map` frame.
+13. Open a web browser and navigate to:
  ```
  localhost:8080
  ```
