@@ -3,7 +3,7 @@
 ## Tested System Specifications
  - Ubuntu 22.04
  - Docker version 27.0.3, build 7d4bcd8
- - No locally installed version of ROS2 (locally installed may have conflicting RMW versions with containerized ROS2 applications)
+ - No locally installed version of ROS2 (locally installed ROS2 may have conflicting RMW versions with containerized ROS2 applications)
  - NVIDIA GeForce RTX 3050
  - NVIDIA Driver Version: 535.183.01
  - CUDA Version: 12.2
