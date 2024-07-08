@@ -1,73 +1,90 @@
 
 services:
 
-  isaac-sim:
+  # isaac-sim:
+  #   build:
+  #     context: ./dockerfiles/
+  #     dockerfile: isaacsim_humble_dockerfile
+  #   image: isaacsim_humble
+
+  #   container_name: humble-isaac-sim
+  #   stdin_open: true
+  #   tty: true
+  #   environment:
+  #     - ACCEPT_EULA=Y
+  #     - PRIVACY_CONSENT=Y
+  #     - USE_SIM=${USE_SIM}
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - capabilities:
+  #               - gpu
+  #   volumes:
+  #     - ./fastdds.xml:/root/.ros/fastdds.xml:rw
+  #     # - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
+  #     - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
+  #     # - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
+  #     # - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
+  #     # - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
+  #     # - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
+  #     # - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
+  #     # - ~/docker/isaac-sim/documents:/root/Documents:rw
+  #     - ./humble_ws:/isaac-sim/humble_ws:rw
+  #     - ./docker_entry_scripts/isaacsim_entrypoint.sh:/isaac-sim/scripts/isaacsim_entrypoint.sh:rw
+  #   restart: "no"
+  #   entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
+
+  # humble-navigation:
+  #   container_name: humble-navigation
+  #   build:
+  #     context: ./dockerfiles/
+  #     dockerfile: navigation_dockerfile
+  #   image: humble_dev_img
+  #   tty: true
+  #   stdin_open: true
+  #   environment:
+  #     - DISPLAY=${DISPLAY}
+  #     - USE_SIM=${USE_SIM}
+  #   volumes:
+  #     - /tmp/.X11-unix:/tmp/.X11-unix
+  #     - ./humble_ws:/home/humble_ws:rw
+  #     - ./docker_entry_scripts/nav_entrypoint.sh:/scripts/nav_entrypoint.sh:rw
+  #   working_dir: /home/humble_ws/
+  #   restart: "no"
+  #   # entrypoint: /scripts/nav_entrypoint.sh
+
+  humble-joy:
+    container_name: humble-joy
     build:
       context: ./dockerfiles/
-      dockerfile: isaacsim_humble_dockerfile
-    image: isaacsim_humble
-
-    container_name: humble-isaac-sim
-    stdin_open: true
-    tty: true
-    environment:
-      - ACCEPT_EULA=Y
-      - PRIVACY_CONSENT=Y
-      - USE_SIM=${USE_SIM}
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - capabilities:
-                - gpu
-    volumes:
-      - ./fastdds.xml:/root/.ros/fastdds.xml:rw
-      # - ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
-      - ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw
-      # - ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw
-      # - ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
-      # - ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
-      # - ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
-      # - ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw
-      # - ~/docker/isaac-sim/documents:/root/Documents:rw
-      - ./humble_ws:/isaac-sim/humble_ws:rw
-      - ./docker_entry_scripts/isaacsim_entrypoint.sh:/isaac-sim/scripts/isaacsim_entrypoint.sh:rw
-    restart: "no"
-    entrypoint: /isaac-sim/scripts/isaacsim_entrypoint.sh
-
-  humble-navigation:
-    container_name: humble-navigation
-    build:
-      context: ./dockerfiles/
-      dockerfile: navigation_dockerfile
-    image: humble_dev_img
+      dockerfile: joy_dockerfile
+    image: humble_joy_img
     tty: true
     stdin_open: true
     environment:
-      - DISPLAY=${DISPLAY}
       - USE_SIM=${USE_SIM}
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - ./humble_ws:/home/humble_ws:rw
-      - ./docker_entry_scripts/nav_entrypoint.sh:/isaac-sim/scripts/nav_entrypoint.sh:rw
+      - ./docker_entry_scripts/joy_entrypoint.sh:/scripts/joy_entrypoint.sh:rw
     privileged: true # Couldnt get joystick passed in with 'device' tag, so using privileged mode. TODO - pass joystick in without using privileged mode
     working_dir: /home/humble_ws/
     restart: "no"
-    entrypoint: /isaac-sim/scripts/nav_entrypoint.sh
+    entrypoint: /scripts/joy_entrypoint.sh
   
-  nicegui_ros2:
-    container_name: nicegui-ros2
-    build:
-      context: ./dockerfiles/
-      dockerfile: nicegui_dockerfile
-    ports:
-      - 8080:8080
-    volumes:
-      - ./nicegui_ros2_ws:/ros2_ws
-      - ./docker_entry_scripts/nicegui_entrypoint.sh:/nicegui_entrypoint.sh
-    working_dir: /ros2_ws
-    stdin_open: true
-    entrypoint: /nicegui_entrypoint.sh
+  # nicegui_ros2:
+  #   container_name: nicegui-ros2
+  #   build:
+  #     context: ./dockerfiles/
+  #     dockerfile: nicegui_dockerfile
+  #   ports:
+  #     - 8080:8080
+  #   volumes:
+  #     - ./nicegui_ros2_ws:/ros2_ws
+  #     - ./docker_entry_scripts/nicegui_entrypoint.sh:/nicegui_entrypoint.sh
+  #   working_dir: /ros2_ws
+  #   stdin_open: true
+  #   entrypoint: /nicegui_entrypoint.sh
 
     
 
