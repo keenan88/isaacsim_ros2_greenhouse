@@ -21,10 +21,11 @@
    
 ## Worker Navigation App Setup
 
-4. Open a terminal and enter: ```xhost +local:docker```. You will need to run this every time you restart your computer, to access IsaacSim & RVIZ in Docker containers.
-5. Navigate to the root of this repository and run: ```docker-compose build```
-6. Once the build is complete, start the containers with: ```docker-compose up```
-7. It may take approximately 2 minutes for IsaacSim to fully start up the first time and your system may lag. An RVIZ window should appear with a large map: 
+4. Plug the xbox controller into a USB port on your machine. The Xbox logo on the controller should light up. Make sure to use a USB cable that is data & power, not just power.
+5. Open a terminal and enter: ```xhost +local:docker```. You will need to run this every time you restart your computer, to access IsaacSim & RVIZ in Docker containers.
+6. Navigate to the root of this repository and run: ```docker-compose build```
+7. Once the build is complete, start the containers with: ```docker-compose up```
+8. It may take approximately 2 minutes for IsaacSim to fully start up the first time and your system may lag. An RVIZ window should appear with a large map: 
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/eb9a79eb-21ce-4491-9871-2ece68a995e6)
 
@@ -54,7 +55,7 @@
 
 # Worker Navigation Interaction
 
-13. Use the control box in the web interface as a joystick to drive the robot forward/backward. Observe the robot's movement in the control panel, RVIZ, and IsaacSim. The robot's pathing and frames should be visible in RVIZ.
+13. Use the control box in the web interface as a joystick to drive the robot forward/backward. You can also move the robot with the controller - hold down the right bumper, and toggle the left joystick forward/backward. Observe the robot's movement in the control panel, RVIZ, and IsaacSim. The robot's pathing and frames should be visible in RVIZ.
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/d14c3969-5e61-4052-8168-bfbf34015aa8)
 
