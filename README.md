@@ -1,9 +1,17 @@
 # Nvidia IsaacSim Startup Instructions
 
+## Tested System Specifications
+Ubuntu 22.04
+Docker version 27.0.3, build 7d4bcd8
+No locally installed version of ROS2 (locally installed may have conflicting RMW versions with containerized ROS2 application)
+NVIDIA GeForce RTX 3050 
+NVIDIA Driver Version: 535.183.01
+CUDA Version: 12.2
+
 ## Nvidia Setup
 
 1. Follow the instructions in [Nvidia IsaacSim Installation Guide](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to gain access to Nvidia's IsaacSim container.
-2. Download the Omniverse Launcher from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). Ensure you install `libfuse2`, **not** `fuse`.
+2. Download the Omniverse Launcher from [Nvidia's website](https://www.nvidia.com/en-us/omniverse/download/). To run the .AppImage file, ensure you install `libfuse2`, **not** `fuse`.
 3. Within the Omniverse Launcher, install the streaming client from the "exchange" window.
 
 ## Worker Navigation App Setup
