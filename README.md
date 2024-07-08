@@ -8,8 +8,8 @@
 
 ## Source Code Setup
 
-4. Open a terminal and enter:
-   ```xhost +local: docker```
+4. Open a terminal and enter: ```xhost +local: docker```
+   
 6. Navigate to the root of the repository containing your source code and run: docker-compose build
 7. Once the build is complete, start the containers with: docker-compose up
 8. It may take approximately 2 minutes for IsaacSim to fully start up. At the end, you may see terminal messages regarding transforms from map not existing yet.
@@ -17,10 +17,8 @@
 10. Launch the streaming client from the Omniverse Launcher. Enter the IP address of the IsaacSim container when prompted. This should open a view of IsaacSim.
 11. Press `Ctrl + O` to open the simulation file: /isaac-sim/humble_ws/src/antworker_isaacsim_world/antworker_isaacsim_world/antworker_greenhouse_v3.usd
 12. Press the play button in IsaacSim to start the simulation. The terminal should stop displaying messages about transforming from the `map` frame.
-13. Open a web browser and navigate to:
- ```
- localhost:8080
- ```
+13. Open a web browser and navigate to: ```localhost:8080```
+ 
  You should see a simple control window.
 
 12. Use the control box in the web interface as a joystick to drive the robot forward/backward. You should observe the robot's movement in the control panel, RVIZ, and IsaacSim.
