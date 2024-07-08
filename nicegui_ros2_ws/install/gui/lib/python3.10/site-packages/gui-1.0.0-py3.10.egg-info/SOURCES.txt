@@ -10,5 +10,4 @@ setup.py
 ../../build/gui/gui.egg-info/zip-safe
 gui/__init__.py
 gui/node.py
-gui/pose_interface.py
 launch/main_launch.py

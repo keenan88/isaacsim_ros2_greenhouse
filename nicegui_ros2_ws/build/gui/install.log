@@ -1,8 +1,6 @@
 /ros2_ws/install/gui/lib/python3.10/site-packages/gui/node.py
-/ros2_ws/install/gui/lib/python3.10/site-packages/gui/pose_interface.py
 /ros2_ws/install/gui/lib/python3.10/site-packages/gui/__init__.py
 /ros2_ws/install/gui/lib/python3.10/site-packages/gui/__pycache__/node.cpython-310.pyc
-/ros2_ws/install/gui/lib/python3.10/site-packages/gui/__pycache__/pose_interface.cpython-310.pyc
 /ros2_ws/install/gui/lib/python3.10/site-packages/gui/__pycache__/__init__.cpython-310.pyc
 /ros2_ws/install/gui/share/gui/package.xml
 /ros2_ws/install/gui/share/gui/launch/main_launch.py
