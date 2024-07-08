@@ -24,7 +24,7 @@
 4. Open a terminal and enter: ```xhost +local:docker```
 5. Navigate to the root of this repository and run: ```docker-compose build```
 6. Once the build is complete, start the containers with: ```docker-compose up```
-7. It may take approximately 2 minutes for IsaacSim to fully start up the first time. An RVIZ window should appear with a large map: 
+7. It may take approximately 2 minutes for IsaacSim to fully start up the first time and your system may lag. An RVIZ window should appear with a large map: 
 
 ![image](https://github.com/keenan88/isaacsim_ros2_greenhouse/assets/45887966/eb9a79eb-21ce-4491-9871-2ece68a995e6)
 
