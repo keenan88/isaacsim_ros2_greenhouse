@@ -12,7 +12,7 @@
 
 1. Checkout branch voxels_working
 2. Follow the instructions in [Nvidia IsaacSim Installation Guide](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html) to: 
- - Install Nvidia drivers [compatable with IsaacSim](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html) and [your Nvidia graphics card](https://www.nvidia.com/download/index.aspx). You can check your graphics driver version with the command nvidia-smi, if you already have Nvidia graphics drivers installed.
+ - Install Nvidia drivers [compatable with IsaacSim](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html) and [your Nvidia graphics card](https://www.nvidia.com/download/index.aspx). You can check your graphics driver version with the command `nvidia-smi`, if you already have Nvidia graphics drivers installed.
  - Install docker engine (not desktop!)
  - Download Nvidia's IsaacSim container
  - Install the Nvidia container toolkit.
